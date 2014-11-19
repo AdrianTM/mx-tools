@@ -22,10 +22,23 @@
 
 #include "mxtools.h"
 #include <QApplication>
+#include <qtranslator.h>
+#include <qlocale.h>
+#include <QIcon>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    a.setWindowIcon(QIcon("/usr/share/pixmaps/mx/mx-tools.xpm"));
+
+    QTranslator qtTran;
+    qtTran.load(QString("qt_") + QLocale::system().name());
+    a.installTranslator(&qtTran);
+
+    QTranslator appTran;
+    appTran.load(QString("mx-tools_") + QLocale::system().name(), "/usr/share/mx-tools/locale");
+    a.installTranslator(&appTran);
+
     mxtools w;
     w.show();
 

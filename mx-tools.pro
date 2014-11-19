@@ -40,3 +40,10 @@ SOURCES += main.cpp\
 HEADERS  += mxtools.h
 
 FORMS    += mxtools.ui
+
+TRANSLATIONS += translations/mx-findshares_ca.ts \
+                translations/mx-findshares_es.ts \
+                translations/mx-findshares_ja.ts \
+                translations/mx-findshares_nl.ts \
+                translations/mx-findshares_sv.ts
+
