@@ -94,7 +94,7 @@ void mxtools::on_buttonFlash_clicked() {
 
 void mxtools::on_buttonCheckAptGPG_clicked() {
     this->hide();
-    system("$TERM -e checkaptgpg --wait-at-end");
+    system("su-to-root -X -c \"xfce4-terminal -e 'bash checkaptgpg --wait-at-end'\" 2>/dev/null");
     this->show();
 }
 

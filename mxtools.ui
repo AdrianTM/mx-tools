@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>639</width>
-    <height>318</height>
+    <height>320</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -272,11 +272,23 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string>Bacon ipsum dolor amet pork chop leberkas kevin prosciutto, swine jowl frankfurter flank drumstick ham pancetta ham hock brisket ball tip. Spare ribs tenderloin short loin swine pancetta. Pastrami hamburger ham pork loin cupim. Salami short loin fatback drumstick.</string>
+         <string>These MX applications save time and effort with important tasks.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
         <property name="wordWrap">
          <bool>true</bool>
+        </property>
+        <property name="margin">
+         <number>-2</number>
         </property>
        </widget>
       </item>
