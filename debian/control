@@ -10,5 +10,6 @@ Vcs-Git: git://github.com/AdrianTM/mx-tools
 Package: mx-tools
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer
+Recommends: apt-notifier, checkaptgpg, mx-bootrepair, mx-codecs, mx-findshares, mx-flash,  mx-packageinstaller, mx-switchuser, mx-user
 Description: MX Tools Launcher
  MX Tools is a simple launcher used for starting various MX configuration tools.
