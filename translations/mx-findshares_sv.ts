@@ -41,52 +41,52 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="171"/>
-        <source>MX Check Apt GPG</source>
+        <source>Check Apt GPG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="182"/>
-        <source>MX Find Shares</source>
+        <source>Find Network Shares</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="193"/>
-        <source>MX Package Installer</source>
+        <source>Package Installer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="204"/>
-        <source>MX Apt Notifier</source>
+        <source>Unhide Apt Notifier</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="215"/>
-        <source>MX User</source>
+        <source>User Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="226"/>
-        <source>MX Flash</source>
+        <source>Flash Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="237"/>
-        <source>MX Switch User</source>
+        <source>Switch User</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="248"/>
-        <source>MX Boot Repair</source>
+        <source>Boot Repair</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="259"/>
-        <source>MX Codecs</source>
+        <source>Codecs Downloader</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="276"/>
-        <source>Bacon ipsum dolor amet pork chop leberkas kevin prosciutto, swine jowl frankfurter flank drumstick ham pancetta ham hock brisket ball tip. Spare ribs tenderloin short loin swine pancetta. Pastrami hamburger ham pork loin cupim. Salami short loin fatback drumstick.</source>
+        <location filename="../mxtools.ui" line="282"/>
+        <source>These MX applications save time and effort with important tasks.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -101,7 +101,7 @@
     </message>
     <message>
         <location filename="../mxtools.cpp" line="62"/>
-        <source>Tools for MX Linux</source>
+        <source>Configuration Tools for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
