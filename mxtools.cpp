@@ -59,7 +59,7 @@ void mxtools::on_buttonAbout_clicked() {
                        tr("About MX Tools"), "<p align=\"center\"><b><h2>" +
                        tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
                        getVersion("mx-tools") + "</p><p align=\"center\"><h3>" +
-                       tr("Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
+                       tr("Configuration Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
@@ -68,4 +68,56 @@ void mxtools::on_buttonAbout_clicked() {
 }
 
 
+void mxtools::on_buttonUser_clicked() {
+    this->hide();
+    system("su-to-root -X -c mx-user");
+    this->show();
+}
 
+void mxtools::on_buttonPackageInstaller_clicked() {
+    this->hide();
+    system("su-to-root -X -c mx-packageinstaller");
+    this->show();
+}
+
+void mxtools::on_buttonCodecs_clicked() {
+    this->hide();
+    system("su-to-root -X -c mx-codecs");
+    this->show();
+}
+
+void mxtools::on_buttonFlash_clicked() {
+    this->hide();
+    system("su-to-root -X -c mx-flash");
+    this->show();
+}
+
+void mxtools::on_buttonCheckAptGPG_clicked() {
+    this->hide();
+    system("$TERM -e checkaptgpg --wait-at-end");
+    this->show();
+}
+
+void mxtools::on_buttonAptNotifier_clicked() {
+    this->hide();
+    system("/usr/bin/apt-notifier-unhide-Icon");
+    this->show();
+}
+
+void mxtools::on_buttonFindShares_clicked() {
+    this->hide();
+    system("mx-findshares");
+    this->show();
+}
+
+void mxtools::on_buttonSwitchUser_clicked() {
+    this->hide();
+    system("mx-switchuser");
+    this->show();
+}
+
+void mxtools::on_buttonBootrepair_clicked() {
+    this->hide();
+    system("su-to-root -X -c mx-bootrepair");
+    this->show();
+}

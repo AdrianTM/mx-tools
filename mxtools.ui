@@ -39,7 +39,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-user/icons/accessories-text-editor.png</normaloff>../../../../../../../../usr/share/mx-user/icons/accessories-text-editor.png</iconset>
+         <normaloff>../../../../../../../../usr/share/mx-tools/icons/accessories-text-editor.png</normaloff>../../../../../../../../usr/share/mx-tools/icons/accessories-text-editor.png</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -90,7 +90,7 @@
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../../../../../../../usr/share/mx-user/icons/mxfcelogo.png</pixmap>
+        <pixmap>../../../../../../../../usr/share/mx-tools/icons/mxfcelogo.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -107,7 +107,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-user/icons/gtk-cancel.png</normaloff>../../../../../../../../usr/share/mx-user/icons/gtk-cancel.png</iconset>
+         <normaloff>../../../../../../../../usr/share/mx-tools/icons/gtk-cancel.png</normaloff>../../../../../../../../usr/share/mx-tools/icons/gtk-cancel.png</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -166,9 +166,9 @@
        <number>20</number>
       </property>
       <item row="4" column="1">
-       <widget class="QPushButton" name="buttomCheckAptGPG">
+       <widget class="QPushButton" name="buttonCheckAptGPG">
         <property name="text">
-         <string>MX Check Apt GPG</string>
+         <string>Check Apt GPG</string>
         </property>
         <property name="icon">
          <iconset>
@@ -179,7 +179,7 @@
       <item row="5" column="0">
        <widget class="QPushButton" name="buttonFindShares">
         <property name="text">
-         <string>MX Find Shares</string>
+         <string>Find Network Shares</string>
         </property>
         <property name="icon">
          <iconset>
@@ -188,9 +188,9 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QPushButton" name="buttomPackageInstaller">
+       <widget class="QPushButton" name="buttonPackageInstaller">
         <property name="text">
-         <string>MX Package Installer</string>
+         <string>Package Installer</string>
         </property>
         <property name="icon">
          <iconset>
@@ -199,9 +199,9 @@
        </widget>
       </item>
       <item row="4" column="2">
-       <widget class="QPushButton" name="buttomAptNotifier">
+       <widget class="QPushButton" name="buttonAptNotifier">
         <property name="text">
-         <string>MX Apt Notifier</string>
+         <string>Unhide Apt Notifier</string>
         </property>
         <property name="icon">
          <iconset>
@@ -212,7 +212,7 @@
       <item row="2" column="0">
        <widget class="QPushButton" name="buttonUser">
         <property name="text">
-         <string>MX User</string>
+         <string>User Manager</string>
         </property>
         <property name="icon">
          <iconset>
@@ -221,9 +221,9 @@
        </widget>
       </item>
       <item row="4" column="0">
-       <widget class="QPushButton" name="buttomFlash">
+       <widget class="QPushButton" name="buttonFlash">
         <property name="text">
-         <string>MX Flash</string>
+         <string>Flash Manager</string>
         </property>
         <property name="icon">
          <iconset>
@@ -234,7 +234,7 @@
       <item row="5" column="1">
        <widget class="QPushButton" name="buttonSwitchUser">
         <property name="text">
-         <string>MX Switch User</string>
+         <string>Switch User</string>
         </property>
         <property name="icon">
          <iconset>
@@ -245,7 +245,7 @@
       <item row="5" column="2">
        <widget class="QPushButton" name="buttonBootrepair">
         <property name="text">
-         <string>MX Boot Repair</string>
+         <string>Boot Repair</string>
         </property>
         <property name="icon">
          <iconset>
@@ -256,7 +256,7 @@
       <item row="2" column="2">
        <widget class="QPushButton" name="buttonCodecs">
         <property name="text">
-         <string>MX Codecs</string>
+         <string>Codecs Downloader</string>
         </property>
         <property name="icon">
          <iconset>
