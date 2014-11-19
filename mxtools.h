@@ -44,6 +44,7 @@ public:
 
     QString getCmdOut(QString cmd);
     QString getVersion(QString name);
+    void checkApps();
 
 private slots:
     void on_buttonAbout_clicked();

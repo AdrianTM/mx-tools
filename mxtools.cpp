@@ -29,6 +29,7 @@ mxtools::mxtools(QWidget *parent) :
     ui(new Ui::mxtools)
 {
     ui->setupUi(this);
+    checkApps();
 }
 
 mxtools::~mxtools()
@@ -50,6 +51,48 @@ QString mxtools::getCmdOut(QString cmd) {
 QString mxtools::getVersion(QString name) {
     QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
     return getCmdOut(cmd);
+}
+
+
+// Check if the apps are installed
+void mxtools::checkApps() {
+    // MX User
+    if (getCmdOut("dpkg -s mx-user | grep Status") != "Status: install ok installed") {
+        ui->buttonUser->setEnabled(false);
+    }
+    // MX PackageInstaller
+    if (getCmdOut("dpkg -s mx-packageinstaller | grep Status") != "Status: install ok installed") {
+        ui->buttonPackageInstaller->setEnabled(false);
+    }
+    // MX Codecs
+    if (getCmdOut("dpkg -s mx-codecs | grep Status") != "Status: install ok installed") {
+        ui->buttonCodecs->setEnabled(false);
+    }
+    // MX Flash
+    if (getCmdOut("dpkg -s mx-flash | grep Status") != "Status: install ok installed") {
+        ui->buttonFlash->setEnabled(false);
+    }
+    // MX CheckAptGPG
+    if (getCmdOut("dpkg -s checkaptgpg | grep Status") != "Status: install ok installed") {
+        ui->buttonCheckAptGPG->setEnabled(false);
+    }
+    // MX AptNotifier
+    if (getCmdOut("dpkg -s apt-notifier | grep Status") != "Status: install ok installed") {
+        ui->buttonAptNotifier->setEnabled(false);
+    }
+    // MX Findshares
+    if (getCmdOut("dpkg -s mx-findshares | grep Status") != "Status: install ok installed") {
+        ui->buttonFindShares->setEnabled(false);
+    }
+    // MX Switchuser
+    if (getCmdOut("dpkg -s mx-switchuser | grep Status") != "Status: install ok installed") {
+        ui->buttonSwitchUser->setEnabled(false);
+    }
+    // MX BootRepair
+    if (getCmdOut("dpkg -s mx-bootrepair | grep Status") != "Status: install ok installed") {
+        ui->buttonBootrepair->setEnabled(false);
+    }
+
 }
 
 
