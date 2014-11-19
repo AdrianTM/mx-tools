@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=MX Tools
+Name[ca]=MX Tools
 Name[de]=MX-Werkzeug 
 Name[el]=MX Tools
 Name[es]=MX Tools
@@ -8,6 +9,7 @@ Name[nl]=MX Tools
 Name[ro]=MX Tools
 Name[sv]=MX Tools
 Comment=Configuration tools for MX Linux
+Comment[ca]=Eines de configuració per a MX Linux
 Comment[de]=Konfigurationswerkzeuge für MX Linux
 Comment[el]=Εργαλεία διαμόρφωσης για MX Linux
 Comment[es]=Herramientas de configuración para MX Linux
