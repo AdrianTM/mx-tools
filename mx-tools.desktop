@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=MX Tools
+Comment=MX Configuration Tools Launcher
+Icon=/usr/share/pixmaps/mx/mx-tools.png
+Exec=mx-tools
+NoDisplay=false
+Categories=System;
+Terminal=false
+Type=Application

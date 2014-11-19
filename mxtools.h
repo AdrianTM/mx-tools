@@ -47,7 +47,15 @@ public:
 
 private slots:
     void on_buttonAbout_clicked();
-
+    void on_buttonUser_clicked();
+    void on_buttonPackageInstaller_clicked();
+    void on_buttonCodecs_clicked();
+    void on_buttonFlash_clicked();
+    void on_buttonCheckAptGPG_clicked();
+    void on_buttonAptNotifier_clicked();
+    void on_buttonFindShares_clicked();
+    void on_buttonSwitchUser_clicked();
+    void on_buttonBootrepair_clicked();
 
 private:
     Ui::mxtools *ui;
