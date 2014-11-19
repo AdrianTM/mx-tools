@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mxtools</class>
+ <widget class="QWidget" name="mxtools">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>318</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MX Tools</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <layout class="QGridLayout" columnstretch="0,0,0,0,0,0,0,0">
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="buttonAbout">
+       <property name="toolTip">
+        <string>About this application</string>
+       </property>
+       <property name="text">
+        <string>About...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../../../../../../usr/share/mx-user/icons/accessories-text-editor.png</normaloff>../../../../../../../../usr/share/mx-user/icons/accessories-text-editor.png</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Alt+B</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <spacer name="horizontalSpacer2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <spacer name="horizontalSpacer1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../../../../../../usr/share/mx-user/icons/mxfcelogo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="QPushButton" name="buttonCancel">
+       <property name="toolTip">
+        <string>Cancel any changes then quit</string>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../../../../../../usr/share/mx-user/icons/gtk-cancel.png</normaloff>../../../../../../../../usr/share/mx-user/icons/gtk-cancel.png</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Alt+N</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>26</number>
+      </property>
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="buttomCheckAptGPG">
+        <property name="text">
+         <string>MX Check Apt GPG</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="buttonFindShares">
+        <property name="text">
+         <string>MX Find Shares</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="buttomPackageInstaller">
+        <property name="text">
+         <string>MX Package Installer</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="buttomAptNotifier">
+        <property name="text">
+         <string>MX Apt Notifier</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="buttonUser">
+        <property name="text">
+         <string>MX User</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="buttomFlash">
+        <property name="text">
+         <string>MX Flash</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="buttonSwitchUser">
+        <property name="text">
+         <string>MX Switch User</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="buttonBootrepair">
+        <property name="text">
+         <string>MX Boot Repair</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="buttonCodecs">
+        <property name="text">
+         <string>MX Codecs</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLabel" name="introductionLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Bacon ipsum dolor amet pork chop leberkas kevin prosciutto, swine jowl frankfurter flank drumstick ham pancetta ham hock brisket ball tip. Spare ribs tenderloin short loin swine pancetta. Pastrami hamburger ham pork loin cupim. Salami short loin fatback drumstick.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>mxtools</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
