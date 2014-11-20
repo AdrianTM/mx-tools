@@ -41,10 +41,12 @@ HEADERS  += mxtools.h
 
 FORMS    += mxtools.ui
 
-TRANSLATIONS += translations/mx-tools_de.ts \
+TRANSLATIONS += translations/mx-tools_ca.ts \
+		translations/mx-tools_de.ts \
                 translations/mx-tools_el.ts \
 		translations/mx-tools_es.ts \
                 translations/mx-tools_fr.ts \
+                translations/mx-tools_it.ts \
                 translations/mx-tools_nl.ts \
                 translations/mx-tools_ro.ts \
                 translations/mx-tools_sv.ts
