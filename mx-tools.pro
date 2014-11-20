@@ -41,10 +41,11 @@ HEADERS  += mxtools.h
 
 FORMS    += mxtools.ui
 
-TRANSLATIONS += translations/mx-findshares_ca.ts \
-                translations/mx-findshares_es.ts \
-                translations/mx-findshares_ja.ts \
-                translations/mx-findshares_nl.ts \
-                translations/mx-findshares_ro.ts \
-                translations/mx-findshares_sv.ts
+TRANSLATIONS += translations/mx-tools_de.ts \
+                translations/mx-tools_el.ts \
+		translations/mx-tools_es.ts \
+                translations/mx-tools_fr.ts \
+                translations/mx-tools_nl.ts \
+                translations/mx-tools_ro.ts \
+                translations/mx-tools_sv.ts
 
