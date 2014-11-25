@@ -1,3 +1,9 @@
+mx-tools (14.3+2) mx; urgency=low
+
+  * repackages with new location for .desktop
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 25 Nov 2014 18:24:14 -0500
+
 mx-tools (14.3) mx; urgency=low
 
   * Initial release
