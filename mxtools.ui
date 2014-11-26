@@ -152,6 +152,61 @@
       <property name="spacing">
        <number>20</number>
       </property>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="buttonBootrepair">
+        <property name="text">
+         <string>Boot Repair</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="buttonSwitchUser">
+        <property name="text">
+         <string>Switch User</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="buttonFlash">
+        <property name="text">
+         <string>Flash Manager</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="buttonPackageInstaller">
+        <property name="text">
+         <string>Package Installer</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="buttonCodecs">
+        <property name="text">
+         <string>Codecs Downloader</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
+        </property>
+       </widget>
+      </item>
       <item row="0" column="0" rowspan="2" colspan="3">
        <widget class="QLabel" name="introductionLabel">
         <property name="sizePolicy">
@@ -191,36 +246,14 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="buttonPackageInstaller">
+      <item row="4" column="0">
+       <widget class="QPushButton" name="buttonFindShares">
         <property name="text">
-         <string>Package Installer</string>
+         <string>Find Network Shares</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QPushButton" name="buttonCodecs">
-        <property name="text">
-         <string>Codecs Downloader</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QPushButton" name="buttonFlash">
-        <property name="text">
-         <string>Flash Manager</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
+          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
         </property>
        </widget>
       </item>
@@ -246,36 +279,10 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="QPushButton" name="buttonFindShares">
+      <item row="5" column="0">
+       <widget class="QCheckBox" name="hideCheckBox">
         <property name="text">
-         <string>Find Network Shares</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="1">
-       <widget class="QPushButton" name="buttonSwitchUser">
-        <property name="text">
-         <string>Switch User</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="2">
-       <widget class="QPushButton" name="buttonBootrepair">
-        <property name="text">
-         <string>Boot Repair</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
+         <string>Hide individual tools from the menu</string>
         </property>
        </widget>
       </item>
