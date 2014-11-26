@@ -30,6 +30,10 @@ mxtools::mxtools(QWidget *parent) :
 {
     ui->setupUi(this);
     checkApps();
+    // detect if tools are displayed in the menu (check for only one since all are set at the same time)
+    if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
+        ui->hideCheckBox->setChecked(true);
+    }
 }
 
 mxtools::~mxtools()
@@ -53,6 +57,15 @@ QString mxtools::getVersion(QString name) {
     return getCmdOut(cmd);
 }
 
+// Replace string in a file
+bool mxtools::replaceStringInFile(QString oldtext, QString newtext, QString filepath) {
+
+    QString cmd = QString("su-to-root -X -c \"sed -i 's/%1/%2/g' %3\"").arg(oldtext).arg(newtext).arg(filepath);
+    if (system(cmd.toAscii()) != 0) {
+        return false;
+    }
+    return true;
+}
 
 // Check if the apps are installed
 void mxtools::checkApps() {
@@ -163,4 +176,37 @@ void mxtools::on_buttonBootrepair_clicked() {
     this->hide();
     system("su-to-root -X -c mx-bootrepair");
     this->show();
+}
+
+void mxtools::on_hideCheckBox_clicked(bool checked)
+{
+    if (checked) {
+        replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx/mx-bootrepair.desktop");
+        replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx/mx-codecs.desktop");
+        replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx/mx-findshares.desktop");
+        replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx/mx-flash.desktop");
+        replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx/mx-packageinstaller.desktop");
+        replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx/mx-switchuser.desktop");
+        replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx/mx-user.desktop");
+        if (system("grep -q \"NoDisplay\" /usr/share/applications/mx-apt-notifier-menu.desktop") == 0) {
+            replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx-apt-notifier-menu.desktop");
+        } else {
+            system("su-to-root -X -c 'echo \"NoDisplay=true\" >> /usr/share/applications/mx-apt-notifier-menu.desktop'");
+        }
+        if (system("grep -q \"NoDisplay\" /usr/share/applications/mx-checkaptgpg.desktop") == 0) {
+            replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx-checkaptgpg.desktop");
+        } else {
+            system("su-to-root -X -c 'echo \"NoDisplay=true\" >> /usr/share/applications/mx-checkaptgpg.desktop'");
+        }
+    } else {
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx/mx-bootrepair.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx/mx-codecs.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx/mx-findshares.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx/mx-flash.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx/mx-packageinstaller.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx/mx-switchuser.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx/mx-user.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx-apt-notifier-menu.desktop");
+        replaceStringInFile("NoDisplay=true", "NoDisplay=false", "/usr/share/applications/mx-checkaptgpg.desktop");
+    }
 }
