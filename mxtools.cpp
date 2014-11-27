@@ -196,6 +196,7 @@ void mxtools::on_hideCheckBox_clicked(bool checked)
         if (system("grep -q \"NoDisplay\" /usr/share/applications/mx-checkaptgpg.desktop") == 0) {
             replaceStringInFile("NoDisplay=false", "NoDisplay=true", "/usr/share/applications/mx-checkaptgpg.desktop");
         } else {
+            system("su-to-root -X -c \"sed -i -e '$a\'\"");
             system("su-to-root -X -c 'echo \"NoDisplay=true\" >> /usr/share/applications/mx-checkaptgpg.desktop'");
         }
     } else {
