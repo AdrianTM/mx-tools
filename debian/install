@@ -3,4 +3,4 @@ mx-tools.desktop	usr/share/applications
 translations/*.qm 	usr/share/mx-tools/locale
 mx-tools.png		usr/share/pixmaps/mx
 icons/*                 usr/share/mx-tools/icons
-hideshowicons.sh	usr/share/mx-tools
+mx-tools.sh		usr/bin

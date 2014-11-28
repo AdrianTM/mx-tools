@@ -169,5 +169,5 @@ void mxtools::on_buttonBootrepair_clicked() {
 }
 
 void mxtools::on_hideCheckBox_clicked() {
-    system("su-to-root -X -c /usr/share/mx-tools/hideshowicons.sh");
+    system("su-to-root -X -c mx-tools.sh");
 }
