@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="103"/>
+        <location filename="../mxtools.cpp" line="116"/>
         <source>MX Tools</source>
         <translation type="unfinished"></translation>
     </message>
@@ -41,81 +41,86 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="158"/>
-        <source>Check Apt GPG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="169"/>
-        <source>Find Network Shares</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="180"/>
-        <source>Package Installer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="191"/>
-        <source>Unhide Apt Notifier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="202"/>
-        <source>User Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="213"/>
-        <source>Flash Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="224"/>
-        <source>Switch User</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="235"/>
         <source>Boot Repair</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="246"/>
+        <location filename="../mxtools.ui" line="169"/>
+        <source>Switch User</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="180"/>
+        <source>Flash Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="191"/>
+        <source>Package Installer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="202"/>
         <source>Codecs Downloader</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="269"/>
+        <location filename="../mxtools.ui" line="225"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="102"/>
+        <location filename="../mxtools.ui" line="241"/>
+        <source>User Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="252"/>
+        <source>Find Network Shares</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="263"/>
+        <source>Check Apt GPG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="274"/>
+        <source>Unhide Apt Notifier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="285"/>
+        <source>Hide individual tools from the menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="115"/>
         <source>About MX Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="103"/>
+        <location filename="../mxtools.cpp" line="116"/>
         <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="105"/>
+        <location filename="../mxtools.cpp" line="118"/>
         <source>Configuration Tools for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="106"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>Copyright (c) antiX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="107"/>
+        <location filename="../mxtools.cpp" line="120"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="108"/>
+        <location filename="../mxtools.cpp" line="121"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
