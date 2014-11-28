@@ -9,10 +9,10 @@ do
 			sed -i "s/^NoDisplay=.*/NoDisplay=false/" $DESKTOP_PATH/$DESKTOP_FILE
 		;;
 		false)
-			sed -i -e '$a\' $DESKTOP_PATH/$DESKTOP_FILE
 			sed -i "s/^NoDisplay=.*/NoDisplay=true/" $DESKTOP_PATH/$DESKTOP_FILE
 		;;
 		*)
+			sed -i -e '$a\' $DESKTOP_PATH/$DESKTOP_FILE
 			echo "NoDisplay=true" >> $DESKTOP_PATH/$DESKTOP_FILE
 		;;
 	esac
