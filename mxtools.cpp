@@ -170,8 +170,8 @@ void mxtools::on_buttonBootrepair_clicked() {
 
 void mxtools::on_hideCheckBox_clicked(bool checked) {
     if (checked) {
-        system("su-to-root -X -c mx-tools_hide.sh");
+        system("su-to-root -X -c 'mx-tools.sh --hide'");
     } else {
-        system("su-to-root -X -c mx-tools_unhide.sh");
+        system("su-to-root -X -c 'mx-tools.sh --show'");
     }
 }
