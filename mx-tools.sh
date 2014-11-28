@@ -1,7 +1,7 @@
 #!/bin/bash
 DESKTOP_PATH="/usr/share/applications"
 
-for DESKTOP_FILE in "mx/mx-bootrepair.desktop" "mx/mx-codecs.desktop" "mx/mx-findshares.desktop" "mx/mx-flash.desktop" "mx/mx-packageinstaller.desktop" "mx/mx-switchuser.desktop" "mx/mx-user.desktop" "mx-apt-notifier-menu.desktop" "mx-checkaptgpg.desktop"
+for DESKTOP_FILE in $(ls -1 $DESKTOP_PATH/{,mx/}mx*.desktop | cut -f5- -d/ | grep -v mx-tools)
 do
 	OLD_VALUE=$(cat $DESKTOP_PATH/$DESKTOP_FILE | grep "^NoDisplay=" | cut -d "=" -f2)
 	case "$OLD_VALUE" in
