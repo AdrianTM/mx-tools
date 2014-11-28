@@ -168,6 +168,10 @@ void mxtools::on_buttonBootrepair_clicked() {
     this->show();
 }
 
-void mxtools::on_hideCheckBox_clicked() {
-    system("su-to-root -X -c mx-tools.sh");
+void mxtools::on_hideCheckBox_clicked(bool checked) {
+    if (checked) {
+        system("su-to-root -X -c mx-tools_hide.sh");
+    } else {
+        system("su-to-root -X -c mx-tools_unhide.sh");
+    }
 }

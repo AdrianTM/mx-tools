@@ -6,7 +6,6 @@ do
 	OLD_VALUE=$(cat $DESKTOP_PATH/$DESKTOP_FILE | grep "^NoDisplay=" | cut -d "=" -f2)
 	case "$OLD_VALUE" in
 		true)
-			sed -i "s/^NoDisplay=.*/NoDisplay=false/" $DESKTOP_PATH/$DESKTOP_FILE
 		;;
 		false)
 			sed -i "s/^NoDisplay=.*/NoDisplay=true/" $DESKTOP_PATH/$DESKTOP_FILE
