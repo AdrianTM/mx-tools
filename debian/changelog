@@ -1,3 +1,9 @@
+mx-tools (14.3+4) mx; urgency=low
+
+  * final refinements to the hide/show icons script
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 29 Nov 2014 09:24:26 -0500
+
 mx-tools (14.3+3) mx; urgency=low
 
   * option to hide tool icons from the menu
