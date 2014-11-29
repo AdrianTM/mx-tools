@@ -1,3 +1,15 @@
+mx-tools (14.3+4) mx; urgency=low
+
+  * final refinements to the hide/show icons script
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 29 Nov 2014 09:24:26 -0500
+
+mx-tools (14.3+3) mx; urgency=low
+
+  * option to hide tool icons from the menu
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 26 Nov 2014 18:47:58 -0500
+
 mx-tools (14.3+2) mx; urgency=low
 
   * repackages with new location for .desktop
