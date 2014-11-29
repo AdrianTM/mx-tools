@@ -30,6 +30,10 @@ mxtools::mxtools(QWidget *parent) :
 {
     ui->setupUi(this);
     checkApps();
+    // detect if tools are displayed in the menu (check for only one since all are set at the same time)
+    if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
+        ui->hideCheckBox->setChecked(true);
+    }
 }
 
 mxtools::~mxtools()
@@ -52,7 +56,6 @@ QString mxtools::getVersion(QString name) {
     QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
     return getCmdOut(cmd);
 }
-
 
 // Check if the apps are installed
 void mxtools::checkApps() {
@@ -163,4 +166,13 @@ void mxtools::on_buttonBootrepair_clicked() {
     this->hide();
     system("su-to-root -X -c mx-bootrepair");
     this->show();
+}
+
+void mxtools::on_hideCheckBox_clicked(bool checked) {
+    if (checked) {
+        system("su-to-root -X -c 'mx-tools.sh --hide'");
+    } else {
+        system("su-to-root -X -c 'mx-tools.sh --show'");
+    }
+    system("xfce4-panel --restart");
 }

@@ -43,7 +43,7 @@ public:
     ~mxtools();
 
     QString getCmdOut(QString cmd);
-    QString getVersion(QString name);
+    QString getVersion(QString name);    
     void checkApps();
 
 private slots:
@@ -57,6 +57,7 @@ private slots:
     void on_buttonFindShares_clicked();
     void on_buttonSwitchUser_clicked();
     void on_buttonBootrepair_clicked();
+    void on_hideCheckBox_clicked(bool checked);
 
 private:
     Ui::mxtools *ui;
