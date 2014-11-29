@@ -1,7 +1,14 @@
 #!/bin/bash
+#Base .desktop file location
+#This is where you can set the base file path.
 DESKTOP_PATH="/usr/share/applications"
+
+#Where you can set any extra files (full path) that are not of the name scheme mx-
+#Example:
+#EXTRA_FILES="$DESKTOP_PATH/synaptic.desktop $DESKTOP_PATH/xfce4-terminal"
 EXTRA_FILES=""
-#EXTRA_FILES="synaptic.desktop"
+
+#Allowance for passed items on the command line, do not edit
 EXTRA_PASSED="${@:2}"
 
 help() {
@@ -12,13 +19,13 @@ help() {
     echo "-H | --help    This help Dialog"
     echo "Examples:"
     echo "$0 -h"
-    echo "$0 -h synaptic.desktop"
+    echo "$0 -h $DESKTOP_PATH/synaptic.desktop"
     echo "$0 -s"
-    echo "$0 -s synaptic.desktop"
+    echo "$0 -s $DESKTOP_PATH/synaptic.desktop"
 }
 
 SHOW_HIDE() {
-    for DESKTOP_FILE in $(ls -1 $DESKTOP_PATH/{,mx/}mx*.desktop | grep -v mx-tools) $DESKTOP_PATH/$EXTRA_FILES $EXTRA_PASSED
+    for DESKTOP_FILE in $(ls -1 $DESKTOP_PATH/{,mx/}mx*.desktop | grep -v mx-tools) $EXTRA_FILES $EXTRA_PASSED
     do
         if [ -f $DESKTOP_FILE ]; then
             OLD_VALUE=$(cat $DESKTOP_FILE | grep "^NoDisplay=" | cut -d "=" -f2)
@@ -37,7 +44,7 @@ SHOW_HIDE() {
                     sed -i -e '$a\' $DESKTOP_FILE
                     if [ "$CONDITION" = "hide" ]; then
                         echo "NoDisplay=true" >> $DESKTOP_FILE
-                        else [ "$CONDITION" = "show" ];
+                    else
                         echo "NoDisplay=false" >> $DESKTOP_FILE
                     fi
                 ;;
