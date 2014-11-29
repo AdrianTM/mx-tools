@@ -174,4 +174,5 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
     } else {
         system("su-to-root -X -c 'mx-tools.sh --show'");
     }
+    system("xfce4-panel --restart");
 }
