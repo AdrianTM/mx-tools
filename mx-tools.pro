@@ -47,6 +47,7 @@ TRANSLATIONS += translations/mx-tools_ca.ts \
 		translations/mx-tools_es.ts \
                 translations/mx-tools_fr.ts \
                 translations/mx-tools_it.ts \
+                translations/mx-tools_ja.ts \
                 translations/mx-tools_nl.ts \
                 translations/mx-tools_ro.ts \
                 translations/mx-tools_sv.ts
