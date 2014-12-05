@@ -1,3 +1,9 @@
+mx-tools (14.3+6) mx; urgency=low
+
+  * design change, added antiX tools
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 04 Dec 2014 12:48:32 -0500
+
 mx-tools (14.3+4) mx; urgency=low
 
   * final refinements to the hide/show icons script

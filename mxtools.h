@@ -57,7 +57,10 @@ private slots:
     void on_buttonFindShares_clicked();
     void on_buttonSwitchUser_clicked();
     void on_buttonBootrepair_clicked();
-    void on_hideCheckBox_clicked(bool checked);
+    void on_buttonSnapshot_clicked();
+    void on_buttonRemaster_clicked();
+    void on_buttonLiveUSB_clicked();
+    void on_hideCheckBox_clicked(bool checked);    
 
 private:
     Ui::mxtools *ui;

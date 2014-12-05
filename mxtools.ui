@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>629</width>
-    <height>297</height>
+    <width>621</width>
+    <height>434</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -127,6 +127,18 @@
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="font">
+      <font>
+       <strikeout>false</strikeout>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -152,58 +164,77 @@
       <property name="spacing">
        <number>20</number>
       </property>
-      <item row="4" column="2">
-       <widget class="QPushButton" name="buttonBootrepair">
-        <property name="text">
-         <string>Boot Repair</string>
+      <item row="9" column="0">
+       <widget class="QGroupBox" name="advancedBox">
+        <property name="title">
+         <string>Advanced</string>
         </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
-        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0" colspan="3">
+          <widget class="Line" name="lineAdv">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="FlatButton" name="buttonRemaster">
+           <property name="text">
+            <string>Live Remaster</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Tango/24x24/categories/preferences-desktop.png</normaloff>../../../../../../../../usr/share/icons/Tango/24x24/categories/preferences-desktop.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="FlatButton" name="buttonSnapshot">
+           <property name="text">
+            <string>ISO Backup</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/devices/system.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/devices/system.svg</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="FlatButton" name="buttonLiveUSB">
+           <property name="text">
+            <string>Create Live USB</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Tango/24x24/devices/usbpendrive_unmount.png</normaloff>../../../../../../../../usr/share/icons/Tango/24x24/devices/usbpendrive_unmount.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
-      <item row="4" column="1">
-       <widget class="QPushButton" name="buttonSwitchUser">
+      <item row="10" column="0">
+       <widget class="QCheckBox" name="hideCheckBox">
         <property name="text">
-         <string>Switch User</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QPushButton" name="buttonFlash">
-        <property name="text">
-         <string>Flash Manager</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="buttonPackageInstaller">
-        <property name="text">
-         <string>Package Installer</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QPushButton" name="buttonCodecs">
-        <property name="text">
-         <string>Codecs Downloader</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
+         <string>Hide individual tools from the menu</string>
         </property>
        </widget>
       </item>
@@ -235,55 +266,182 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="buttonUser">
-        <property name="text">
-         <string>User Manager</string>
+      <item row="6" column="0">
+       <widget class="QGroupBox" name="basicBox">
+        <property name="title">
+         <string>Basic</string>
         </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</iconset>
+        <property name="flat">
+         <bool>false</bool>
         </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QPushButton" name="buttonFindShares">
-        <property name="text">
-         <string>Find Network Shares</string>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QPushButton" name="buttonCheckAptGPG">
-        <property name="text">
-         <string>Check Apt GPG</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="2">
-       <widget class="QPushButton" name="buttonAptNotifier">
-        <property name="text">
-         <string>Unhide Apt Notifier</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="0">
-       <widget class="QCheckBox" name="hideCheckBox">
-        <property name="text">
-         <string>Hide individual tools from the menu</string>
-        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0" colspan="3">
+          <widget class="Line" name="lineBasic">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="FlatButton" name="buttonUser">
+           <property name="font">
+            <font>
+             <underline>false</underline>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>User Manager</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="FlatButton" name="buttonPackageInstaller">
+           <property name="text">
+            <string>Package Installer</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="FlatButton" name="buttonCodecs">
+           <property name="text">
+            <string>Codecs Downloader</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="FlatButton" name="buttonFlash">
+           <property name="text">
+            <string>Flash Manager</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="FlatButton" name="buttonCheckAptGPG">
+           <property name="text">
+            <string>Check Apt GPG</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="FlatButton" name="buttonAptNotifier">
+           <property name="text">
+            <string>Unhide Apt Notifier</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="FlatButton" name="buttonFindShares">
+           <property name="text">
+            <string>Find Network Shares</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>21</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="FlatButton" name="buttonSwitchUser">
+           <property name="text">
+            <string>Switch User</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="FlatButton" name="buttonBootrepair">
+           <property name="text">
+            <string>Boot Repair</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
      </layout>
@@ -292,6 +450,13 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FlatButton</class>
+   <extends>QPushButton</extends>
+   <header>flatbutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections>
   <connection>
