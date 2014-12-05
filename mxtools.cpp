@@ -24,6 +24,7 @@
 #include "ui_mxtools.h"
 #include "flatbutton.h"
 
+#include <QDebug>
 
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
@@ -109,9 +110,9 @@ void mxtools::on_buttonAbout_clicked() {
                        getVersion("mx-tools") + "</p><p align=\"center\"><h3>" +
                        tr("Configuration Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
-    msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-    msgBox.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
-    if (msgBox.exec() == QMessageBox::AcceptRole)
+    msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
+    msgBox.addButton(tr("License"), QMessageBox::RejectRole);
+    if (msgBox.exec() == QMessageBox::RejectRole)
         system("mx-viewer http://www.mepiscommunity.org/doc_mx/mx-tools-license.html 'MX Tools License'");
 }
 
