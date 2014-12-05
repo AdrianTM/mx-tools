@@ -188,6 +188,9 @@
          </item>
          <item row="1" column="0">
           <widget class="FlatButton" name="buttonRemaster">
+           <property name="toolTip">
+            <string>Tools for live persistence and remastering.</string>
+           </property>
            <property name="text">
             <string>Live Remaster</string>
            </property>
@@ -202,6 +205,9 @@
          </item>
          <item row="1" column="1">
           <widget class="FlatButton" name="buttonSnapshot">
+           <property name="toolTip">
+            <string>Create a live-CD from the running system.</string>
+           </property>
            <property name="text">
             <string>ISO Backup</string>
            </property>
@@ -216,6 +222,9 @@
          </item>
          <item row="1" column="2">
           <widget class="FlatButton" name="buttonLiveUSB">
+           <property name="toolTip">
+            <string>Run MX live with persistence on a USB device.</string>
+           </property>
            <property name="text">
             <string>Create Live USB</string>
            </property>
@@ -308,6 +317,9 @@
            <property name="acceptDrops">
             <bool>false</bool>
            </property>
+           <property name="toolTip">
+            <string>Manage users and groups, repair settings.</string>
+           </property>
            <property name="autoFillBackground">
             <bool>false</bool>
            </property>
@@ -325,6 +337,9 @@
          </item>
          <item row="1" column="1">
           <widget class="FlatButton" name="buttonPackageInstaller">
+           <property name="toolTip">
+            <string>Install additional packages.</string>
+           </property>
            <property name="text">
             <string>Package Installer</string>
            </property>
@@ -339,6 +354,9 @@
          </item>
          <item row="1" column="2">
           <widget class="FlatButton" name="buttonCodecs">
+           <property name="toolTip">
+            <string>Download and install restricted codecs.</string>
+           </property>
            <property name="text">
             <string>Codecs Downloader</string>
            </property>
@@ -353,6 +371,9 @@
          </item>
          <item row="2" column="0">
           <widget class="FlatButton" name="buttonFlash">
+           <property name="toolTip">
+            <string>Manage Adobe Flash (tm) plugin.</string>
+           </property>
            <property name="text">
             <string>Flash Manager</string>
            </property>
@@ -367,6 +388,9 @@
          </item>
          <item row="2" column="1">
           <widget class="FlatButton" name="buttonCheckAptGPG">
+           <property name="toolTip">
+            <string>Check and add missing GPG keys needed by APT.</string>
+           </property>
            <property name="text">
             <string>Check Apt GPG</string>
            </property>
@@ -381,6 +405,9 @@
          </item>
          <item row="2" column="2">
           <widget class="FlatButton" name="buttonAptNotifier">
+           <property name="toolTip">
+            <string>Show the tray applet to notify of system and application updates.</string>
+           </property>
            <property name="text">
             <string>Unhide Apt Notifier</string>
            </property>
@@ -395,6 +422,9 @@
          </item>
          <item row="3" column="0">
           <widget class="FlatButton" name="buttonFindShares">
+           <property name="toolTip">
+            <string>Program for network troubleshooting and configuration.</string>
+           </property>
            <property name="text">
             <string>Find Network Shares</string>
            </property>
@@ -415,6 +445,9 @@
          </item>
          <item row="3" column="1">
           <widget class="FlatButton" name="buttonSwitchUser">
+           <property name="toolTip">
+            <string>Switch users without logging out.</string>
+           </property>
            <property name="text">
             <string>Switch User</string>
            </property>
@@ -429,6 +462,9 @@
          </item>
          <item row="3" column="2">
           <widget class="FlatButton" name="buttonBootrepair">
+           <property name="toolTip">
+            <string>Repair boot problems.</string>
+           </property>
            <property name="text">
             <string>Boot Repair</string>
            </property>
