@@ -22,6 +22,7 @@
 
 #include "mxtools.h"
 #include "ui_mxtools.h"
+#include "flatbutton.h"
 
 
 mxtools::mxtools(QWidget *parent) :
@@ -168,6 +169,24 @@ void mxtools::on_buttonBootrepair_clicked() {
     this->show();
 }
 
+void mxtools::on_buttonSnapshot_clicked() {
+    this->hide();
+    system("su-to-root -X -c snapshot-gui-mx");
+    this->show();
+}
+
+void mxtools::on_buttonRemaster_clicked() {
+    this->hide();
+    system("remastercc.sh");
+    this->show();
+}
+
+void mxtools::on_buttonLiveUSB_clicked() {
+    this->hide();
+    system("su-to-root -X -c /usr/local/bin/antix2usb.py");
+    this->show();
+}
+
 void mxtools::on_hideCheckBox_clicked(bool checked) {
     if (checked) {
         system("su-to-root -X -c 'mx-tools.sh --hide'");
@@ -176,3 +195,5 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
     }
     system("xfce4-panel --restart");
 }
+
+
