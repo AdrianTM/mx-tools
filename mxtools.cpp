@@ -35,6 +35,7 @@ mxtools::mxtools(QWidget *parent) :
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
+    ui->buttonAptNotifier->toolTip();
 }
 
 mxtools::~mxtools()
