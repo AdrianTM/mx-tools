@@ -209,7 +209,7 @@
             <string>Create a live-CD from the running system.</string>
            </property>
            <property name="text">
-            <string>ISO Backup</string>
+            <string>Save System to ISO</string>
            </property>
            <property name="icon">
             <iconset>
