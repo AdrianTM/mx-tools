@@ -1,3 +1,9 @@
+mx-tools (14.3.7) mx; urgency=low
+
+  * added Russian translation
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 14 Dec 2014 11:44:24 -0500
+
 mx-tools (14.3.6) mx; urgency=low
 
   * design change, added antiX tools
