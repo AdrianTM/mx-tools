@@ -24,8 +24,6 @@
 #include "ui_mxtools.h"
 #include "flatbutton.h"
 
-#include <QDebug>
-
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::mxtools)
