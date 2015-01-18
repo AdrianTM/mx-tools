@@ -23,7 +23,16 @@
    </item>
    <item row="3" column="0">
     <layout class="QGridLayout" columnstretch="0,0,0,0,0,0,0,0">
-     <property name="margin">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
       <number>0</number>
      </property>
      <property name="spacing">
@@ -192,7 +201,7 @@
             <string>Tools for live persistence and remastering.</string>
            </property>
            <property name="text">
-            <string>Live Remaster</string>
+            <string>Persistence/Remaster</string>
            </property>
            <property name="icon">
             <iconset>

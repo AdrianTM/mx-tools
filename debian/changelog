@@ -1,3 +1,9 @@
+mx-tools (14.3.8) mx; urgency=medium
+
+  * added mx-snapshot (if mx-snapshot is present launch that instead of the old tool)
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 15 Jan 2015 11:10:38 -0500
+
 mx-tools (14.3.7) mx; urgency=low
 
   * added Russian translation
