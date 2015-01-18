@@ -171,7 +171,11 @@ void mxtools::on_buttonBootrepair_clicked() {
 
 void mxtools::on_buttonSnapshot_clicked() {
     this->hide();
-    system("su-to-root -X -c snapshot-gui-mx");
+    if (getCmdOut("dpkg -s mx-snapshot | grep Status") == "Status: install ok installed") {
+        system("su-to-root -X -c mx-snapshot");
+    } else {
+        system("su-to-root -X -c snapshot-gui-mx");
+    }
     this->show();
 }
 
