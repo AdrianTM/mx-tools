@@ -3,207 +3,207 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="109"/>
+        <location filename="../mxtools.cpp" line="107"/>
         <source>MX Tools</source>
         <translation>MX Strumenti</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="35"/>
+        <location filename="../mxtools.ui" line="44"/>
         <source>About this application</source>
-        <translation>Info su questa applicazione</translation>
+        <translation>Informazioni riguardo questa applicazione</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="38"/>
+        <location filename="../mxtools.ui" line="47"/>
         <source>About...</source>
         <translation>Info...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="45"/>
+        <location filename="../mxtools.ui" line="54"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="103"/>
+        <location filename="../mxtools.ui" line="112"/>
         <source>Cancel any changes then quit</source>
         <translation>Cancella tutte le modifiche e poi esci</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="106"/>
+        <location filename="../mxtools.ui" line="115"/>
         <source>Close</source>
         <translation>Chiudi</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="113"/>
+        <location filename="../mxtools.ui" line="122"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="170"/>
+        <location filename="../mxtools.ui" line="179"/>
         <source>Advanced</source>
         <translation>Avanzate</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="192"/>
+        <location filename="../mxtools.ui" line="201"/>
         <source>Tools for live persistence and remastering.</source>
         <translation>Strumenti per creare iso rimasterizzate e live con persistenza</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="195"/>
-        <source>Live Remaster</source>
-        <translation>Live Remaster</translation>
+        <location filename="../mxtools.ui" line="204"/>
+        <source>Persistence/Remaster</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="209"/>
+        <location filename="../mxtools.ui" line="218"/>
         <source>Create a live-CD from the running system.</source>
-        <translation>Crea un live-CD del tuo sistema attualmente in uso </translation>
+        <translation>Crea una ISO del tuo attuale sistema per ottenere un tuo CD/DVD Live</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="212"/>
+        <location filename="../mxtools.ui" line="221"/>
         <source>Save System to ISO</source>
-        <translation>Salva il Sistema in un Iso</translation>
+        <translation>Salva tuo Sistema su ISO</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="226"/>
+        <location filename="../mxtools.ui" line="235"/>
         <source>Run MX live with persistence on a USB device.</source>
-        <translation>Esegui MX live con persistenza su un&apos;unità USB</translation>
+        <translation>Crea una Live con persistenza su un&apos;unità USB</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="229"/>
+        <location filename="../mxtools.ui" line="238"/>
         <source>Create Live USB</source>
         <translation>Crea Live USB</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="246"/>
+        <location filename="../mxtools.ui" line="255"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Nascondi questi singoli strumenti dal Menu delle applicazioni</translation>
+        <translation>Nascondi dal Menu delle applicazioni questi strumenti presenti singolarmente</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="265"/>
+        <location filename="../mxtools.ui" line="274"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Queste applicazioni di MX facilitano il lavoro in diverse importanti attività.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="281"/>
+        <location filename="../mxtools.ui" line="290"/>
         <source>Basic</source>
         <translation>Base</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="321"/>
+        <location filename="../mxtools.ui" line="330"/>
         <source>Manage users and groups, repair settings.</source>
         <translation>Gestisci utenti e gruppi, ripara impostazioni.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="327"/>
+        <location filename="../mxtools.ui" line="336"/>
         <source>User Manager</source>
         <translation>Manager Utenti</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="341"/>
+        <location filename="../mxtools.ui" line="350"/>
         <source>Install additional packages.</source>
-        <translation>Installa pacchetti di software supplementare.</translation>
+        <translation>Installa gruppi di pacchetti di software supplementare.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="344"/>
+        <location filename="../mxtools.ui" line="353"/>
         <source>Package Installer</source>
         <translation>Installa Meta-pacchetti</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="358"/>
+        <location filename="../mxtools.ui" line="367"/>
         <source>Download and install restricted codecs.</source>
         <translation>Scarica e installa codecs proprietari</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="361"/>
+        <location filename="../mxtools.ui" line="370"/>
         <source>Codecs Downloader</source>
-        <translation>Downloader Codecs</translation>
+        <translation>Installa Codecs</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="375"/>
+        <location filename="../mxtools.ui" line="384"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Gestisce plugin di Adobe Flash (tm)</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="378"/>
+        <location filename="../mxtools.ui" line="387"/>
         <source>Flash Manager</source>
         <translation>Flash Manager</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="392"/>
+        <location filename="../mxtools.ui" line="401"/>
         <source>Check and add missing GPG keys needed by APT.</source>
         <translation>Cerca e fornisce ad APT chiavi GPG mancanti.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="395"/>
+        <location filename="../mxtools.ui" line="404"/>
         <source>Check Apt GPG</source>
         <translation>Cerca chiavi Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="409"/>
+        <location filename="../mxtools.ui" line="418"/>
         <source>Show the tray applet to notify of system and application updates.</source>
         <translation>Mostrare un&apos; icona sul pannello per la notifica degli aggiornamenti del sistema e delle applicazioni.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="412"/>
+        <location filename="../mxtools.ui" line="421"/>
         <source>Unhide Apt Notifier</source>
         <translation>Mostra Apt Notifier</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="426"/>
+        <location filename="../mxtools.ui" line="435"/>
         <source>Program for network troubleshooting and configuration.</source>
         <translation>Programma per la configurazione e i problemi di rete.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="429"/>
+        <location filename="../mxtools.ui" line="438"/>
         <source>Find Network Shares</source>
         <translation>Risorse Condivise</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="449"/>
+        <location filename="../mxtools.ui" line="458"/>
         <source>Switch users without logging out.</source>
         <translation>Cambia utente senza chiudere la sessione.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="452"/>
+        <location filename="../mxtools.ui" line="461"/>
         <source>Switch User</source>
         <translation>Cambia Utente</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="466"/>
+        <location filename="../mxtools.ui" line="475"/>
         <source>Repair boot problems.</source>
         <translation>Risolve problemi di avvio del boot.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="469"/>
+        <location filename="../mxtools.ui" line="478"/>
         <source>Boot Repair</source>
         <translation>Ripara Boot</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="108"/>
+        <location filename="../mxtools.cpp" line="106"/>
         <source>About MX Tools</source>
-        <translation>Info su MX Strumenti</translation>
+        <translation>Informazioni su MX Strumenti</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="109"/>
+        <location filename="../mxtools.cpp" line="107"/>
         <source>Version: </source>
         <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="111"/>
+        <location filename="../mxtools.cpp" line="109"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Strumenti di configurazione per MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="112"/>
+        <location filename="../mxtools.cpp" line="110"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="113"/>
+        <location filename="../mxtools.cpp" line="111"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="114"/>
+        <location filename="../mxtools.cpp" line="112"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>
