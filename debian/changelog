@@ -1,3 +1,9 @@
+mx-tools (15.3mx14) mx; urgency=medium
+
+  * small fixes
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 21 Mar 2015 16:25:15 -0400
+
 mx-tools (14.3.8) mx; urgency=medium
 
   * added mx-snapshot (if mx-snapshot is present launch that instead of the old tool)
