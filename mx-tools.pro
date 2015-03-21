@@ -6,7 +6,7 @@
 # *
 # * This file is part of MX Tools.
 # *
-# * MX Tolls is free software: you can redistribute it and/or modify
+# * MX Tools is free software: you can redistribute it and/or modify
 # * it under the terms of the GNU General Public License as published by
 # * the Free Software Foundation, either version 3 of the License, or
 # * (at your option) any later version.
@@ -44,9 +44,9 @@ HEADERS  += mxtools.h \
 FORMS    += mxtools.ui
 
 TRANSLATIONS += translations/mx-tools_ca.ts \
-		translations/mx-tools_de.ts \
+                translations/mx-tools_de.ts \
                 translations/mx-tools_el.ts \
-		translations/mx-tools_es.ts \
+                translations/mx-tools_es.ts \
                 translations/mx-tools_fr.ts \
                 translations/mx-tools_it.ts \
                 translations/mx-tools_ja.ts \

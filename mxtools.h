@@ -6,7 +6,7 @@
  *
  * This file is part of MX Tools.
  *
- * MX Tolls is free software: you can redistribute it and/or modify
+ * MX Tools is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -43,7 +43,7 @@ public:
     ~mxtools();
 
     QString getCmdOut(QString cmd);
-    QString getVersion(QString name);    
+    QString getVersion(QString name);
     void checkApps();
 
 private slots:
@@ -60,7 +60,7 @@ private slots:
     void on_buttonSnapshot_clicked();
     void on_buttonRemaster_clicked();
     void on_buttonLiveUSB_clicked();
-    void on_hideCheckBox_clicked(bool checked);    
+    void on_hideCheckBox_clicked(bool checked);
 
 private:
     Ui::mxtools *ui;
