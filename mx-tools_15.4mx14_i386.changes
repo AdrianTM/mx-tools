@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 11 Apr 2015 11:02:18 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source i386
+Version: 15.4mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-tools   - MX Tools Launcher
+Changes: 
+ mx-tools (15.4mx14) mx; urgency=medium
+ .
+   * Sound Card button instead of Hide Apt-Notifier, added Help button
+Checksums-Sha1: 
+ 25f47b8e1e356d3a8fb35ca31dcdd41baa017e74 601 mx-tools_15.4mx14.dsc
+ b1f01fa216e1a944ace6f0f12044875f8b5de616 184665 mx-tools_15.4mx14.tar.gz
+ 1835b414c145d32f3b6a51716cd4bad3eac62ad6 36140 mx-tools_15.4mx14_i386.deb
+Checksums-Sha256: 
+ 693f94b713fcab6dd011a9e39c30e4600fcc76f90569aa67e6db1cf076d25238 601 mx-tools_15.4mx14.dsc
+ 28ec330460ca3026fad02a4cc40ed20b09deab0c1a6c4e6cc249da8c2d4e1512 184665 mx-tools_15.4mx14.tar.gz
+ 17cd6b5f54982551b941767722930926e55d18e0349052da6c257d575d77a4ee 36140 mx-tools_15.4mx14_i386.deb
+Files: 
+ bd4c2e99d85759e37d701fdff5374776 601 admin optional mx-tools_15.4mx14.dsc
+ b61120100524b670bd07fae13fa3574b 184665 admin optional mx-tools_15.4mx14.tar.gz
+ 29e64ed56481cf66cc62f34e47af283c 36140 admin optional mx-tools_15.4mx14_i386.deb

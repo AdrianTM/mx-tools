@@ -34,7 +34,6 @@ mxtools::mxtools(QWidget *parent) :
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
-    ui->buttonAptNotifier->toolTip();
 }
 
 mxtools::~mxtools()
@@ -81,8 +80,8 @@ void mxtools::checkApps() {
         ui->buttonCheckAptGPG->setEnabled(false);
     }
     // MX AptNotifier
-    if (getCmdOut("dpkg -s apt-notifier | grep Status") != "Status: install ok installed") {
-        ui->buttonAptNotifier->setEnabled(false);
+    if (getCmdOut("dpkg -s antix-goodies | grep Status") != "Status: install ok installed") {
+        ui->buttonSoundCard->setEnabled(false);
     }
     // MX Findshares
     if (getCmdOut("dpkg -s mx-findshares | grep Status") != "Status: install ok installed") {
@@ -145,9 +144,9 @@ void mxtools::on_buttonCheckAptGPG_clicked() {
     this->show();
 }
 
-void mxtools::on_buttonAptNotifier_clicked() {
+void mxtools::on_buttonSoundCard_clicked() {
     this->hide();
-    system("/usr/bin/apt-notifier-unhide-Icon");
+    system("/usr/local/bin/alsa-set-default-card");
     this->show();
 }
 
@@ -200,4 +199,9 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
     system("xfce4-panel --restart");
 }
 
-
+// Help button clicked
+void mxtools::on_buttonHelp_clicked()
+{
+    QString cmd = QString("xdg-open http://www.mepiscommunity.org/user_manual_mx15/mxum.html#toc-Subsection-3.2");
+    system(cmd.toAscii());
+}

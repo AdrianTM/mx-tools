@@ -22,7 +22,7 @@
     </widget>
    </item>
    <item row="3" column="0">
-    <layout class="QGridLayout" columnstretch="0,0,0,0,0,0,0,0">
+    <layout class="QGridLayout" columnstretch="0,0,0,0,0,0,0,0,0">
      <property name="leftMargin">
       <number>0</number>
      </property>
@@ -58,7 +58,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="5">
+     <item row="0" column="6">
       <spacer name="horizontalSpacer2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -71,7 +71,7 @@
        </property>
       </spacer>
      </item>
-     <item row="0" column="1">
+     <item row="0" column="2">
       <spacer name="horizontalSpacer1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -84,7 +84,7 @@
        </property>
       </spacer>
      </item>
-     <item row="0" column="4">
+     <item row="0" column="5">
       <widget class="QLabel" name="label">
        <property name="maximumSize">
         <size>
@@ -106,7 +106,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="7">
+     <item row="0" column="8">
       <widget class="QPushButton" name="buttonCancel">
        <property name="toolTip">
         <string>Cancel any changes then quit</string>
@@ -123,6 +123,26 @@
        </property>
        <property name="autoDefault">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="buttonHelp">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Manual</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../../../../../../usr/share/mx-tools/icons/gnome-help.png</normaloff>../../../../../../../../usr/share/mx-tools/icons/gnome-help.png</iconset>
        </property>
       </widget>
      </item>
@@ -413,16 +433,13 @@
           </widget>
          </item>
          <item row="2" column="2">
-          <widget class="FlatButton" name="buttonAptNotifier">
-           <property name="toolTip">
-            <string>Show the tray applet to notify of system and application updates.</string>
-           </property>
+          <widget class="FlatButton" name="buttonSoundCard">
            <property name="text">
-            <string>Unhide Apt Notifier</string>
+            <string>Sound Card</string>
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -440,12 +457,6 @@
            <property name="icon">
             <iconset>
              <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>24</width>
-             <height>21</height>
-            </size>
            </property>
            <property name="flat">
             <bool>true</bool>
