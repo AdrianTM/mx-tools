@@ -53,7 +53,6 @@ private slots:
     void on_buttonCodecs_clicked();
     void on_buttonFlash_clicked();
     void on_buttonCheckAptGPG_clicked();
-    void on_buttonAptNotifier_clicked();
     void on_buttonFindShares_clicked();
     void on_buttonSwitchUser_clicked();
     void on_buttonBootrepair_clicked();
@@ -61,6 +60,8 @@ private slots:
     void on_buttonRemaster_clicked();
     void on_buttonLiveUSB_clicked();
     void on_hideCheckBox_clicked(bool checked);
+    void on_buttonHelp_clicked();
+    void on_buttonSoundCard_clicked();
 
 private:
     Ui::mxtools *ui;

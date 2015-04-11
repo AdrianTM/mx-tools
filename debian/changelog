@@ -1,3 +1,9 @@
+mx-tools (15.4mx14) mx; urgency=medium
+
+  * Sound Card button instead of Hide Apt-Notifier, added Help button
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 11 Apr 2015 11:02:18 -0400
+
 mx-tools (15.3mx14) mx; urgency=medium
 
   * small fixes
