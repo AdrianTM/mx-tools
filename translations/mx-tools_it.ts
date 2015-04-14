@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -42,7 +40,7 @@
     <message>
         <location filename="../mxtools.ui" line="141"/>
         <source>Manual</source>
-        <translation type="unfinished"></translation>
+        <translation>Manuale</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="199"/>
@@ -57,7 +55,7 @@
     <message>
         <location filename="../mxtools.ui" line="224"/>
         <source>Persistence/Remaster</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="238"/>
@@ -147,15 +145,7 @@
     <message>
         <location filename="../mxtools.ui" line="438"/>
         <source>Sound Card</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="obsolete">Mostrare un&apos; icona sul pannello per la notifica degli aggiornamenti del sistema e delle applicazioni.</translation>
-    </message>
-    <message>
-        <source>Unhide Apt Notifier</source>
-        <translation type="obsolete">Mostra Apt Notifier</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="452"/>
