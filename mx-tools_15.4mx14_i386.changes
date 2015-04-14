@@ -15,14 +15,14 @@ Changes:
  .
    * Sound Card button instead of Hide Apt-Notifier, added Help button
 Checksums-Sha1: 
- 12b7d7853b45a52d582785d153b534c12b49689b 598 mx-tools_15.4mx14.dsc
- 2edd57f90af0bef7d3a76a223d2d55016d3aa946 36196 mx-tools_15.4mx14.tar.gz
- f76667748966cf127f95fbdace81e3b15c865fc0 36214 mx-tools_15.4mx14_i386.deb
+ 479c2e817b1c992bc2239c5e08787d6c120b615b 598 mx-tools_15.4mx14.dsc
+ 77cb673663f792a53d6f5bb4e258d1d625da987f 35468 mx-tools_15.4mx14.tar.gz
+ 611fa2dcb0f05af378e3c945bbdbda22bd93e479 36452 mx-tools_15.4mx14_i386.deb
 Checksums-Sha256: 
- 6d41b6a597f29f6cc051c6a827a3d85c43627a3592a334f28671c81e1da6ac62 598 mx-tools_15.4mx14.dsc
- 2c6732741bac248feea0745af3ea2b73a5003ce99402acd39acfbfd059d65172 36196 mx-tools_15.4mx14.tar.gz
- 5cb3172200ee47f4aa4da429113d42f796ce9938e6fcf529101308a7fe262b20 36214 mx-tools_15.4mx14_i386.deb
+ e4b08fa5a2cb2b9384e77c130b1eba9ab428503e5db34eb31e040d6713824d2f 598 mx-tools_15.4mx14.dsc
+ 994b0fba6e63e8bf2f454d6918a66332096101522d18e22c3c14fd59833fcfa6 35468 mx-tools_15.4mx14.tar.gz
+ 67e65777e702c99f9a18b86d81fa93bde78b4de77d627f4ac5566c805c95ae10 36452 mx-tools_15.4mx14_i386.deb
 Files: 
- 4d3c746e45552c73b5caf4830788c44a 598 admin optional mx-tools_15.4mx14.dsc
- 26ba01e2a4cea44e640bb199187be177 36196 admin optional mx-tools_15.4mx14.tar.gz
- 6690780ab53863046400aee10ae98d47 36214 admin optional mx-tools_15.4mx14_i386.deb
+ add6f16e36cd4747c25816e324dc2328 598 admin optional mx-tools_15.4mx14.dsc
+ 330c89620e0156ebf5d07d5a640e62a6 35468 admin optional mx-tools_15.4mx14.tar.gz
+ ba7a02a2e0a93769fa10a9be4811e932 36452 admin optional mx-tools_15.4mx14_i386.deb

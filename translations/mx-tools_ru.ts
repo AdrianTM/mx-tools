@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="ru">
 <context>
     <name>mxtools</name>
     <message>
@@ -40,7 +42,7 @@
     <message>
         <location filename="../mxtools.ui" line="141"/>
         <source>Manual</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="199"/>
@@ -55,7 +57,7 @@
     <message>
         <location filename="../mxtools.ui" line="224"/>
         <source>Persistence/Remaster</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="238"/>
@@ -145,7 +147,7 @@
     <message>
         <location filename="../mxtools.ui" line="438"/>
         <source>Sound Card</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="452"/>
