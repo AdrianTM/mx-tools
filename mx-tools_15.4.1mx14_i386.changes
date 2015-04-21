@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 21 Apr 2015 14:14:57 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source i386
+Version: 15.4.1mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-tools   - MX Tools Launcher
+Changes: 
+ mx-tools (15.4.1mx14) mx; urgency=medium
+ .
+   * added translation
+Checksums-Sha1: 
+ c007b2535d697a2367969e3ded9dcc6cd647657b 606 mx-tools_15.4.1mx14.dsc
+ ca33941ef53f586bca1362cfc3d62ff0d63e853f 36944 mx-tools_15.4.1mx14.tar.gz
+ e2dca79068b40585065636533b88821ba261ad56 37336 mx-tools_15.4.1mx14_i386.deb
+Checksums-Sha256: 
+ 566fe315a042162303b3c49ea30c062ce0c7b6f0af2bfbf61ec2fe2656cb4841 606 mx-tools_15.4.1mx14.dsc
+ 3ecaf7eddffbd87701fcaa79adc97965eb81ec1ffc88c61fc06cd9c6186080a1 36944 mx-tools_15.4.1mx14.tar.gz
+ 7ece4c3f0a569646878595633b1a493084200fb71d626fcb845e6496430d6045 37336 mx-tools_15.4.1mx14_i386.deb
+Files: 
+ d8b8f78f976c2ecd94e54a244ffe952e 606 admin optional mx-tools_15.4.1mx14.dsc
+ 17a651f57cf671b6999cc8351bbcdb7b 36944 admin optional mx-tools_15.4.1mx14.tar.gz
+ d6a76a5eefcda78a96056101e1ae8ef5 37336 admin optional mx-tools_15.4.1mx14_i386.deb
