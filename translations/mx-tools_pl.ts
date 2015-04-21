@@ -1,21 +1,21 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="106"/>
         <source>MX Tools</source>
-        <translation>MX Tools</translation>
+        <translation>MX Narzędzia</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="44"/>
         <source>About this application</source>
-        <translation>このアプリケーションについて</translation>
+        <translation>O programie</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>O...</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="54"/>
@@ -25,12 +25,12 @@
     <message>
         <location filename="../mxtools.ui" line="112"/>
         <source>Cancel any changes then quit</source>
-        <translation>変更をキャンセルして終了</translation>
+        <translation>Cofnij wszelkie zmiany i wyjdź</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Close</source>
-        <translation>閉じる</translation>
+        <translation>Zamknij</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="122"/>
@@ -40,172 +40,172 @@
     <message>
         <location filename="../mxtools.ui" line="141"/>
         <source>Manual</source>
-        <translation>手動</translation>
+        <translation>Instrukcja</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="199"/>
         <source>Advanced</source>
-        <translation>特殊</translation>
+        <translation>Zaawansowane</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="221"/>
         <source>Tools for live persistence and remastering.</source>
-        <translation>ライブ Presistence・リマスターのツール</translation>
+        <translation>Narzędzia przetrwania i modyfikacji obrazu Live.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="224"/>
         <source>Persistence/Remaster</source>
-        <translation>Persistence・リマスター</translation>
+        <translation>Przetrwanie/Modyfikacja</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="238"/>
         <source>Create a live-CD from the running system.</source>
-        <translation> システムを実行するライブ CD を作成</translation>
+        <translation>Stwórz obraz LiveCD z działającego systemu.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="241"/>
         <source>Save System to ISO</source>
-        <translation>システムを ISO へ保存</translation>
+        <translation>Zapisz system do obrazu ISO</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="255"/>
         <source>Run MX live with persistence on a USB device.</source>
-        <translation>MX ライブを Prersistence 状態で USB デバイスから実行</translation>
+        <translation>Uruchom obraz MX Live z przetrwaniem na napędzie USB.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="258"/>
         <source>Create Live USB</source>
-        <translation>ライブ USB の作成</translation>
+        <translation>Stwórz LiveUSB</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="275"/>
         <source>Hide individual tools from the menu</source>
-        <translation>メニューから個々のツールを非表示にする</translation>
+        <translation>Ukryj poszczególne narzędzia w menu</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="294"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>これらの MX アプリケーションは、重要な作業の時間・努力を温存します。</translation>
+        <translation>Te aplikacje MX oszczędzają Twój czas i wysiłek poświęcony na ważne zadania.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="310"/>
         <source>Basic</source>
-        <translation>基本</translation>
+        <translation>Podstawowe</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="350"/>
         <source>Manage users and groups, repair settings.</source>
-        <translation>ユーザー・グループの管理と設定の修復</translation>
+        <translation>Zarządzaj użytkownikami, grupami i ustawieniami naprawy.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="356"/>
         <source>User Manager</source>
-        <translation>ユーザー管理</translation>
+        <translation>Zarządzanie użytkownikiem</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="370"/>
         <source>Install additional packages.</source>
-        <translation>追加パッケージのインストール</translation>
+        <translation>Zainstaluj dodatkowe pakiety.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="373"/>
         <source>Package Installer</source>
-        <translation>パッケージインストーラー</translation>
+        <translation>Instalator pakietów</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="387"/>
         <source>Download and install restricted codecs.</source>
-        <translation>コーデックのダウンロード・インストール</translation>
+        <translation>Pobierz i zainstaluj ograniczone licencyjnie kodeki. </translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="390"/>
         <source>Codecs Downloader</source>
-        <translation>Codec ダウンローダー</translation>
+        <translation>Instalator kodeków</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="404"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
-        <translation>Adobe Flash プラグインの管理</translation>
+        <translation>Zarządzaj dodatkiem Adobe Flash</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="407"/>
         <source>Flash Manager</source>
-        <translation>Flash 管理</translation>
+        <translation>Zarządzanie Flash</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="421"/>
         <source>Check and add missing GPG keys needed by APT.</source>
-        <translation>APT の追加された GPG キーに誤りがないか確認</translation>
+        <translation>Sprawdź i dodaj brakujące klucze GPG wymagane przez APT.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="424"/>
         <source>Check Apt GPG</source>
-        <translation>APT の GPG 確認</translation>
+        <translation>Sprawdź klucze GPG dla programu APT</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="438"/>
         <source>Sound Card</source>
-        <translation type="unfinished"/>
+        <translation>Karta dźwiękowa</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="452"/>
         <source>Program for network troubleshooting and configuration.</source>
-        <translation>ネットの問題解決と設定</translation>
+        <translation>Program do analizy i usuwania problemów z konfiguracją sieci.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="455"/>
         <source>Find Network Shares</source>
-        <translation>ネットワーク共有検索</translation>
+        <translation>Znajdź zasoby współdzielone</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="469"/>
         <source>Switch users without logging out.</source>
-        <translation>ログアウトせずにユーザーを切り替え</translation>
+        <translation>Przełącz użytkownika bez wylogowania.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="472"/>
         <source>Switch User</source>
-        <translation>ユーザー切替</translation>
+        <translation>Przełącz użytkownika</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="486"/>
         <source>Repair boot problems.</source>
-        <translation>起動の問題を修復</translation>
+        <translation>Napraw problemy rozruchu.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="489"/>
         <source>Boot Repair</source>
-        <translation>起動復旧</translation>
+        <translation>Naprawa rozruchu</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="105"/>
         <source>About MX Tools</source>
-        <translation>MX ツールについて</translation>
+        <translation>O MX Narzędzia</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="106"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation>Wersja:</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="108"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>MX Linux の設定ツール</translation>
+        <translation>Narzędzia konfiguracyjne dla dystrybucji antiX MX</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="109"/>
         <source>Copyright (c) antiX</source>
-        <translation>Copyright (c) antiX</translation>
+        <translation>Copyright (c) antiX </translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="110"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="111"/>
         <source>License</source>
-        <translation>ライセンス</translation>
+        <translation>Licencja</translation>
     </message>
 </context>
 </TS>
