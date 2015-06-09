@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 09 Jun 2015 13:54:50 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 15.6mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-tools   - MX Tools Launcher
+Changes: 
+ mx-tools (15.6mx14) mx; urgency=medium
+ .
+   * added mx-menu-editor, re-added unhide apt notifier
+Checksums-Sha1: 
+ f6c3389790d57fdf66ac3d2395aafade2f8d768f 598 mx-tools_15.6mx14.dsc
+ 6a17b8dfeb6a70910886fa5d27a101f03ae10afc 48810 mx-tools_15.6mx14.tar.gz
+ 2dc022da3ee05676eb5cd864a2a54522721f0048 38354 mx-tools_15.6mx14_amd64.deb
+Checksums-Sha256: 
+ be9f6ef2743c94e7583b2a0a525a063482a52700fb42035574b363f7b58f9e3d 598 mx-tools_15.6mx14.dsc
+ 99d9a1630bbd6f6c4f85f23f85e46918fbb65b9b1d72bfa16c71cf29c9d7b776 48810 mx-tools_15.6mx14.tar.gz
+ c2492278b6189c9829e9782d6e696fc50c0dd41f199177ce39b41804f9b2ea86 38354 mx-tools_15.6mx14_amd64.deb
+Files: 
+ 313f8b4f6b733694a70fa0ba8a07022e 598 admin optional mx-tools_15.6mx14.dsc
+ c4ba60e5ce6ee9480e6b667aa0d087a9 48810 admin optional mx-tools_15.6mx14.tar.gz
+ 46153b16223586fc3117570843aaf2fb 38354 admin optional mx-tools_15.6mx14_amd64.deb

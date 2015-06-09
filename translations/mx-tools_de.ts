@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="106"/>
+        <location filename="../mxtools.cpp" line="115"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -146,66 +146,91 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="438"/>
+        <source>Select the sound card you want to use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="441"/>
         <source>Sound Card</source>
         <translation>Soundkarte</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="452"/>
+        <location filename="../mxtools.ui" line="455"/>
         <source>Program for network troubleshooting and configuration.</source>
         <translation>Programm für Netzwerk-Fehlersuche -und Konfiguration.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="455"/>
+        <location filename="../mxtools.ui" line="458"/>
         <source>Find Network Shares</source>
         <translation>Netzwerkfreigaben finden</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="469"/>
+        <location filename="../mxtools.ui" line="472"/>
         <source>Switch users without logging out.</source>
         <translation>Benutzer wechseln ohne Abmeldung.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="472"/>
+        <location filename="../mxtools.ui" line="475"/>
         <source>Switch User</source>
         <translation>Benutzerwechsel</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="486"/>
+        <location filename="../mxtools.ui" line="489"/>
         <source>Repair boot problems.</source>
         <translation>Reparatur Bootprobleme.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="489"/>
+        <location filename="../mxtools.ui" line="492"/>
         <source>Boot Repair</source>
         <translation>Bootreparatur</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="105"/>
+        <location filename="../mxtools.ui" line="506"/>
+        <source>Xfce menu editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="509"/>
+        <source>Menu Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="523"/>
+        <source>Show the tray applet to notify of system and application updates.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="526"/>
+        <source>Unhide Apt Notifier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="114"/>
         <source>About MX Tools</source>
         <translation>Über MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="106"/>
+        <location filename="../mxtools.cpp" line="115"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="108"/>
+        <location filename="../mxtools.cpp" line="117"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Konfigurationswerkzeuge für MX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="109"/>
+        <location filename="../mxtools.cpp" line="118"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="110"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>Cancel</source>
         <translation>Ablehnen</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="111"/>
+        <location filename="../mxtools.cpp" line="120"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>

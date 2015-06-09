@@ -33,7 +33,9 @@ mxtools::mxtools(QWidget *parent) :
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
-    }
+    }    
+    QIcon::setThemeName(getCmdOut("xfconf-query -c xsettings -p /Net/IconThemeName"));
+    ui->buttonMenuEditor->setIcon(QIcon::fromTheme("edit-copy"));
 }
 
 mxtools::~mxtools()
@@ -79,7 +81,7 @@ void mxtools::checkApps() {
     if (getCmdOut("dpkg -s checkaptgpg | grep Status") != "Status: install ok installed") {
         ui->buttonCheckAptGPG->setEnabled(false);
     }
-    // MX AptNotifier
+    // Sound Card app
     if (getCmdOut("dpkg -s antix-goodies | grep Status") != "Status: install ok installed") {
         ui->buttonSoundCard->setEnabled(false);
     }
@@ -95,7 +97,14 @@ void mxtools::checkApps() {
     if (getCmdOut("dpkg -s mx-bootrepair | grep Status") != "Status: install ok installed") {
         ui->buttonBootrepair->setEnabled(false);
     }
-
+    // MX AptNotifier
+    if (getCmdOut("dpkg -s apt-notifier | grep Status") != "Status: install ok installed") {
+        ui->buttonAptNotifier->setEnabled(false);
+    }
+    // MX Menu Editor
+    if (getCmdOut("dpkg -s mx-menu-editor | grep Status") != "Status: install ok installed") {
+        ui->buttonMenuEditor->setEnabled(false);
+    }
 }
 
 
@@ -189,6 +198,18 @@ void mxtools::on_buttonLiveUSB_clicked() {
     system("su-to-root -X -c /usr/local/bin/antix2usb.py");
     this->show();
 }
+
+void mxtools::on_buttonMenuEditor_clicked() {
+    this->hide();
+    system("mx-menu-editor");
+    this->show();
+}
+
+void mxtools::on_buttonAptNotifier_clicked() {
+    system("/usr/bin/apt-notifier-unhide-Icon");
+}
+
+
 
 void mxtools::on_hideCheckBox_clicked(bool checked) {
     if (checked) {
