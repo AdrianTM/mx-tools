@@ -59,6 +59,8 @@ private slots:
     void on_buttonSnapshot_clicked();
     void on_buttonRemaster_clicked();
     void on_buttonLiveUSB_clicked();
+    void on_buttonMenuEditor_clicked();
+    void on_buttonAptNotifier_clicked();
     void on_hideCheckBox_clicked(bool checked);
     void on_buttonHelp_clicked();
     void on_buttonSoundCard_clicked();

@@ -434,6 +434,9 @@
          </item>
          <item row="2" column="2">
           <widget class="FlatButton" name="buttonSoundCard">
+           <property name="toolTip">
+            <string>Select the sound card you want to use.</string>
+           </property>
            <property name="text">
             <string>Sound Card</string>
            </property>
@@ -491,6 +494,40 @@
            <property name="icon">
             <iconset>
              <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="FlatButton" name="buttonMenuEditor">
+           <property name="toolTip">
+            <string>Xfce menu editor.</string>
+           </property>
+           <property name="text">
+            <string>Menu Editor</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="FlatButton" name="buttonAptNotifier">
+           <property name="toolTip">
+            <string>Show the tray applet to notify of system and application updates.</string>
+           </property>
+           <property name="text">
+            <string>Unhide Apt Notifier</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../usr/share/icons/mnotify-some.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>

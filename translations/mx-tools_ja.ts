@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="106"/>
+        <location filename="../mxtools.cpp" line="115"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -146,66 +146,91 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="438"/>
+        <source>Select the sound card you want to use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="441"/>
         <source>Sound Card</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="452"/>
+        <location filename="../mxtools.ui" line="455"/>
         <source>Program for network troubleshooting and configuration.</source>
         <translation>ネットの問題解決と設定</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="455"/>
+        <location filename="../mxtools.ui" line="458"/>
         <source>Find Network Shares</source>
         <translation>ネットワーク共有検索</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="469"/>
+        <location filename="../mxtools.ui" line="472"/>
         <source>Switch users without logging out.</source>
         <translation>ログアウトせずにユーザーを切り替え</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="472"/>
+        <location filename="../mxtools.ui" line="475"/>
         <source>Switch User</source>
         <translation>ユーザー切替</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="486"/>
+        <location filename="../mxtools.ui" line="489"/>
         <source>Repair boot problems.</source>
         <translation>起動の問題を修復</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="489"/>
+        <location filename="../mxtools.ui" line="492"/>
         <source>Boot Repair</source>
         <translation>起動復旧</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="105"/>
+        <location filename="../mxtools.ui" line="506"/>
+        <source>Xfce menu editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="509"/>
+        <source>Menu Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="523"/>
+        <source>Show the tray applet to notify of system and application updates.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="526"/>
+        <source>Unhide Apt Notifier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="114"/>
         <source>About MX Tools</source>
         <translation>MX ツールについて</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="106"/>
+        <location filename="../mxtools.cpp" line="115"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="108"/>
+        <location filename="../mxtools.cpp" line="117"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>MX Linux の設定ツール</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="109"/>
+        <location filename="../mxtools.cpp" line="118"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="110"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="111"/>
+        <location filename="../mxtools.cpp" line="120"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
