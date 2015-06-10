@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 10 Jun 2015 14:32:04 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source i386
+Version: 15.6.1mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-tools   - MX Tools Launcher
+Changes: 
+ mx-tools (15.6.1mx14) mx; urgency=medium
+ .
+   * added Broadcom Manager button
+Checksums-Sha1: 
+ 59fb433ffe3aaef6aca4a92369add4e125f36a76 606 mx-tools_15.6.1mx14.dsc
+ 70383828813796155df6fda3148c04ecea702073 90334 mx-tools_15.6.1mx14.tar.gz
+ de9f9b2b0290661776d513435686ac6a62e85858 38788 mx-tools_15.6.1mx14_i386.deb
+Checksums-Sha256: 
+ c8c6ab5a83d8d54ba3d30914427da8d1cb50b82b80bb247c57508938a12b6c98 606 mx-tools_15.6.1mx14.dsc
+ 8e4939158b24fcbf19ba5ec6fea52927fb95645e4573462802136002c64bc1c5 90334 mx-tools_15.6.1mx14.tar.gz
+ 3d73ef33d62517fa1fa2a1deb204426a8907339ca46e3b75cd25ff4925bdbe4f 38788 mx-tools_15.6.1mx14_i386.deb
+Files: 
+ 36939a0452500108993502e2a5d0889b 606 admin optional mx-tools_15.6.1mx14.dsc
+ 69691adab728ee2359f1b2254199dae3 90334 admin optional mx-tools_15.6.1mx14.tar.gz
+ 416b37b1a86b44fd6e7bcf3100146ad6 38788 admin optional mx-tools_15.6.1mx14_i386.deb

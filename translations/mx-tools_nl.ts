@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="115"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -205,32 +205,42 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="114"/>
+        <location filename="../mxtools.ui" line="540"/>
+        <source>Manage Broadcom WiFi drivers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="543"/>
+        <source>Broadcom Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="118"/>
         <source>About MX Tools</source>
         <translation>Over MX Gereedschappen</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="115"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>Version: </source>
         <translation>Versie:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="117"/>
+        <location filename="../mxtools.cpp" line="121"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Configuratiegereedschappen voor MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="118"/>
+        <location filename="../mxtools.cpp" line="122"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="119"/>
+        <location filename="../mxtools.cpp" line="123"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="120"/>
+        <location filename="../mxtools.cpp" line="124"/>
         <source>License</source>
         <translation>Licentie</translation>
     </message>

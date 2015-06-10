@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>621</width>
-    <height>434</height>
+    <height>470</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -528,6 +528,23 @@
            <property name="icon">
             <iconset>
              <normaloff>../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../usr/share/icons/mnotify-some.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="FlatButton" name="buttonBroadcom">
+           <property name="toolTip">
+            <string>Manage Broadcom WiFi drivers.</string>
+           </property>
+           <property name="text">
+            <string>Broadcom Manager</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>

@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-tools
 Binary: mx-tools
 Architecture: any
-Version: 15.6mx14
+Version: 15.6.1mx14
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Standards-Version: 3.9.5
 Vcs-Git: git://github.com/AdrianTM/mx-tools
@@ -10,8 +10,8 @@ Build-Depends: qt4-qmake, debhelper (>= 7.0.50~)
 Package-List: 
  mx-tools deb admin optional
 Checksums-Sha1: 
- 6a17b8dfeb6a70910886fa5d27a101f03ae10afc 48810 mx-tools_15.6mx14.tar.gz
+ 2375e465048cbbce1f03fa5f0286de812f26a75b 102539 mx-tools_15.6.1mx14.tar.gz
 Checksums-Sha256: 
- 99d9a1630bbd6f6c4f85f23f85e46918fbb65b9b1d72bfa16c71cf29c9d7b776 48810 mx-tools_15.6mx14.tar.gz
+ 4d3c576074414c60611e78338a2bc5b6cacb439ec49d3923356ba48aadd04b9b 102539 mx-tools_15.6.1mx14.tar.gz
 Files: 
- c4ba60e5ce6ee9480e6b667aa0d087a9 48810 mx-tools_15.6mx14.tar.gz
+ 3927ceb8baaf7e1be3f9ddb0dd4a9b66 102539 mx-tools_15.6.1mx14.tar.gz
