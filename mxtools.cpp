@@ -105,6 +105,10 @@ void mxtools::checkApps() {
     if (getCmdOut("dpkg -s mx-menu-editor | grep Status") != "Status: install ok installed") {
         ui->buttonMenuEditor->setEnabled(false);
     }
+    // MX Broadcom Manager
+    if (getCmdOut("dpkg -s mx-broadcom-manager | grep Status") != "Status: install ok installed") {
+        ui->buttonMenuEditor->setEnabled(false);
+    }
 }
 
 
@@ -209,7 +213,11 @@ void mxtools::on_buttonAptNotifier_clicked() {
     system("/usr/bin/apt-notifier-unhide-Icon");
 }
 
-
+void mxtools::on_buttonBroadcom_clicked() {
+    this->hide();
+    system("su-to-root -X -c mx-broadcom-manager");
+    this->show();
+}
 
 void mxtools::on_hideCheckBox_clicked(bool checked) {
     if (checked) {
