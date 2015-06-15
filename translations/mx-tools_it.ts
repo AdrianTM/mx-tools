@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -57,7 +55,7 @@
     <message>
         <location filename="../mxtools.ui" line="224"/>
         <source>Persistence/Remaster</source>
-        <translation type="unfinished"></translation>
+        <translation>Persistenza/Remaster</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="238"/>
@@ -147,17 +145,17 @@
     <message>
         <location filename="../mxtools.ui" line="438"/>
         <source>Select the sound card you want to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona la scheda audio che vuoi usare</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="441"/>
         <source>Sound Card</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda Audio</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="455"/>
         <source>Program for network troubleshooting and configuration.</source>
-        <translation>Programma per la configurazione e i problemi di rete.</translation>
+        <translation>Programma che facilita la configurazione, e la risoluzione di eventuali problemi, delle risorse condivise presenti in un network di rete.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="458"/>
@@ -187,32 +185,32 @@
     <message>
         <location filename="../mxtools.ui" line="506"/>
         <source>Xfce menu editor.</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifica il menu di Xfce.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="509"/>
         <source>Menu Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu Editor</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="523"/>
         <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="unfinished"></translation>
+        <translation>Evidenzia un icona sulla barra del pannello per la notifica degli aggiornamenti del sistema e delle applicazioni.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="526"/>
         <source>Unhide Apt Notifier</source>
-        <translation type="unfinished"></translation>
+        <translation>Nascondi Apt Notifier</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="540"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestisce i drivers delle schede WiFi Broadcom</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="543"/>
         <source>Broadcom Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Broadcom Manager</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="118"/>
