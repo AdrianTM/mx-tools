@@ -3,7 +3,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="106"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -144,66 +144,101 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="438"/>
+        <source>Select the sound card you want to use.</source>
+        <translation>Select the sound card you want to use.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="441"/>
         <source>Sound Card</source>
         <translation>Sound Card</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="452"/>
+        <location filename="../mxtools.ui" line="455"/>
         <source>Program for network troubleshooting and configuration.</source>
         <translation>Program for network troubleshooting and configuration.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="455"/>
+        <location filename="../mxtools.ui" line="458"/>
         <source>Find Network Shares</source>
         <translation>Find Network Shares</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="469"/>
+        <location filename="../mxtools.ui" line="472"/>
         <source>Switch users without logging out.</source>
         <translation>Switch users without logging out.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="472"/>
+        <location filename="../mxtools.ui" line="475"/>
         <source>Switch User</source>
         <translation>Switch User</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="486"/>
+        <location filename="../mxtools.ui" line="489"/>
         <source>Repair boot problems.</source>
         <translation>Repair boot problems.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="489"/>
+        <location filename="../mxtools.ui" line="492"/>
         <source>Boot Repair</source>
         <translation>Boot Repair</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="105"/>
+        <location filename="../mxtools.ui" line="506"/>
+        <source>Xfce menu editor.</source>
+        <translation>Xfce menu editor.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="509"/>
+        <source>Menu Editor</source>
+        <translation>Menu Editor</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="523"/>
+        <source>Show the tray applet to notify of system and application updates.</source>
+        <translation>Show the tray applet to notify of system and application updates.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="526"/>
+        <source>Unhide Apt Notifier</source>
+        <translation>Unhide Apt Notifier</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="540"/>
+        <source>Manage Broadcom WiFi drivers.</source>
+        <translation>Manage Broadcom WiFi drivers.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="543"/>
+        <source>Broadcom Manager</source>
+        <translation>Broadcom Manager</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="118"/>
         <source>About MX Tools</source>
         <translation>About MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="106"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="108"/>
+        <location filename="../mxtools.cpp" line="121"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Configuration Tools for MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="109"/>
+        <location filename="../mxtools.cpp" line="122"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="110"/>
+        <location filename="../mxtools.cpp" line="123"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="111"/>
+        <location filename="../mxtools.cpp" line="124"/>
         <source>License</source>
         <translation>License</translation>
     </message>

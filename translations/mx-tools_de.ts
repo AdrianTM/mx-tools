@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -147,7 +145,7 @@
     <message>
         <location filename="../mxtools.ui" line="438"/>
         <source>Select the sound card you want to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wählen Sie die Soundkarte, die Sie benutzen wollen.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="441"/>
@@ -187,32 +185,32 @@
     <message>
         <location filename="../mxtools.ui" line="506"/>
         <source>Xfce menu editor.</source>
-        <translation type="unfinished"></translation>
+        <translation>Menü-Editor für Xfce</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="509"/>
         <source>Menu Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Menü-Editor</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="523"/>
         <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lassen Sie sich durch ein Leisten-Applet über System- und Anwendungsupdates benachrichtigen.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="526"/>
         <source>Unhide Apt Notifier</source>
-        <translation type="unfinished"></translation>
+        <translation>Apt Notifier Zeigen</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="540"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Broadcom WiFi-Treiber verwalten</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="543"/>
         <source>Broadcom Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Manager für Broadcom WiFi-Treiber </translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="118"/>

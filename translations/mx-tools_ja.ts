@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -147,12 +145,12 @@
     <message>
         <location filename="../mxtools.ui" line="438"/>
         <source>Select the sound card you want to use.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="441"/>
         <source>Sound Card</source>
-        <translation type="unfinished"></translation>
+        <translation>サウンドカード</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="455"/>
@@ -187,32 +185,32 @@
     <message>
         <location filename="../mxtools.ui" line="506"/>
         <source>Xfce menu editor.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="509"/>
         <source>Menu Editor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="523"/>
         <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="526"/>
         <source>Unhide Apt Notifier</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="540"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="543"/>
         <source>Broadcom Manager</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="118"/>
