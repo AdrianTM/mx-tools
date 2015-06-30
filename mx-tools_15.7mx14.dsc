@@ -6,12 +6,12 @@ Version: 15.7mx14
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Standards-Version: 3.9.5
 Vcs-Git: git://github.com/AdrianTM/mx-tools
-Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
+Build-Depends: qt5-qmake, libqt5widgets5, debhelper (>= 7.0.50~)
 Package-List: 
  mx-tools deb admin optional
 Checksums-Sha1: 
- 6cd381fb64036880bb4227251f69479b2a3ba043 51874 mx-tools_15.7mx14.tar.gz
+ 9e323d1c2b01a0c8304cb0b9212e348bd1871b01 51897 mx-tools_15.7mx14.tar.gz
 Checksums-Sha256: 
- 8547e9f7f60cb44f5903886ee9c6a40213406328fc1390d8118ad6d79687d11a 51874 mx-tools_15.7mx14.tar.gz
+ 45f1ee793c8c1b10120c5b368d16abf9d3176add0e85826539c243a3613e6a8e 51897 mx-tools_15.7mx14.tar.gz
 Files: 
- a0c97120edd1c467a555d750d72942c7 51874 mx-tools_15.7mx14.tar.gz
+ 143c069483114bdfb15a8def750c5909 51897 mx-tools_15.7mx14.tar.gz
