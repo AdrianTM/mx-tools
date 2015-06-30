@@ -510,7 +510,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -527,7 +527,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../usr/share/icons/mnotify-some.png</iconset>
+             <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -544,7 +544,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
