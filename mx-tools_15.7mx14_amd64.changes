@@ -15,14 +15,14 @@ Changes:
  .
    * chaged to qt5
 Checksums-Sha1: 
- 8204bc7bcc561e9d088391220d2c30bf1116a175 601 mx-tools_15.7mx14.dsc
- 8ac42a819fd6c77a50261396bfbcac86835b34e2 157780 mx-tools_15.7mx14.tar.gz
- 532f9d56f95fd48b64c69fc7cdacdac8106ece08 42110 mx-tools_15.7mx14_amd64.deb
+ 0e57837e226dcc894c515af6b37ebe04286f9a50 598 mx-tools_15.7mx14.dsc
+ 1ade70461acc1acee857c8a766f68c2b66599987 51980 mx-tools_15.7mx14.tar.gz
+ d2405297ab39145575377992820fa8b2dc2b57f2 42248 mx-tools_15.7mx14_amd64.deb
 Checksums-Sha256: 
- b83d98e20c6a26d41bbbcd3c06624430d2cec3bcdd629404bac461bd79402fb9 601 mx-tools_15.7mx14.dsc
- d5f00d1d87688fd7e10c4c305ad06c17dd1852275bb76f6f2750d7d3e6e8937b 157780 mx-tools_15.7mx14.tar.gz
- f3cfa164446c476e247f74de87609251b060ae56a0fb0079f6f8b688a717bea3 42110 mx-tools_15.7mx14_amd64.deb
+ c871f6ff7a9d8b0b3d4f6ea4f1c75e8432662e735ab0837e904c3ec6551d785f 598 mx-tools_15.7mx14.dsc
+ 8271a41844726b2128eb3cf8e1596fde1499dd9e1b33b983d09eff73be8f56ef 51980 mx-tools_15.7mx14.tar.gz
+ f37f9f3903108ac2dd976dcfdab9b79e94b209d11eaf1cdda846fe68b163e5dd 42248 mx-tools_15.7mx14_amd64.deb
 Files: 
- deeed97bf9f18630f44e95e973feeaa9 601 admin optional mx-tools_15.7mx14.dsc
- 0839a376f5399aeb3c2e6d9ab64b8348 157780 admin optional mx-tools_15.7mx14.tar.gz
- 0c84eea2c6bb4308b755632829015fd9 42110 admin optional mx-tools_15.7mx14_amd64.deb
+ 351ebdcc36956b9d7744e27b5c46f544 598 admin optional mx-tools_15.7mx14.dsc
+ 8091eeeb4000859ef857429fe29d4229 51980 admin optional mx-tools_15.7mx14.tar.gz
+ 8d413eee7c8f7ecd8a65be1ce150b784 42248 admin optional mx-tools_15.7mx14_amd64.deb
