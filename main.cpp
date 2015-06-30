@@ -22,8 +22,8 @@
 
 #include "mxtools.h"
 #include <QApplication>
-#include <qtranslator.h>
-#include <qlocale.h>
+#include <QTranslator>
+#include <QLocale>
 #include <QIcon>
 
 int main(int argc, char *argv[])
