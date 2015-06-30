@@ -33,7 +33,7 @@ mxtools::mxtools(QWidget *parent) :
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
-    }    
+    }
     QIcon::setThemeName(getCmdOut("xfconf-query -c xsettings -p /Net/IconThemeName"));
     ui->buttonMenuEditor->setIcon(QIcon::fromTheme("edit-copy"));
 }
@@ -232,5 +232,5 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
 void mxtools::on_buttonHelp_clicked()
 {
     QString cmd = QString("xdg-open http://www.mepiscommunity.org/user_manual_mx15/mxum.html#toc-Subsection-3.2");
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
 }

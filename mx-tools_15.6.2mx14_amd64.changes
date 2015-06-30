@@ -15,14 +15,14 @@ Changes:
  .
    * new translations
 Checksums-Sha1: 
- 757be9c16f390d59a78f6d7c31fec16836b40a5e 606 mx-tools_15.6.2mx14.dsc
- db2e4252e08741f956744653050497f67cbb8533 53619 mx-tools_15.6.2mx14.tar.gz
- c5e1d452358995a981cae2856678e267a3b72cc4 40184 mx-tools_15.6.2mx14_amd64.deb
+ a64f506993d2c1f8358082a6f7c84aafc749be9a 606 mx-tools_15.6.2mx14.dsc
+ e4d9c88357123f359fb0f43a20a0dc93a2d340b4 52079 mx-tools_15.6.2mx14.tar.gz
+ 3686e2f08575bfcc9a473bd2457b77d612ba2e04 42082 mx-tools_15.6.2mx14_amd64.deb
 Checksums-Sha256: 
- ddfc0773a406776436cdfe1372e9b6356fcdff987d134db5d4620017a475b118 606 mx-tools_15.6.2mx14.dsc
- 947be906eb3a700aac33450917905fed4175aca730afe5abfcbce8ae5e528985 53619 mx-tools_15.6.2mx14.tar.gz
- 3ceed03dbc150abd994215c5059f79f82d8f0cfaed5fc522dde500384fee83f4 40184 mx-tools_15.6.2mx14_amd64.deb
+ df85fd0c40eb603d6251db65de8bc9987c76b8f6552ec47040ebc39a02333980 606 mx-tools_15.6.2mx14.dsc
+ e7afce57808cd2935d4bc3daa71a60a351db29f86b89347a4e5e2ec81a58c99c 52079 mx-tools_15.6.2mx14.tar.gz
+ 103e85b538b860ada8401c881bc8c266f94cad9f9193f964ee3ff15023e6ca83 42082 mx-tools_15.6.2mx14_amd64.deb
 Files: 
- 9a24cf502c3f5672f2ba865cbe5c288d 606 admin optional mx-tools_15.6.2mx14.dsc
- 3c3b2532c2fb1485d53b0b68b0bbadd7 53619 admin optional mx-tools_15.6.2mx14.tar.gz
- 677df2c7c642e4110b8f17956e39d1c6 40184 admin optional mx-tools_15.6.2mx14_amd64.deb
+ 53631a903f3d1ff4e0733cdc36fa27bc 606 admin optional mx-tools_15.6.2mx14.dsc
+ fd947175ef7809f3d6d4b428ddfd1daa 52079 admin optional mx-tools_15.6.2mx14.tar.gz
+ 7f5b1abf35aec4a0245417c70c7f9b8c 42082 admin optional mx-tools_15.6.2mx14_amd64.deb
