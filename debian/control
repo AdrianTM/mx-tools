@@ -3,7 +3,6 @@ Section: admin
 Priority: optional
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Build-Depends: qt5-qmake,
-        libqt5widgets5,
 	debhelper (>=7.0.50~)        
 Standards-Version: 3.9.5
 Vcs-Git: git://github.com/AdrianTM/mx-tools
