@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List:
  mx-tools deb admin optional arch=any
 Checksums-Sha1:
- c4752bef0880a7d0eb1d165fbcca11e81239edc2 45592 mx-tools_15.7mx15.tar.xz
+ ef1f083d1afde9843e9f4b3035ded3e81e6e23f3 92188 mx-tools_15.7mx15.tar.xz
 Checksums-Sha256:
- 0a0c6d34024f5463ba9109a3760a1de3a45527150e27a383e89aae744a5df7ea 45592 mx-tools_15.7mx15.tar.xz
+ 23165df2fb02f4c5baacefc4abb195a9c640482a5437bdf95af7b791ebcd5629 92188 mx-tools_15.7mx15.tar.xz
 Files:
- b102634d063fa0d022239792ab481c09 45592 mx-tools_15.7mx15.tar.xz
+ 799e39e50d3e2f3f14e6ddafa85bdd18 92188 mx-tools_15.7mx15.tar.xz

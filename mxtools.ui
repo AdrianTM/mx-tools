@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>621</width>
+    <width>636</width>
     <height>470</height>
    </rect>
   </property>
@@ -199,7 +199,7 @@
          <string>Advanced</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_4">
-         <item row="0" column="0" colspan="3">
+         <item row="0" column="0" colspan="5">
           <widget class="Line" name="lineAdv">
            <property name="sizePolicy">
             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
@@ -215,24 +215,7 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
-          <widget class="FlatButton" name="buttonRemaster">
-           <property name="toolTip">
-            <string>Tools for live persistence and remastering.</string>
-           </property>
-           <property name="text">
-            <string>Persistence/Remaster</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/Tango/24x24/categories/preferences-desktop.png</normaloff>../../../../../../../../usr/share/icons/Tango/24x24/categories/preferences-desktop.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
+         <item row="1" column="3">
           <widget class="FlatButton" name="buttonSnapshot">
            <property name="toolTip">
             <string>Create a live-CD from the running system.</string>
@@ -249,7 +232,7 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="2">
+         <item row="1" column="1">
           <widget class="FlatButton" name="buttonLiveUSB">
            <property name="toolTip">
             <string>Run MX live with persistence on a USB device.</string>
@@ -260,6 +243,23 @@
            <property name="icon">
             <iconset>
              <normaloff>../../../../../../../../usr/share/icons/Tango/24x24/devices/usbpendrive_unmount.png</normaloff>../../../../../../../../usr/share/icons/Tango/24x24/devices/usbpendrive_unmount.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="FlatButton" name="buttonRemaster">
+           <property name="toolTip">
+            <string>Tools for live persistence and remastering.</string>
+           </property>
+           <property name="text">
+            <string>Persistence/Remaster</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Tango/24x24/categories/preferences-desktop.png</normaloff>../../../../../../../../usr/share/icons/Tango/24x24/categories/preferences-desktop.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -316,7 +316,7 @@
          <bool>false</bool>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
-         <item row="0" column="0" colspan="3">
+         <item row="0" column="0" colspan="4">
           <widget class="Line" name="lineBasic">
            <property name="sizePolicy">
             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
@@ -333,6 +333,193 @@
           </widget>
          </item>
          <item row="1" column="0">
+          <widget class="FlatButton" name="buttonBootrepair">
+           <property name="toolTip">
+            <string>Repair boot problems.</string>
+           </property>
+           <property name="text">
+            <string>Boot Repair</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="FlatButton" name="buttonBroadcom">
+           <property name="toolTip">
+            <string>Manage Broadcom WiFi drivers.</string>
+           </property>
+           <property name="text">
+            <string>Broadcom Manager</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="FlatButton" name="buttonCheckAptGPG">
+           <property name="toolTip">
+            <string>Check and add missing GPG keys needed by APT.</string>
+           </property>
+           <property name="text">
+            <string>Check Apt GPG</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="FlatButton" name="buttonCodecs">
+           <property name="toolTip">
+            <string>Download and install restricted codecs.</string>
+           </property>
+           <property name="text">
+            <string>Codecs Downloader</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="FlatButton" name="buttonFindShares">
+           <property name="toolTip">
+            <string>Program for network troubleshooting and configuration.</string>
+           </property>
+           <property name="text">
+            <string>Find Network Shares</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="FlatButton" name="buttonFlash">
+           <property name="toolTip">
+            <string>Manage Adobe Flash (tm) plugin.</string>
+           </property>
+           <property name="text">
+            <string>Flash Manager</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="FlatButton" name="buttonMenuEditor">
+           <property name="toolTip">
+            <string>Xfce menu editor.</string>
+           </property>
+           <property name="text">
+            <string>Menu Editor</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="FlatButton" name="buttonPackageInstaller">
+           <property name="toolTip">
+            <string>Install additional packages.</string>
+           </property>
+           <property name="text">
+            <string>Package Installer</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="FlatButton" name="buttonSoundCard">
+           <property name="toolTip">
+            <string>Select the sound card you want to use.</string>
+           </property>
+           <property name="text">
+            <string>Sound Card</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="FlatButton" name="buttonSwitchUser">
+           <property name="toolTip">
+            <string>Switch users without logging out.</string>
+           </property>
+           <property name="text">
+            <string>Switch User</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="FlatButton" name="buttonAptNotifier">
+           <property name="toolTip">
+            <string>Show the tray applet to notify of system and application updates.</string>
+           </property>
+           <property name="text">
+            <string>Unhide Apt Notifier</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
           <widget class="FlatButton" name="buttonUser">
            <property name="font">
             <font>
@@ -358,193 +545,6 @@
            <property name="icon">
             <iconset>
              <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="FlatButton" name="buttonPackageInstaller">
-           <property name="toolTip">
-            <string>Install additional packages.</string>
-           </property>
-           <property name="text">
-            <string>Package Installer</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="FlatButton" name="buttonCodecs">
-           <property name="toolTip">
-            <string>Download and install restricted codecs.</string>
-           </property>
-           <property name="text">
-            <string>Codecs Downloader</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="FlatButton" name="buttonFlash">
-           <property name="toolTip">
-            <string>Manage Adobe Flash (tm) plugin.</string>
-           </property>
-           <property name="text">
-            <string>Flash Manager</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="FlatButton" name="buttonCheckAptGPG">
-           <property name="toolTip">
-            <string>Check and add missing GPG keys needed by APT.</string>
-           </property>
-           <property name="text">
-            <string>Check Apt GPG</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</normaloff>../../../../../../../../usr/share/pixmaps/checkaptgpg.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="FlatButton" name="buttonSoundCard">
-           <property name="toolTip">
-            <string>Select the sound card you want to use.</string>
-           </property>
-           <property name="text">
-            <string>Sound Card</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="FlatButton" name="buttonFindShares">
-           <property name="toolTip">
-            <string>Program for network troubleshooting and configuration.</string>
-           </property>
-           <property name="text">
-            <string>Find Network Shares</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="FlatButton" name="buttonSwitchUser">
-           <property name="toolTip">
-            <string>Switch users without logging out.</string>
-           </property>
-           <property name="text">
-            <string>Switch User</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="FlatButton" name="buttonBootrepair">
-           <property name="toolTip">
-            <string>Repair boot problems.</string>
-           </property>
-           <property name="text">
-            <string>Boot Repair</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="FlatButton" name="buttonMenuEditor">
-           <property name="toolTip">
-            <string>Xfce menu editor.</string>
-           </property>
-           <property name="text">
-            <string>Menu Editor</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="FlatButton" name="buttonAptNotifier">
-           <property name="toolTip">
-            <string>Show the tray applet to notify of system and application updates.</string>
-           </property>
-           <property name="text">
-            <string>Unhide Apt Notifier</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="FlatButton" name="buttonBroadcom">
-           <property name="toolTip">
-            <string>Manage Broadcom WiFi drivers.</string>
-           </property>
-           <property name="text">
-            <string>Broadcom Manager</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
