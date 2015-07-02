@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 30 Jun 2015 11:05:47 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 15.7mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (15.7mx15) mx; urgency=medium
+ .
+   * chaged to qt5
+Checksums-Sha1:
+ 276610ffb48ef6d51a3777f2c503ad8158be5682 603 mx-tools_15.7mx15.dsc
+ c4752bef0880a7d0eb1d165fbcca11e81239edc2 45592 mx-tools_15.7mx15.tar.xz
+ b51828f5ffcb912142eaaeba6421285d6ad1866a 41282 mx-tools_15.7mx15_amd64.deb
+Checksums-Sha256:
+ 9ef626df2d7aa32d97ecd7b545b75660c5047477f39d6a6eb941838d0469ac58 603 mx-tools_15.7mx15.dsc
+ 0a0c6d34024f5463ba9109a3760a1de3a45527150e27a383e89aae744a5df7ea 45592 mx-tools_15.7mx15.tar.xz
+ ef0c987b4cb5cf4869b916dcf05486a1983345a72239a6f55a11fff3980cede5 41282 mx-tools_15.7mx15_amd64.deb
+Files:
+ cb5faf46c5251689df762364fc9f2050 603 admin optional mx-tools_15.7mx15.dsc
+ b102634d063fa0d022239792ab481c09 45592 admin optional mx-tools_15.7mx15.tar.xz
+ b8e77fc3800ace6a026080ee9dd9d014 41282 admin optional mx-tools_15.7mx15_amd64.deb
