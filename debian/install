@@ -4,3 +4,4 @@ translations/*.qm 	usr/share/mx-tools/locale
 mx-tools.png		usr/share/pixmaps/mx
 icons/*                 usr/share/mx-tools/icons
 mx-tools.sh		usr/bin
+license.html		usr/share/doc/mx-tools

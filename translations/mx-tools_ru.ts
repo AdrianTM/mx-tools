@@ -235,12 +235,12 @@
         <translation>авторское право (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="123"/>
+        <location filename="../mxtools.cpp" line="124"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="124"/>
+        <location filename="../mxtools.cpp" line="123"/>
         <source>License</source>
         <translation>лицензия</translation>
     </message>
