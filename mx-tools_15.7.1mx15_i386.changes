@@ -15,14 +15,14 @@ Changes:
  .
    * added build-deps, license
 Checksums-Sha1:
- 1daacfbaa8eb8b829c0e445692782ab4e985c350 647 mx-tools_15.7.1mx15.dsc
- 4d55b440d3e5f269dd5204d099e1e92ba0e41b14 161040 mx-tools_15.7.1mx15.tar.xz
- f7472efa2b5ee436186a40aa239d00dc5974c9c2 42086 mx-tools_15.7.1mx15_i386.deb
+ 91f49d4ef837a85211c98f93e8bc0c637dc1f474 647 mx-tools_15.7.1mx15.dsc
+ a6c40b8240978b64f80946c79e7367977d2ce7ef 196612 mx-tools_15.7.1mx15.tar.xz
+ 1b7c224383af89cbe9a7fc5a6ee396f888954187 42170 mx-tools_15.7.1mx15_i386.deb
 Checksums-Sha256:
- b3308a62cd4f6aeca86edc7c9e053adf7843af66f78c55936d3eaf33c6f6e5a3 647 mx-tools_15.7.1mx15.dsc
- ceff99daa746158ae925d23512ad2ac7b4baa1e1642ef55532c407912fb5d21d 161040 mx-tools_15.7.1mx15.tar.xz
- e25a3238c78c09b896b38405cc5a4846ec401b93bdc3becaa2e0a60d2e74dc14 42086 mx-tools_15.7.1mx15_i386.deb
+ 3872b434e6e0b63903475d9a72acb455c8f71171b03b51cdd456117c7bb16ec2 647 mx-tools_15.7.1mx15.dsc
+ e248051b78a5854e728331aadf70a007dffd1698311c1ea07a2fc2b38c3749bf 196612 mx-tools_15.7.1mx15.tar.xz
+ e8f2d4668802d10f2b6f328e41f931a432ef5fb7865ba293db265841a5d1b2de 42170 mx-tools_15.7.1mx15_i386.deb
 Files:
- aea7ea81321141e4464953664cf58388 647 admin optional mx-tools_15.7.1mx15.dsc
- 5f573e76003bc98aa0f7e870d947c21f 161040 admin optional mx-tools_15.7.1mx15.tar.xz
- 72b5ac4d348ee586cc6621cfa1c6d3b1 42086 admin optional mx-tools_15.7.1mx15_i386.deb
+ 456ece6dad1a2586e5e3a6723bf2d2ce 647 admin optional mx-tools_15.7.1mx15.dsc
+ ac6cb4b942dc34463c28353c49f9f8b0 196612 admin optional mx-tools_15.7.1mx15.tar.xz
+ 006e99dfd6bba6bd943d36cf92d11370 42170 admin optional mx-tools_15.7.1mx15_i386.deb

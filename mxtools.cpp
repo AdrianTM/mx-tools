@@ -123,7 +123,7 @@ void mxtools::on_buttonAbout_clicked() {
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
-        system("mx-viewer http://www.mepiscommunity.org/doc_mx/mx-tools-license.html 'MX Tools License'");
+        system("mx-viewer file:///usr/share/doc/mx-tools/license.html 'MX Tools License'");
 }
 
 
