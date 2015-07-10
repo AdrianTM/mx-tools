@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-tools deb admin optional arch=any
 Checksums-Sha1:
- 4d55b440d3e5f269dd5204d099e1e92ba0e41b14 161040 mx-tools_15.7.1mx15.tar.xz
+ a6c40b8240978b64f80946c79e7367977d2ce7ef 196612 mx-tools_15.7.1mx15.tar.xz
 Checksums-Sha256:
- ceff99daa746158ae925d23512ad2ac7b4baa1e1642ef55532c407912fb5d21d 161040 mx-tools_15.7.1mx15.tar.xz
+ e248051b78a5854e728331aadf70a007dffd1698311c1ea07a2fc2b38c3749bf 196612 mx-tools_15.7.1mx15.tar.xz
 Files:
- 5f573e76003bc98aa0f7e870d947c21f 161040 mx-tools_15.7.1mx15.tar.xz
+ ac6cb4b942dc34463c28353c49f9f8b0 196612 mx-tools_15.7.1mx15.tar.xz
