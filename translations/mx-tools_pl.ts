@@ -235,12 +235,12 @@
         <translation>Copyright (c) antiX </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="123"/>
+        <location filename="../mxtools.cpp" line="124"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="124"/>
+        <location filename="../mxtools.cpp" line="123"/>
         <source>License</source>
         <translation>Licencja</translation>
     </message>
