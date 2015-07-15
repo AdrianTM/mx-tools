@@ -231,6 +231,6 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
 // Help button clicked
 void mxtools::on_buttonHelp_clicked()
 {
-    QString cmd = QString("xdg-open http://www.mepiscommunity.org/user_manual_mx15/mxum.html#toc-Subsection-3.2");
+    QString cmd = QString("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2");
     system(cmd.toUtf8());
 }

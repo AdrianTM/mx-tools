@@ -1,3 +1,9 @@
+mx-tools (15.7.2mx15) mx; urgency=medium
+
+  * load help from local storage
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 14 Jul 2015 20:15:26 -0400
+
 mx-tools (15.7.1mx15) mx; urgency=medium
 
   * added build-deps, license
