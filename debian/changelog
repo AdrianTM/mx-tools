@@ -1,3 +1,9 @@
+mx-tools (15.10mx15) mx; urgency=medium
+
+  * added new tools
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 18 Oct 2015 15:23:29 -0400
+
 mx-tools (15.7.2mx15) mx; urgency=medium
 
   * load help from local storage

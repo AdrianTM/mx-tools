@@ -95,22 +95,22 @@
         <translation>Basis</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="537"/>
+        <location filename="../mxtools.ui" line="536"/>
         <source>Manage users and groups, repair settings.</source>
         <translation>Beheer gebruikers en groepen, repareer instellingen.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="543"/>
+        <location filename="../mxtools.ui" line="542"/>
         <source>User Manager</source>
         <translation>Gebruikersbeheer</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="457"/>
+        <location filename="../mxtools.ui" line="456"/>
         <source>Install additional packages.</source>
         <translation>Installeer verdere paketten.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="460"/>
+        <location filename="../mxtools.ui" line="459"/>
         <source>Package Installer</source>
         <translation>Pakket Installeerder</translation>
     </message>
@@ -125,12 +125,12 @@
         <translation>Codecs Downloader</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="423"/>
+        <location filename="../mxtools.ui" line="422"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Beheer Adobe Flash (tm) plugin.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="426"/>
+        <location filename="../mxtools.ui" line="425"/>
         <source>Flash Manager</source>
         <translation>Flashbeheer</translation>
     </message>
@@ -145,12 +145,12 @@
         <translation>Controleer Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="474"/>
+        <location filename="../mxtools.ui" line="473"/>
         <source>Select the sound card you want to use.</source>
         <translation>Selecteer de geluidskaart die u wilt gebruiken.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="477"/>
+        <location filename="../mxtools.ui" line="476"/>
         <source>Sound Card</source>
         <translation>Geluidskaart</translation>
     </message>
@@ -165,12 +165,12 @@
         <translation>Vind Network Shares</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="491"/>
+        <location filename="../mxtools.ui" line="490"/>
         <source>Switch users without logging out.</source>
         <translation>Wissel gebruikers zonder uit te loggen.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="494"/>
+        <location filename="../mxtools.ui" line="493"/>
         <source>Switch User</source>
         <translation>Wissel Gebruiker</translation>
     </message>
@@ -185,22 +185,22 @@
         <translation>Bootreparatie</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="440"/>
+        <location filename="../mxtools.ui" line="439"/>
         <source>Xfce menu editor.</source>
         <translation>MX Menu Editor.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="443"/>
+        <location filename="../mxtools.ui" line="442"/>
         <source>Menu Editor</source>
         <translation>Menu Editor</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="508"/>
+        <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
         <translation>Laat system- en applicatie-updates zien met de tray-applet.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="511"/>
+        <location filename="../mxtools.ui" line="510"/>
         <source>Unhide Apt Notifier</source>
         <translation>Apt Notifier Tevoorschijn Halen</translation>
     </message>

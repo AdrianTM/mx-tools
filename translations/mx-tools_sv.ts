@@ -95,22 +95,22 @@
         <translation>Grundläggande</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="537"/>
+        <location filename="../mxtools.ui" line="536"/>
         <source>Manage users and groups, repair settings.</source>
         <translation>Hantera användare och grupper, reparera inställningar.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="543"/>
+        <location filename="../mxtools.ui" line="542"/>
         <source>User Manager</source>
         <translation>Användarhanterare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="457"/>
+        <location filename="../mxtools.ui" line="456"/>
         <source>Install additional packages.</source>
         <translation>Installera fler paket.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="460"/>
+        <location filename="../mxtools.ui" line="459"/>
         <source>Package Installer</source>
         <translation>Paket-installerare</translation>
     </message>
@@ -125,12 +125,12 @@
         <translation>Codecs Nerladdare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="423"/>
+        <location filename="../mxtools.ui" line="422"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Hantera Adobe Flash (tm) plugin.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="426"/>
+        <location filename="../mxtools.ui" line="425"/>
         <source>Flash Manager</source>
         <translation>Flash-hanterare</translation>
     </message>
@@ -145,12 +145,12 @@
         <translation>Check Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="474"/>
+        <location filename="../mxtools.ui" line="473"/>
         <source>Select the sound card you want to use.</source>
         <translation>Välj det ljudkort du vill använda</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="477"/>
+        <location filename="../mxtools.ui" line="476"/>
         <source>Sound Card</source>
         <translation>Ljudkort</translation>
     </message>
@@ -165,12 +165,12 @@
         <translation>Hitta Nätverksresurser</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="491"/>
+        <location filename="../mxtools.ui" line="490"/>
         <source>Switch users without logging out.</source>
         <translation>Byt användare utan att logga ut.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="494"/>
+        <location filename="../mxtools.ui" line="493"/>
         <source>Switch User</source>
         <translation>Byt Användare</translation>
     </message>
@@ -185,22 +185,22 @@
         <translation>Boot-reparation</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="440"/>
+        <location filename="../mxtools.ui" line="439"/>
         <source>Xfce menu editor.</source>
         <translation>Xfce meny-editor</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="443"/>
+        <location filename="../mxtools.ui" line="442"/>
         <source>Menu Editor</source>
         <translation>Meny-editor</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="508"/>
+        <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
         <translation>Visa brickans miniprogram för att meddela om system och program-uppdateringar.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="511"/>
+        <location filename="../mxtools.ui" line="510"/>
         <source>Unhide Apt Notifier</source>
         <translation>Synliggör Apt Notifier</translation>
     </message>

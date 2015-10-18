@@ -97,22 +97,22 @@
         <translation>βασικό</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="537"/>
+        <location filename="../mxtools.ui" line="536"/>
         <source>Manage users and groups, repair settings.</source>
         <translation>Διαχείριση χρηστών και ομάδων, επισκευή τις ρυθμίσεις.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="543"/>
+        <location filename="../mxtools.ui" line="542"/>
         <source>User Manager</source>
         <translation>Διαχείριση Χρηστών</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="457"/>
+        <location filename="../mxtools.ui" line="456"/>
         <source>Install additional packages.</source>
         <translation>Εγκατάσταση επιπλέον πακέτων.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="460"/>
+        <location filename="../mxtools.ui" line="459"/>
         <source>Package Installer</source>
         <translation>Εγκατάσταση πακέτων</translation>
     </message>
@@ -127,12 +127,12 @@
         <translation>Εγκατάσταση codecs</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="423"/>
+        <location filename="../mxtools.ui" line="422"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Διαχείριση του Adobe Flash (tm)</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="426"/>
+        <location filename="../mxtools.ui" line="425"/>
         <source>Flash Manager</source>
         <translation>Διαχείρηση του Flash</translation>
     </message>
@@ -147,12 +147,12 @@
         <translation>Έλεγχος  του Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="474"/>
+        <location filename="../mxtools.ui" line="473"/>
         <source>Select the sound card you want to use.</source>
         <translation>Επιλέξτε την κάρτα ήχου που θέλετε να χρησιμοποιήσετε.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="477"/>
+        <location filename="../mxtools.ui" line="476"/>
         <source>Sound Card</source>
         <translation>Καρτα Ηχου</translation>
     </message>
@@ -167,12 +167,12 @@
         <translation>Βρείτε Μετοχές Δίκτυο </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="491"/>
+        <location filename="../mxtools.ui" line="490"/>
         <source>Switch users without logging out.</source>
         <translation>Εναλλαγή χρηστών χωρίς να αποσύνδεση.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="494"/>
+        <location filename="../mxtools.ui" line="493"/>
         <source>Switch User</source>
         <translation>Αλλαγή χρήστη </translation>
     </message>
@@ -187,22 +187,22 @@
         <translation>Επισκευή Εκκίνησης</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="440"/>
+        <location filename="../mxtools.ui" line="439"/>
         <source>Xfce menu editor.</source>
         <translation>Xfce menu editor.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="443"/>
+        <location filename="../mxtools.ui" line="442"/>
         <source>Menu Editor</source>
         <translation>Menu Editor</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="508"/>
+        <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
         <translation>Δείτε το applet δίσκο μικροεφαρμογή για να ειδοποιεί για ενημερώσεις του συστήματος και τις εφαρμογές.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="511"/>
+        <location filename="../mxtools.ui" line="510"/>
         <source>Unhide Apt Notifier</source>
         <translation>Επανεμφάνιση του Apt Notifier</translation>
     </message>

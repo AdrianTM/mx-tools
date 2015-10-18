@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 18 Oct 2015 15:23:29 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source i386
+Version: 15.10mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (15.10mx15) mx; urgency=medium
+ .
+   * added new tools
+Checksums-Sha1:
+ 206c2146d1d4067eed6e873c0bfcab518216afd5 643 mx-tools_15.10mx15.dsc
+ 0663b18bc92f04fae34a61ac11b46fce540eafdf 429176 mx-tools_15.10mx15.tar.xz
+ ad8dde2b8435f0a2af1bf157afa7fc02439c632a 42246 mx-tools_15.10mx15_i386.deb
+Checksums-Sha256:
+ a1b9e5479db75f96efc4b2bccfb7b1dee8ea2480d65639766477e39b8ae9ac88 643 mx-tools_15.10mx15.dsc
+ 2690d66d813fbaf5e48123688b9e5b78c6085698c40b0fec10bd50c42850c101 429176 mx-tools_15.10mx15.tar.xz
+ 24a07fbcbd0feff30f04b68962e414c2505b32c5eae8c563099f4a82c0151ca8 42246 mx-tools_15.10mx15_i386.deb
+Files:
+ 7d5a0ba61b8728ed7c7750139dff6fe7 643 admin optional mx-tools_15.10mx15.dsc
+ d752bd77400a1ead4a93fb4b17076ae3 429176 admin optional mx-tools_15.10mx15.tar.xz
+ 17a5da4068f271fed5b42df67c6f6a4f 42246 admin optional mx-tools_15.10mx15_i386.deb

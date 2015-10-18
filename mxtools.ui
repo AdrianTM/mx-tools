@@ -409,8 +409,7 @@
             <string>Find Network Shares</string>
            </property>
            <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-findshares.xpm</iconset>
+            <iconset theme="find"/>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -478,7 +477,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</normaloff>../../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</iconset>
+             <normaloff>../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</normaloff>../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
