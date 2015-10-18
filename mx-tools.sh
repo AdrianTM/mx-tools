@@ -6,7 +6,7 @@ DESKTOP_PATH="/usr/share/applications"
 #Where you can set any extra files (full path) that are not of the name scheme mx-
 #Example:
 #EXTRA_FILES="$DESKTOP_PATH/synaptic.desktop $DESKTOP_PATH/xfce4-terminal"
-EXTRA_FILES="$DESKTOP_PATH/antix/RemasterCC.desktop $DESKTOP_PATH/mx/RemasterCC.desktop $DESKTOP_PATH/antix/live-usb.desktop $DESKTOP_PATH/antix/snapshot-mx.desktop $DESKTOP_PATH/antix/Sound_Card.desktop"
+EXTRA_FILES="$DESKTOP_PATH/antix/live-usb.desktop $DESKTOP_PATH/antix/snapshot-mx.desktop"
 
 #Allowance for passed items on the command line, do not edit
 EXTRA_PASSED="${@:2}"
@@ -25,7 +25,7 @@ help() {
 }
 
 SHOW_HIDE() {
-    for DESKTOP_FILE in $(ls -1 $DESKTOP_PATH/{,mx/}mx*.desktop | grep -v mx-tools) $EXTRA_FILES $EXTRA_PASSED
+    for DESKTOP_FILE in $(ls -1 $DESKTOP_PATH/{,mx/}mx*.desktop | grep -v mx-tools | grep -v mx-welcome) $EXTRA_FILES $EXTRA_PASSED
     do
         if [ -f $DESKTOP_FILE ]; then
             OLD_VALUE=$(cat $DESKTOP_FILE | grep "^NoDisplay=" | cut -d "=" -f2)

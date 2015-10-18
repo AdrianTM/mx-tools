@@ -95,22 +95,22 @@
         <translation>основной</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="537"/>
+        <location filename="../mxtools.ui" line="536"/>
         <source>Manage users and groups, repair settings.</source>
         <translation>Управление пользователями и группами, починка настроек.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="543"/>
+        <location filename="../mxtools.ui" line="542"/>
         <source>User Manager</source>
         <translation>Диспетчер пользователей</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="457"/>
+        <location filename="../mxtools.ui" line="456"/>
         <source>Install additional packages.</source>
         <translation>Установка дополнительных пакетов.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="460"/>
+        <location filename="../mxtools.ui" line="459"/>
         <source>Package Installer</source>
         <translation>Установщик пакетов</translation>
     </message>
@@ -125,12 +125,12 @@
         <translation>Кодеки Downloader</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="423"/>
+        <location filename="../mxtools.ui" line="422"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Управление Adobe Flash (тм) плагин.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="426"/>
+        <location filename="../mxtools.ui" line="425"/>
         <source>Flash Manager</source>
         <translation>флэш-менеджер</translation>
     </message>
@@ -145,12 +145,12 @@
         <translation>Проверьте Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="474"/>
+        <location filename="../mxtools.ui" line="473"/>
         <source>Select the sound card you want to use.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="477"/>
+        <location filename="../mxtools.ui" line="476"/>
         <source>Sound Card</source>
         <translation type="unfinished"></translation>
     </message>
@@ -165,12 +165,12 @@
         <translation>Найти общие сетевые ресурсы</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="491"/>
+        <location filename="../mxtools.ui" line="490"/>
         <source>Switch users without logging out.</source>
         <translation>Переключение пользователей без выхода из системы.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="494"/>
+        <location filename="../mxtools.ui" line="493"/>
         <source>Switch User</source>
         <translation>Смена пользователя</translation>
     </message>
@@ -185,22 +185,22 @@
         <translation>Загрузка pемонт</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="440"/>
+        <location filename="../mxtools.ui" line="439"/>
         <source>Xfce menu editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="443"/>
+        <location filename="../mxtools.ui" line="442"/>
         <source>Menu Editor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="508"/>
+        <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="511"/>
+        <location filename="../mxtools.ui" line="510"/>
         <source>Unhide Apt Notifier</source>
         <translation type="unfinished"></translation>
     </message>

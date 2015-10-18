@@ -81,8 +81,8 @@ void mxtools::checkApps() {
     if (getCmdOut("dpkg -s checkaptgpg | grep Status") != "Status: install ok installed") {
         ui->buttonCheckAptGPG->setEnabled(false);
     }
-    // Sound Card app
-    if (getCmdOut("dpkg -s antix-goodies | grep Status") != "Status: install ok installed") {
+    // MX Select Sound
+    if (getCmdOut("dpkg -s mx-select-sound | grep Status") != "Status: install ok installed") {
         ui->buttonSoundCard->setEnabled(false);
     }
     // MX Findshares
@@ -159,7 +159,7 @@ void mxtools::on_buttonCheckAptGPG_clicked() {
 
 void mxtools::on_buttonSoundCard_clicked() {
     this->hide();
-    system("/usr/local/bin/alsa-set-default-card");
+    system("mx-select-sound");
     this->show();
 }
 
@@ -193,7 +193,7 @@ void mxtools::on_buttonSnapshot_clicked() {
 
 void mxtools::on_buttonRemaster_clicked() {
     this->hide();
-    system("remastercc.sh");
+    system("su-to-root -X -c mx-remastercc");
     this->show();
 }
 
