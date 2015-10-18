@@ -15,14 +15,14 @@ Changes:
  .
    * added new tools
 Checksums-Sha1:
- 206c2146d1d4067eed6e873c0bfcab518216afd5 643 mx-tools_15.10mx15.dsc
- 0663b18bc92f04fae34a61ac11b46fce540eafdf 429176 mx-tools_15.10mx15.tar.xz
- ad8dde2b8435f0a2af1bf157afa7fc02439c632a 42246 mx-tools_15.10mx15_i386.deb
+ 267eb62db02fb1bed219ea8ac15c45cf622e2ad8 643 mx-tools_15.10mx15.dsc
+ 3c31d8c1d2073016d173bc295894b916c0e66cfd 465092 mx-tools_15.10mx15.tar.xz
+ e393db2786efc63b777f788ffb40ffefc30cf034 42202 mx-tools_15.10mx15_i386.deb
 Checksums-Sha256:
- a1b9e5479db75f96efc4b2bccfb7b1dee8ea2480d65639766477e39b8ae9ac88 643 mx-tools_15.10mx15.dsc
- 2690d66d813fbaf5e48123688b9e5b78c6085698c40b0fec10bd50c42850c101 429176 mx-tools_15.10mx15.tar.xz
- 24a07fbcbd0feff30f04b68962e414c2505b32c5eae8c563099f4a82c0151ca8 42246 mx-tools_15.10mx15_i386.deb
+ 38e3cc81267141345dcbd97a7b7f1e09a8059c242b90a8386368d6fce29daf86 643 mx-tools_15.10mx15.dsc
+ 48a20372384447ed9392cd76409751bf82a2093d5ce26d1523b7dfac2b80726c 465092 mx-tools_15.10mx15.tar.xz
+ c8a93281304b745d84a1239fa0870e2fea42ab0648085a7aefe2b540eab7fad2 42202 mx-tools_15.10mx15_i386.deb
 Files:
- 7d5a0ba61b8728ed7c7750139dff6fe7 643 admin optional mx-tools_15.10mx15.dsc
- d752bd77400a1ead4a93fb4b17076ae3 429176 admin optional mx-tools_15.10mx15.tar.xz
- 17a5da4068f271fed5b42df67c6f6a4f 42246 admin optional mx-tools_15.10mx15_i386.deb
+ 334b1816d12d16b0f3247b4d0d7c45c6 643 admin optional mx-tools_15.10mx15.dsc
+ 5b54acec21ed94d661bf494c938bc403 465092 admin optional mx-tools_15.10mx15.tar.xz
+ 5e65c1d80d98278b795a83b00e84b8a0 42202 admin optional mx-tools_15.10mx15_i386.deb
