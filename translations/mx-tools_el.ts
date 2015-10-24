@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -52,16 +50,6 @@
 </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="255"/>
-        <source>Tools for live persistence and remastering.</source>
-        <translation>Εργαλεία για ζωντανή persistence και remastering.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="258"/>
-        <source>Persistence/Remaster</source>
-        <translation>Persistence/Remaster</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="221"/>
         <source>Create a live-CD from the running system.</source>
         <translation>Δημιουργήστε ένα live-CD από το εγκατεστημένο σύστημα.</translation>
@@ -82,6 +70,16 @@
         <translation>Δημιουργία Ζωντανή USB </translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="255"/>
+        <source>Tools for live persistence and remastering.</source>
+        <translation>Εργαλεία για ζωντανή persistence και remastering.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="258"/>
+        <source>Persistence/Remaster</source>
+        <translation>Persistence/Remaster</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="275"/>
         <source>Hide individual tools from the menu</source>
         <translation>Απόκρυψη μεμονωμένων εργαλείων από το μενού </translation>
@@ -97,44 +95,24 @@
         <translation>βασικό</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="536"/>
-        <source>Manage users and groups, repair settings.</source>
-        <translation>Διαχείριση χρηστών και ομάδων, επισκευή τις ρυθμίσεις.</translation>
+        <location filename="../mxtools.ui" line="338"/>
+        <source>Repair boot problems.</source>
+        <translation>Επισκευή προβλήματα εκκίνησης.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="542"/>
-        <source>User Manager</source>
-        <translation>Διαχείριση Χρηστών</translation>
+        <location filename="../mxtools.ui" line="341"/>
+        <source>Boot Repair</source>
+        <translation>Επισκευή Εκκίνησης</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="456"/>
-        <source>Install additional packages.</source>
-        <translation>Εγκατάσταση επιπλέον πακέτων.</translation>
+        <location filename="../mxtools.ui" line="355"/>
+        <source>Manage Broadcom WiFi drivers.</source>
+        <translation>Διαχείριση Broadcom WiFi</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="459"/>
-        <source>Package Installer</source>
-        <translation>Εγκατάσταση πακέτων</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="389"/>
-        <source>Download and install restricted codecs.</source>
-        <translation>Λήψη και εγκατάσταση codecs.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="392"/>
-        <source>Codecs Downloader</source>
-        <translation>Εγκατάσταση codecs</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="422"/>
-        <source>Manage Adobe Flash (tm) plugin.</source>
-        <translation>Διαχείριση του Adobe Flash (tm)</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="425"/>
-        <source>Flash Manager</source>
-        <translation>Διαχείρηση του Flash</translation>
+        <location filename="../mxtools.ui" line="358"/>
+        <source>Broadcom Manager</source>
+        <translation>Broadcom Manager</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="372"/>
@@ -147,14 +125,14 @@
         <translation>Έλεγχος  του Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="473"/>
-        <source>Select the sound card you want to use.</source>
-        <translation>Επιλέξτε την κάρτα ήχου που θέλετε να χρησιμοποιήσετε.</translation>
+        <location filename="../mxtools.ui" line="389"/>
+        <source>Download and install restricted codecs.</source>
+        <translation>Λήψη και εγκατάσταση codecs.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="476"/>
-        <source>Sound Card</source>
-        <translation>Καρτα Ηχου</translation>
+        <location filename="../mxtools.ui" line="392"/>
+        <source>Codecs Downloader</source>
+        <translation>Εγκατάσταση codecs</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="406"/>
@@ -167,24 +145,14 @@
         <translation>Βρείτε Μετοχές Δίκτυο </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="490"/>
-        <source>Switch users without logging out.</source>
-        <translation>Εναλλαγή χρηστών χωρίς να αποσύνδεση.</translation>
+        <location filename="../mxtools.ui" line="422"/>
+        <source>Manage Adobe Flash (tm) plugin.</source>
+        <translation>Διαχείριση του Adobe Flash (tm)</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="493"/>
-        <source>Switch User</source>
-        <translation>Αλλαγή χρήστη </translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="338"/>
-        <source>Repair boot problems.</source>
-        <translation>Επισκευή προβλήματα εκκίνησης.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="341"/>
-        <source>Boot Repair</source>
-        <translation>Επισκευή Εκκίνησης</translation>
+        <location filename="../mxtools.ui" line="425"/>
+        <source>Flash Manager</source>
+        <translation>Διαχείρηση του Flash</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="439"/>
@@ -197,6 +165,36 @@
         <translation>Menu Editor</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="456"/>
+        <source>Install additional packages.</source>
+        <translation>Εγκατάσταση επιπλέον πακέτων.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="459"/>
+        <source>Package Installer</source>
+        <translation>Εγκατάσταση πακέτων</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="473"/>
+        <source>Select the sound card you want to use.</source>
+        <translation>Επιλέξτε την κάρτα ήχου που θέλετε να χρησιμοποιήσετε.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="476"/>
+        <source>Sound Card</source>
+        <translation>Καρτα Ηχου</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="490"/>
+        <source>Switch users without logging out.</source>
+        <translation>Εναλλαγή χρηστών χωρίς να αποσύνδεση.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="493"/>
+        <source>Switch User</source>
+        <translation>Αλλαγή χρήστη </translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
         <translation>Δείτε το applet δίσκο μικροεφαρμογή για να ειδοποιεί για ενημερώσεις του συστήματος και τις εφαρμογές.</translation>
@@ -207,14 +205,14 @@
         <translation>Επανεμφάνιση του Apt Notifier</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="355"/>
-        <source>Manage Broadcom WiFi drivers.</source>
-        <translation>Διαχείριση Broadcom WiFi</translation>
+        <location filename="../mxtools.ui" line="536"/>
+        <source>Manage users and groups, repair settings.</source>
+        <translation>Διαχείριση χρηστών και ομάδων, επισκευή τις ρυθμίσεις.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="358"/>
-        <source>Broadcom Manager</source>
-        <translation>Broadcom Manager</translation>
+        <location filename="../mxtools.ui" line="542"/>
+        <source>User Manager</source>
+        <translation>Διαχείριση Χρηστών</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="118"/>
@@ -237,14 +235,14 @@
         <translation>Copyright (c) antiX </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="124"/>
-        <source>Cancel</source>
-        <translation>Ακύρωση</translation>
-    </message>
-    <message>
         <location filename="../mxtools.cpp" line="123"/>
         <source>License</source>
         <translation>Άδεια</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="124"/>
+        <source>Cancel</source>
+        <translation>Ακύρωση</translation>
     </message>
 </context>
 </TS>

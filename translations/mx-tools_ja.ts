@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -50,16 +48,6 @@
         <translation>特殊</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="255"/>
-        <source>Tools for live persistence and remastering.</source>
-        <translation>ライブ Presistence・リマスターのツール</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="258"/>
-        <source>Persistence/Remaster</source>
-        <translation>Persistence・リマスター</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="221"/>
         <source>Create a live-CD from the running system.</source>
         <translation> システムを実行するライブ CD を作成</translation>
@@ -80,6 +68,16 @@
         <translation>ライブ USB の作成</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="255"/>
+        <source>Tools for live persistence and remastering.</source>
+        <translation>ライブ Presistence・リマスターのツール</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="258"/>
+        <source>Persistence/Remaster</source>
+        <translation>Persistence・リマスター</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="275"/>
         <source>Hide individual tools from the menu</source>
         <translation>メニューから個々のツールを非表示にする</translation>
@@ -95,44 +93,24 @@
         <translation>基本</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="536"/>
-        <source>Manage users and groups, repair settings.</source>
-        <translation>ユーザー・グループの管理と設定の修復</translation>
+        <location filename="../mxtools.ui" line="338"/>
+        <source>Repair boot problems.</source>
+        <translation>起動の問題を修復</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="542"/>
-        <source>User Manager</source>
-        <translation>ユーザー管理</translation>
+        <location filename="../mxtools.ui" line="341"/>
+        <source>Boot Repair</source>
+        <translation>起動復旧</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="456"/>
-        <source>Install additional packages.</source>
-        <translation>追加パッケージのインストール</translation>
+        <location filename="../mxtools.ui" line="355"/>
+        <source>Manage Broadcom WiFi drivers.</source>
+        <translation>Broadcom WiFi ドライバーの管理</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="459"/>
-        <source>Package Installer</source>
-        <translation>パッケージインストーラー</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="389"/>
-        <source>Download and install restricted codecs.</source>
-        <translation>コーデックのダウンロード・インストール</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="392"/>
-        <source>Codecs Downloader</source>
-        <translation>Codec ダウンローダー</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="422"/>
-        <source>Manage Adobe Flash (tm) plugin.</source>
-        <translation>Adobe Flash プラグインの管理</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="425"/>
-        <source>Flash Manager</source>
-        <translation>Flash 管理</translation>
+        <location filename="../mxtools.ui" line="358"/>
+        <source>Broadcom Manager</source>
+        <translation>Broadcom 管理</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="372"/>
@@ -145,14 +123,14 @@
         <translation>APT の GPG 確認</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="473"/>
-        <source>Select the sound card you want to use.</source>
-        <translation type="unfinished"></translation>
+        <location filename="../mxtools.ui" line="389"/>
+        <source>Download and install restricted codecs.</source>
+        <translation>コーデックのダウンロード・インストール</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="476"/>
-        <source>Sound Card</source>
-        <translation>サウンドカード</translation>
+        <location filename="../mxtools.ui" line="392"/>
+        <source>Codecs Downloader</source>
+        <translation>Codec ダウンローダー</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="406"/>
@@ -165,6 +143,46 @@
         <translation>ネットワーク共有検索</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="422"/>
+        <source>Manage Adobe Flash (tm) plugin.</source>
+        <translation>Adobe Flash プラグインの管理</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="425"/>
+        <source>Flash Manager</source>
+        <translation>Flash 管理</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="439"/>
+        <source>Xfce menu editor.</source>
+        <translation>Xfce メニューエディタ</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="442"/>
+        <source>Menu Editor</source>
+        <translation>メニューエディタ</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="456"/>
+        <source>Install additional packages.</source>
+        <translation>追加パッケージのインストール</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="459"/>
+        <source>Package Installer</source>
+        <translation>パッケージインストーラー</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="473"/>
+        <source>Select the sound card you want to use.</source>
+        <translation>使用するサウントカードを選択して下さい</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="476"/>
+        <source>Sound Card</source>
+        <translation>サウンドカード</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="490"/>
         <source>Switch users without logging out.</source>
         <translation>ログアウトせずにユーザーを切り替え</translation>
@@ -175,44 +193,24 @@
         <translation>ユーザー切替</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="338"/>
-        <source>Repair boot problems.</source>
-        <translation>起動の問題を修復</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="341"/>
-        <source>Boot Repair</source>
-        <translation>起動復旧</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="439"/>
-        <source>Xfce menu editor.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="442"/>
-        <source>Menu Editor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="unfinished"></translation>
+        <translation>システム・アプリの更新時にトレイアプレットの通知を表示します</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="510"/>
         <source>Unhide Apt Notifier</source>
-        <translation type="unfinished"></translation>
+        <translation>APT 通知を表示</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="355"/>
-        <source>Manage Broadcom WiFi drivers.</source>
-        <translation type="unfinished"></translation>
+        <location filename="../mxtools.ui" line="536"/>
+        <source>Manage users and groups, repair settings.</source>
+        <translation>ユーザー・グループの管理と設定の修復</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="358"/>
-        <source>Broadcom Manager</source>
-        <translation type="unfinished"></translation>
+        <location filename="../mxtools.ui" line="542"/>
+        <source>User Manager</source>
+        <translation>ユーザー管理</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="118"/>
@@ -235,14 +233,14 @@
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="124"/>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
-    </message>
-    <message>
         <location filename="../mxtools.cpp" line="123"/>
         <source>License</source>
         <translation>ライセンス</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="124"/>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
     </message>
 </context>
 </TS>
