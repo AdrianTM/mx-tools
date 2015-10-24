@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -50,16 +48,6 @@
         <translation>Avancerat</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="255"/>
-        <source>Tools for live persistence and remastering.</source>
-        <translation>Verktyg för live persistence och remastering.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="258"/>
-        <source>Persistence/Remaster</source>
-        <translation>Persistence/Remaster</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="221"/>
         <source>Create a live-CD from the running system.</source>
         <translation>Skapa en live-CD av systemet du kör.</translation>
@@ -80,6 +68,16 @@
         <translation>Skapa Live USB</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="255"/>
+        <source>Tools for live persistence and remastering.</source>
+        <translation>Verktyg för live persistence och remastering.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="258"/>
+        <source>Persistence/Remaster</source>
+        <translation>Persistence/Remaster</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="275"/>
         <source>Hide individual tools from the menu</source>
         <translation>Göm enskilda verktyg från menyn</translation>
@@ -95,44 +93,24 @@
         <translation>Grundläggande</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="536"/>
-        <source>Manage users and groups, repair settings.</source>
-        <translation>Hantera användare och grupper, reparera inställningar.</translation>
+        <location filename="../mxtools.ui" line="338"/>
+        <source>Repair boot problems.</source>
+        <translation>Åtgärda boot-problem.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="542"/>
-        <source>User Manager</source>
-        <translation>Användarhanterare</translation>
+        <location filename="../mxtools.ui" line="341"/>
+        <source>Boot Repair</source>
+        <translation>Boot-reparation</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="456"/>
-        <source>Install additional packages.</source>
-        <translation>Installera fler paket.</translation>
+        <location filename="../mxtools.ui" line="355"/>
+        <source>Manage Broadcom WiFi drivers.</source>
+        <translation>Hantera Broadcom WiFi-drivrutiner.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="459"/>
-        <source>Package Installer</source>
-        <translation>Paket-installerare</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="389"/>
-        <source>Download and install restricted codecs.</source>
-        <translation>Ladda ner och installera  restricted codecs.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="392"/>
-        <source>Codecs Downloader</source>
-        <translation>Codecs Nerladdare</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="422"/>
-        <source>Manage Adobe Flash (tm) plugin.</source>
-        <translation>Hantera Adobe Flash (tm) plugin.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="425"/>
-        <source>Flash Manager</source>
-        <translation>Flash-hanterare</translation>
+        <location filename="../mxtools.ui" line="358"/>
+        <source>Broadcom Manager</source>
+        <translation>Broadcom-hanterare</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="372"/>
@@ -145,14 +123,14 @@
         <translation>Check Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="473"/>
-        <source>Select the sound card you want to use.</source>
-        <translation>Välj det ljudkort du vill använda</translation>
+        <location filename="../mxtools.ui" line="389"/>
+        <source>Download and install restricted codecs.</source>
+        <translation>Ladda ner och installera  restricted codecs.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="476"/>
-        <source>Sound Card</source>
-        <translation>Ljudkort</translation>
+        <location filename="../mxtools.ui" line="392"/>
+        <source>Codecs Downloader</source>
+        <translation>Codecs Nerladdare</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="406"/>
@@ -165,24 +143,14 @@
         <translation>Hitta Nätverksresurser</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="490"/>
-        <source>Switch users without logging out.</source>
-        <translation>Byt användare utan att logga ut.</translation>
+        <location filename="../mxtools.ui" line="422"/>
+        <source>Manage Adobe Flash (tm) plugin.</source>
+        <translation>Hantera Adobe Flash (tm) plugin.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="493"/>
-        <source>Switch User</source>
-        <translation>Byt Användare</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="338"/>
-        <source>Repair boot problems.</source>
-        <translation>Åtgärda boot-problem.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="341"/>
-        <source>Boot Repair</source>
-        <translation>Boot-reparation</translation>
+        <location filename="../mxtools.ui" line="425"/>
+        <source>Flash Manager</source>
+        <translation>Flash-hanterare</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="439"/>
@@ -195,6 +163,36 @@
         <translation>Meny-editor</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="456"/>
+        <source>Install additional packages.</source>
+        <translation>Installera fler paket.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="459"/>
+        <source>Package Installer</source>
+        <translation>Paket-installerare</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="473"/>
+        <source>Select the sound card you want to use.</source>
+        <translation>Välj det ljudkort du vill använda</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="476"/>
+        <source>Sound Card</source>
+        <translation>Ljudkort</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="490"/>
+        <source>Switch users without logging out.</source>
+        <translation>Byt användare utan att logga ut.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="493"/>
+        <source>Switch User</source>
+        <translation>Byt Användare</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
         <translation>Visa brickans miniprogram för att meddela om system och program-uppdateringar.</translation>
@@ -205,14 +203,14 @@
         <translation>Synliggör Apt Notifier</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="355"/>
-        <source>Manage Broadcom WiFi drivers.</source>
-        <translation>Hantera Broadcom WiFi-drivrutiner.</translation>
+        <location filename="../mxtools.ui" line="536"/>
+        <source>Manage users and groups, repair settings.</source>
+        <translation>Hantera användare och grupper, reparera inställningar.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="358"/>
-        <source>Broadcom Manager</source>
-        <translation>Broadcom-hanterare</translation>
+        <location filename="../mxtools.ui" line="542"/>
+        <source>User Manager</source>
+        <translation>Användarhanterare</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="118"/>
@@ -235,14 +233,14 @@
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="124"/>
-        <source>Cancel</source>
-        <translation>Avbryt</translation>
-    </message>
-    <message>
         <location filename="../mxtools.cpp" line="123"/>
         <source>License</source>
         <translation>Licens</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.cpp" line="124"/>
+        <source>Cancel</source>
+        <translation>Avbryt</translation>
     </message>
 </context>
 </TS>
