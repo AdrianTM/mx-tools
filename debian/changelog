@@ -1,3 +1,9 @@
+mx-tools (15.10.1mx15) mx; urgency=medium
+
+  * added new translations
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 24 Oct 2015 19:57:14 -0400
+
 mx-tools (15.10mx15) mx; urgency=medium
 
   * added new tools

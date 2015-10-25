@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pl">
 <context>
     <name>mxtools</name>
     <message>
@@ -105,12 +107,12 @@
     <message>
         <location filename="../mxtools.ui" line="355"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="358"/>
         <source>Broadcom Manager</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="372"/>
@@ -155,12 +157,12 @@
     <message>
         <location filename="../mxtools.ui" line="439"/>
         <source>Xfce menu editor.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="442"/>
         <source>Menu Editor</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="456"/>
@@ -175,7 +177,7 @@
     <message>
         <location filename="../mxtools.ui" line="473"/>
         <source>Select the sound card you want to use.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="476"/>
@@ -195,12 +197,12 @@
     <message>
         <location filename="../mxtools.ui" line="507"/>
         <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="510"/>
         <source>Unhide Apt Notifier</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="536"/>
