@@ -36,6 +36,7 @@ mxtools::mxtools(QWidget *parent) :
     }
     QIcon::setThemeName(getCmdOut("xfconf-query -c xsettings -p /Net/IconThemeName"));
     ui->buttonMenuEditor->setIcon(QIcon::fromTheme("edit-copy"));
+    this->adjustSize();
 }
 
 mxtools::~mxtools()
