@@ -1,3 +1,9 @@
+mx-tools (15.11.2mx15) mx; urgency=medium
+
+  * changed icon location
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 12 Nov 2015 17:46:14 -0500
+
 mx-tools (15.11.1mx15) mx; urgency=medium
 
   * added panel orientation option
