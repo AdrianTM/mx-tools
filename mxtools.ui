@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>666</width>
-    <height>470</height>
+    <height>478</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -348,40 +348,6 @@
          <bool>false</bool>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
-         <item row="4" column="2">
-          <widget class="FlatButton" name="buttonAptNotifier">
-           <property name="toolTip">
-            <string>Show the tray applet to notify of system and application updates.</string>
-           </property>
-           <property name="text">
-            <string>Unhide Apt Notifier</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</normaloff>../../../../../../../../usr/share/icons/mnotify-some.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="FlatButton" name="buttonSwitchUser">
-           <property name="toolTip">
-            <string>Switch users without logging out.</string>
-           </property>
-           <property name="text">
-            <string>Switch User</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
          <item row="4" column="3">
           <widget class="FlatButton" name="buttonUser">
            <property name="font">
@@ -550,23 +516,6 @@
            </property>
           </widget>
          </item>
-         <item row="3" column="3">
-          <widget class="FlatButton" name="buttonSoundCard">
-           <property name="toolTip">
-            <string>Select the sound card you want to use.</string>
-           </property>
-           <property name="text">
-            <string>Sound Card</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</normaloff>../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</iconset>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
          <item row="3" column="1">
           <widget class="FlatButton" name="buttonMenuEditor">
            <property name="toolTip">
@@ -613,6 +562,54 @@
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="FlatButton" name="buttonSwitchUser">
+           <property name="toolTip">
+            <string>Switch users without logging out.</string>
+           </property>
+           <property name="text">
+            <string>Switch User</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</normaloff>../../../../../../../../usr/share/icons/Tango/scalable/apps/system-users.svg</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="FlatButton" name="buttonSoundCard">
+           <property name="toolTip">
+            <string>Select the sound card you want to use.</string>
+           </property>
+           <property name="text">
+            <string>Sound Card</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</normaloff>../../../../../../../usr/share/icons/Faenza-Cupertino-mini/status/16/audio-volume-medium.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="FlatButton" name="buttonPanelOrientation">
+           <property name="text">
+            <string>Panel Orientation</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-panel-orientation.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-panel-orientation.png</iconset>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
            </property>
           </widget>
          </item>
