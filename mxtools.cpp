@@ -98,10 +98,6 @@ void mxtools::checkApps() {
     if (getCmdOut("dpkg -s mx-bootrepair | grep Status") != "Status: install ok installed") {
         ui->buttonBootrepair->setEnabled(false);
     }
-    // MX AptNotifier
-    if (getCmdOut("dpkg -s apt-notifier | grep Status") != "Status: install ok installed") {
-        ui->buttonAptNotifier->setEnabled(false);
-    }
     // MX Menu Editor
     if (getCmdOut("dpkg -s mx-menu-editor | grep Status") != "Status: install ok installed") {
         ui->buttonMenuEditor->setEnabled(false);
@@ -210,10 +206,6 @@ void mxtools::on_buttonMenuEditor_clicked() {
     this->show();
 }
 
-void mxtools::on_buttonAptNotifier_clicked() {
-    system("/usr/bin/apt-notifier-unhide-Icon");
-}
-
 void mxtools::on_buttonBroadcom_clicked() {
     this->hide();
     system("su-to-root -X -c mx-broadcom-manager");
@@ -227,6 +219,13 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
         system("su-to-root -X -c 'mx-tools.sh --show'");
     }
     system("xfce4-panel --restart");
+}
+
+void mxtools::on_buttonPanelOrientation_clicked()
+{
+    this->hide();
+    system("mx-panel-orientation");
+    this->show();
 }
 
 // Help button clicked

@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="120"/>
+        <location filename="../mxtools.cpp" line="116"/>
         <source>MX Tools</source>
         <translation>MX Инструменты</translation>
     </message>
@@ -70,6 +70,11 @@
         <translation>Создать Live USB</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="605"/>
+        <source>Panel Orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="273"/>
         <source>Tools for live persistence and remastering.</source>
         <translation>Инструменты для создания носителей с рабочей ОС, с сохранением данных / заранее модицифицированной.</translation>
@@ -95,152 +100,150 @@
         <translation>Основной</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="436"/>
+        <location filename="../mxtools.ui" line="402"/>
         <source>Repair boot problems.</source>
         <translation>Решение проблем загрузчика.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="439"/>
+        <location filename="../mxtools.ui" line="405"/>
         <source>Boot Repair</source>
         <translation>Восстановление загрузчика</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="487"/>
+        <location filename="../mxtools.ui" line="453"/>
         <source>Manage Broadcom WiFi drivers.</source>
         <translation>Управление драйверами Broadcom WiFi.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="490"/>
+        <location filename="../mxtools.ui" line="456"/>
         <source>Broadcom Manager</source>
         <translation>Broadcom Менеджер</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="470"/>
+        <location filename="../mxtools.ui" line="436"/>
         <source>Check and add missing GPG keys needed by APT.</source>
         <translation>Проверить и добавить недостающие ключи GPG, необходимые для APT.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="473"/>
+        <location filename="../mxtools.ui" line="439"/>
         <source>Check Apt GPG</source>
         <translation>Проверить Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="453"/>
+        <location filename="../mxtools.ui" line="419"/>
         <source>Download and install restricted codecs.</source>
         <translation>Скачать и установить несвободные кодеки.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="456"/>
+        <location filename="../mxtools.ui" line="422"/>
         <source>Codecs Downloader</source>
         <translation>Загрузчик кодеков</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="504"/>
+        <location filename="../mxtools.ui" line="470"/>
         <source>Program for network troubleshooting and configuration.</source>
         <translation>Программа для поиска и устранения неисправностей и конфигурации сети.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="507"/>
+        <location filename="../mxtools.ui" line="473"/>
         <source>Find Network Shares</source>
         <translation>Найти общие сетевые ресурсы</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="522"/>
+        <location filename="../mxtools.ui" line="488"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Управление плагином Adobe Flash (тм).</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="525"/>
+        <location filename="../mxtools.ui" line="491"/>
         <source>Flash Manager</source>
         <translation>Флэш-менеджер</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="573"/>
+        <location filename="../mxtools.ui" line="522"/>
         <source>Xfce menu editor.</source>
         <translation>Редактор меню Xfce.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="576"/>
+        <location filename="../mxtools.ui" line="525"/>
         <source>Menu Editor</source>
         <translation>Редактор меню</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="539"/>
+        <location filename="../mxtools.ui" line="505"/>
         <source>Install additional packages.</source>
         <translation>Установить дополнительные пакеты.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="542"/>
+        <location filename="../mxtools.ui" line="508"/>
         <source>Package Installer</source>
         <translation>Установщик пакетов</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="556"/>
+        <location filename="../mxtools.ui" line="588"/>
         <source>Select the sound card you want to use.</source>
         <translation>Выбрать звуковую карту по Вашему желанию.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="559"/>
+        <location filename="../mxtools.ui" line="591"/>
         <source>Sound Card</source>
         <translation>Звуковая карта</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="371"/>
+        <location filename="../mxtools.ui" line="571"/>
         <source>Switch users without logging out.</source>
         <translation>Переключение пользователей без выхода из системы.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="374"/>
+        <location filename="../mxtools.ui" line="574"/>
         <source>Switch User</source>
         <translation>Смена пользователя</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="354"/>
         <source>Show the tray applet to notify of system and application updates.</source>
-        <translation>Показать лоток в трее с уведомлениями об обновлениях системы и программ.</translation>
+        <translation type="vanished">Показать лоток в трее с уведомлениями об обновлениях системы и программ.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="357"/>
         <source>Unhide Apt Notifier</source>
-        <translation>Показать Уведомитель об обновлениях</translation>
+        <translation type="vanished">Показать Уведомитель об обновлениях</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="400"/>
+        <location filename="../mxtools.ui" line="366"/>
         <source>Manage users and groups, repair settings.</source>
         <translation>Управлять пользователями и группами, восстановить настройки.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="406"/>
+        <location filename="../mxtools.ui" line="372"/>
         <source>User Manager</source>
         <translation>Диспетчер пользователей</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="119"/>
+        <location filename="../mxtools.cpp" line="115"/>
         <source>About MX Tools</source>
         <translation>О программе MX Инструменты</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="120"/>
+        <location filename="../mxtools.cpp" line="116"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="122"/>
+        <location filename="../mxtools.cpp" line="118"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Средства настройки для MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="123"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>Copyright (c) antiX</source>
         <translation>Авторское право (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="124"/>
+        <location filename="../mxtools.cpp" line="120"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="125"/>
+        <location filename="../mxtools.cpp" line="121"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
