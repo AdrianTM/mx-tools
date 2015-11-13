@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 13 Nov 2015 12:38:49 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 15.11.3mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (15.11.3mx15) mx; urgency=medium
+ .
+   * added 48x48 icon
+Checksums-Sha1:
+ d5c58decf432d2e4eeeb4e998374efaeb5d6163e 1172 mx-tools_15.11.3mx15.dsc
+ 2c958c6c2ec2544d48a030e035a58bad1d617d0a 219308 mx-tools_15.11.3mx15.tar.xz
+ d6a38b1729db9e977f5e85f5e56eaadb19915fff 43916 mx-tools_15.11.3mx15_amd64.deb
+Checksums-Sha256:
+ c9529f253e9e4c26e993fae75017cfce0519ee16560c794c950cc1441a3a11d5 1172 mx-tools_15.11.3mx15.dsc
+ 7d874b13ac8154f0fc7e10047d5f9c1f330fc789579c08e6439aabdac334e1b4 219308 mx-tools_15.11.3mx15.tar.xz
+ 58eba1b3f7ba3aa1f7932ae38875a21f4054dee4d5d23cb948b7762679c25e54 43916 mx-tools_15.11.3mx15_amd64.deb
+Files:
+ ff2311a407da7146679b4dd0306d8b01 1172 admin optional mx-tools_15.11.3mx15.dsc
+ fdd47b74831c9b7a68323df8cd2f02ed 219308 admin optional mx-tools_15.11.3mx15.tar.xz
+ df8a82d0a95c422ab02278416c2dc963 43916 admin optional mx-tools_15.11.3mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWRiCJAAoJEHCTjHgGee6Y7e4IANfq6pB4g2dHgiicsDxnXSCT
+PdSUhG4mdYJgLCkyc1RBIZD9HOrA5LnkBy7xSwpFj+w7VluxrcZSqhY+i8f54z/l
+Suige8Ourj/8fDM4NPucbI2ngLMoMCFFniIOlpNITd/IAfxqFdZPWk8/eBSnPDC5
+yp4Sxm+iAPV7aMx/EEF6DdN1kQfzk3RRifY7U9xMFsh2DzjXATOanziLu9vCE5lL
+0mGcBqwyn2wcirCbt6PF72/efotqQrBDvrbatAP9+g0RzxOyj6wFn1hGuwmcou3S
+XFkzImuiJnvxgaH+vV9seGoLlMazjjZWic25xuXARPVO4hnp7YU5CZFP/aRbaZw=
+=GMlV
+-----END PGP SIGNATURE-----
