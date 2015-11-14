@@ -1,3 +1,9 @@
+mx-tools (15.11.4mx15) mx; urgency=medium
+
+  * fix icon location
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 13 Nov 2015 22:30:22 -0500
+
 mx-tools (15.11.3mx15) mx; urgency=medium
 
   * added 48x48 icon
