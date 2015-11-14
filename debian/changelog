@@ -1,3 +1,9 @@
+mx-tools (15.11.5mx15) mx; urgency=medium
+
+  * edit categories in .debian file
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 14 Nov 2015 07:52:57 -0500
+
 mx-tools (15.11.4mx15) mx; urgency=medium
 
   * fix icon location
