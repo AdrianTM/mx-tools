@@ -24,5 +24,5 @@ Comment[sv]=Konfigurationsverktyg för MX Linux
 Exec=mx-tools
 Icon=mx-tools
 NoDisplay=false
-Categories=System;
+Categories=XFCE;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
 Type=Application
