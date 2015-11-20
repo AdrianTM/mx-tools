@@ -196,7 +196,7 @@ void mxtools::on_buttonRemaster_clicked() {
 
 void mxtools::on_buttonLiveUSB_clicked() {
     this->hide();
-    system("su-to-root -X -c /usr/local/bin/antix2usb.py");
+    system("su-to-root -X -c unetbootin");
     this->show();
 }
 
