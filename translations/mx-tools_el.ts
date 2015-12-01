@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -45,6 +43,16 @@
         <translation>Εγχειρίδιο</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="199"/>
+        <source>Hide individual tools from the menu</source>
+        <translation>Απόκρυψη μεμονωμένων εργαλείων από το μενού </translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="218"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation>Εξοικονομήσετε το χρόνο σας με αυτές τις εφαρμογές του MX </translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="234"/>
         <source>Advanced</source>
         <translation>Προχωρημένα
@@ -62,21 +70,6 @@
         <translation>Αποθήκευση με το πρότυπο ISO</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="290"/>
-        <source>Run MX live with persistence on a USB device.</source>
-        <translation>Εκτέλεση MX live με persistence σε μια συσκευή USB.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="293"/>
-        <source>Create Live USB</source>
-        <translation>Δημιουργία Ζωντανή USB </translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="605"/>
-        <source>Panel Orientation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="273"/>
         <source>Tools for live persistence and remastering.</source>
         <translation>Εργαλεία για ζωντανή persistence και remastering.</translation>
@@ -87,19 +80,29 @@
         <translation>Persistence/Remaster</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="199"/>
-        <source>Hide individual tools from the menu</source>
-        <translation>Απόκρυψη μεμονωμένων εργαλείων από το μενού </translation>
+        <location filename="../mxtools.ui" line="290"/>
+        <source>Run MX live with persistence on a USB device.</source>
+        <translation>Εκτέλεση MX live με persistence σε μια συσκευή USB.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="218"/>
-        <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Εξοικονομήσετε το χρόνο σας με αυτές τις εφαρμογές του MX </translation>
+        <location filename="../mxtools.ui" line="293"/>
+        <source>Create Live USB</source>
+        <translation>Δημιουργία Ζωντανή USB </translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="342"/>
         <source>Basic</source>
         <translation>βασικό</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="366"/>
+        <source>Manage users and groups, repair settings.</source>
+        <translation>Διαχείριση χρηστών και ομάδων, επισκευή τις ρυθμίσεις.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="372"/>
+        <source>User Manager</source>
+        <translation>Διαχείριση Χρηστών</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="402"/>
@@ -112,14 +115,14 @@
         <translation>Επισκευή Εκκίνησης</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="453"/>
-        <source>Manage Broadcom WiFi drivers.</source>
-        <translation>Διαχείριση Broadcom WiFi</translation>
+        <location filename="../mxtools.ui" line="419"/>
+        <source>Download and install restricted codecs.</source>
+        <translation>Λήψη και εγκατάσταση codecs.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="456"/>
-        <source>Broadcom Manager</source>
-        <translation>Broadcom Manager</translation>
+        <location filename="../mxtools.ui" line="422"/>
+        <source>Codecs Downloader</source>
+        <translation>Εγκατάσταση codecs</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="436"/>
@@ -132,14 +135,14 @@
         <translation>Έλεγχος  του Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="419"/>
-        <source>Download and install restricted codecs.</source>
-        <translation>Λήψη και εγκατάσταση codecs.</translation>
+        <location filename="../mxtools.ui" line="453"/>
+        <source>Manage Broadcom WiFi drivers.</source>
+        <translation>Διαχείριση Broadcom WiFi</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="422"/>
-        <source>Codecs Downloader</source>
-        <translation>Εγκατάσταση codecs</translation>
+        <location filename="../mxtools.ui" line="456"/>
+        <source>Broadcom Manager</source>
+        <translation>Broadcom Manager</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="470"/>
@@ -162,16 +165,6 @@
         <translation>Διαχείρηση του Flash</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="522"/>
-        <source>Xfce menu editor.</source>
-        <translation>Xfce menu editor.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="525"/>
-        <source>Menu Editor</source>
-        <translation>Menu Editor</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="505"/>
         <source>Install additional packages.</source>
         <translation>Εγκατάσταση επιπλέον πακέτων.</translation>
@@ -182,14 +175,14 @@
         <translation>Εγκατάσταση πακέτων</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="588"/>
-        <source>Select the sound card you want to use.</source>
-        <translation>Επιλέξτε την κάρτα ήχου που θέλετε να χρησιμοποιήσετε.</translation>
+        <location filename="../mxtools.ui" line="522"/>
+        <source>Xfce menu editor.</source>
+        <translation>Xfce menu editor.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="591"/>
-        <source>Sound Card</source>
-        <translation>Καρτα Ηχου</translation>
+        <location filename="../mxtools.ui" line="525"/>
+        <source>Menu Editor</source>
+        <translation>Menu Editor</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="571"/>
@@ -202,22 +195,19 @@
         <translation>Αλλαγή χρήστη </translation>
     </message>
     <message>
-        <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="vanished">Δείτε το applet δίσκο μικροεφαρμογή για να ειδοποιεί για ενημερώσεις του συστήματος και τις εφαρμογές.</translation>
+        <location filename="../mxtools.ui" line="588"/>
+        <source>Select the sound card you want to use.</source>
+        <translation>Επιλέξτε την κάρτα ήχου που θέλετε να χρησιμοποιήσετε.</translation>
     </message>
     <message>
-        <source>Unhide Apt Notifier</source>
-        <translation type="vanished">Επανεμφάνιση του Apt Notifier</translation>
+        <location filename="../mxtools.ui" line="591"/>
+        <source>Sound Card</source>
+        <translation>Καρτα Ηχου</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="366"/>
-        <source>Manage users and groups, repair settings.</source>
-        <translation>Διαχείριση χρηστών και ομάδων, επισκευή τις ρυθμίσεις.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="372"/>
-        <source>User Manager</source>
-        <translation>Διαχείριση Χρηστών</translation>
+        <location filename="../mxtools.ui" line="605"/>
+        <source>Panel Orientation</source>
+        <translation>Τοποθεσία του Panel</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="115"/>

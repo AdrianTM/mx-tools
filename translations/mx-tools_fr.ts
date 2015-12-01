@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
 <context>
     <name>mxtools</name>
     <message>
@@ -45,6 +43,16 @@
         <translation>Manuel</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="199"/>
+        <source>Hide individual tools from the menu</source>
+        <translation>Cacher les outils individuels du menu</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="218"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation>Ces applications de MX épqrgnent du temps et de l&apos;effort des tâches importantes</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="234"/>
         <source>Advanced</source>
         <translation>Avancé</translation>
@@ -60,21 +68,6 @@
         <translation>Enregistrer une image ISO du système </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="290"/>
-        <source>Run MX live with persistence on a USB device.</source>
-        <translation>Exécuter MX live avec persistance sur un périphérique USB.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="293"/>
-        <source>Create Live USB</source>
-        <translation>Créer un live USB</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="605"/>
-        <source>Panel Orientation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="273"/>
         <source>Tools for live persistence and remastering.</source>
         <translation>Des outils pour live persistence et remastering</translation>
@@ -85,19 +78,29 @@
         <translation>Persistence/Remaster</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="199"/>
-        <source>Hide individual tools from the menu</source>
-        <translation>Cacher les outils individuels du menu</translation>
+        <location filename="../mxtools.ui" line="290"/>
+        <source>Run MX live with persistence on a USB device.</source>
+        <translation>Exécuter MX live avec persistance sur un périphérique USB.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="218"/>
-        <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Ces applications de MX épqrgnent du temps et de l&apos;effort des tâches importantes</translation>
+        <location filename="../mxtools.ui" line="293"/>
+        <source>Create Live USB</source>
+        <translation>Créer un live USB</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="342"/>
         <source>Basic</source>
         <translation>De base</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="366"/>
+        <source>Manage users and groups, repair settings.</source>
+        <translation>Gérer les utilisateurs et les groupes, réparer les paramètres.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="372"/>
+        <source>User Manager</source>
+        <translation>Gestionnaire des utilisateurs</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="402"/>
@@ -110,14 +113,14 @@
         <translation>Réparation du démarrage</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="453"/>
-        <source>Manage Broadcom WiFi drivers.</source>
-        <translation>Gérer les drivers pour Broadcom Wifi.</translation>
+        <location filename="../mxtools.ui" line="419"/>
+        <source>Download and install restricted codecs.</source>
+        <translation>Télécharger et installer des codecs restreints.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="456"/>
-        <source>Broadcom Manager</source>
-        <translation>Gestionnaire Broadcom</translation>
+        <location filename="../mxtools.ui" line="422"/>
+        <source>Codecs Downloader</source>
+        <translation>Installateur des Codecs</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="436"/>
@@ -130,14 +133,14 @@
         <translation>Check Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="419"/>
-        <source>Download and install restricted codecs.</source>
-        <translation>Télécharger et installer des codecs restreints.</translation>
+        <location filename="../mxtools.ui" line="453"/>
+        <source>Manage Broadcom WiFi drivers.</source>
+        <translation>Gérer les drivers pour Broadcom Wifi.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="422"/>
-        <source>Codecs Downloader</source>
-        <translation>Installateur des Codecs</translation>
+        <location filename="../mxtools.ui" line="456"/>
+        <source>Broadcom Manager</source>
+        <translation>Gestionnaire Broadcom</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="470"/>
@@ -160,16 +163,6 @@
         <translation>Gestionnaire de Flash</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="522"/>
-        <source>Xfce menu editor.</source>
-        <translation>Xfce éditeur de menu.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="525"/>
-        <source>Menu Editor</source>
-        <translation>Éditeur de Menu</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="505"/>
         <source>Install additional packages.</source>
         <translation>Installer des paquets supplémentaires.</translation>
@@ -180,14 +173,14 @@
         <translation>Installateur des paquets</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="588"/>
-        <source>Select the sound card you want to use.</source>
-        <translation>Sélectionnez la carte son que vous souhaitez utiliser.</translation>
+        <location filename="../mxtools.ui" line="522"/>
+        <source>Xfce menu editor.</source>
+        <translation>Xfce éditeur de menu.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="591"/>
-        <source>Sound Card</source>
-        <translation>Carte Son</translation>
+        <location filename="../mxtools.ui" line="525"/>
+        <source>Menu Editor</source>
+        <translation>Éditeur de Menu</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="571"/>
@@ -200,22 +193,19 @@
         <translation>Changer d&apos;utilisateur</translation>
     </message>
     <message>
-        <source>Show the tray applet to notify of system and application updates.</source>
-        <translation type="vanished">Afficher l&apos;applet de la boîte pour notifier des mises à jour du système et des applications.</translation>
+        <location filename="../mxtools.ui" line="588"/>
+        <source>Select the sound card you want to use.</source>
+        <translation>Sélectionnez la carte son que vous souhaitez utiliser.</translation>
     </message>
     <message>
-        <source>Unhide Apt Notifier</source>
-        <translation type="vanished">Montrer Apt Notifier</translation>
+        <location filename="../mxtools.ui" line="591"/>
+        <source>Sound Card</source>
+        <translation>Carte Son</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="366"/>
-        <source>Manage users and groups, repair settings.</source>
-        <translation>Gérer les utilisateurs et les groupes, réparer les paramètres.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="372"/>
-        <source>User Manager</source>
-        <translation>Gestionnaire des utilisateurs</translation>
+        <location filename="../mxtools.ui" line="605"/>
+        <source>Panel Orientation</source>
+        <translation>Orientation du panneau</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="115"/>
