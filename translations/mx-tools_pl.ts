@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pl">
 <context>
     <name>mxtools</name>
     <message>
@@ -135,12 +137,12 @@
     <message>
         <location filename="../mxtools.ui" line="453"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="456"/>
         <source>Broadcom Manager</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="470"/>
@@ -175,12 +177,12 @@
     <message>
         <location filename="../mxtools.ui" line="522"/>
         <source>Xfce menu editor.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="525"/>
         <source>Menu Editor</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="571"/>
@@ -195,7 +197,7 @@
     <message>
         <location filename="../mxtools.ui" line="588"/>
         <source>Select the sound card you want to use.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="591"/>
@@ -205,7 +207,7 @@
     <message>
         <location filename="../mxtools.ui" line="605"/>
         <source>Panel Orientation</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="115"/>
