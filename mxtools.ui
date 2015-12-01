@@ -373,7 +373,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-user.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-user.png</normaloff>../../../../../../../usr/share/pixmaps/mx-user.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -406,7 +406,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-bootrepair.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-bootrepair.png</normaloff>../../../../../../../usr/share/pixmaps/mx-bootrepair.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -423,7 +423,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-codecs.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-codecs.png</normaloff>../../../../../../../usr/share/pixmaps/mx-codecs.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -457,7 +457,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-broadcom-manager.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-broadcom-manager.png</normaloff>../../../../../../../usr/share/pixmaps/mx-broadcom-manager.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -492,7 +492,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-flash.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-flash.png</normaloff>../../../../../../../usr/share/pixmaps/mx-flash.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -509,7 +509,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-packageinstaller.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-packageinstaller.png</normaloff>../../../../../../../usr/share/pixmaps/mx-packageinstaller.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -526,7 +526,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</normaloff>../../../../../../../../usr/share/pixmaps/mx/mx-menu-editor.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-menu-editor.png</normaloff>../../../../../../../usr/share/pixmaps/mx-menu-editor.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
@@ -606,7 +606,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../../../../../usr/share/pixmaps/mx/mx-panel-orientation.png</normaloff>../../../../../../../usr/share/pixmaps/mx/mx-panel-orientation.png</iconset>
+             <normaloff>../../../../../../../usr/share/pixmaps/mx-panel-orientation.png</normaloff>../../../../../../../usr/share/pixmaps/mx-panel-orientation.png</iconset>
            </property>
            <property name="flat">
             <bool>true</bool>
