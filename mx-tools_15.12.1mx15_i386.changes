@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 22 Dec 2015 18:38:12 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 15.12.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (15.12.1mx15) mx; urgency=medium
+ .
+   * hide GUI when displaying help/license
+Checksums-Sha1:
+ 4e53fe6f24e840b1502ef90917af24b556b492d9 44216 mx-tools_15.12.1mx15_i386.deb
+Checksums-Sha256:
+ 73d226129ddb2d5170c921057878cdb2cdc8a062f90f2fb90ac749ead7b75b04 44216 mx-tools_15.12.1mx15_i386.deb
+Files:
+ ad3e1866f24a993947396f4266c9bfe2 44216 admin optional mx-tools_15.12.1mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWed9cAAoJEHCTjHgGee6YPMUH/jWX+skFmSHmQIKaVNa/lft1
+2vA02pBS23+NFQyvnfwrnDnJGWIkfy2XrsM0Of2JjjkvrgFhxPLi7uiZLBJ0rNz+
+kMCm5RhCm7lzmb5N7U7A0dw9EWUuPJgLHzrNGaQB2My96T6eiTd1LQ1XVm6pSuLs
+/PRgjwWxhhJCXMgRbY40ZsTILdXCNWp8Jr0dFuBtR1nPXkr4E3HxV0vM4XHH7htq
+FzHH76JwmJjgxFx/zuIcAAfYw6y1B5oFSyd44a6VBS1iuZEyszOnW+LN9wUj/hnv
+sm0q0iQt7T1QjZRy5k+cABObPL3F8J4zEs3NGpU+lj5yOEaOyWacECL7LAB6HyU=
+=w581
+-----END PGP SIGNATURE-----

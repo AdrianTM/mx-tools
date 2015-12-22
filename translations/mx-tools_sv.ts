@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="116"/>
+        <location filename="../mxtools.cpp" line="117"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -210,32 +210,32 @@
         <translation>Panel-orientering</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="115"/>
+        <location filename="../mxtools.cpp" line="116"/>
         <source>About MX Tools</source>
         <translation>Om MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="116"/>
+        <location filename="../mxtools.cpp" line="117"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="118"/>
+        <location filename="../mxtools.cpp" line="119"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Konfigurationsverktyg för MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="119"/>
+        <location filename="../mxtools.cpp" line="120"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="120"/>
+        <location filename="../mxtools.cpp" line="121"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="121"/>
+        <location filename="../mxtools.cpp" line="122"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
