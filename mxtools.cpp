@@ -111,6 +111,7 @@ void mxtools::checkApps() {
 
 // About button clicked
 void mxtools::on_buttonAbout_clicked() {
+    this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Tools"), "<p align=\"center\"><b><h2>" +
                        tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
@@ -121,6 +122,7 @@ void mxtools::on_buttonAbout_clicked() {
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
         system("mx-viewer file:///usr/share/doc/mx-tools/license.html 'MX Tools License'");
+    this->show();
 }
 
 
@@ -231,6 +233,8 @@ void mxtools::on_buttonPanelOrientation_clicked()
 // Help button clicked
 void mxtools::on_buttonHelp_clicked()
 {
+    this->hide();
     QString cmd = QString("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2");
     system(cmd.toUtf8());
+    this->show();
 }
