@@ -1,3 +1,9 @@
+mx-tools (16.2mx15) mx; urgency=medium
+
+  * replaced Switch User with Repo Manager
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 08 Feb 2016 10:39:38 -0500
+
 mx-tools (15.12.1mx15) mx; urgency=medium
 
   * hide GUI when displaying help/license
