@@ -90,10 +90,6 @@ void mxtools::checkApps() {
     if (getCmdOut("dpkg -s mx-findshares | grep Status") != "Status: install ok installed") {
         ui->buttonFindShares->setEnabled(false);
     }
-    // MX Switchuser
-    if (getCmdOut("dpkg -s mx-switchuser | grep Status") != "Status: install ok installed") {
-        ui->buttonSwitchUser->setEnabled(false);
-    }
     // MX BootRepair
     if (getCmdOut("dpkg -s mx-bootrepair | grep Status") != "Status: install ok installed") {
         ui->buttonBootrepair->setEnabled(false);
@@ -168,9 +164,9 @@ void mxtools::on_buttonFindShares_clicked() {
     this->show();
 }
 
-void mxtools::on_buttonSwitchUser_clicked() {
+void mxtools::on_buttonRepoManager_clicked() {
     this->hide();
-    system("mx-switchuser");
+    system("su-to-root -X -c mx-repo-manager");
     this->show();
 }
 
