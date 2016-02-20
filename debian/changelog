@@ -1,3 +1,9 @@
+mx-tools (16.2mx15+1) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 20 Feb 2016 09:43:38 -0500
+
 mx-tools (16.2mx15) mx; urgency=medium
 
   * replaced Switch User with Repo Manager
