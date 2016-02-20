@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -145,21 +143,6 @@
         <translation>Administrador de Broadcom</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="503"/>
-        <source>Program for network troubleshooting and configuration.</source>
-        <translation>Programa para detectar y resolver problemas en redes. </translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="506"/>
-        <source>Find Network Shares</source>
-        <translation>Encontrar Recursos Compartidos en Red</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="588"/>
-        <source>Repo Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="486"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Administrar el plugin de Adobe Flash (tm)</translation>
@@ -168,6 +151,16 @@
         <location filename="../mxtools.ui" line="489"/>
         <source>Flash Manager</source>
         <translation>Manejador de Flash</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="503"/>
+        <source>Program for network troubleshooting and configuration.</source>
+        <translation>Programa para detectar y resolver problemas en redes. </translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="506"/>
+        <source>Find Network Shares</source>
+        <translation>Encontrar Recursos Compartidos en Red</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="521"/>
@@ -190,13 +183,19 @@
         <translation>Editor del menú</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="571"/>
+        <source>Panel Orientation</source>
+        <translation>Orientación del panel</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="585"/>
         <source>Switch users without logging out.</source>
         <translation>Cambiar usuarios sin salir del sistema.</translation>
     </message>
     <message>
-        <source>Switch User</source>
-        <translation type="vanished">Cambiar Usuario</translation>
+        <location filename="../mxtools.ui" line="588"/>
+        <source>Repo Manager</source>
+        <translation>Manejador de repositorios</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="602"/>
@@ -207,11 +206,6 @@
         <location filename="../mxtools.ui" line="605"/>
         <source>Sound Card</source>
         <translation>Tarjeta de sonido</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="571"/>
-        <source>Panel Orientation</source>
-        <translation>Orientación del panel</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>

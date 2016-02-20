@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ro">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -145,21 +143,6 @@
         <translation>Manager Broadcom</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="503"/>
-        <source>Program for network troubleshooting and configuration.</source>
-        <translation>Program pentru rezolvarea problemelor de rețea.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="506"/>
-        <source>Find Network Shares</source>
-        <translation>Gasire Partiții Rețea</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="588"/>
-        <source>Repo Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="486"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Administraza pluginul Adobe Flash (tm).</translation>
@@ -168,6 +151,16 @@
         <location filename="../mxtools.ui" line="489"/>
         <source>Flash Manager</source>
         <translation>Manager Flash</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="503"/>
+        <source>Program for network troubleshooting and configuration.</source>
+        <translation>Program pentru rezolvarea problemelor de rețea.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="506"/>
+        <source>Find Network Shares</source>
+        <translation>Gasire Partiții Rețea</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="521"/>
@@ -190,13 +183,19 @@
         <translation>Editor de meniu</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="571"/>
+        <source>Panel Orientation</source>
+        <translation>Orientare Panou</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="585"/>
         <source>Switch users without logging out.</source>
         <translation>Schimbă utilizatorul fără logare afară.</translation>
     </message>
     <message>
-        <source>Switch User</source>
-        <translation type="vanished">Schimbare Utilizator</translation>
+        <location filename="../mxtools.ui" line="588"/>
+        <source>Repo Manager</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="602"/>
@@ -207,11 +206,6 @@
         <location filename="../mxtools.ui" line="605"/>
         <source>Sound Card</source>
         <translation>Placă de sunet</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="571"/>
-        <source>Panel Orientation</source>
-        <translation>Orientare Panou</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>
