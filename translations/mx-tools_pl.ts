@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -137,27 +135,12 @@
     <message>
         <location filename="../mxtools.ui" line="469"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="472"/>
         <source>Broadcom Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="503"/>
-        <source>Program for network troubleshooting and configuration.</source>
-        <translation>Program do analizy i usuwania problemów z konfiguracją sieci.</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="506"/>
-        <source>Find Network Shares</source>
-        <translation>Znajdź zasoby współdzielone</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="588"/>
-        <source>Repo Manager</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="486"/>
@@ -168,6 +151,16 @@
         <location filename="../mxtools.ui" line="489"/>
         <source>Flash Manager</source>
         <translation>Zarządzanie Flash</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="503"/>
+        <source>Program for network troubleshooting and configuration.</source>
+        <translation>Program do analizy i usuwania problemów z konfiguracją sieci.</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="506"/>
+        <source>Find Network Shares</source>
+        <translation>Znajdź zasoby współdzielone</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="521"/>
@@ -182,12 +175,17 @@
     <message>
         <location filename="../mxtools.ui" line="538"/>
         <source>Xfce menu editor.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="541"/>
         <source>Menu Editor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="571"/>
+        <source>Panel Orientation</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="585"/>
@@ -195,23 +193,19 @@
         <translation>Przełącz użytkownika bez wylogowania.</translation>
     </message>
     <message>
-        <source>Switch User</source>
-        <translation type="vanished">Przełącz użytkownika</translation>
+        <location filename="../mxtools.ui" line="588"/>
+        <source>Repo Manager</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="602"/>
         <source>Select the sound card you want to use.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="605"/>
         <source>Sound Card</source>
         <translation>Karta dźwiękowa</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="571"/>
-        <source>Panel Orientation</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -145,21 +143,6 @@
         <translation>Broadcom 管理</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="503"/>
-        <source>Program for network troubleshooting and configuration.</source>
-        <translation>ネットの問題解決と設定</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="506"/>
-        <source>Find Network Shares</source>
-        <translation>ネットワーク共有検索</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="588"/>
-        <source>Repo Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="486"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
         <translation>Adobe Flash プラグインの管理</translation>
@@ -168,6 +151,16 @@
         <location filename="../mxtools.ui" line="489"/>
         <source>Flash Manager</source>
         <translation>Flash 管理</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="503"/>
+        <source>Program for network troubleshooting and configuration.</source>
+        <translation>ネットの問題解決と設定</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="506"/>
+        <source>Find Network Shares</source>
+        <translation>ネットワーク共有検索</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="521"/>
@@ -190,13 +183,19 @@
         <translation>メニューエディタ</translation>
     </message>
     <message>
+        <location filename="../mxtools.ui" line="571"/>
+        <source>Panel Orientation</source>
+        <translation>パネルの方向</translation>
+    </message>
+    <message>
         <location filename="../mxtools.ui" line="585"/>
         <source>Switch users without logging out.</source>
         <translation>ログアウトせずにユーザーを切り替え</translation>
     </message>
     <message>
-        <source>Switch User</source>
-        <translation type="vanished">ユーザー切替</translation>
+        <location filename="../mxtools.ui" line="588"/>
+        <source>Repo Manager</source>
+        <translation>リポジトリマネージャー</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="602"/>
@@ -207,11 +206,6 @@
         <location filename="../mxtools.ui" line="605"/>
         <source>Sound Card</source>
         <translation>サウンドカード</translation>
-    </message>
-    <message>
-        <location filename="../mxtools.ui" line="571"/>
-        <source>Panel Orientation</source>
-        <translation>パネルの方向</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>
