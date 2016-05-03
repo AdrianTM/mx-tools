@@ -1,3 +1,9 @@
+mx-tools (16.5mx15) mx; urgency=medium
+
+  * minor changes: renamed button, adjusted hide tools in the menu
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 03 May 2016 08:45:46 -0400
+
 mx-tools (16.2mx15+1) mx; urgency=medium
 
   * new translations

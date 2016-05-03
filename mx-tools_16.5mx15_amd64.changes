@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 03 May 2016 08:45:46 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 16.5mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (16.5mx15) mx; urgency=medium
+ .
+   * minor changes: renamed button, adjusted hide tools in the menu
+Checksums-Sha1:
+ c29c83e27899c2b931b585af6c40f6df2fa8893e 1157 mx-tools_16.5mx15.dsc
+ 01af34b9f1a52aec90c11557bf431dba2a982c39 73800 mx-tools_16.5mx15.tar.xz
+ 87d4536fa1c959a7b6f5f59e9182b30d7473f333 44242 mx-tools_16.5mx15_amd64.deb
+Checksums-Sha256:
+ 5b0831b35ca6273e4d7153548bec0bf8b6146139755f0cdd0f601dfa0321da87 1157 mx-tools_16.5mx15.dsc
+ d14b6dd9a582ee552776bb805ed6239a13363cbf8332ac93943d0ba6de6e7709 73800 mx-tools_16.5mx15.tar.xz
+ 9289c94b7fad0f7a06af8e365fda24329e4f3fe0da7b3f15c76cfd2b785941b0 44242 mx-tools_16.5mx15_amd64.deb
+Files:
+ d33e6a516ba76bbaca0d041949c03469 1157 admin optional mx-tools_16.5mx15.dsc
+ df884d7f59ac4de40b65971a53439b47 73800 admin optional mx-tools_16.5mx15.tar.xz
+ 930fc1a000d6cc22466be92a590802ea 44242 admin optional mx-tools_16.5mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXKJ7XAAoJEHCTjHgGee6Y9BEH/2SAs/dFMGXCm1YYpmges8J1
+KX+D8Q9mpaSfb9heEp9Hk2lLqHQSFure2RlQ+QSD/OBanZY+Rs6muIWsKIPkHOw0
++ts9jEn4f9bKVeB0lQ9wIjNx9Hk4hJrAsyfiP4MsDaciyXMlCwvyu3lOcboZ3tS1
+km0Dl7QVZlAJMf0s/JG+noVarYNZk53bUl05oCtR9SvIvs/ByG0yvaBWTdwONGil
+jM9UIkf0aqmCLBmf/25fC4Y/EP3YE6hRgSJ73VhZPZfgmlqnN3VBn0q/CY8GCoDd
+o+BaAhiqx4K7z19bmtagtaAJCrl8pGRaNOPE6VQTbhauBj2PSoXIPi/gArJlyX4=
+=Tv14
+-----END PGP SIGNATURE-----
