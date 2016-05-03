@@ -25,7 +25,7 @@ help() {
 }
 
 SHOW_HIDE() {
-    for DESKTOP_FILE in $(ls -1 $DESKTOP_PATH/{,mx/}mx*.desktop | grep -v mx-tools | grep -v mx-welcome | grep -v mx-apt-notifier-menu) $EXTRA_FILES $EXTRA_PASSED
+    for DESKTOP_FILE in $(ls -1 $DESKTOP_PATH/{,mx/}mx*.desktop | grep -v mx-tools | grep -v mx-welcome | grep -v mx-apt-notifier-menu | grep -v mx-test-repo-installer | grep -v mx-usb-unmounter) $EXTRA_FILES $EXTRA_PASSED
     do
         if [ -f $DESKTOP_FILE ]; then
             OLD_VALUE=$(cat $DESKTOP_FILE | grep "^NoDisplay=" | cut -d "=" -f2)

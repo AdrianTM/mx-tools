@@ -206,8 +206,12 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="605"/>
+        <source>Select Sound Card</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Sound Card</source>
-        <translation>Placă de sunet</translation>
+        <translation type="vanished">Placă de sunet</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>

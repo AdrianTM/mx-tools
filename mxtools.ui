@@ -602,7 +602,7 @@
             <string>Select the sound card you want to use.</string>
            </property>
            <property name="text">
-            <string>Sound Card</string>
+            <string>Select Sound Card</string>
            </property>
            <property name="icon">
             <iconset>
