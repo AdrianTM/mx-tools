@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ro">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -197,7 +195,7 @@
     <message>
         <location filename="../mxtools.ui" line="588"/>
         <source>Repo Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Manager Repo</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="602"/>
@@ -207,11 +205,7 @@
     <message>
         <location filename="../mxtools.ui" line="605"/>
         <source>Select Sound Card</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sound Card</source>
-        <translation type="vanished">Placă de sunet</translation>
+        <translation>Alegeți Placa de Sunet</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>

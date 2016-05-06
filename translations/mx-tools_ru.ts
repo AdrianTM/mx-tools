@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -207,11 +205,7 @@
     <message>
         <location filename="../mxtools.ui" line="605"/>
         <source>Select Sound Card</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sound Card</source>
-        <translation type="vanished">Звуковая карта</translation>
+        <translation>Выберите звуковую карту</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>
