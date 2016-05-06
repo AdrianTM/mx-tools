@@ -204,8 +204,8 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="605"/>
-        <source>Sound Card</source>
-        <translation>Sound Card</translation>
+        <source>Select Sound Card</source>
+        <translation>Select Sound Card</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="112"/>
