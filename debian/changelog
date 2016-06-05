@@ -1,3 +1,9 @@
+mx-tools (16.6mx15) mx; urgency=medium
+
+  * code re-write to add buttons for MX tools automatically
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 05 Jun 2016 15:28:20 -0400
+
 mx-tools (16.5mx15+1) mx; urgency=medium
 
   * new translations

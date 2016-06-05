@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="113"/>
+        <location filename="../mxtools.cpp" line="231"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -55,187 +55,156 @@
         <translation>De här MX-programmen spar tid och arbete vid viktiga göromål.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="234"/>
         <source>Advanced</source>
-        <translation>Avancerat</translation>
+        <translation type="vanished">Avancerat</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="256"/>
         <source>Create a live-CD from the running system.</source>
-        <translation>Skapa en live-CD av systemet du kör.</translation>
+        <translation type="vanished">Skapa en live-CD av systemet du kör.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="259"/>
         <source>Save System to ISO</source>
-        <translation>Spara systemet till ISO</translation>
+        <translation type="vanished">Spara systemet till ISO</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="273"/>
         <source>Tools for live persistence and remastering.</source>
-        <translation>Verktyg för live persistence och remastering.</translation>
+        <translation type="vanished">Verktyg för live persistence och remastering.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="276"/>
         <source>Persistence/Remaster</source>
-        <translation>Persistence/Remaster</translation>
+        <translation type="vanished">Persistence/Remaster</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="290"/>
         <source>Run MX live with persistence on a USB device.</source>
-        <translation>Kör MX live med persistence på en USB-enhet.</translation>
+        <translation type="vanished">Kör MX live med persistence på en USB-enhet.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="293"/>
         <source>Create Live USB</source>
-        <translation>Skapa Live USB</translation>
+        <translation type="vanished">Skapa Live USB</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="342"/>
         <source>Basic</source>
-        <translation>Grundläggande</translation>
+        <translation type="vanished">Grundläggande</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="382"/>
         <source>Manage users and groups, repair settings.</source>
-        <translation>Hantera användare och grupper, reparera inställningar.</translation>
+        <translation type="vanished">Hantera användare och grupper, reparera inställningar.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="388"/>
         <source>User Manager</source>
-        <translation>Användarhanterare</translation>
+        <translation type="vanished">Användarhanterare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="418"/>
         <source>Repair boot problems.</source>
-        <translation>Åtgärda boot-problem.</translation>
+        <translation type="vanished">Åtgärda boot-problem.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="421"/>
         <source>Boot Repair</source>
-        <translation>Boot-reparation</translation>
+        <translation type="vanished">Boot-reparation</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="435"/>
         <source>Download and install restricted codecs.</source>
-        <translation>Ladda ner och installera  restricted codecs.</translation>
+        <translation type="vanished">Ladda ner och installera  restricted codecs.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="438"/>
         <source>Codecs Downloader</source>
-        <translation>Codecs Nerladdare</translation>
+        <translation type="vanished">Codecs Nerladdare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="452"/>
         <source>Check and add missing GPG keys needed by APT.</source>
-        <translation>Kontrollera och lägg till saknade GPG-nycklar som behövs av APT.</translation>
+        <translation type="vanished">Kontrollera och lägg till saknade GPG-nycklar som behövs av APT.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="455"/>
         <source>Check Apt GPG</source>
-        <translation>Check Apt GPG</translation>
+        <translation type="vanished">Check Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="469"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation>Hantera Broadcom WiFi-drivrutiner.</translation>
+        <translation type="vanished">Hantera Broadcom WiFi-drivrutiner.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="472"/>
         <source>Broadcom Manager</source>
-        <translation>Broadcom-hanterare</translation>
+        <translation type="vanished">Broadcom-hanterare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="486"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
-        <translation>Hantera Adobe Flash (tm) plugin.</translation>
+        <translation type="vanished">Hantera Adobe Flash (tm) plugin.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="489"/>
         <source>Flash Manager</source>
-        <translation>Flash-hanterare</translation>
+        <translation type="vanished">Flash-hanterare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="503"/>
         <source>Program for network troubleshooting and configuration.</source>
-        <translation>Program för nätverksfelsökning och konfiguration.</translation>
+        <translation type="vanished">Program för nätverksfelsökning och konfiguration.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="506"/>
         <source>Find Network Shares</source>
-        <translation>Hitta Nätverksresurser</translation>
+        <translation type="vanished">Hitta Nätverksresurser</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="521"/>
         <source>Install additional packages.</source>
-        <translation>Installera fler paket.</translation>
+        <translation type="vanished">Installera fler paket.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="524"/>
         <source>Package Installer</source>
-        <translation>Paket-installerare</translation>
+        <translation type="vanished">Paket-installerare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="538"/>
         <source>Xfce menu editor.</source>
-        <translation>Xfce meny-editor</translation>
+        <translation type="vanished">Xfce meny-editor</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="541"/>
         <source>Menu Editor</source>
-        <translation>Meny-editor</translation>
+        <translation type="vanished">Meny-editor</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="571"/>
         <source>Panel Orientation</source>
-        <translation>Panel-orientering</translation>
+        <translation type="vanished">Panel-orientering</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="585"/>
         <source>Switch users without logging out.</source>
-        <translation>Byt användare utan att logga ut.</translation>
+        <translation type="vanished">Byt användare utan att logga ut.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="588"/>
         <source>Repo Manager</source>
-        <translation>Repo Manager</translation>
+        <translation type="vanished">Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="602"/>
         <source>Select the sound card you want to use.</source>
-        <translation>Välj det ljudkort du vill använda</translation>
+        <translation type="vanished">Välj det ljudkort du vill använda</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="605"/>
         <source>Select Sound Card</source>
-        <translation>Välj Ljudkort</translation>
+        <translation type="vanished">Välj Ljudkort</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="112"/>
+        <location filename="../mxtools.cpp" line="230"/>
         <source>About MX Tools</source>
         <translation>Om MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="113"/>
+        <location filename="../mxtools.cpp" line="231"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="115"/>
+        <location filename="../mxtools.cpp" line="233"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Konfigurationsverktyg för MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="116"/>
+        <location filename="../mxtools.cpp" line="234"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="117"/>
+        <location filename="../mxtools.cpp" line="235"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="118"/>
+        <location filename="../mxtools.cpp" line="236"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
