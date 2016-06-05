@@ -149,6 +149,9 @@ QIcon mxtools::findIcon(QString icon_name)
     if (QFile(icon_name).exists()) {
         return QIcon(icon_name);
     } else {
+        icon_name = icon_name.remove(".png");
+        icon_name = icon_name.remove(".svg");
+        icon_name = icon_name.remove(".xpm");
         // return the icon from the theme if it exists
         if (QIcon::fromTheme(icon_name).name() != "") {
             return QIcon::fromTheme(icon_name);
