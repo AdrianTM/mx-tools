@@ -26,6 +26,7 @@
 #include <flatbutton.h>
 #include <QMessageBox>
 #include <QProcess>
+#include <QMultiMap>
 
 
 namespace Ui {
@@ -44,7 +45,7 @@ public:
     ~mxtools();
 
     FlatButton *btn;
-
+    QMultiMap<QString, QStringList> multimap;
     QStringList live_list;
     QStringList maintenance_list;
     QStringList setup_list;
@@ -52,6 +53,7 @@ public:
     QStringList utilities_list;
 
     void addButton(QMultiMap<QString, QStringList>);
+    void hideShowIcon(QString file_name, bool hide);
     QIcon findIcon(QString icon_name);
     QString getCmdOut(QString cmd);
     QString getVersion(QString name);
@@ -61,6 +63,7 @@ private slots:
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
     void btn_clicked();
+    void on_hideCheckBox_clicked(bool checked);
 
 private:
     Ui::mxtools *ui;
