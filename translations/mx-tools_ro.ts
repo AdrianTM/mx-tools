@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="113"/>
+        <location filename="../mxtools.cpp" line="231"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -55,187 +55,156 @@
         <translation>Aceste programe MX economisesc timpul si efortul necesar pentru indeplinirea diverselor sarcini.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="234"/>
         <source>Advanced</source>
-        <translation>Avansat</translation>
+        <translation type="vanished">Avansat</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="256"/>
         <source>Create a live-CD from the running system.</source>
-        <translation>Creaza un live-CD din sistemul de functionare.</translation>
+        <translation type="vanished">Creaza un live-CD din sistemul de functionare.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="259"/>
         <source>Save System to ISO</source>
-        <translation>Salveaza Sistemul pe ISO</translation>
+        <translation type="vanished">Salveaza Sistemul pe ISO</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="273"/>
         <source>Tools for live persistence and remastering.</source>
-        <translation>Intrumente pentru persistență si remasterizare</translation>
+        <translation type="vanished">Intrumente pentru persistență si remasterizare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="276"/>
         <source>Persistence/Remaster</source>
-        <translation>Persistență/Remasterare</translation>
+        <translation type="vanished">Persistență/Remasterare</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="290"/>
         <source>Run MX live with persistence on a USB device.</source>
-        <translation>Rulează MX live cu persistențîă pe un dispozitiv USB </translation>
+        <translation type="vanished">Rulează MX live cu persistențîă pe un dispozitiv USB </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="293"/>
         <source>Create Live USB</source>
-        <translation>Creere Live USB</translation>
+        <translation type="vanished">Creere Live USB</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="342"/>
         <source>Basic</source>
-        <translation>De bază</translation>
+        <translation type="vanished">De bază</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="382"/>
         <source>Manage users and groups, repair settings.</source>
-        <translation>Administrează utilizatori si grupuri de utilizatori, repară configurația.</translation>
+        <translation type="vanished">Administrează utilizatori si grupuri de utilizatori, repară configurația.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="388"/>
         <source>User Manager</source>
-        <translation>Manager Utilizator</translation>
+        <translation type="vanished">Manager Utilizator</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="418"/>
         <source>Repair boot problems.</source>
-        <translation>Repară probleme de boot.</translation>
+        <translation type="vanished">Repară probleme de boot.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="421"/>
         <source>Boot Repair</source>
-        <translation>Reparare Boot</translation>
+        <translation type="vanished">Reparare Boot</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="435"/>
         <source>Download and install restricted codecs.</source>
-        <translation>Descarcă și instalează codecuri restricționate.</translation>
+        <translation type="vanished">Descarcă și instalează codecuri restricționate.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="438"/>
         <source>Codecs Downloader</source>
-        <translation>Instalator Codecuri</translation>
+        <translation type="vanished">Instalator Codecuri</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="452"/>
         <source>Check and add missing GPG keys needed by APT.</source>
-        <translation>Verifică și adaugă key GPG folosite de APT.</translation>
+        <translation type="vanished">Verifică și adaugă key GPG folosite de APT.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="455"/>
         <source>Check Apt GPG</source>
-        <translation>Verificare Apt GPG</translation>
+        <translation type="vanished">Verificare Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="469"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation>Gestionare drivere Broadcom.</translation>
+        <translation type="vanished">Gestionare drivere Broadcom.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="472"/>
         <source>Broadcom Manager</source>
-        <translation>Manager Broadcom</translation>
+        <translation type="vanished">Manager Broadcom</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="486"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
-        <translation>Administraza pluginul Adobe Flash (tm).</translation>
+        <translation type="vanished">Administraza pluginul Adobe Flash (tm).</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="489"/>
         <source>Flash Manager</source>
-        <translation>Manager Flash</translation>
+        <translation type="vanished">Manager Flash</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="503"/>
         <source>Program for network troubleshooting and configuration.</source>
-        <translation>Program pentru rezolvarea problemelor de rețea.</translation>
+        <translation type="vanished">Program pentru rezolvarea problemelor de rețea.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="506"/>
         <source>Find Network Shares</source>
-        <translation>Gasire Partiții Rețea</translation>
+        <translation type="vanished">Gasire Partiții Rețea</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="521"/>
         <source>Install additional packages.</source>
-        <translation>Instalare alte programe.</translation>
+        <translation type="vanished">Instalare alte programe.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="524"/>
         <source>Package Installer</source>
-        <translation>Instalator Programe</translation>
+        <translation type="vanished">Instalator Programe</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="538"/>
         <source>Xfce menu editor.</source>
-        <translation>Meniu editor pentru Xfce.</translation>
+        <translation type="vanished">Meniu editor pentru Xfce.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="541"/>
         <source>Menu Editor</source>
-        <translation>Editor de meniu</translation>
+        <translation type="vanished">Editor de meniu</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="571"/>
         <source>Panel Orientation</source>
-        <translation>Orientare Panou</translation>
+        <translation type="vanished">Orientare Panou</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="585"/>
         <source>Switch users without logging out.</source>
-        <translation>Schimbă utilizatorul fără logare afară.</translation>
+        <translation type="vanished">Schimbă utilizatorul fără logare afară.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="588"/>
         <source>Repo Manager</source>
-        <translation>Manager Repo</translation>
+        <translation type="vanished">Manager Repo</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="602"/>
         <source>Select the sound card you want to use.</source>
-        <translation>Selectați placa de sunet pe care doriți să o utilizați.</translation>
+        <translation type="vanished">Selectați placa de sunet pe care doriți să o utilizați.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="605"/>
         <source>Select Sound Card</source>
-        <translation>Alegeți Placa de Sunet</translation>
+        <translation type="vanished">Alegeți Placa de Sunet</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="112"/>
+        <location filename="../mxtools.cpp" line="230"/>
         <source>About MX Tools</source>
         <translation>Despre MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="113"/>
+        <location filename="../mxtools.cpp" line="231"/>
         <source>Version: </source>
         <translation>Versiune:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="115"/>
+        <location filename="../mxtools.cpp" line="233"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Programe utilitare pentru MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="116"/>
+        <location filename="../mxtools.cpp" line="234"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="117"/>
+        <location filename="../mxtools.cpp" line="235"/>
         <source>License</source>
         <translation>Licență</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="118"/>
+        <location filename="../mxtools.cpp" line="236"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>

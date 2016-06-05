@@ -25,7 +25,7 @@
 #include "flatbutton.h"
 
 #include <QFile>
-#include <QDebug>
+//#include <QDebug>
 
 
 
@@ -38,8 +38,6 @@ mxtools::mxtools(QWidget *parent) :
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
-    //QIcon::setThemeName(getCmdOut("xfconf-query -c xsettings -p /Net/IconThemeName"));
-    //ui->buttonMenuEditor->setIcon(QIcon::fromTheme("edit-copy"));
 
     live_list = listDesktopFiles("MX-Live", "/usr/share/applications");
     maintenance_list = listDesktopFiles("MX-Maintenance", "/usr/share/applications");
@@ -103,7 +101,6 @@ void mxtools::addButton(QMultiMap<QString, QStringList> multimap)
     QStringList list;
     QLocale locale;
     QString lang = locale.bcp47Name();
-    qDebug() << "lang = " << lang;
 
     foreach (QString category, multimap.keys()) {
         QLabel *label = new QLabel();
@@ -168,7 +165,7 @@ void mxtools::addButton(QMultiMap<QString, QStringList> multimap)
 QIcon mxtools::findIcon(QString icon_name)
 {
     // return icon if fully specified
-    if (QFile(icon_name).exists()) {
+    if (QFile("/" + icon_name).exists()) { // make sure it looks for icon in root, not in home
         return QIcon(icon_name);
     } else {
         icon_name = icon_name.remove(".png");
@@ -187,7 +184,6 @@ QIcon mxtools::findIcon(QString icon_name)
         } else if (QFile("/usr/share/pixmaps/" + icon_name).exists()) {
             return QIcon("/usr/share/pixmaps/" + icon_name);
         } else {
-            qDebug() << "could not find icon: " << icon_name;
             return QIcon();
         }
     }

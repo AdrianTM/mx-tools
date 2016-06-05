@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="113"/>
+        <location filename="../mxtools.cpp" line="231"/>
         <source>MX Tools</source>
         <translation>MX Tools </translation>
     </message>
@@ -55,189 +55,158 @@
         <translation>Εξοικονομήσετε το χρόνο σας με αυτές τις εφαρμογές του MX </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="234"/>
         <source>Advanced</source>
-        <translation>Προχωρημένα
+        <translation type="vanished">Προχωρημένα
 	
 </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="256"/>
         <source>Create a live-CD from the running system.</source>
-        <translation>Δημιουργήστε ένα live-CD από το εγκατεστημένο σύστημα.</translation>
+        <translation type="vanished">Δημιουργήστε ένα live-CD από το εγκατεστημένο σύστημα.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="259"/>
         <source>Save System to ISO</source>
-        <translation>Αποθήκευση με το πρότυπο ISO</translation>
+        <translation type="vanished">Αποθήκευση με το πρότυπο ISO</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="273"/>
         <source>Tools for live persistence and remastering.</source>
-        <translation>Εργαλεία για ζωντανή persistence και remastering.</translation>
+        <translation type="vanished">Εργαλεία για ζωντανή persistence και remastering.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="276"/>
         <source>Persistence/Remaster</source>
-        <translation>Persistence/Remaster</translation>
+        <translation type="vanished">Persistence/Remaster</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="290"/>
         <source>Run MX live with persistence on a USB device.</source>
-        <translation>Εκτέλεση MX live με persistence σε μια συσκευή USB.</translation>
+        <translation type="vanished">Εκτέλεση MX live με persistence σε μια συσκευή USB.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="293"/>
         <source>Create Live USB</source>
-        <translation>Δημιουργία Ζωντανή USB </translation>
+        <translation type="vanished">Δημιουργία Ζωντανή USB </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="342"/>
         <source>Basic</source>
-        <translation>βασικό</translation>
+        <translation type="vanished">βασικό</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="382"/>
         <source>Manage users and groups, repair settings.</source>
-        <translation>Διαχείριση χρηστών και ομάδων, επισκευή τις ρυθμίσεις.</translation>
+        <translation type="vanished">Διαχείριση χρηστών και ομάδων, επισκευή τις ρυθμίσεις.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="388"/>
         <source>User Manager</source>
-        <translation>Διαχείριση Χρηστών</translation>
+        <translation type="vanished">Διαχείριση Χρηστών</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="418"/>
         <source>Repair boot problems.</source>
-        <translation>Επισκευή προβλήματα εκκίνησης.</translation>
+        <translation type="vanished">Επισκευή προβλήματα εκκίνησης.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="421"/>
         <source>Boot Repair</source>
-        <translation>Επισκευή Εκκίνησης</translation>
+        <translation type="vanished">Επισκευή Εκκίνησης</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="435"/>
         <source>Download and install restricted codecs.</source>
-        <translation>Λήψη και εγκατάσταση codecs.</translation>
+        <translation type="vanished">Λήψη και εγκατάσταση codecs.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="438"/>
         <source>Codecs Downloader</source>
-        <translation>Εγκατάσταση codecs</translation>
+        <translation type="vanished">Εγκατάσταση codecs</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="452"/>
         <source>Check and add missing GPG keys needed by APT.</source>
-        <translation>Ελέγξτε και προσθέτει τα ελλείποντα κλειδιά απαιτείται από το APT.</translation>
+        <translation type="vanished">Ελέγξτε και προσθέτει τα ελλείποντα κλειδιά απαιτείται από το APT.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="455"/>
         <source>Check Apt GPG</source>
-        <translation>Έλεγχος  του Apt GPG</translation>
+        <translation type="vanished">Έλεγχος  του Apt GPG</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="469"/>
         <source>Manage Broadcom WiFi drivers.</source>
-        <translation>Διαχείριση Broadcom WiFi</translation>
+        <translation type="vanished">Διαχείριση Broadcom WiFi</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="472"/>
         <source>Broadcom Manager</source>
-        <translation>Broadcom Manager</translation>
+        <translation type="vanished">Broadcom Manager</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="486"/>
         <source>Manage Adobe Flash (tm) plugin.</source>
-        <translation>Διαχείριση του Adobe Flash (tm)</translation>
+        <translation type="vanished">Διαχείριση του Adobe Flash (tm)</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="489"/>
         <source>Flash Manager</source>
-        <translation>Διαχείρηση του Flash</translation>
+        <translation type="vanished">Διαχείρηση του Flash</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="503"/>
         <source>Program for network troubleshooting and configuration.</source>
-        <translation>Eφαρμογή για την αντιμετώπιση προβλημάτων δικτύου και τη διαμόρφωση.</translation>
+        <translation type="vanished">Eφαρμογή για την αντιμετώπιση προβλημάτων δικτύου και τη διαμόρφωση.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="506"/>
         <source>Find Network Shares</source>
-        <translation>Βρείτε Μετοχές Δίκτυο </translation>
+        <translation type="vanished">Βρείτε Μετοχές Δίκτυο </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="521"/>
         <source>Install additional packages.</source>
-        <translation>Εγκατάσταση επιπλέον πακέτων.</translation>
+        <translation type="vanished">Εγκατάσταση επιπλέον πακέτων.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="524"/>
         <source>Package Installer</source>
-        <translation>Εγκατάσταση πακέτων</translation>
+        <translation type="vanished">Εγκατάσταση πακέτων</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="538"/>
         <source>Xfce menu editor.</source>
-        <translation>Xfce menu editor.</translation>
+        <translation type="vanished">Xfce menu editor.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="541"/>
         <source>Menu Editor</source>
-        <translation>Menu Editor</translation>
+        <translation type="vanished">Menu Editor</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="571"/>
         <source>Panel Orientation</source>
-        <translation>Τοποθεσία του Panel</translation>
+        <translation type="vanished">Τοποθεσία του Panel</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="585"/>
         <source>Switch users without logging out.</source>
-        <translation>Εναλλαγή χρηστών χωρίς να αποσύνδεση.</translation>
+        <translation type="vanished">Εναλλαγή χρηστών χωρίς να αποσύνδεση.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="588"/>
         <source>Repo Manager</source>
-        <translation>Repo Manager</translation>
+        <translation type="vanished">Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="602"/>
         <source>Select the sound card you want to use.</source>
-        <translation>Επιλέξτε την κάρτα ήχου που θέλετε να χρησιμοποιήσετε.</translation>
+        <translation type="vanished">Επιλέξτε την κάρτα ήχου που θέλετε να χρησιμοποιήσετε.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="605"/>
         <source>Select Sound Card</source>
-        <translation>Επιλέξτε την Κάρτα Ήχου</translation>
+        <translation type="vanished">Επιλέξτε την Κάρτα Ήχου</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="112"/>
+        <location filename="../mxtools.cpp" line="230"/>
         <source>About MX Tools</source>
         <translation>Περί MX Tools  </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="113"/>
+        <location filename="../mxtools.cpp" line="231"/>
         <source>Version: </source>
         <translation>Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="115"/>
+        <location filename="../mxtools.cpp" line="233"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Εργαλεία διαμόρφωσης για MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="116"/>
+        <location filename="../mxtools.cpp" line="234"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="117"/>
+        <location filename="../mxtools.cpp" line="235"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="118"/>
+        <location filename="../mxtools.cpp" line="236"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
