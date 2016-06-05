@@ -46,7 +46,6 @@ mxtools::mxtools(QWidget *parent) :
     software_list = listDesktopFiles("MX-Software", "/usr/share/applications");
     utilities_list = listDesktopFiles("MX-Utilities", "/usr/share/applications");
 
-    QMultiMap<QString, QStringList> multimap;
     multimap.insertMulti("MX-Live", live_list);
     multimap.insertMulti("MX-Maintenance", maintenance_list);
     multimap.insertMulti("MX-Setup", setup_list);
@@ -175,6 +174,31 @@ void mxtools::btn_clicked()
     this->hide();
     system(sender()->objectName().toUtf8());
     this->show();
+}
+
+void mxtools::on_hideCheckBox_clicked(bool checked) {
+    foreach (QStringList list, multimap) {
+        foreach (QString file_name, list) {
+            hideShowIcon(file_name, checked);
+        }
+    }
+    system("xfce4-panel --restart");
+}
+
+// hide or show icon for .desktop file
+void mxtools::hideShowIcon(QString file_name, bool hide)
+{
+    QString hide_str = hide ? "true" : "false";
+
+    QString cmd = "cat " + file_name + " | grep -m1 '^NoDisplay=' | cut -d '=' -f2";
+    QString out = getCmdOut(cmd);
+
+    if (out.compare("true", Qt::CaseInsensitive) == 0 || out.compare("false", Qt::CaseInsensitive) == 0) {
+        cmd = "sed -i 's/^NoDisplay=.*/NoDisplay=" + hide_str +  "/' " + file_name;
+    } else { // take care of the instances when there's no "NoDisplay=" line in .desktop
+        cmd = "echo 'NoDisplay=" + hide_str + "' >> " + file_name;
+    }
+    system("su-to-root -X -c \"" + cmd.toUtf8() + "\"");
 }
 
 // About button clicked
