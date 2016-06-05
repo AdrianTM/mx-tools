@@ -29,6 +29,13 @@ FlatButton::FlatButton(QWidget * parent)
     setStyleSheet("text-align:left;");
 }
 
+FlatButton::FlatButton(QString name, QWidget * parent)
+    : QPushButton(name, parent)
+{
+    setFlat(true);
+    setStyleSheet("text-align:left;");
+}
+
 void FlatButton::leaveEvent(QEvent * e)
 {
     //setFlat(true);

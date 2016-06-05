@@ -23,6 +23,7 @@
 #ifndef MXTOOLS_H
 #define MXTOOLS_H
 
+#include <flatbutton.h>
 #include <QMessageBox>
 #include <QProcess>
 
@@ -42,29 +43,24 @@ public:
     explicit mxtools(QWidget *parent = 0);
     ~mxtools();
 
+    FlatButton *btn;
+
+    QStringList live_list;
+    QStringList maintenance_list;
+    QStringList setup_list;
+    QStringList software_list;
+    QStringList utilities_list;
+
+    void addButton(QMultiMap<QString, QStringList>);
+    QIcon findIcon(QString icon_name);
     QString getCmdOut(QString cmd);
     QString getVersion(QString name);
-    void checkApps();
+    QStringList listDesktopFiles(QString search_string, QString location);
 
 private slots:
     void on_buttonAbout_clicked();
-    void on_buttonUser_clicked();
-    void on_buttonPackageInstaller_clicked();
-    void on_buttonCodecs_clicked();
-    void on_buttonFlash_clicked();
-    void on_buttonCheckAptGPG_clicked();
-    void on_buttonFindShares_clicked();
-    void on_buttonRepoManager_clicked();
-    void on_buttonBootrepair_clicked();
-    void on_buttonSnapshot_clicked();
-    void on_buttonRemaster_clicked();
-    void on_buttonLiveUSB_clicked();
-    void on_buttonMenuEditor_clicked();
-    void on_buttonBroadcom_clicked();
-    void on_hideCheckBox_clicked(bool checked);
     void on_buttonHelp_clicked();
-    void on_buttonSoundCard_clicked();
-    void on_buttonPanelOrientation_clicked();
+    void btn_clicked();
 
 private:
     Ui::mxtools *ui;

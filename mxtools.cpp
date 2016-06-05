@@ -24,18 +24,35 @@
 #include "ui_mxtools.h"
 #include "flatbutton.h"
 
+#include <QFile>
+#include <QDebug>
+
+
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::mxtools)
 {
     ui->setupUi(this);
-    checkApps();
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
-    QIcon::setThemeName(getCmdOut("xfconf-query -c xsettings -p /Net/IconThemeName"));
-    ui->buttonMenuEditor->setIcon(QIcon::fromTheme("edit-copy"));
+    //QIcon::setThemeName(getCmdOut("xfconf-query -c xsettings -p /Net/IconThemeName"));
+    //ui->buttonMenuEditor->setIcon(QIcon::fromTheme("edit-copy"));
+
+    live_list = listDesktopFiles("MX-Live", "/usr/share/applications");
+    maintenance_list = listDesktopFiles("MX-Maintenance", "/usr/share/applications");
+    setup_list = listDesktopFiles("MX-Setup", "/usr/share/applications");
+    software_list = listDesktopFiles("MX-Software", "/usr/share/applications");
+    utilities_list = listDesktopFiles("MX-Utilities", "/usr/share/applications");
+
+    QMultiMap<QString, QStringList> multimap;
+    multimap.insertMulti("MX-Live", live_list);
+    multimap.insertMulti("MX-Maintenance", maintenance_list);
+    multimap.insertMulti("MX-Setup", setup_list);
+    multimap.insertMulti("MX-Software", software_list);
+    multimap.insertMulti("MX-Utilities", utilities_list);
+    addButton(multimap);
     this->adjustSize();
 }
 
@@ -60,53 +77,109 @@ QString mxtools::getVersion(QString name) {
     return getCmdOut(cmd);
 }
 
-// Check if the apps are installed
-void mxtools::checkApps() {
-    // MX User
-    if (getCmdOut("dpkg -s mx-user | grep Status") != "Status: install ok installed") {
-        ui->buttonUser->setEnabled(false);
+
+// List .desktop files that contain a specific string
+QStringList mxtools::listDesktopFiles(QString search_string, QString location)
+{
+    QStringList listDesktop;
+    QString cmd = QString("grep -Elr %1 %2").arg(search_string).arg(location);
+    QString out = getCmdOut(cmd);
+    if (out != "") {
+        listDesktop = out.split("\n");
     }
-    // MX PackageInstaller
-    if (getCmdOut("dpkg -s mx-packageinstaller | grep Status") != "Status: install ok installed") {
-        ui->buttonPackageInstaller->setEnabled(false);
-    }
-    // MX Codecs
-    if (getCmdOut("dpkg -s mx-codecs | grep Status") != "Status: install ok installed") {
-        ui->buttonCodecs->setEnabled(false);
-    }
-    // MX Flash
-    if (getCmdOut("dpkg -s mx-flash | grep Status") != "Status: install ok installed") {
-        ui->buttonFlash->setEnabled(false);
-    }
-    // MX CheckAptGPG
-    if (getCmdOut("dpkg -s checkaptgpg | grep Status") != "Status: install ok installed") {
-        ui->buttonCheckAptGPG->setEnabled(false);
-    }
-    // MX Select Sound
-    if (getCmdOut("dpkg -s mx-select-sound | grep Status") != "Status: install ok installed") {
-        ui->buttonSoundCard->setEnabled(false);
-    }
-    // MX Findshares
-    if (getCmdOut("dpkg -s mx-findshares | grep Status") != "Status: install ok installed") {
-        ui->buttonFindShares->setEnabled(false);
-    }
-    // MX BootRepair
-    if (getCmdOut("dpkg -s mx-bootrepair | grep Status") != "Status: install ok installed") {
-        ui->buttonBootrepair->setEnabled(false);
-    }
-    // MX Menu Editor
-    if (getCmdOut("dpkg -s mx-menu-editor | grep Status") != "Status: install ok installed") {
-        ui->buttonMenuEditor->setEnabled(false);
-    }
-    // MX Broadcom Manager
-    if (getCmdOut("dpkg -s mx-broadcom-manager | grep Status") != "Status: install ok installed") {
-        ui->buttonMenuEditor->setEnabled(false);
+    return listDesktop;
+}
+
+void mxtools::addButton(QMultiMap<QString, QStringList> multimap)
+{
+    int col = 0;
+    int row = 0;
+    int max = 3; // no. max of col
+    QString name;
+    QString comment;
+    QString exec;
+    QString icon_name;
+    QStringList list;
+
+    foreach (QString category, multimap.keys()) {
+        QLabel *label = new QLabel();
+        QFont font;
+        font.setBold(true);
+        font.setUnderline(true);
+        label->setFont(font);
+        QString label_txt = category;
+        label_txt.remove("MX-");
+        label->setText(label_txt);
+        col = 0;
+        row += 1;
+        ui->gridLayout_btn->addWidget(label, row, col);
+        row += 1;
+        list = multimap.value(category);
+        foreach (QString item, list) {
+            name = getCmdOut("grep ^Name= " + item + " | cut -f2 -d=");
+            comment = getCmdOut("grep ^Comment= " + item + " | cut -f2 -d=");
+            exec = getCmdOut("grep ^Exec= " + item + " | cut -f2 -d=");
+            icon_name = getCmdOut("grep ^Icon= " + item + " | cut -f2 -d=");
+            btn = new FlatButton(name);
+            btn->setToolTip(comment);
+            btn->setIcon(findIcon(icon_name));
+            ui->gridLayout_btn->addWidget(btn, row, col);
+            col += 1;
+            if (col >= max) {
+                col = 0;
+                row += 1;
+            }
+            btn->setObjectName(exec); // add the command to be executed to the object name
+            QObject::connect(btn, SIGNAL(clicked()), this, SLOT(btn_clicked()));
+
+        }
+        // add empty row if it's not the last key
+        if (category != multimap.lastKey()) {
+            col = 0;
+            row += 1;
+            label = new QLabel();
+            ui->gridLayout_btn->addWidget(label, row, col);
+        }
     }
 }
 
+// find icon by name specified in .desktop file
+QIcon mxtools::findIcon(QString icon_name)
+{
+    // return icon if fully specified
+    if (QFile(icon_name).exists()) {
+        return QIcon(icon_name);
+    } else {
+        // return the icon from the theme if it exists
+        if (QIcon::fromTheme(icon_name).name() != "") {
+            return QIcon::fromTheme(icon_name);
+        // return png, svg, xpm icons from /usr/share/pixmaps
+        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".png").exists()) {
+            return QIcon("/usr/share/pixmaps/" + icon_name + ".png");
+        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".svg").exists()) {
+            return QIcon("/usr/share/pixmaps/" + icon_name + ".svg");
+        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".xpm").exists()) {
+            return QIcon("/usr/share/pixmaps/" + icon_name + ".xpm");
+        } else if (QFile("/usr/share/pixmaps/" + icon_name).exists()) {
+            return QIcon("/usr/share/pixmaps/" + icon_name);
+        } else {
+            qDebug() << "could not find icon: " << icon_name;
+            return QIcon();
+        }
+    }
+}
+
+// run code when button is clicked
+void mxtools::btn_clicked()
+{
+    this->hide();
+    system(sender()->objectName().toUtf8());
+    this->show();
+}
 
 // About button clicked
-void mxtools::on_buttonAbout_clicked() {
+void mxtools::on_buttonAbout_clicked()
+{
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Tools"), "<p align=\"center\"><b><h2>" +
@@ -121,110 +194,6 @@ void mxtools::on_buttonAbout_clicked() {
     this->show();
 }
 
-
-void mxtools::on_buttonUser_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-user");
-    this->show();
-}
-
-void mxtools::on_buttonPackageInstaller_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-packageinstaller");
-    this->show();
-}
-
-void mxtools::on_buttonCodecs_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-codecs");
-    this->show();
-}
-
-void mxtools::on_buttonFlash_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-flash");
-    this->show();
-}
-
-void mxtools::on_buttonCheckAptGPG_clicked() {
-    this->hide();
-    system("su-to-root -X -c \"xfce4-terminal -e 'bash checkaptgpg --wait-at-end'\" 2>/dev/null");
-    this->show();
-}
-
-void mxtools::on_buttonSoundCard_clicked() {
-    this->hide();
-    system("mx-select-sound");
-    this->show();
-}
-
-void mxtools::on_buttonFindShares_clicked() {
-    this->hide();
-    system("mx-findshares");
-    this->show();
-}
-
-void mxtools::on_buttonRepoManager_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-repo-manager");
-    this->show();
-}
-
-void mxtools::on_buttonBootrepair_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-bootrepair");
-    this->show();
-}
-
-void mxtools::on_buttonSnapshot_clicked() {
-    this->hide();
-    if (getCmdOut("dpkg -s mx-snapshot | grep Status") == "Status: install ok installed") {
-        system("su-to-root -X -c mx-snapshot");
-    } else {
-        system("su-to-root -X -c snapshot-gui-mx");
-    }
-    this->show();
-}
-
-void mxtools::on_buttonRemaster_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-remastercc");
-    this->show();
-}
-
-void mxtools::on_buttonLiveUSB_clicked() {
-    this->hide();
-    system("su-to-root -X -c unetbootin");
-    this->show();
-}
-
-void mxtools::on_buttonMenuEditor_clicked() {
-    this->hide();
-    system("mx-menu-editor");
-    this->show();
-}
-
-void mxtools::on_buttonBroadcom_clicked() {
-    this->hide();
-    system("su-to-root -X -c mx-broadcom-manager");
-    this->show();
-}
-
-void mxtools::on_hideCheckBox_clicked(bool checked) {
-    if (checked) {
-        system("su-to-root -X -c 'mx-tools.sh --hide'");
-    } else {
-        system("su-to-root -X -c 'mx-tools.sh --show'");
-    }
-    system("xfce4-panel --restart");
-}
-
-void mxtools::on_buttonPanelOrientation_clicked()
-{
-    this->hide();
-    system("mx-panel-orientation");
-    this->show();
-}
 
 // Help button clicked
 void mxtools::on_buttonHelp_clicked()
