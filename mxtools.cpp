@@ -28,6 +28,7 @@
 #include <QDebug>
 
 
+
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::mxtools)
@@ -52,6 +53,7 @@ mxtools::mxtools(QWidget *parent) :
     multimap.insertMulti("MX-Software", software_list);
     multimap.insertMulti("MX-Utilities", utilities_list);
     addButton(multimap);
+
     this->adjustSize();
 }
 
@@ -99,6 +101,9 @@ void mxtools::addButton(QMultiMap<QString, QStringList> multimap)
     QString exec;
     QString icon_name;
     QStringList list;
+    QLocale locale;
+    QString lang = locale.bcp47Name();
+    qDebug() << "lang = " << lang;
 
     foreach (QString category, multimap.keys()) {
         QLabel *label = new QLabel();
@@ -115,8 +120,25 @@ void mxtools::addButton(QMultiMap<QString, QStringList> multimap)
         row += 1;
         list = multimap.value(category);
         foreach (QString item, list) {
-            name = getCmdOut("grep ^Name= " + item + " | cut -f2 -d=");
-            comment = getCmdOut("grep ^Comment= " + item + " | cut -f2 -d=");
+            name = "";
+            comment = "";
+            if (lang != "en") {
+                name = getCmdOut("grep -i ^'Name\\[" + lang + "\\]=' " + item + " | cut -f2 -d=");
+                comment = getCmdOut("grep -i ^'Comment\\[" + lang + "\\]=' " + item + " | cut -f2 -d=");
+            }
+            if (lang == "pt" && name == "") { // Brazilian if Portuguese and name empty
+                name = getCmdOut("grep -i ^'Name\\[pt_BR]=' " + item + " | cut -f2 -d=");
+            }
+            if (lang == "pt" && comment == "") { // Brazilian if Portuguese and comment empty
+                comment = getCmdOut("grep -i ^'Comment\\[pt_BR]=' " + item + " | cut -f2 -d=");
+            }
+            if (name == "") { // backup if Name is not translated
+                name = getCmdOut("grep -i ^Name= " + item + " | cut -f2 -d=");
+                name = name.remove("MX ");
+            }
+            if (comment == "") { // backup if Comment is not translated
+                comment = getCmdOut("grep ^Comment= " + item + " | cut -f2 -d=");
+            }
             exec = getCmdOut("grep ^Exec= " + item + " | cut -f2 -d=");
             icon_name = getCmdOut("grep ^Icon= " + item + " | cut -f2 -d=");
             btn = new FlatButton(name);
