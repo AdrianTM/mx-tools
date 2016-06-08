@@ -152,12 +152,16 @@ void mxtools::addButton(QMultiMap<QString, QStringList> multimap)
 
         }
         // add empty row if it's not the last key
-        if (category != multimap.lastKey()) {
+        //if (category != multimap.lastKey()) {
             col = 0;
             row += 1;
-            label = new QLabel();
-            ui->gridLayout_btn->addWidget(label, row, col);
-        }
+            //label = new QLabel();
+            QFrame *line = new QFrame();
+            line->setFrameShape(QFrame::HLine);
+            line->setFrameShadow(QFrame::Sunken);
+            //line->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+            ui->gridLayout_btn->addWidget(line, row, col, 1, -1);
+        //}
     }
 }
 

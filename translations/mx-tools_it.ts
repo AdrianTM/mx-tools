@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="231"/>
+        <location filename="../mxtools.cpp" line="235"/>
         <source>MX Tools</source>
         <translation>MX Strumenti</translation>
     </message>
@@ -175,32 +175,32 @@
         <translation type="vanished">Seleziona la scheda audio che vuoi usare</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="230"/>
+        <location filename="../mxtools.cpp" line="234"/>
         <source>About MX Tools</source>
         <translation>Informazioni su MX Strumenti</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="231"/>
+        <location filename="../mxtools.cpp" line="235"/>
         <source>Version: </source>
         <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="233"/>
+        <location filename="../mxtools.cpp" line="237"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Strumenti di configurazione per MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="234"/>
+        <location filename="../mxtools.cpp" line="238"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="235"/>
+        <location filename="../mxtools.cpp" line="239"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="236"/>
+        <location filename="../mxtools.cpp" line="240"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
