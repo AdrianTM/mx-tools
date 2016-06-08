@@ -81,7 +81,7 @@ QString mxtools::getVersion(QString name) {
 QStringList mxtools::listDesktopFiles(QString search_string, QString location)
 {
     QStringList listDesktop;
-    QString cmd = QString("grep -Elr %1 %2").arg(search_string).arg(location);
+    QString cmd = QString("grep -Elr %1 %2 | sort").arg(search_string).arg(location);
     QString out = getCmdOut(cmd);
     if (out != "") {
         listDesktop = out.split("\n");
