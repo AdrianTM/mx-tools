@@ -10,47 +10,47 @@
         <translation>MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="44"/>
+        <location filename="../mxtools.ui" line="53"/>
         <source>About this application</source>
         <translation>Infos zu diesem Programm</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="47"/>
+        <location filename="../mxtools.ui" line="56"/>
         <source>About...</source>
         <translation>Impressum</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="54"/>
+        <location filename="../mxtools.ui" line="63"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="112"/>
+        <location filename="../mxtools.ui" line="121"/>
         <source>Cancel any changes then quit</source>
         <translation>Änderungen verwerfen und abbrechen</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="115"/>
+        <location filename="../mxtools.ui" line="124"/>
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="122"/>
+        <location filename="../mxtools.ui" line="131"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="141"/>
+        <location filename="../mxtools.ui" line="150"/>
         <source>Manual</source>
         <translation>Handbuch</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="199"/>
+        <location filename="../mxtools.ui" line="208"/>
         <source>Hide individual tools from the menu</source>
         <translation>Werkzeuge nicht einzeln im Menü zeigen</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="218"/>
+        <location filename="../mxtools.ui" line="227"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Diese MX-Anwendungen sparen Zeit und Mühe bei wichtigen Aufgaben</translation>
     </message>
