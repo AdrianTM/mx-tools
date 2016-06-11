@@ -45,14 +45,16 @@ public:
     ~mxtools();
 
     FlatButton *btn;
-    QMultiMap<QString, QStringList> multimap;
+    QMultiMap<QString, QStringList> category_map;
+    QMultiMap<QString, QMultiMap<QString, QStringList> > info_map;
     QStringList live_list;
     QStringList maintenance_list;
     QStringList setup_list;
     QStringList software_list;
     QStringList utilities_list;
 
-    void addButton(QMultiMap<QString, QStringList>);
+    void readInfo(QMultiMap<QString, QStringList>);
+    void addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > info_map);
     void hideShowIcon(QString file_name, bool hide);
     QIcon findIcon(QString icon_name);
     QString getCmdOut(QString cmd);
@@ -64,6 +66,8 @@ private slots:
     void on_buttonHelp_clicked();
     void btn_clicked();
     void on_hideCheckBox_clicked(bool checked);
+
+    void on_lineSearch_textChanged(const QString &arg1);
 
 private:
     Ui::mxtools *ui;
