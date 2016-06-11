@@ -5,52 +5,57 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="235"/>
+        <location filename="../mxtools.cpp" line="265"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="53"/>
+        <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
         <translation>Informații despre program</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="56"/>
+        <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
         <translation>Despre...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="63"/>
+        <location filename="../mxtools.ui" line="57"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="121"/>
+        <location filename="../mxtools.ui" line="115"/>
         <source>Cancel any changes then quit</source>
         <translation>Anulează toate schimbările și închide programul</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="124"/>
+        <location filename="../mxtools.ui" line="118"/>
         <source>Close</source>
         <translation>Închidere</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="131"/>
+        <location filename="../mxtools.ui" line="125"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="150"/>
+        <location filename="../mxtools.ui" line="144"/>
         <source>Manual</source>
         <translation>Manual</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="208"/>
+        <location filename="../mxtools.ui" line="258"/>
         <source>Hide individual tools from the menu</source>
         <translation>Ascunde aceste instrumente din meniul Xfce.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="227"/>
+        <location filename="../mxtools.ui" line="277"/>
+        <source>search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="242"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Aceste programe MX economisesc timpul si efortul necesar pentru indeplinirea diverselor sarcini.</translation>
     </message>
@@ -179,32 +184,32 @@
         <translation type="vanished">Alegeți Placa de Sunet</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="234"/>
+        <location filename="../mxtools.cpp" line="264"/>
         <source>About MX Tools</source>
         <translation>Despre MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="235"/>
+        <location filename="../mxtools.cpp" line="265"/>
         <source>Version: </source>
         <translation>Versiune:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="237"/>
+        <location filename="../mxtools.cpp" line="267"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Programe utilitare pentru MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="238"/>
+        <location filename="../mxtools.cpp" line="268"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="239"/>
+        <location filename="../mxtools.cpp" line="269"/>
         <source>License</source>
         <translation>Licență</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="240"/>
+        <location filename="../mxtools.cpp" line="270"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>
