@@ -1,3 +1,9 @@
+mx-tools (16.8mx15) mx; urgency=medium
+
+  * removed postinstall command
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 04 Aug 2016 12:52:13 -0400
+
 mx-tools (16.6mx15+2) mx; urgency=medium
 
   * added search

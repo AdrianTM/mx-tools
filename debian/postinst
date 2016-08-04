@@ -1,2 +1,0 @@
-#!/bin/sh
-sed -i "s/^NoDisplay=.*/NoDisplay=false/" /usr/share/applications/mx-apt-notifier-menu.desktop
