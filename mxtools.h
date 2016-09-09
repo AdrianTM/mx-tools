@@ -27,7 +27,6 @@
 #include <QMessageBox>
 #include <QProcess>
 #include <QMultiMap>
-#include <QKeyEvent>
 
 
 namespace Ui {
@@ -63,11 +62,11 @@ public:
     QStringList listDesktopFiles(QString search_string, QString location);
 
 private slots:
-    void btn_clicked();
-    void keyPressEvent(QKeyEvent *event);
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
+    void btn_clicked();
     void on_hideCheckBox_clicked(bool checked);
+
     void on_lineSearch_textChanged(const QString &arg1);
 
 private:

@@ -317,12 +317,3 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
     }
 }
 
-// process keystrokes
-void mxtools::keyPressEvent(QKeyEvent *event)
-{
-    if (event->matches(QKeySequence::Find))
-        ui->lineSearch->setFocus();
-    if (event->key() == Qt::Key_Escape) {
-        ui->lineSearch->clear();
-    }
-}
