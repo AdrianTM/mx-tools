@@ -200,8 +200,8 @@
     </message>
     <message>
         <location filename="../mxtools.cpp" line="268"/>
-        <source>Copyright (c) antiX</source>
-        <translation>Авторское право (c) antiX</translation>
+        <source>Copyright (c) MX Linux</source>
+        <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="269"/>
