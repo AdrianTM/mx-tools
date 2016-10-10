@@ -2,7 +2,7 @@
  * Copyright (C) 2014 MX Authors
  *
  * Authors: Adrian
- *          MEPIS Community <http://forum.mepiscommunity.org>
+ *          MX Linux <http://mxlinux.org>
  *
  * This file is part of MX Tools.
  *
