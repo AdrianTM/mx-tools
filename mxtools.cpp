@@ -27,8 +27,6 @@
 #include <QFile>
 //#include <QDebug>
 
-
-
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::mxtools)
@@ -54,6 +52,7 @@ mxtools::mxtools(QWidget *parent) :
     addButtons(info_map);
     ui->lineSearch->setFocus();
     this->adjustSize();
+    //qDebug() << "list" << category_map;
 }
 
 mxtools::~mxtools()
@@ -96,6 +95,7 @@ void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
     QString comment;
     QString exec;
     QString icon_name;
+    QString terminal_switch;
     QStringList list;
     QLocale locale;
     QString lang = locale.bcp47Name();
@@ -125,11 +125,13 @@ void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
             }
             exec = getCmdOut("grep ^Exec= " + file_name + " | cut -f2 -d=");
             icon_name = getCmdOut("grep ^Icon= " + file_name + " | cut -f2 -d=");
+            terminal_switch = getCmdOut("grep ^Terminal= " + file_name + " | cut -f2 -d=");
             QStringList info;
-            map.insert(file_name, info << name << comment << icon_name << exec << category);
+            map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
         }
         info_map.insert(category, map);
         map.clear();
+        //qDebug() << "infomap" << info_map;
     }
 }
 
@@ -143,6 +145,8 @@ void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > in
     QString exec;
     QString icon_name;
     QString file_name;
+    QString terminal_switch;
+    uint termdata;
 
     foreach (QString category, info_map.keys()) {
         if (!info_map.values(category).isEmpty()) {
@@ -166,6 +170,8 @@ void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > in
                 comment = file_info[1];
                 icon_name = file_info[2];
                 exec = file_info[3];
+                terminal_switch = file_info[5];
+                //qDebug() << "terminal switch" << terminal_switch;
                 btn = new FlatButton(name);
                 btn->setToolTip(comment);
                 btn->setAutoDefault(false);
@@ -177,7 +183,14 @@ void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > in
                     col = 0;
                     row += 1;
                 }
-                btn->setObjectName(exec); // add the command to be executed to the object name
+                //add "x-termial-emulator -e " if terminal_switch = true
+                QString cmd = "x-terminal-emulator -e ";
+                if (terminal_switch == "true") {
+                    btn->setObjectName(cmd + exec); // add the command to be executed to the object name
+                } else {
+                    btn->setObjectName(exec); // add the command to be executed to the object name
+                }
+                //qDebug() << "button exec" << btn->objectName();
                 QObject::connect(btn, SIGNAL(clicked()), this, SLOT(btn_clicked()));
             }
         }
@@ -227,6 +240,7 @@ QIcon mxtools::findIcon(QString icon_name)
 void mxtools::btn_clicked()
 {
     this->hide();
+    //qDebug() << sender()->objectName();
     system(sender()->objectName().toUtf8());
     this->show();
 }

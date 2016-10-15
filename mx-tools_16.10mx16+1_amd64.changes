@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 15 Oct 2016 19:30:17 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 16.10mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphinoracle@gmail.com>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (16.10mx16+1) mx; urgency=medium
+ .
+   * added parsing of Terminal= line for cli apps
+Checksums-Sha1:
+ 1597ecfa073c4e2d2954b8d3cca975a6f8e47698 648 mx-tools_16.10mx16+1.dsc
+ 07b86b77f5b88f2e6695aaf6c8d22a822c0bd5e4 38484 mx-tools_16.10mx16+1.tar.xz
+ 13029faadcd4f5e64ddab6356754457e34442a5d 47180 mx-tools_16.10mx16+1_amd64.deb
+Checksums-Sha256:
+ 8019d3d996ec03994c053db148bd7a4a9b920ec1bb0599a6f865110200a68fdd 648 mx-tools_16.10mx16+1.dsc
+ 6279a29a0d3d0c853fdc82b3af5cb6d4e84f3a4a343ac0f66f8b2afff55e96a7 38484 mx-tools_16.10mx16+1.tar.xz
+ 90d7432e1c057a53c3a8823aeeb224c249d65cdf21007ace8af05fd9368ee1dd 47180 mx-tools_16.10mx16+1_amd64.deb
+Files:
+ e133adcda13793139aaada3f2b00dd78 648 admin optional mx-tools_16.10mx16+1.dsc
+ cdf4a80d0729c39e49c0f85dd04d3512 38484 admin optional mx-tools_16.10mx16+1.tar.xz
+ 3d0516d5fd76d9f0abac871047105725 47180 admin optional mx-tools_16.10mx16+1_amd64.deb
