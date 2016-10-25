@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 25 Oct 2016 10:50:35 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 16.10mx16+3
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (16.10mx16+3) mx; urgency=medium
+ .
+   * look follows the desktop theme
+Checksums-Sha1:
+ 7b2d2ecb9f7fe935a4b120e62f3f993ffddb5523 47544 mx-tools_16.10mx16+3_i386.deb
+Checksums-Sha256:
+ a49a9bb1eedf609b7ec5dd214c3637ea63a2bbb7590069837cc3092fd47015dd 47544 mx-tools_16.10mx16+3_i386.deb
+Files:
+ 7d6e3355d71827aba4832ec9405e4d43 47544 admin optional mx-tools_16.10mx16+3_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYD5IUAAoJEHCTjHgGee6Y0uoH/0CxxW28VZGqm4Yg/vM7azFl
+8zoABgMLFZBK6vt/z5378/ezhRbCZb6PG6Dg9S30Yio+01NWz/6I37RGKbSQpFWm
+e2TMcMiPbZmISUcnFPlXwuz06E2Ceqf1C2pXRGViDmdM7cayd3RKdVeMbYrj9V1m
+Gal/XP13CQ+0svh6vE65jFCd0TigScDYKVYpVd09KIS+NpsimJTdMZliKoTvB40z
+6jutWdILxb2GXRn/p7RE7+E7c79kRKp2jInfPdqzuPrFYLZjNJb1QD3RmOTKO/zZ
+yekiSm3GafsF+BeK9IydTAB67I8HUKYfustueGrTGHFyeLohCXQSrLitIYOgHSU=
+=W7TA
+-----END PGP SIGNATURE-----

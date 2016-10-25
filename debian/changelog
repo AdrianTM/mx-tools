@@ -1,3 +1,9 @@
+mx-tools (16.10mx16+3) mx; urgency=medium
+
+  * look follows the desktop theme
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 25 Oct 2016 10:50:35 -0400
+
 mx-tools (16.10mx16+2) mx; urgency=medium
 
   * removed depend on mx-docs per anti's request

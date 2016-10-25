@@ -151,7 +151,7 @@ void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > in
     foreach (QString category, info_map.keys()) {
         if (!info_map.values(category).isEmpty()) {
             QLabel *label = new QLabel();
-            label->setStyleSheet("QLabel {color:black}");
+            //label->setStyleSheet("QLabel {color:black}");
             QFont font;
             font.setBold(true);
             font.setUnderline(true);

@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="265"/>
+        <location filename="../mxtools.cpp" line="279"/>
         <source>MX Tools</source>
         <translation>MX Strumenti</translation>
     </message>
@@ -45,17 +45,17 @@
         <translation>Manuale</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="258"/>
+        <location filename="../mxtools.ui" line="255"/>
         <source>Hide individual tools from the menu</source>
         <translation>Nascondi dal Menu delle applicazioni questi strumenti presenti singolarmente</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="277"/>
+        <location filename="../mxtools.ui" line="274"/>
         <source>search</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="242"/>
+        <location filename="../mxtools.ui" line="239"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Queste applicazioni di MX facilitano il lavoro in diverse importanti attività.</translation>
     </message>
@@ -180,32 +180,32 @@
         <translation type="vanished">Seleziona la scheda audio che vuoi usare</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="264"/>
+        <location filename="../mxtools.cpp" line="278"/>
         <source>About MX Tools</source>
         <translation>Informazioni su MX Strumenti</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="265"/>
+        <location filename="../mxtools.cpp" line="279"/>
         <source>Version: </source>
         <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="267"/>
+        <location filename="../mxtools.cpp" line="281"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Strumenti di configurazione per MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="268"/>
+        <location filename="../mxtools.cpp" line="282"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="269"/>
+        <location filename="../mxtools.cpp" line="283"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="270"/>
+        <location filename="../mxtools.cpp" line="284"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
