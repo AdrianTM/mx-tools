@@ -1,3 +1,9 @@
+mx-tools (16.10mx16+4) mx; urgency=medium
+
+  * don't show mx-remaster unless running live
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Wed, 26 Oct 2016 12:30:17 -0400
+
 mx-tools (16.10mx16+3) mx; urgency=medium
 
   * look follows the desktop theme
