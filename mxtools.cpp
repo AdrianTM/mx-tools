@@ -100,6 +100,8 @@ void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
     QLocale locale;
     QString lang = locale.bcp47Name();
     QMultiMap<QString, QStringList> map;
+    QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
+    //qDebug() << "test" << test;
 
     foreach (QString category, category_map.keys()) {
         list = category_map.value(category);
@@ -127,7 +129,14 @@ void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
             icon_name = getCmdOut("grep ^Icon= " + file_name + " | cut -f2 -d=");
             terminal_switch = getCmdOut("grep ^Terminal= " + file_name + " | cut -f2 -d=");
             QStringList info;
-            map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
+            // if running installed, hide mx-remaster
+            if ( test == "aufs" || test == "overlay" ) {
+                map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
+            } else {
+                if ( exec != "mx-remastercc") {
+                    map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
+                }
+            }
         }
         info_map.insert(category, map);
         map.clear();
@@ -190,6 +199,7 @@ void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > in
                 } else {
                     btn->setObjectName(exec); // add the command to be executed to the object name
                 }
+
                 //qDebug() << "button exec" << btn->objectName();
                 QObject::connect(btn, SIGNAL(clicked()), this, SLOT(btn_clicked()));
             }
