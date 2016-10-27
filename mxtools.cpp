@@ -45,7 +45,7 @@ mxtools::mxtools(QWidget *parent) :
 
     QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
     // remove mx-remastercc.desktop from list if not running Live
-    if (test != "aufs" || test != "overlay") {
+    if (test != "aufs" && test != "overlay") {
         foreach(QString item, live_list) {
             if (item.contains("mx-remastercc.desktop")) {
                 live_list.removeOne(item);
