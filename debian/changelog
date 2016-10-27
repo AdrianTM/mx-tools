@@ -1,3 +1,9 @@
+mx-tools (16.10mx16+5) mx; urgency=medium
+
+  * bug fix
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 27 Oct 2016 10:51:31 -0400
+
 mx-tools (16.10mx16+4) mx; urgency=medium
 
   * don't show mx-remaster unless running live
