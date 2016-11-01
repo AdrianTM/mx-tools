@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 01 Nov 2016 09:51:52 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 16.11mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (16.11mx16) mx; urgency=medium
+ .
+   * adjust windows width
+Checksums-Sha1:
+ 89c58791857055a8387c36789242bf1c7751b659 49206 mx-tools_16.11mx16_i386.deb
+Checksums-Sha256:
+ a5920e13dd16d5fd86d2cdc26850ab6db9d718815904aaf67365d9013307db1a 49206 mx-tools_16.11mx16_i386.deb
+Files:
+ d505195ac39c548271eca4260f3e2aeb 49206 admin optional mx-tools_16.11mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYGJ9bAAoJEHCTjHgGee6YG6EH/2ValnTahJ9q4oN2QCPdqE3r
+iH7OOqsP9dB2OV4lgyB+ZmNrD+uyfeArji8f69Dudy9JYGlC05GIWEqbKVolmu0r
+oxmGhyHpvCyXMWLjz3V2v2iwLMZ+tMHED8n91gZJMqL95Yqq4cxPAz65SjVckuSw
+tBVpdgO1RdF6QzAQBMqWQjhfoYEB3TSGCEebGtZ21hsJLaE8ziqCTBomCPr2WCDJ
+tHQaJknWVVaXkpj4tw1ThJFluCDVfquJZMPQkAflh/gmvOPAvAYgs8RqXGMWm0CA
+foifNl9ufCD9FqVv0/ZPZntTOzVIQQd849BFRqbkGCW1FL6TUHt6qXQy6XkbAn4=
+=p1Dw
+-----END PGP SIGNATURE-----

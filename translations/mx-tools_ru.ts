@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="290"/>
         <source>MX Tools</source>
         <translation>MX Инструменты</translation>
     </message>
@@ -184,32 +184,32 @@
         <translation type="vanished">Выберите звуковую карту</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="288"/>
+        <location filename="../mxtools.cpp" line="289"/>
         <source>About MX Tools</source>
         <translation>О программе MX Инструменты</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="290"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="291"/>
+        <location filename="../mxtools.cpp" line="292"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Средства настройки для MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="292"/>
+        <location filename="../mxtools.cpp" line="293"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="293"/>
+        <location filename="../mxtools.cpp" line="294"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="294"/>
+        <location filename="../mxtools.cpp" line="295"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>

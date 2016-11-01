@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="290"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -180,32 +180,32 @@
         <translation type="vanished">使用するサウントカードを選択して下さい</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="288"/>
+        <location filename="../mxtools.cpp" line="289"/>
         <source>About MX Tools</source>
         <translation>MX ツールについて</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="290"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="291"/>
+        <location filename="../mxtools.cpp" line="292"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>MX Linux の設定ツール</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="292"/>
+        <location filename="../mxtools.cpp" line="293"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="293"/>
+        <location filename="../mxtools.cpp" line="294"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="294"/>
+        <location filename="../mxtools.cpp" line="295"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>

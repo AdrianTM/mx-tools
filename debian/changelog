@@ -1,3 +1,9 @@
+mx-tools (16.11mx16) mx; urgency=medium
+
+  * adjust windows width
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 01 Nov 2016 09:51:52 -0400
+
 mx-tools (16.10mx16+5) mx; urgency=medium
 
   * bug fix

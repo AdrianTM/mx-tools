@@ -62,6 +62,7 @@ mxtools::mxtools(QWidget *parent) :
     addButtons(info_map);
     ui->lineSearch->setFocus();
     this->adjustSize();
+    this->resize(this->width() + 15, this->height());
     //qDebug() << "list" << category_map;
 }
 

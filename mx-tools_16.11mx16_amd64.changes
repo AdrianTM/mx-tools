@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 01 Nov 2016 09:51:52 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 16.11mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (16.11mx16) mx; urgency=medium
+ .
+   * adjust windows width
+Checksums-Sha1:
+ 3eb62c3c7fb059dee6bc184304750d205b2aed01 1161 mx-tools_16.11mx16.dsc
+ fba71289a4a3d50b06bbbb6734fa5b4646a871eb 73520 mx-tools_16.11mx16.tar.xz
+ 7f717b65e0d2bbae5dc2b309b35ac9a99500d999 48684 mx-tools_16.11mx16_amd64.deb
+Checksums-Sha256:
+ 19567d4a0e1df84a1f50afd7c74c56d1134ff927b02613fb44cc36fd513a3f85 1161 mx-tools_16.11mx16.dsc
+ 917a56eed57ae47d17d386b9d3a1207943f95c49b6a4b2dce29775b05fcee942 73520 mx-tools_16.11mx16.tar.xz
+ 5998c973793e2c1467ea1021ad33de50b223f71e4fbd3f047da37e0f04c39c8f 48684 mx-tools_16.11mx16_amd64.deb
+Files:
+ de7e60ef87ddae37e5fa981b2554020a 1161 admin optional mx-tools_16.11mx16.dsc
+ db07150cebf4da2ec8bb7475eae0e280 73520 admin optional mx-tools_16.11mx16.tar.xz
+ 4955a7ef8292d9bdb8591015724e43f2 48684 admin optional mx-tools_16.11mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYGJ7vAAoJEHCTjHgGee6YtvYH/3gG4XIpD96vXxDHpdygMTW4
+u/pZhjvA8XDl/GxJBzbymC3hlFrl0avGcxt9B4jZmwkQpE2vyb62tcoamlcohTo/
+xLNu1iteB9FCYvZv5DCxEv+56ethhH6qBf+mZOLTNOKby1oKZUCvNDDR4Hgsmvcv
+fpB5MMdMU436sl4rk6VfwT23qAEr3ji5wDizrEfi38aar4YJWs2X2WjwJkTpEfFH
+iymPZJ6/gmJfdufqh1IU2ED3ngRHDnpVgd6+C7xvBiwgQ7JlsNacbzPmoZR7d6/X
+2Nk66G0slksDo9VDtgcP4rF2N6qlUplANIu1582N3TXorcchC7pCFrTuB70eyGY=
+=qiTK
+-----END PGP SIGNATURE-----
