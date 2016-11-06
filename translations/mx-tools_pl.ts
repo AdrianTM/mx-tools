@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="290"/>
+        <location filename="../mxtools.cpp" line="289"/>
         <source>MX Tools</source>
         <translation>MX Narzędzia</translation>
     </message>
@@ -152,32 +152,32 @@
         <translation type="vanished">Przełącz użytkownika bez wylogowania.</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="288"/>
         <source>About MX Tools</source>
         <translation>O MX Narzędzia</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="290"/>
+        <location filename="../mxtools.cpp" line="289"/>
         <source>Version: </source>
         <translation>Wersja:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="292"/>
+        <location filename="../mxtools.cpp" line="291"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Narzędzia konfiguracyjne dla dystrybucji MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="293"/>
+        <location filename="../mxtools.cpp" line="292"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="294"/>
+        <location filename="../mxtools.cpp" line="293"/>
         <source>License</source>
         <translation>Licencja</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="295"/>
+        <location filename="../mxtools.cpp" line="294"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
     </message>

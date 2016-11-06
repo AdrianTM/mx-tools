@@ -44,10 +44,10 @@ mxtools::mxtools(QWidget *parent) :
     utilities_list = listDesktopFiles("MX-Utilities", "/usr/share/applications");
 
     QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
-    // remove mx-remastercc.desktop from list if not running Live
+    // remove mx-remastercc and live-kernel-updater from list if not running Live
     if (!(test == "aufs" || test == "overlay")) {
         foreach(QString item, live_list) {
-            if (item.contains("mx-remastercc.desktop")) {
+            if (item.contains("mx-remastercc.desktop") || item.contains("live-kernel-updater.desktop")) {
                 live_list.removeOne(item);
             }
         }
@@ -156,7 +156,6 @@ void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > in
     QString icon_name;
     QString file_name;
     QString terminal_switch;
-    uint termdata;
 
     foreach (QString category, info_map.keys()) {
         if (!info_map.values(category).isEmpty()) {

@@ -1,3 +1,9 @@
+mx-tools (16.11mx16+1) mx; urgency=medium
+
+  * remove live-kernel-update when not running in a live environment
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 06 Nov 2016 18:10:20 -0500
+
 mx-tools (16.11mx16) mx; urgency=medium
 
   * adjust windows width

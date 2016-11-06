@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="290"/>
+        <location filename="../mxtools.cpp" line="289"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -184,32 +184,32 @@
         <translation type="vanished">Selecteer Geluidskaart</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="288"/>
         <source>About MX Tools</source>
         <translation>Over MX Gereedschappen</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="290"/>
+        <location filename="../mxtools.cpp" line="289"/>
         <source>Version: </source>
         <translation>Versie:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="292"/>
+        <location filename="../mxtools.cpp" line="291"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Configuratiegereedschappen voor MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="293"/>
+        <location filename="../mxtools.cpp" line="292"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="294"/>
+        <location filename="../mxtools.cpp" line="293"/>
         <source>License</source>
         <translation>Licentie</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="295"/>
+        <location filename="../mxtools.cpp" line="294"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
