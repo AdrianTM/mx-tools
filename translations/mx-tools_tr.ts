@@ -1,11 +1,13 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="tr">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="289"/>
         <source>MX Tools</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
@@ -45,22 +47,22 @@
     <message>
         <location filename="../mxtools.ui" line="239"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="255"/>
         <source>Hide individual tools from the menu</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="274"/>
         <source>search</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="288"/>
         <source>About MX Tools</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="289"/>
@@ -70,7 +72,7 @@
     <message>
         <location filename="../mxtools.cpp" line="291"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="292"/>

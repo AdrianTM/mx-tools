@@ -1,3 +1,9 @@
+mx-tools (16.11mx16+2) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 16 Nov 2016 13:49:42 -0500
+
 mx-tools (16.11mx16+1) mx; urgency=medium
 
   * remove live-kernel-update when not running in a live environment
