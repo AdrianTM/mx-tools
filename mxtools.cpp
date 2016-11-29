@@ -25,7 +25,7 @@
 #include "flatbutton.h"
 
 #include <QFile>
-//#include <QDebug>
+#include <QDebug>
 
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
@@ -43,6 +43,16 @@ mxtools::mxtools(QWidget *parent) :
     software_list = listDesktopFiles("MX-Software", "/usr/share/applications");
     utilities_list = listDesktopFiles("MX-Utilities", "/usr/share/applications");
 
+    QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
+    // remove mx-remastercc and live-kernel-updater from list if not running Live
+    if (!(test == "aufs" || test == "overlay")) {
+        foreach(QString item, live_list) {
+            if (item.contains("mx-remastercc.desktop") || item.contains("live-kernel-updater.desktop")) {
+                live_list.removeOne(item);
+            }
+        }
+    }
+
     category_map.insertMulti("MX-Live", live_list);
     category_map.insertMulti("MX-Maintenance", maintenance_list);
     category_map.insertMulti("MX-Setup", setup_list);
@@ -52,6 +62,7 @@ mxtools::mxtools(QWidget *parent) :
     addButtons(info_map);
     ui->lineSearch->setFocus();
     this->adjustSize();
+    this->resize(this->width() + 15, this->height());
     //qDebug() << "list" << category_map;
 }
 
@@ -100,8 +111,6 @@ void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
     QLocale locale;
     QString lang = locale.bcp47Name();
     QMultiMap<QString, QStringList> map;
-    QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
-    //qDebug() << "test" << test;
 
     foreach (QString category, category_map.keys()) {
         list = category_map.value(category);
@@ -129,18 +138,10 @@ void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
             icon_name = getCmdOut("grep ^Icon= " + file_name + " | cut -f2 -d=");
             terminal_switch = getCmdOut("grep ^Terminal= " + file_name + " | cut -f2 -d=");
             QStringList info;
-            // if running installed, hide mx-remaster
-            if ( test == "aufs" || test == "overlay" ) {
-                map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
-            } else {
-                if ( exec != "mx-remastercc") {
-                    map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
-                }
-            }
+            map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
         }
         info_map.insert(category, map);
         map.clear();
-        //qDebug() << "infomap" << info_map;
     }
 }
 
@@ -155,7 +156,6 @@ void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > in
     QString icon_name;
     QString file_name;
     QString terminal_switch;
-    uint termdata;
 
     foreach (QString category, info_map.keys()) {
         if (!info_map.values(category).isEmpty()) {
@@ -321,8 +321,10 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
 
     // creat a new_map with items that match the search argument
     foreach (QString category, info_map.keys()) {
+        qDebug() << category;
         QMultiMap<QString, QStringList> file_info =  info_map.value(category);
         foreach (QString file_name, category_map.value(category)) {
+            qDebug() << file_name;
             QString name = file_info.value(file_name)[0];
             QString comment = file_info.value(file_name)[1];
             QString category = file_info.value(file_name)[4];

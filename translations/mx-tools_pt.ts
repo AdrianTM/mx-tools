@@ -1,21 +1,23 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pt">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="289"/>
         <source>MX Tools</source>
-        <translation>MX Tools</translation>
+        <translation>MX_Ferramentas do Linux MX</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>About this application</translation>
+        <translation>Sobre esta aplicação</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>Sobre...</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="57"/>
@@ -25,12 +27,12 @@
     <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Cancel any changes then quit</source>
-        <translation>Cancel any changes then quit</translation>
+        <translation>Cancelar alterações e sair</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
         <source>Close</source>
-        <translation>Close</translation>
+        <translation>Encerrar</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="125"/>
@@ -45,32 +47,32 @@
     <message>
         <location filename="../mxtools.ui" line="239"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>These MX applications save time and effort with important tasks.</translation>
+        <translation>Estas ferramentas do MX poupam tempo e esforço ao executarem tarefas importantes.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="255"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Hide individual tools from the menu</translation>
+        <translation>Ocultar ferramentas do menu, individualmente</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="274"/>
         <source>search</source>
-        <translation>search</translation>
+        <translation>procurar</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="288"/>
         <source>About MX Tools</source>
-        <translation>About MX Tools</translation>
+        <translation>Sobre o MX_Ferramentas do Linux MX</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="289"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation>Versão:</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="291"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Configuration Tools for MX Linux</translation>
+        <translation>Ferramentas de configuração do Linux MX</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="292"/>
@@ -80,12 +82,12 @@
     <message>
         <location filename="../mxtools.cpp" line="293"/>
         <source>License</source>
-        <translation>License</translation>
+        <translation>Licença</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="294"/>
         <source>Cancel</source>
-        <translation>Cancel</translation>
+        <translation>Cancelar</translation>
     </message>
 </context>
 </TS>
