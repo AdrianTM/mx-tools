@@ -62,8 +62,11 @@ mxtools::mxtools(QWidget *parent) :
     addButtons(info_map);
     ui->lineSearch->setFocus();
     this->adjustSize();
-    this->resize(this->width() + 15, this->height());
+    //this->resize(this->width() + 15, this->height());
     //qDebug() << "list" << category_map;
+    this->resize(ui->gridLayout_btn->sizeHint().width() + 90, this->height());
+    qDebug() << "width window" << this->width();
+    qDebug() << "width btn layout area" << ui->gridLayout_btn->sizeHint().width();
 }
 
 mxtools::~mxtools()
