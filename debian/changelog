@@ -1,3 +1,9 @@
+mx-tools (16.11mx16+3) mx; urgency=medium
+
+  * modified window width calculation
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Wed, 16 Nov 2016 13:49:42 -0500
+
 mx-tools (16.11mx16+2) mx; urgency=medium
 
   * new translations
