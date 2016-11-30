@@ -1,21 +1,21 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="kk" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="292"/>
         <source>MX Tools</source>
-        <translation>Outils MX</translation>
+        <translation>MX саймандары</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>A propos de cette application</translation>
+        <translation>Бұл қолданба жөнінде</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>A propos...</translation>
+        <translation>Осы туралы...</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="57"/>
@@ -25,12 +25,12 @@
     <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Cancel any changes then quit</source>
-        <translation>Annuler toutes les modifications puis sortir</translation>
+        <translation>Өзгерістерді елемей, қолданбаны жабу</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
         <source>Close</source>
-        <translation>Fermer</translation>
+        <translation>Жабу</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="125"/>
@@ -40,37 +40,37 @@
     <message>
         <location filename="../mxtools.ui" line="144"/>
         <source>Manual</source>
-        <translation>Manuel</translation>
+        <translation>Нұсқаулық</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="239"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+        <translation>Бұл MX қолданбалары маңызды тапсырмаларды орындау кезінде уақытты үнемдейді.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="255"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Cacher les outils individuels du menu</translation>
+        <translation>Жеке-жеке саймандарды мәзірден жасыру</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="274"/>
         <source>search</source>
-        <translation>Rechercher</translation>
+        <translation>іздеу</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="291"/>
         <source>About MX Tools</source>
-        <translation>A propos de MX Outils</translation>
+        <translation>MX саймандары жөнінде</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="292"/>
         <source>Version: </source>
-        <translation>Version:</translation>
+        <translation>Нұсқасы:</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="294"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Outils de configuration pour MX Linux</translation>
+        <translation>MX Linux үшін баптау саймандары</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="295"/>
@@ -80,12 +80,12 @@
     <message>
         <location filename="../mxtools.cpp" line="296"/>
         <source>License</source>
-        <translation>Licence</translation>
+        <translation>Лицензиясы</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="297"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation>Бас тарту</translation>
     </message>
 </context>
 </TS>
