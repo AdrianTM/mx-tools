@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 12 Mar 2017 15:45:45 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 17.3mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (17.3mx16) mx; urgency=medium
+ .
+   * hide Xfce-only items when not running in Xfce
+Checksums-Sha1:
+ 5e5b123d1c07b5dfbbfbd8d29cb1dd2477f30c57 48872 mx-tools_17.3mx16_i386.deb
+Checksums-Sha256:
+ c2bb1732ae39c28837c7321763e96705af0347ce1533ded852c7133cc3899c9e 48872 mx-tools_17.3mx16_i386.deb
+Files:
+ 4200fcde90287df9e3a7d9db09c3ebd7 48872 admin optional mx-tools_17.3mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYxadtAAoJEHCTjHgGee6YlZ4IAKyIdXAQOklK6rSga8YujIQg
+rSrsy2xzJleivEmMJI8Oq1yaJhZVy/Ll6jrimCvvojAPiMTothZ2vcrCigHtKUl6
+21ksjMC4W04+qPR5kgC+xtgdvH4l4o+LP/JmByZ5gXIuES2//syaSo14cNLHGLbA
+39x3hUyMS3BwjCuncc3mUKZmHpPaN0PvDcozT1AUNX1X3JSrvuWr6CUTinTCTm9I
+j7sAgrMoehVcX4h6bmzbkO/wF5gbh5fRvTeXiRmEJ/ldkoJNBXvXUknzVWVwVBov
+6A7hMxq81CJab9+XzQdXaASUp7uiYwFMihayplTG40B0DkvIh7LMpvaQbAel56I=
+=0SaO
+-----END PGP SIGNATURE-----

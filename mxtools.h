@@ -53,13 +53,13 @@ public:
     QStringList software_list;
     QStringList utilities_list;
 
-    void readInfo(QMultiMap<QString, QStringList>);
-    void addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > info_map);
-    void hideShowIcon(QString file_name, bool hide);
+    void readInfo(const QMultiMap<QString, QStringList> &category_map);
+    void addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map);
+    void hideShowIcon(const QString &file_name, bool hide);
     QIcon findIcon(QString icon_name);
-    QString getCmdOut(QString cmd);
+    QString getCmdOut(const QString &cmd);
     QString getVersion(QString name);
-    QStringList listDesktopFiles(QString search_string, QString location);
+    QStringList listDesktopFiles(const QString &search_string, const QString &location);
 
 private slots:
     void on_buttonAbout_clicked();
@@ -71,6 +71,7 @@ private slots:
 
 private:
     Ui::mxtools *ui;
+    void removeXfceOnly(QStringList &list);
 };
 
 #endif // MXTOOLS_H

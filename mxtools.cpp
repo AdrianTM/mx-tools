@@ -25,7 +25,7 @@
 #include "flatbutton.h"
 
 #include <QFile>
-#include <QDebug>
+//#include <QDebug>
 
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
@@ -37,11 +37,12 @@ mxtools::mxtools(QWidget *parent) :
         ui->hideCheckBox->setChecked(true);
     }
 
-    live_list = listDesktopFiles("MX-Live", "/usr/share/applications");
-    maintenance_list = listDesktopFiles("MX-Maintenance", "/usr/share/applications");
-    setup_list = listDesktopFiles("MX-Setup", "/usr/share/applications");
-    software_list = listDesktopFiles("MX-Software", "/usr/share/applications");
-    utilities_list = listDesktopFiles("MX-Utilities", "/usr/share/applications");
+    QString search_folder = "/usr/share/applications";
+    live_list = listDesktopFiles("MX-Live", search_folder);
+    maintenance_list = listDesktopFiles("MX-Maintenance", search_folder);
+    setup_list = listDesktopFiles("MX-Setup", search_folder);
+    software_list = listDesktopFiles("MX-Software", search_folder);
+    utilities_list = listDesktopFiles("MX-Utilities", search_folder);
 
     QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
     // remove mx-remastercc and live-kernel-updater from list if not running Live
@@ -53,11 +54,21 @@ mxtools::mxtools(QWidget *parent) :
         }
     }
 
+    // remove item from list if it is only meant for XFCE
+    if (qgetenv("XDG_CURRENT_DESKTOP") != "XFCE") {
+        removeXfceOnly(live_list);
+        removeXfceOnly(maintenance_list);
+        removeXfceOnly(setup_list);
+        removeXfceOnly(software_list);
+        removeXfceOnly(utilities_list);
+    }
+
     category_map.insertMulti("MX-Live", live_list);
     category_map.insertMulti("MX-Maintenance", maintenance_list);
     category_map.insertMulti("MX-Setup", setup_list);
     category_map.insertMulti("MX-Software", software_list);
     category_map.insertMulti("MX-Utilities", utilities_list);
+
     readInfo(category_map);
     addButtons(info_map);
     ui->lineSearch->setFocus();
@@ -65,8 +76,8 @@ mxtools::mxtools(QWidget *parent) :
     //this->resize(this->width() + 15, this->height());
     //qDebug() << "list" << category_map;
     this->resize(ui->gridLayout_btn->sizeHint().width() + 90, this->height());
-    qDebug() << "width window" << this->width();
-    qDebug() << "width btn layout area" << ui->gridLayout_btn->sizeHint().width();
+    //qDebug() << "width window" << this->width();
+    //qDebug() << "width btn layout area" << ui->gridLayout_btn->sizeHint().width();
 }
 
 mxtools::~mxtools()
@@ -75,7 +86,7 @@ mxtools::~mxtools()
 }
 
 // Util function
-QString mxtools::getCmdOut(QString cmd) {
+QString mxtools::getCmdOut(const QString &cmd) {
     proc = new QProcess(this);
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     proc->setReadChannel(QProcess::StandardOutput);
@@ -92,7 +103,7 @@ QString mxtools::getVersion(QString name) {
 
 
 // List .desktop files that contain a specific string
-QStringList mxtools::listDesktopFiles(QString search_string, QString location)
+QStringList mxtools::listDesktopFiles(const QString &search_string, const QString &location)
 {
     QStringList listDesktop;
     QString cmd = QString("grep -Elr %1 %2 | sort").arg(search_string).arg(location);
@@ -103,7 +114,8 @@ QStringList mxtools::listDesktopFiles(QString search_string, QString location)
     return listDesktop;
 }
 
-void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
+// Load info (name, comment, exec, icon_name, category, terminal) to the info_map
+void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
 {
     QString name;
     QString comment;
@@ -148,7 +160,8 @@ void mxtools::readInfo(QMultiMap<QString, QStringList> category_map)
     }
 }
 
-void mxtools::addButtons(QMultiMap<QString, QMultiMap<QString, QStringList> > info_map)
+// read the info_map and add the buttons to the UI
+void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map)
 {
     int col = 0;
     int row = 0;
@@ -258,6 +271,7 @@ void mxtools::btn_clicked()
     this->show();
 }
 
+// hide icons in menu checkbox
 void mxtools::on_hideCheckBox_clicked(bool checked) {
     foreach (QStringList list, category_map) {
         foreach (QString file_name, list) {
@@ -268,7 +282,7 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
 }
 
 // hide or show icon for .desktop file
-void mxtools::hideShowIcon(QString file_name, bool hide)
+void mxtools::hideShowIcon(const QString &file_name, bool hide)
 {
     QString hide_str = hide ? "true" : "false";
 
@@ -310,6 +324,7 @@ void mxtools::on_buttonHelp_clicked()
     this->show();
 }
 
+// text changed in search field
 void mxtools::on_lineSearch_textChanged(const QString &arg1)
 {
     // remove all items from the layout
@@ -324,10 +339,10 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
 
     // creat a new_map with items that match the search argument
     foreach (QString category, info_map.keys()) {
-        qDebug() << category;
+        //qDebug() << category;
         QMultiMap<QString, QStringList> file_info =  info_map.value(category);
         foreach (QString file_name, category_map.value(category)) {
-            qDebug() << file_name;
+            //qDebug() << file_name;
             QString name = file_info.value(file_name)[0];
             QString comment = file_info.value(file_name)[1];
             QString category = file_info.value(file_name)[4];
@@ -343,6 +358,16 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
     }
     if (!new_map.empty()) {
         arg1 == "" ? addButtons(info_map) : addButtons(new_map);
+    }
+}
+
+// remove Xfce-only apps from the list
+void mxtools::removeXfceOnly(QStringList &list)
+{
+    foreach(QString file_name, list) {
+        if (system("grep -iq 'OnlyShowIn=XFCE' "+ file_name.toUtf8()) == 0) {
+            list.removeOne(file_name);
+        }
     }
 }
 

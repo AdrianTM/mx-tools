@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="292"/>
+        <location filename="../mxtools.cpp" line="306"/>
         <source>MX Tools</source>
         <translation>MX Herramientas</translation>
     </message>
@@ -25,9 +25,13 @@
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="115"/>
         <source>Cancel any changes then quit</source>
-        <translation>Cancelar los cambios y luego salir</translation>
+        <translation type="vanished">Cancelar los cambios y luego salir</translation>
+    </message>
+    <message>
+        <location filename="../mxtools.ui" line="115"/>
+        <source>Close application</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
@@ -60,32 +64,32 @@
         <translation>busca</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="291"/>
+        <location filename="../mxtools.cpp" line="305"/>
         <source>About MX Tools</source>
         <translation>Acerca de MX Herramientas</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="292"/>
+        <location filename="../mxtools.cpp" line="306"/>
         <source>Version: </source>
         <translation>Versión:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="294"/>
+        <location filename="../mxtools.cpp" line="308"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Herramientas de configuración para MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="295"/>
+        <location filename="../mxtools.cpp" line="309"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Derechos de Autor (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="296"/>
+        <location filename="../mxtools.cpp" line="310"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="297"/>
+        <location filename="../mxtools.cpp" line="311"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>

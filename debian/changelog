@@ -1,3 +1,9 @@
+mx-tools (17.3mx16) mx; urgency=medium
+
+  * hide Xfce-only items when not running in Xfce
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 12 Mar 2017 15:45:45 -0400
+
 mx-tools (16.11mx16+4) mx; urgency=medium
 
   * new translations 
