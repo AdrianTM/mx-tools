@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -25,13 +23,9 @@
         <translation>Alt+B</translation>
     </message>
     <message>
-        <source>Cancel any changes then quit</source>
-        <translation type="vanished">Avbryt ändringarna och sedan sluta</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng programmet</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>

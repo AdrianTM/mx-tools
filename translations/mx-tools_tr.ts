@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="306"/>
         <source>MX Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Araçlar</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
@@ -25,13 +23,9 @@
         <translation>Alt+B</translation>
     </message>
     <message>
-        <source>Cancel any changes then quit</source>
-        <translation type="vanished">Değişiklikleri iptal et ve çık</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
@@ -51,22 +45,22 @@
     <message>
         <location filename="../mxtools.ui" line="239"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="255"/>
         <source>Hide individual tools from the menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Bireysel araçları menüde gösterme</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="274"/>
         <source>search</source>
-        <translation type="unfinished"></translation>
+        <translation>Ara</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="305"/>
         <source>About MX Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Araçları Hakkında</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="306"/>
@@ -76,7 +70,7 @@
     <message>
         <location filename="../mxtools.cpp" line="308"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Linux için Yapılandırma Araçları</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="309"/>

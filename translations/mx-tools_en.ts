@@ -3,7 +3,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="306"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -24,8 +24,8 @@
     </message>
     <message>
         <location filename="../mxtools.ui" line="115"/>
-        <source>Cancel any changes then quit</source>
-        <translation>Cancel any changes then quit</translation>
+        <source>Close application</source>
+        <translation>Close application</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
@@ -58,32 +58,32 @@
         <translation>search</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="288"/>
+        <location filename="../mxtools.cpp" line="305"/>
         <source>About MX Tools</source>
         <translation>About MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="289"/>
+        <location filename="../mxtools.cpp" line="306"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="291"/>
+        <location filename="../mxtools.cpp" line="308"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Configuration Tools for MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="292"/>
+        <location filename="../mxtools.cpp" line="309"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="293"/>
+        <location filename="../mxtools.cpp" line="310"/>
         <source>License</source>
         <translation>License</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="294"/>
+        <location filename="../mxtools.cpp" line="311"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>

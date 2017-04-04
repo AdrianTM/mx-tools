@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -25,13 +23,9 @@
         <translation>Alt+B</translation>
     </message>
     <message>
-        <source>Cancel any changes then quit</source>
-        <translation type="vanished">Cofnij wszelkie zmiany i wyjdź</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
@@ -61,7 +55,7 @@
     <message>
         <location filename="../mxtools.ui" line="274"/>
         <source>search</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="305"/>

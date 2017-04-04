@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="306"/>
         <source>MX Tools</source>
-        <translation>MX_Ferramentas do Linux MX</translation>
+        <translation>Ferramentas MX</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
@@ -25,13 +23,9 @@
         <translation>Alt+B</translation>
     </message>
     <message>
-        <source>Cancel any changes then quit</source>
-        <translation type="vanished">Cancelar alterações e sair</translation>
-    </message>
-    <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar a aplicação</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
