@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="tr">
 <context>
     <name>mxtools</name>
     <message>
@@ -25,7 +27,7 @@
     <message>
         <location filename="../mxtools.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="118"/>
@@ -45,7 +47,7 @@
     <message>
         <location filename="../mxtools.ui" line="239"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="255"/>
