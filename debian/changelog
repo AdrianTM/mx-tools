@@ -1,3 +1,9 @@
+mx-tools (17.4mx16+1) mx; urgency=medium
+
+  * fix displaying names in different languages
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 17 Apr 2017 11:11:49 -0400
+
 mx-tools (17.4mx16) mx; urgency=medium
 
   * new translations

@@ -25,7 +25,7 @@
 #include "flatbutton.h"
 
 #include <QFile>
-//#include <QDebug>
+#include <QDebug>
 
 mxtools::mxtools(QWidget *parent) :
     QDialog(parent),
@@ -133,7 +133,7 @@ void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
             name = "";
             comment = "";
             if (lang != "en") {
-                name = getCmdOut("grep -i ^'Name\\￼[" + lang + "\\]=' " + file_name + " | cut -f2 -d=");
+                name = getCmdOut("grep -i ^'Name\\[" + lang + "\\]=' " + file_name + " | cut -f2 -d=");
                 comment = getCmdOut("grep -i ^'Comment\\[" + lang + "\\]=' " + file_name + " | cut -f2 -d=");
             }
             if (lang == "pt" && name == "") { // Brazilian if Portuguese and name empty
