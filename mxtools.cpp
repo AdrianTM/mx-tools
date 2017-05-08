@@ -33,7 +33,7 @@ mxtools::mxtools(QWidget *parent) :
 {
     ui->setupUi(this);
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
-    if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx/mx-user.desktop") == 0) {
+    if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
 
