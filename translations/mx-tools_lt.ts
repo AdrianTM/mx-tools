@@ -20,42 +20,42 @@
         <translation>Apie...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="57"/>
+        <location filename="../mxtools.ui" line="56"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="115"/>
+        <location filename="../mxtools.ui" line="114"/>
         <source>Close application</source>
         <translation>Užverti programą</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="118"/>
+        <location filename="../mxtools.ui" line="117"/>
         <source>Close</source>
         <translation>Užverti</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="125"/>
+        <location filename="../mxtools.ui" line="123"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="144"/>
+        <location filename="../mxtools.ui" line="142"/>
         <source>Manual</source>
         <translation>Vadovas</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="239"/>
+        <location filename="../mxtools.ui" line="236"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Šios MX programos sutaupo laiko ir pastangų, atliekant svarbias užduotis.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="255"/>
+        <location filename="../mxtools.ui" line="252"/>
         <source>Hide individual tools from the menu</source>
         <translation>Slėpti atskirus įrankius iš meniu</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="274"/>
+        <location filename="../mxtools.ui" line="271"/>
         <source>search</source>
         <translation>ieškoti</translation>
     </message>

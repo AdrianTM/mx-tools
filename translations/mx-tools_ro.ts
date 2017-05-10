@@ -20,42 +20,42 @@
         <translation>Despre...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="57"/>
+        <location filename="../mxtools.ui" line="56"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="115"/>
+        <location filename="../mxtools.ui" line="114"/>
         <source>Close application</source>
         <translation>Închide programul </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="118"/>
+        <location filename="../mxtools.ui" line="117"/>
         <source>Close</source>
         <translation>Închidere</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="125"/>
+        <location filename="../mxtools.ui" line="123"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="144"/>
+        <location filename="../mxtools.ui" line="142"/>
         <source>Manual</source>
         <translation>Manual</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="239"/>
+        <location filename="../mxtools.ui" line="236"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Aceste programe MX economisesc timpul si efortul necesar pentru indeplinirea diverselor sarcini.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="255"/>
+        <location filename="../mxtools.ui" line="252"/>
         <source>Hide individual tools from the menu</source>
         <translation>Ascunde aceste instrumente din meniul Xfce.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="274"/>
+        <location filename="../mxtools.ui" line="271"/>
         <source>search</source>
         <translation>căutare</translation>
     </message>

@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 10 May 2017 15:55:58 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 17.5mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (17.5mx16) mx; urgency=medium
+ .
+   * update icons
+Checksums-Sha1:
+ 389459e2e51623029c80c503e0cbf7b015ae0143 1131 mx-tools_17.5mx16.dsc
+ 5e46b6c28175d80c5ab4c09a9c7f9006ae964431 29684 mx-tools_17.5mx16.tar.xz
+ cb9dee9dadb8c89cd5ae60d2126e084661d1c79c 47360 mx-tools_17.5mx16_amd64.deb
+Checksums-Sha256:
+ d99d2cfb24da026cc6f61c8fd553d1ef89b051a53def7837ed1439cd68d81bff 1131 mx-tools_17.5mx16.dsc
+ 355e431422420317259463db1b1d86b62eceb341323ad2bb90568d2d17203e92 29684 mx-tools_17.5mx16.tar.xz
+ 5f89c322db3f8cc1f2094413347dd94edf7dcd3d308281c2f295d10ad0c666e4 47360 mx-tools_17.5mx16_amd64.deb
+Files:
+ 2322ea4d74d5da1a4fb9715d3d95d06f 1131 admin optional mx-tools_17.5mx16.dsc
+ 2d71fa7878ca08d4f5c80600eb5acbe2 29684 admin optional mx-tools_17.5mx16.tar.xz
+ fa38cf5724a80e6eb8636c7960d0e75b 47360 admin optional mx-tools_17.5mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZE3CNAAoJEHCTjHgGee6YGf0IAMOuxGMKgbd1mCUhLzL8kq0g
+S+VWibrOLxYn/K/uxNClZw2knCqYI5tVKWTOX1OZCob2NxDFJ4z6rzKH4yqXqbnu
+8wytpTBqrmgolx+C2+XkRCanazWEjSPkAJC1+Ubev/i/qBDeu5MJKh5YNydVSKqb
+DE43Ehg+dwPtPISePqfJkvBuJRpeO9gcIoA+ZR4wdEpvGgIwfsu0ovKb2ZJyWKBw
+URibWzTXjwoplF3rvBQ7pZlYoaKuS5MYAMd0O6VvT3pCWWPXfzzbMhF6KNzZu2hR
+qGBI6uyGGm/jBc5DrmqZ5RPZRp6KSZjGoQ+cSvyZYtfH/9vldWLPRKFjwS2ib7o=
+=+40+
+-----END PGP SIGNATURE-----

@@ -311,6 +311,7 @@ void mxtools::on_buttonAbout_clicked()
     msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
     if (msgBox.exec() == QMessageBox::AcceptRole) {
         system("mx-viewer file:///usr/share/doc/mx-tools/license.html 'MX Tools License'");
+    }
     this->show();
 }
 

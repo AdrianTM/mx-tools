@@ -1,3 +1,9 @@
+mx-tools (17.5mx16) mx; urgency=medium
+
+  * update icons
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 10 May 2017 15:55:58 -0400
+
 mx-tools (17.4mx16+1) mx; urgency=medium
 
   * fix displaying names in different languages
