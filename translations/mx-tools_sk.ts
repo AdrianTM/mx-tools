@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
@@ -10,12 +10,12 @@
     <message>
         <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>Impressum zu diesem Programm</translation>
+        <translation>O tejto aplikácii</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>Impressum</translation>
+        <translation>O Programe</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="56"/>
@@ -25,12 +25,12 @@
     <message>
         <location filename="../mxtools.ui" line="114"/>
         <source>Close application</source>
-        <translation>Anwendung schließen</translation>
+        <translation>Zatvoriť aplikáciu</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="117"/>
         <source>Close</source>
-        <translation>Schließen</translation>
+        <translation>Zatvoriť</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="123"/>
@@ -40,37 +40,37 @@
     <message>
         <location filename="../mxtools.ui" line="142"/>
         <source>Manual</source>
-        <translation>Handbuch</translation>
+        <translation>Užívateľský manuál</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="236"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Diese MX-Anwendungen ersparen Zeit und Mühe bei wichtigen Aufgaben (z.B. Remastern der Distro)</translation>
+        <translation>Tieto aplikácie zkracujú čas a zmenšujú námahu s dôležitými úlohami. </translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="252"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Werkzeuge nicht nochmal einzeln im Menü zeigen</translation>
+        <translation>Schovať individuálne položky v hlavnej ponuke</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="271"/>
         <source>search</source>
-        <translation>Suche </translation>
+        <translation>hľadať</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="305"/>
         <source>About MX Tools</source>
-        <translation>Impressum MX Tools</translation>
+        <translation>O programe MX Tools</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="306"/>
         <source>Version: </source>
-        <translation>Version:</translation>
+        <translation>Verzia</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="308"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Konfigurationswerkzeuge für MX</translation>
+        <translation>Konfiguračné nástroje MX Linux</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="309"/>
@@ -80,12 +80,12 @@
     <message>
         <location filename="../mxtools.cpp" line="310"/>
         <source>License</source>
-        <translation>Lizenz</translation>
+        <translation>Licencia</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="311"/>
         <source>Cancel</source>
-        <translation>Abbruch</translation>
+        <translation>Zrušiť</translation>
     </message>
 </context>
 </TS>
