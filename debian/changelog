@@ -1,6 +1,7 @@
 mx-tools (17.9) mx; urgency=medium
 
   * new icon
+  * save location and size of app at exit
 
  -- Adrian <adrian@mxlinux.org>  Sat, 30 Sep 2017 12:26:15 -0400
 

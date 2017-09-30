@@ -25,6 +25,7 @@
 #include "flatbutton.h"
 
 #include <QFile>
+#include <QSettings>
 #include <QDebug>
 
 mxtools::mxtools(QWidget *parent) :
@@ -76,6 +77,9 @@ mxtools::mxtools(QWidget *parent) :
     //this->resize(this->width() + 15, this->height());
     //qDebug() << "list" << category_map;
     this->resize(ui->gridLayout_btn->sizeHint().width() + 90, this->height());
+
+    QSettings settings("MX-Linux", "mx-tools");
+    restoreGeometry(settings.value("geometry").toByteArray());
     //qDebug() << "width window" << this->width();
     //qDebug() << "width btn layout area" << ui->gridLayout_btn->sizeHint().width();
 }
@@ -269,6 +273,13 @@ void mxtools::btn_clicked()
     //qDebug() << sender()->objectName();
     system(sender()->objectName().toUtf8());
     this->show();
+}
+
+void mxtools::closeEvent(QCloseEvent *)
+{
+    qDebug() << "Close event";
+    QSettings settings("MX-Linux", "mx-tools");
+    settings.setValue("geometry", saveGeometry());
 }
 
 // hide icons in menu checkbox

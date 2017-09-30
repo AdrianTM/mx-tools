@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="306"/>
+        <location filename="../mxtools.cpp" line="317"/>
         <source>MX Tools</source>
         <translation>MX Įrankiai</translation>
     </message>
@@ -60,32 +60,32 @@
         <translation>ieškoti</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="305"/>
+        <location filename="../mxtools.cpp" line="316"/>
         <source>About MX Tools</source>
         <translation>Apie MX Įrankiai</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="306"/>
+        <location filename="../mxtools.cpp" line="317"/>
         <source>Version: </source>
         <translation>Versija: </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="308"/>
+        <location filename="../mxtools.cpp" line="319"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Konfigūravimo įrankiai, skirti MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="309"/>
+        <location filename="../mxtools.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Autorių teisės (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="310"/>
+        <location filename="../mxtools.cpp" line="321"/>
         <source>License</source>
         <translation>Licencija</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="311"/>
+        <location filename="../mxtools.cpp" line="322"/>
         <source>Cancel</source>
         <translation>Atsisakyti</translation>
     </message>

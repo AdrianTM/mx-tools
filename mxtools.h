@@ -53,20 +53,21 @@ public:
     QStringList software_list;
     QStringList utilities_list;
 
-    void readInfo(const QMultiMap<QString, QStringList> &category_map);
     void addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map);
     void hideShowIcon(const QString &file_name, bool hide);
+    void readInfo(const QMultiMap<QString, QStringList> &category_map);
+
     QIcon findIcon(QString icon_name);
     QString getCmdOut(const QString &cmd);
     QString getVersion(QString name);
     QStringList listDesktopFiles(const QString &search_string, const QString &location);
 
 private slots:
+    void btn_clicked();
+    void closeEvent(QCloseEvent *);
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
-    void btn_clicked();
     void on_hideCheckBox_clicked(bool checked);
-
     void on_lineSearch_textChanged(const QString &arg1);
 
 private:

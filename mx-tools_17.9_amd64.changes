@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 30 Sep 2017 12:26:15 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 17.9
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (17.9) mx; urgency=medium
+ .
+   * new icon
+   * save location and size of app at exit
+Checksums-Sha1:
+ 8e71e16bd292d4e5b292d7109fc3e7ac83de84f9 1115 mx-tools_17.9.dsc
+ f81aa1bf6321f29088bbcd6f17ef9dc7c7885214 30688 mx-tools_17.9.tar.xz
+ d39c42814a53501f527ad41467de64f6a9e567f5 49652 mx-tools_17.9_amd64.deb
+Checksums-Sha256:
+ 7e72fe82328b7b630256d6182c1e256f5f28af75a1074846d1651de1ea94c56d 1115 mx-tools_17.9.dsc
+ 06cce83aff5a34b4d857e67e24080f2ae426a66cf1e724c164bfcc4afed1fbc9 30688 mx-tools_17.9.tar.xz
+ 02e3ab511cbb9b1148b45d7e0f94b61f2f7eaafd08fd3638069ddbe18dd2fe17 49652 mx-tools_17.9_amd64.deb
+Files:
+ 0893bc940782ec186c59a01b65a5f836 1115 admin optional mx-tools_17.9.dsc
+ b720747ca6ff71b17ac0a74c8eec37ff 30688 admin optional mx-tools_17.9.tar.xz
+ 422dec3a4a2fff9bc2f94823b74c328f 49652 admin optional mx-tools_17.9_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZz9ThAAoJEHCTjHgGee6YA5kH/0T9sacHC4V6oBx+VhaPUGVB
+pk5EOABod1dm0zCVJz1YzwFm1QoYi1GFGcjGdLTJ2qXaUbae7J7aACPD1AdbD5Tv
+c82PEIDfWL/CjEVv+lMWie0c8yXn1g+TMf1b1U6i6aKmxrjY3M/o7Lhc9CXOS3Z5
+CMKiKF9IDxuwx7Dx29yAAwpyJ3vRkRd2YMW3OyLVJ5R5PIUYgUOQg2O5elTs1eX4
+oo3MW9RtsLl8EgC2q3+t/nspniGmGlHmix+sOO7nF+c48oITzqayliuYx8oEQeNZ
+YCFeT2IsDuxzRJ2pADZyLmZz3iP/qVg1o52NT0Sdb9xSkTLE3Pd75AoQuPR511E=
+=I/Pq
+-----END PGP SIGNATURE-----
