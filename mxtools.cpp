@@ -277,7 +277,6 @@ void mxtools::btn_clicked()
 
 void mxtools::closeEvent(QCloseEvent *)
 {
-    qDebug() << "Close event";
     QSettings settings("MX-Linux", "mx-tools");
     settings.setValue("geometry", saveGeometry());
 }
