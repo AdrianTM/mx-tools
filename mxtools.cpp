@@ -178,7 +178,17 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
     QString terminal_switch;
 
     foreach (QString category, info_map.keys()) {
-        if (!info_map.values(category).isEmpty()) {
+        if (!info_map.value(category).isEmpty()) {
+            // add empty row and delimiter except for the first key
+            if (category != category_map.firstKey()) {
+                col = 0;
+                row += 1;
+                QFrame *line = new QFrame();
+                line->setFrameShape(QFrame::HLine);
+                line->setFrameShadow(QFrame::Sunken);
+                ui->gridLayout_btn->addWidget(line, row, col, 1, -1);
+                ui->gridLayout_btn->setRowStretch(row, 0);
+            }
             QLabel *label = new QLabel();
             //label->setStyleSheet("QLabel {color:black}");
             QFont font;
@@ -224,16 +234,6 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
                 QObject::connect(btn, SIGNAL(clicked()), this, SLOT(btn_clicked()));
             }
         }
-        // add empty row if it's not the last key
-        //if (category != category_map.lastKey()) {
-            col = 0;
-            row += 1;
-            QFrame *line = new QFrame();
-            line->setFrameShape(QFrame::HLine);
-            line->setFrameShadow(QFrame::Sunken);
-            ui->gridLayout_btn->addWidget(line, row, col, 1, -1);
-            ui->gridLayout_btn->setRowStretch(row, 0);
-        //}
     }
     ui->gridLayout_btn->setRowStretch(row, 1);
 }
