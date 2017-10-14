@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="316"/>
+        <location filename="../mxtools.cpp" line="315"/>
         <source>MX Tools</source>
         <translation>MX Strumenti</translation>
     </message>
@@ -60,32 +60,32 @@
         <translation>cerca</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="315"/>
+        <location filename="../mxtools.cpp" line="314"/>
         <source>About MX Tools</source>
         <translation>Informazioni su MX Strumenti</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="316"/>
+        <location filename="../mxtools.cpp" line="315"/>
         <source>Version: </source>
         <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="318"/>
+        <location filename="../mxtools.cpp" line="317"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Strumenti di configurazione per MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="319"/>
+        <location filename="../mxtools.cpp" line="318"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="320"/>
+        <location filename="../mxtools.cpp" line="319"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="321"/>
+        <location filename="../mxtools.cpp" line="320"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>

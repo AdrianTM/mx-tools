@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="316"/>
+        <location filename="../mxtools.cpp" line="315"/>
         <source>MX Tools</source>
         <translation>MX Tools</translation>
     </message>
@@ -60,32 +60,32 @@
         <translation>Hledat</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="315"/>
+        <location filename="../mxtools.cpp" line="314"/>
         <source>About MX Tools</source>
         <translation>O MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="316"/>
+        <location filename="../mxtools.cpp" line="315"/>
         <source>Version: </source>
         <translation>Verze:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="318"/>
+        <location filename="../mxtools.cpp" line="317"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Konfigurační nástroje MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="319"/>
+        <location filename="../mxtools.cpp" line="318"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Vlastnická práva (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="320"/>
+        <location filename="../mxtools.cpp" line="319"/>
         <source>License</source>
         <translation>Licence</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="321"/>
+        <location filename="../mxtools.cpp" line="320"/>
         <source>Cancel</source>
         <translation>Zrušit</translation>
     </message>
