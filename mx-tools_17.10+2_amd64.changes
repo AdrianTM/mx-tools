@@ -18,26 +18,26 @@ Changes:
  .
    * larger icons
 Checksums-Sha1:
- f4807253d222d47b56421a226e190ebc840a752b 1127 mx-tools_17.10+2.dsc
- b68169cc95294d89c3913c7113e3f67a18afc1af 30152 mx-tools_17.10+2.tar.xz
- 966ad0d6df03ca30f500062d495becd224c98177 47388 mx-tools_17.10+2_amd64.deb
+ d46b0960148870ed03c6f58e6a4649a30ed13acf 1127 mx-tools_17.10+2.dsc
+ ee5825e11a12c1f873d8593e391c8fbf9199fd42 30120 mx-tools_17.10+2.tar.xz
+ 964f96cb35e7b9a623f677a6fbee0aeadef5710d 48104 mx-tools_17.10+2_amd64.deb
 Checksums-Sha256:
- 417e1e2db3737c2f40bb1df02bebc84c96be721087583b5fb25a84ef0b9ec8e7 1127 mx-tools_17.10+2.dsc
- 2d2b1b31cc76e79a4c4dead1ce1501580f5b2851499779de29f0d262250364d1 30152 mx-tools_17.10+2.tar.xz
- 72fa27f78e9f2df6e27da58d7eac62227f42e672bd4abf6539918403b8a12238 47388 mx-tools_17.10+2_amd64.deb
+ 6f3e1a185407cf8fb9f1f633198f48d0873cfd00b1f56c228c83aeebf32b9cd1 1127 mx-tools_17.10+2.dsc
+ 7f4e4b42a0be3ee08e67a0674b21bcaeb632d01a5f1918e2e158c066b297975d 30120 mx-tools_17.10+2.tar.xz
+ b16cae923983b86fd7b52f3cb882ea18ef0327b9ba3628b6eef32d8de4df02d7 48104 mx-tools_17.10+2_amd64.deb
 Files:
- fd68d92fad8805ac9366e8eec0f0f248 1127 admin optional mx-tools_17.10+2.dsc
- 3ab1f4b0fa9e092dcb289064fbb8f77c 30152 admin optional mx-tools_17.10+2.tar.xz
- b6dbeb2571f4e055e5d52c474f08aec6 47388 admin optional mx-tools_17.10+2_amd64.deb
+ 6862c54d91a2615b4e5fc5a973476870 1127 admin optional mx-tools_17.10+2.dsc
+ 5f0f3b91261d55c3096b9f879c7f8539 30120 admin optional mx-tools_17.10+2.tar.xz
+ b8005a4726e553638764860eb5fa0635 48104 admin optional mx-tools_17.10+2_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZ4mFEAAoJEHCTjHgGee6Y22gH/278mbU3cb/DKVGW2XNeecIc
-2qaEtfCht4ttKawdxqyFJP57cEue+DcpxlZ0icI7EY2U9LrsX3p2Toe1kwEzNxgp
-8PZDPpTZ0QiwzDv+YTqXlYkf4olm630TU5MWAThPfVBh3Q+f8WjmbUN/Hslpp480
-4n2E1qUvcxDwqsBIDw5+RMOa9gREtdektGoV/ullW0ktPsf07Sg0aidtRXU3oDv0
-1E/QqsXtMyZHy5rtF0paqqWqnLThrq8a3gJbsUOow+QK1qZD4V+jGNGdk9JnMP0n
-vZeN0YGiPHdtgJuXedo0GJV2RoltvySnnwZGtcpRa1UOcgcDzVNDLw0of6sEMms=
-=v1R0
+iQEcBAEBAgAGBQJZ4mUwAAoJEHCTjHgGee6YuuAH/iws4aD9ClQItOXdGJR9288X
+qkZRjlBd95bZH8Pvs5bzawexd35RnrDjSWWK8ijGKGSsAvOxoSCZNeVHSQ8x8bdb
+lxhiE7Dea14EFjFj5ZXaBCGIEnUzNrn0XJZS4E8e12letT1GLzhbHqkwxtPxG1iI
+40k72cxt+XyJ9YeVUHT3eCfpaQ927BemURLijB0up0j3aYVRtmiIdm4A4iBOoUVq
+eDzprqSTsdLV+hh1Jm3HOV+D+97NMAa/ZE4HaZDjMs+cnOYFq73SfD2q9aBKzLTu
+n7cjIXDqCto8nXWZQo6opmEk+VrVO66LsfQBn0EhT9CBZaQM3mr2irjSeeXpVjY=
+=NQhc
 -----END PGP SIGNATURE-----

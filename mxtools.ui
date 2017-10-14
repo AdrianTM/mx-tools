@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>666</width>
+    <width>795</width>
     <height>424</height>
    </rect>
   </property>
@@ -50,7 +50,9 @@
         <string>About...</string>
        </property>
        <property name="icon">
-        <iconset theme="help-about"/>
+        <iconset theme="help-about">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -117,7 +119,9 @@
         <string>Close</string>
        </property>
        <property name="icon">
-        <iconset theme="window-close"/>
+        <iconset theme="window-close">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -142,7 +146,9 @@
         <string>Manual</string>
        </property>
        <property name="icon">
-        <iconset theme="help-contents"/>
+        <iconset theme="help-contents">
+         <normaloff/>
+        </iconset>
        </property>
       </widget>
      </item>
@@ -203,8 +209,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>626</width>
-           <height>239</height>
+           <width>755</width>
+           <height>241</height>
           </rect>
          </property>
          <property name="autoFillBackground">

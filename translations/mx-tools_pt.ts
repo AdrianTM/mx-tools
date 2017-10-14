@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="315"/>
+        <location filename="../mxtools.cpp" line="312"/>
         <source>MX Tools</source>
         <translation>Ferramentas MX</translation>
     </message>
@@ -20,72 +20,72 @@
         <translation>Sobre...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="56"/>
+        <location filename="../mxtools.ui" line="58"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="114"/>
+        <location filename="../mxtools.ui" line="116"/>
         <source>Close application</source>
         <translation>Fechar a aplicação</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="117"/>
+        <location filename="../mxtools.ui" line="119"/>
         <source>Close</source>
         <translation>Encerrar</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="123"/>
+        <location filename="../mxtools.ui" line="127"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="142"/>
+        <location filename="../mxtools.ui" line="146"/>
         <source>Manual</source>
         <translation>Manual</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="236"/>
+        <location filename="../mxtools.ui" line="242"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Estas ferramentas do MX poupam tempo e esforço ao executarem tarefas importantes.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="252"/>
+        <location filename="../mxtools.ui" line="258"/>
         <source>Hide individual tools from the menu</source>
         <translation>Ocultar ferramentas do menu, individualmente</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="271"/>
+        <location filename="../mxtools.ui" line="277"/>
         <source>search</source>
         <translation>procurar</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="314"/>
+        <location filename="../mxtools.cpp" line="311"/>
         <source>About MX Tools</source>
         <translation>Sobre o MX_Ferramentas do Linux MX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="315"/>
+        <location filename="../mxtools.cpp" line="312"/>
         <source>Version: </source>
         <translation>Versão:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="317"/>
+        <location filename="../mxtools.cpp" line="314"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Ferramentas de configuração do Linux MX</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="318"/>
+        <location filename="../mxtools.cpp" line="315"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="319"/>
+        <location filename="../mxtools.cpp" line="316"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="320"/>
+        <location filename="../mxtools.cpp" line="317"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>

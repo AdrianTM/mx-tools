@@ -73,13 +73,6 @@ mxtools::mxtools(QWidget *parent) :
     readInfo(category_map);
     addButtons(info_map);
     ui->lineSearch->setFocus();
-    this->adjustSize();
-    this->resize(ui->gridLayout_btn->sizeHint().width() + 90, this->height() + 140);
-
-    QSettings settings("MX-Linux", "mx-tools");
-    restoreGeometry(settings.value("geometry").toByteArray());
-    //qDebug() << "width window" << this->width();
-    //qDebug() << "width btn layout area" << ui->gridLayout_btn->sizeHint().width();
 }
 
 mxtools::~mxtools()
@@ -234,7 +227,11 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
             }
         }
     }
-    //ui->gridLayout_btn->setRowStretch(row, 1);
+    this->adjustSize();
+    this->resize(this->width() + 80, this->height() + 130);
+
+    QSettings settings("MX-Linux", "mx-tools");
+    restoreGeometry(settings.value("geometry").toByteArray());
 }
 
 // find icon by name specified in .desktop file
