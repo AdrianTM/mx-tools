@@ -74,9 +74,7 @@ mxtools::mxtools(QWidget *parent) :
     addButtons(info_map);
     ui->lineSearch->setFocus();
     this->adjustSize();
-    //this->resize(this->width() + 15, this->height());
-    //qDebug() << "list" << category_map;
-    this->resize(ui->gridLayout_btn->sizeHint().width() + 90, this->height());
+    this->resize(ui->gridLayout_btn->sizeHint().width() + 90, this->height() + 140);
 
     QSettings settings("MX-Linux", "mx-tools");
     restoreGeometry(settings.value("geometry").toByteArray());
@@ -201,7 +199,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
             col = 0;
             row += 1;
             ui->gridLayout_btn->addWidget(label, row, col);
-            ui->gridLayout_btn->setRowStretch(row, 0);
+            //ui->gridLayout_btn->setRowStretch(row, 0);
             row += 1;
             foreach (QString file_name, info_map.value(category).keys()) {
                 QStringList file_info = info_map.value(category).value(file_name);
@@ -215,8 +213,9 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
                 btn->setToolTip(comment);
                 btn->setAutoDefault(false);
                 btn->setIcon(findIcon(icon_name));
+                btn->setIconSize(40, 40);
                 ui->gridLayout_btn->addWidget(btn, row, col);
-                 ui->gridLayout_btn->setRowStretch(row, 0);
+                //ui->gridLayout_btn->setRowStretch(row, 0);
                 col += 1;
                 if (col >= max) {
                     col = 0;
@@ -235,21 +234,21 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
             }
         }
     }
-    ui->gridLayout_btn->setRowStretch(row, 1);
+    //ui->gridLayout_btn->setRowStretch(row, 1);
 }
 
 // find icon by name specified in .desktop file
 QIcon mxtools::findIcon(QString icon_name)
 {
     // return icon if fully specified
-    if (QFile("/" + icon_name).exists()) { // make sure it looks for icon in root, not in home
+    if (QFile("/" + icon_name).exists()) { // make sure it looks for icon in root, not in current folder
         return QIcon(icon_name);
     } else {
         icon_name = icon_name.remove(".png");
         icon_name = icon_name.remove(".svg");
         icon_name = icon_name.remove(".xpm");
         // return the icon from the theme if it exists
-        if (QIcon::fromTheme(icon_name).name() != "") {
+        if (QIcon::hasThemeIcon(icon_name)) {
             return QIcon::fromTheme(icon_name);
         // return png, svg, xpm icons from /usr/share/pixmaps
         } else if (QFile("/usr/share/pixmaps/" + icon_name + ".png").exists()) {

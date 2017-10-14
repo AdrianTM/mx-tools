@@ -32,9 +32,11 @@ class FlatButton : public QPushButton
 public:
     FlatButton(QWidget * parent = 0);
     FlatButton(QString name, QWidget * parent = 0);
+    void setIconSize(int, int);
 protected:
     void enterEvent(QEvent *e);
     void leaveEvent(QEvent *e);
+
 };
 
 #endif // FLATBUTTON_H

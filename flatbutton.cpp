@@ -49,3 +49,8 @@ void FlatButton::enterEvent(QEvent * e)
     setStyleSheet("QPushButton { text-align:left; text-decoration:underline}; QToolTip { text-decoration: none; }");
     QPushButton::enterEvent(e);
 }
+
+void FlatButton::setIconSize(int x, int y)
+{
+    QPushButton::setIconSize(QSize(x, y));
+}
