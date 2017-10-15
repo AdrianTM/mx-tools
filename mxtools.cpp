@@ -206,7 +206,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
                 btn->setToolTip(comment);
                 btn->setAutoDefault(false);
                 btn->setIcon(findIcon(icon_name));
-                btn->setIconSize(40, 40);
+                btn->setIconSize(32, 32);
                 ui->gridLayout_btn->addWidget(btn, row, col);
                 //ui->gridLayout_btn->setRowStretch(row, 0);
                 col += 1;

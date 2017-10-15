@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 14 Oct 2017 15:10:28 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 17.10+2
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (17.10+2) mx; urgency=medium
+ .
+   * larger icons
+Checksums-Sha1:
+ 57a41bc13477d7ce1dd718ddfebcd2d66cb3e2e8 48318 mx-tools_17.10+2_i386.deb
+Checksums-Sha256:
+ 1ed2b8d5586d68b8f0eafe56237104b3ece58170cc39b8161fc13966b1c66cb2 48318 mx-tools_17.10+2_i386.deb
+Files:
+ 32b13524517f1d215a9eceb120e4c393 48318 admin optional mx-tools_17.10+2_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZ42OzAAoJEHCTjHgGee6YiywH/j5EDqwuhMwUcBnE6ozDyIdb
+bQK+mWiG89Jp8b60ctivMj/AwDfRNGmr+0kQJ+lqUcmNOlVTKgZQw6AoeB4S7QlV
+NXQsqtcO0EbWNBQNqptNzFcCN405DmY8AcyK/snbgOs4913CV2ucDUPSqyPJnl3C
+KW6AsEENIAnmuxSHulIbXIWZk0Ke7RqFqB3vt++uW4EBZJ5c+uFmHAdfJgS7F4kq
+w8ifG5cGoffGgZ1R+eCl1aU0xe5CxRlID1POf5Hyqhg+6WXCNrHwNCRZeBXGVtmJ
+UQ0Sc4JXVEa3CHjczLrO+CHPhTPJu46kk1rGcwzd7ZpDP9z/VRsg4aGt3guQi+A=
+=VFdQ
+-----END PGP SIGNATURE-----

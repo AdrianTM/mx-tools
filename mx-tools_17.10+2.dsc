@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-tools deb admin optional arch=any
 Checksums-Sha1:
- ee5825e11a12c1f873d8593e391c8fbf9199fd42 30120 mx-tools_17.10+2.tar.xz
+ cbb342c144eb5c3bf7891331058cafbd7a16e742 30112 mx-tools_17.10+2.tar.xz
 Checksums-Sha256:
- 7f4e4b42a0be3ee08e67a0674b21bcaeb632d01a5f1918e2e158c066b297975d 30120 mx-tools_17.10+2.tar.xz
+ 03d74f29dc8399cc94e2218554c62752a92bfc148b77c41b29a2ce6ab5ba9423 30112 mx-tools_17.10+2.tar.xz
 Files:
- 5f0f3b91261d55c3096b9f879c7f8539 30120 mx-tools_17.10+2.tar.xz
+ 45621911b245e23b02afa698d1dfe04b 30112 mx-tools_17.10+2.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZ4mUsAAoJEHCTjHgGee6Y9pMH/ihKiIsi+uIloGWgeC2Cj7cy
-r4zE7akpbDL3GAUTV71o4XixU0CxAS260t8J14xPiOIXSYKpQmW/0MWO38/eNpVp
-QgStWa73FcKi9kFN4afwCIkx6JqWh+MpP5SaKsgNY7LV8By6Qjfw3NqmmhC6mBBV
-CxlGVa/5f2fteuNQln463QUnwdK+qyoWx5SqZ0RR8eTMoQY0hOteRa8KEo39eMFf
-xYj/qoGgrmiFGBVPClEectAhhDB82x5PEKLKvqQY6GAD+Hq5Q7PXgPvnAmXjPclz
-hNnmrSpWsO2hnAfy66LsCVlx+2X5BJ3cAFt8snzxZ9XiPXI2GVJxiW//gUCXBEc=
-=iQgB
+iQEcBAEBAgAGBQJZ42M2AAoJEHCTjHgGee6YNQYH/jpGvH2xHfeRy11nz6TPoXNm
+HkkWOvxipg6JWOPHZjD2jiIp8+1uvHKZAySE5mfp0Np1EUqerTZ6yFvPXIvbmVnb
+hjJ2RkEaLdfh7mLw6Wy6YXgA09RkYl0QOuWW1Q7L9Wm+iiPXa6LKUjM8+4gr+wml
+vmrloGkp4fz4aDrSerBtq6JqZqgMj5XolH9njUuVeZ0K4TdtFgIKLWAxXVR4LwIH
+l3P+ZZ9/d/56QzNSUTBGhPY9rjwrRGPWjOgbyD5CyzIXSE1jiVu3hoGLH5ARlYRw
+qFItPqZuPkIDUvn42OxzcyRwls0XUZTMkNCDnxc2huv7qEoWLeSWFS+NxAYj7v0=
+=hGHP
 -----END PGP SIGNATURE-----
