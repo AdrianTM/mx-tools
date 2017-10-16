@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 16 Oct 2017 14:03:47 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 17.10+3
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (17.10+3) mx; urgency=medium
+ .
+   * remove mx-flash and mx-findshares recommends
+Checksums-Sha1:
+ f713b4fec3ce388a410e9979ef7685509e88106c 1127 mx-tools_17.10+3.dsc
+ f517ce83b27ccc4128429933c8a953f09b527ca8 30024 mx-tools_17.10+3.tar.xz
+ c826aadbe27ae70049677b21e4f4b013cdb8b04f 48090 mx-tools_17.10+3_amd64.deb
+Checksums-Sha256:
+ 3b059e1a6137eb211c8999213a35820e435a2ea68dc9266b2619488bca293058 1127 mx-tools_17.10+3.dsc
+ b514eac86db8936fdc26603211c43c4e2ebfa79c2e20cd4b77b1f8305dfdc1e3 30024 mx-tools_17.10+3.tar.xz
+ c6fa496aa242a1c5886f3a66a7a27ebc574dd2ac8a1cad4d5e3aaaee56aa0ebc 48090 mx-tools_17.10+3_amd64.deb
+Files:
+ 2d946a498166c5f1c27e8f00a106c80d 1127 admin optional mx-tools_17.10+3.dsc
+ 29bf0d88d38277650772c4abe6f853a6 30024 admin optional mx-tools_17.10+3.tar.xz
+ 23f80462b7b5f6c9edb0447d9a7bc1ac 48090 admin optional mx-tools_17.10+3_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZ5PSrAAoJEHCTjHgGee6Y8f0H/iwpOpnTyMZM6ccHRMFN750I
+10xWuT8XFoDM1Q4XpuiBOLF5b6VcQjg2DrIXtP8A+I1BVKuNO8xoBHX/Xb84WRyr
+KD1WqtTlG4d0JwrIc6dV3mmOIYfvFqtalrGlpllsKPlbwqt05HU/wwImrt7+nsFK
+Xzr0EciJjxSzq4786qU4mhE0muSUgFdtEAYhiuVU5t4mItsLiJ+bpLejzLPCLLFc
+5HOoVTAw8UL1LXFiV28gvLzxVCu3SeMFwvmFE4oZ9EkRUvEXk7ATPXoiiAKi/4wg
+9Ztwb9wCk4i+4AhwMOTdiGsx5POQ8cFPpgNRe11No2aVkvffvrS8fS3KnheuPHo=
+=jL/L
+-----END PGP SIGNATURE-----

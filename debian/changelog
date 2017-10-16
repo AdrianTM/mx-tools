@@ -1,3 +1,9 @@
+mx-tools (17.10+3) mx; urgency=medium
+
+  * remove mx-flash and mx-findshares recommends
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 16 Oct 2017 14:03:47 -0400
+
 mx-tools (17.10+2) mx; urgency=medium
 
   * larger icons

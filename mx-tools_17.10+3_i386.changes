@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 16 Oct 2017 14:03:47 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 17.10+3
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (17.10+3) mx; urgency=medium
+ .
+   * remove mx-flash and mx-findshares recommends
+Checksums-Sha1:
+ 5444bc4b2e14ccb2dabd80a0a60ccba7740a97b6 48432 mx-tools_17.10+3_i386.deb
+Checksums-Sha256:
+ a375a3844328be4ae4a7e9ff85dfaa8e85e7353e0d9043436bbb5c842a1e902d 48432 mx-tools_17.10+3_i386.deb
+Files:
+ 64cde03d4aecc07044cff1bd5d18c0ed 48432 admin optional mx-tools_17.10+3_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZ5PZEAAoJEHCTjHgGee6Y8wEIANLRdcVDjkDPu1SFG3mJOjLV
+aNIMOgzGIGftKkUWKdmRJtVWZMqU6eUuiO+Z1lvdIZCNqb9GBwnmBsBiZ7F0a/jo
+65L8JC4+F7z4LISMGYiEyEZ/uXn9GHxXautKE3Yv3YE8LBqUmtGeNwKTy8Pg3DcM
+7xUALvXcu3F0r7CJ3uV82jjnkyyz3oqQ7qfv6NVsF9dRjVXrV5NlLmL834S598zv
+d0mkYiTiLrbip1hJ3TvMIGLWFWR/ad+px1gySXM05Y9gvrljakYr0qS2aRI8T9eW
+Boel/pbspQUNnyFUQCRwpauZpo6tQswrZ9Ky+oPzxoJCa47tkiZ3J/ZCPlZ4N8A=
+=Aioz
+-----END PGP SIGNATURE-----
