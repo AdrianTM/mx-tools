@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 17 Nov 2017 08:43:32 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 17.11
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (17.11) mx; urgency=medium
+ .
+   * open mx-manual if present
+Checksums-Sha1:
+ 8518b8f074f2c262f85f2406b15161fddf0ca8c3 1119 mx-tools_17.11.dsc
+ efbaf4fe3a2f384df685acedea9b6e652e8101e8 30104 mx-tools_17.11.tar.xz
+ 6c1f492a099a385c918f80d98e216a1ba8bc5097 48502 mx-tools_17.11_amd64.deb
+Checksums-Sha256:
+ d2470d5e4e00968e1415abc082ccc1c026ae9d83f58a09be0ff970fffe485971 1119 mx-tools_17.11.dsc
+ 3ff374bd998769b5ceb84f62e7d80c3ad84c55be972a99cc61a5ca3252f6ff1c 30104 mx-tools_17.11.tar.xz
+ 53c1f103fe34393a44ff2a290c57d44c29ba52c1a11b0a57a1409b86fe2ff33b 48502 mx-tools_17.11_amd64.deb
+Files:
+ 3cf8dd66b3c0f9db2cfb251031cd14e0 1119 admin optional mx-tools_17.11.dsc
+ f41122a6b7480eb99e31b06a3e9260be 30104 admin optional mx-tools_17.11.tar.xz
+ 99ca14c827882826a32689141f044271 48502 admin optional mx-tools_17.11_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJaDufWAAoJEHCTjHgGee6YHe8H/iTvQVJbD6bTyVeuK2dJuBAI
++CMbceeRMFKiJGzIzEUDgN4kowJTV/FZMb92cc8/oV9HJMA9dz/l1csKCHTfh82t
+yRK8kNmi3kN4yKOLHKaczrOQ/DPvj5+/te6xZx2tj2IitJH9z0CX/3ttZR6kc8HJ
+PKCt4NZxKyg52mHCl+D8Nz1Sm/bPuex4Uqlt2mYTOxzoFOTEe6BFUC6JpBUWfU3G
++K49VEjUCaw6X1kLeT65u/UqRw/fdSLm4WzovcUDIs3TofNfuLuc8YDVdPKxEOSL
+XDic+r1xtz9LfvhOkojHMPKbZcviTXKvWRprHIgtvkfSJ0c5cHyIFb8qxc1GUlQ=
+=93Bg
+-----END PGP SIGNATURE-----
