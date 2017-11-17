@@ -326,7 +326,7 @@ void mxtools::on_buttonAbout_clicked()
 void mxtools::on_buttonHelp_clicked()
 {
     this->hide();
-    QString cmd = QString("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2");
+    QString cmd = QString("mx-manual");
     system(cmd.toUtf8());
     this->show();
 }
