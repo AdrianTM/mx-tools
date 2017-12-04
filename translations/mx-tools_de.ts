@@ -40,22 +40,22 @@
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="146"/>
+        <location filename="../mxtools.ui" line="149"/>
         <source>Manual</source>
         <translation>Handbuch</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="242"/>
+        <location filename="../mxtools.ui" line="248"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation>Diese MX-Anwendungen ersparen Zeit und Mühe bei wichtigen Aufgaben (z.B. Remastern der Distro)</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="258"/>
+        <location filename="../mxtools.ui" line="264"/>
         <source>Hide individual tools from the menu</source>
         <translation>Werkzeuge nicht nochmal einzeln im Menü zeigen</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="277"/>
+        <location filename="../mxtools.ui" line="283"/>
         <source>search</source>
         <translation>Suche </translation>
     </message>

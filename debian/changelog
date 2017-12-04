@@ -1,3 +1,9 @@
+mx-tools (17.12) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Dec 2017 15:14:42 -0500
+
 mx-tools (17.11) mx; urgency=medium
 
   * open mx-manual if present

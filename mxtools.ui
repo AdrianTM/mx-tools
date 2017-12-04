@@ -129,6 +129,9 @@
        <property name="autoDefault">
         <bool>true</bool>
        </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item row="0" column="1">
@@ -149,6 +152,9 @@
         <iconset theme="help-contents">
          <normaloff/>
         </iconset>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -210,7 +216,7 @@
            <x>0</x>
            <y>0</y>
            <width>755</width>
-           <height>241</height>
+           <height>244</height>
           </rect>
          </property>
          <property name="autoFillBackground">
