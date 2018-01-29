@@ -73,6 +73,11 @@ mxtools::mxtools(QWidget *parent) :
     readInfo(category_map);
     addButtons(info_map);
     ui->lineSearch->setFocus();
+    this->adjustSize();
+    this->resize(this->width() + 80, this->height() + 130);
+
+    QSettings settings("MX-Linux", "mx-tools");
+    restoreGeometry(settings.value("geometry").toByteArray());
 }
 
 mxtools::~mxtools()
@@ -170,18 +175,16 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
 
     foreach (QString category, info_map.keys()) {
         if (!info_map.value(category).isEmpty()) {
-            // add empty row and delimiter except for the first key
-            if (category != category_map.firstKey()) {
+            // add empty row and delimiter except for the first row
+            if (row != 0) {
                 col = 0;
                 row += 1;
                 QFrame *line = new QFrame();
                 line->setFrameShape(QFrame::HLine);
                 line->setFrameShadow(QFrame::Sunken);
                 ui->gridLayout_btn->addWidget(line, row, col, 1, -1);
-                ui->gridLayout_btn->setRowStretch(row, 0);
             }
             QLabel *label = new QLabel();
-            //label->setStyleSheet("QLabel {color:black}");
             QFont font;
             font.setBold(true);
             font.setUnderline(true);
@@ -192,7 +195,6 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
             col = 0;
             row += 1;
             ui->gridLayout_btn->addWidget(label, row, col);
-            //ui->gridLayout_btn->setRowStretch(row, 0);
             row += 1;
             foreach (QString file_name, info_map.value(category).keys()) {
                 QStringList file_info = info_map.value(category).value(file_name);
@@ -227,11 +229,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
             }
         }
     }
-    this->adjustSize();
-    this->resize(this->width() + 80, this->height() + 130);
-
-    QSettings settings("MX-Linux", "mx-tools");
-    restoreGeometry(settings.value("geometry").toByteArray());
+    ui->gridLayout_btn->setRowStretch(row, 1);
 }
 
 // find icon by name specified in .desktop file

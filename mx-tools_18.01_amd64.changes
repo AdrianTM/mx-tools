@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 29 Jan 2018 18:03:00 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 18.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (18.01) mx; urgency=medium
+ .
+   * no window resize when searching
+Checksums-Sha1:
+ 92a7eee30d59e45319b7c62a25b7ba4efbb6bd42 1119 mx-tools_18.01.dsc
+ cbc436a67b82a1116324adfd78710479c27d8054 30188 mx-tools_18.01.tar.xz
+ 5ae6f20cda5b271b61352a36ef35d36c1365bdee 48364 mx-tools_18.01_amd64.deb
+Checksums-Sha256:
+ 5e986d2dcd1af4f5966eb8f9f6f268f9034e157e516a369e46f0a8bd0d3c3124 1119 mx-tools_18.01.dsc
+ 3d34175f82cab572abb926a48bd34b591a840b86c364ca6e813d97254a916d6a 30188 mx-tools_18.01.tar.xz
+ 6f9b0fd74d118267428f0c0fede917a08d93f0cb05a0639a2f84b85c5dfb3026 48364 mx-tools_18.01_amd64.deb
+Files:
+ 6db3c7cba7e3706df39e88876f750cb7 1119 admin optional mx-tools_18.01.dsc
+ 882dbf5bf50c8ced307c7dd8490c4063 30188 admin optional mx-tools_18.01.tar.xz
+ bc510f52ad9a5f97ffc7a4bd7075ebb3 48364 admin optional mx-tools_18.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJab7SAAAoJEHCTjHgGee6YAqsH/RcLRUo5NRLMZhRebVHYTpn5
+n9z6t+ZvTOjWAdpdinuW0h82md/VhvTeZZn7nJoSm/leInO+dheFU7NEyhCKFI67
+HXlQPSMlKUlJeLnadzTbEf5QTHg5Up0a3PN4RjTeXPi9Y5oVc5pwlJ8JlNh0xgwf
+T4KVtk0jnJL0SIvGJGlFCJM0hu7+bnJOjOWeUUF6T0oN/7Q5grhBnlubKgz/Kbhp
+ieHGqSUQPbFApM3ZxgCH8+uXivV4AnoULJcf6hdme1Bds34zX5Gx39NPA1rl/5gl
+trtdEkomd/nx+yL+pF8bVKhGvFdgbsroMTPArGed+bm/XxHE15z7mSEMJ+7FCH0=
+=iDP5
+-----END PGP SIGNATURE-----

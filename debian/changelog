@@ -1,3 +1,9 @@
+mx-tools (18.01) mx; urgency=medium
+
+  * no window resize when searching
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 29 Jan 2018 18:03:00 -0500
+
 mx-tools (17.12) mx; urgency=medium
 
   * new translations
