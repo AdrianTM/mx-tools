@@ -43,24 +43,28 @@ HEADERS  += mxtools.h \
 
 FORMS    += mxtools.ui
 
-TRANSLATIONS += translations/mx-tools_ca.ts \
-                translations/mx-tools_cs.ts \
-                translations/mx-tools_de.ts \
-                translations/mx-tools_el.ts \
-                translations/mx-tools_es.ts \
-                translations/mx-tools_fr.ts \
-                translations/mx-tools_it.ts \
-                translations/mx-tools_ja.ts \
-                translations/mx-tools_kk.ts \
-                translations/mx-tools_lt.ts \
-                translations/mx-tools_nl.ts \
-                translations/mx-tools_pl.ts \
-                translations/mx-tools_pt.ts \
-                translations/mx-tools_ro.ts \
-                translations/mx-tools_ru.ts \
-                translations/mx-tools_sk.ts \
-                translations/mx-tools_sv.ts \
-                translations/mx-tools_tr.ts
+TRANSLATIONS += translations/mx-bootrepair_am.ts \
+                translations/mx-bootrepair_ca.ts \
+                translations/mx-bootrepair_cs.ts \
+                translations/mx-bootrepair_de.ts \
+                translations/mx-bootrepair_el.ts \
+                translations/mx-bootrepair_es.ts \
+                translations/mx-bootrepair_fr.ts \
+                translations/mx-bootrepair_hu.ts \
+                translations/mx-bootrepair_it.ts \
+                translations/mx-bootrepair_ja.ts \
+                translations/mx-bootrepair_kk.ts \
+                translations/mx-bootrepair_lt.ts \
+                translations/mx-bootrepair_nl.ts \
+                translations/mx-bootrepair_pl.ts \
+                translations/mx-bootrepair_pt.ts \
+                translations/mx-bootrepair_pt_BR.ts \
+                translations/mx-bootrepair_ro.ts \
+                translations/mx-bootrepair_ru.ts \
+                translations/mx-bootrepair_sk.ts \
+                translations/mx-bootrepair_sv.ts \
+                translations/mx-bootrepair_tr.ts \
+                translations/mx-bootrepair_uk.ts
 
 RESOURCES += \
     images.qrc
