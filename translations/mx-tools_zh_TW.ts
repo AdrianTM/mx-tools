@@ -1,21 +1,21 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="306"/>
         <source>MX Tools</source>
-        <translation>MX Strumenti</translation>
+        <translation>MX 工具組</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>Informazioni su questa applicazione</translation>
+        <translation>關於本程式</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>Info...</translation>
+        <translation>關於……</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="56"/>
@@ -25,12 +25,12 @@
     <message>
         <location filename="../mxtools.ui" line="114"/>
         <source>Close application</source>
-        <translation>Chiudi l&apos;applicazione</translation>
+        <translation>關閉程式</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="117"/>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation>關閉</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="123"/>
@@ -40,52 +40,52 @@
     <message>
         <location filename="../mxtools.ui" line="142"/>
         <source>Manual</source>
-        <translation>Manuale</translation>
+        <translation>使用手冊</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="236"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Queste applicazioni di MX facilitano il lavoro in diverse importanti attività.</translation>
+        <translation>這些 MX 程式可以為你完成重要事項，節省時間與心力。</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="252"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Nascondi dal Menu delle applicazioni questi strumenti presenti singolarmente</translation>
+        <translation>在主選單中隱藏個別工具</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="271"/>
         <source>search</source>
-        <translation>cerca</translation>
+        <translation>搜尋</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="305"/>
         <source>About MX Tools</source>
-        <translation>Informazioni su MX Strumenti</translation>
+        <translation>關於 MX 工具組</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="306"/>
         <source>Version: </source>
-        <translation>Versione:</translation>
+        <translation>版本：</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="308"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Strumenti di configurazione per MX Linux</translation>
+        <translation>MX Linux 的設定工具</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="309"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>版權所有 (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="310"/>
         <source>License</source>
-        <translation>Licenza</translation>
+        <translation>授權條款</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="311"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>取消</translation>
     </message>
 </context>
 </TS>

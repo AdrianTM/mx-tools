@@ -64,7 +64,8 @@ TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_sk.ts \
                 translations/mx-tools_sv.ts \
                 translations/mx-tools_tr.ts \
-                translations/mx-tools_uk.ts
+                translations/mx-tools_uk.ts \
+                translations/mx-tools_zh_TW.ts
 
 RESOURCES += \
     images.qrc
