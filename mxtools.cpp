@@ -323,8 +323,6 @@ void mxtools::on_buttonAbout_clicked()
 // Help button clicked
 void mxtools::on_buttonHelp_clicked()
 {
-    this->hide();
-
     QString cmd;
 
     if (QFile("/usr/bin/mx-manual").exists()) {
@@ -334,8 +332,6 @@ void mxtools::on_buttonHelp_clicked()
     }
 
     system(cmd.toUtf8());
-
-    this->show();
 }
 
 // text changed in search field
