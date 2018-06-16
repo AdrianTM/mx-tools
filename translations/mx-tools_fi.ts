@@ -1,21 +1,21 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="lt" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fi" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="306"/>
         <source>MX Tools</source>
-        <translation>MX įrankiai</translation>
+        <translation>MX Työkalut</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>Apie šią programą</translation>
+        <translation>Tietoja tästä sovelluksesta</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>Apie...</translation>
+        <translation>Tietoja...</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="56"/>
@@ -25,12 +25,12 @@
     <message>
         <location filename="../mxtools.ui" line="114"/>
         <source>Close application</source>
-        <translation>Užverti programą</translation>
+        <translation>Sulje sovellus</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="117"/>
         <source>Close</source>
-        <translation>Užverti</translation>
+        <translation>Sulje</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="123"/>
@@ -40,52 +40,52 @@
     <message>
         <location filename="../mxtools.ui" line="142"/>
         <source>Manual</source>
-        <translation>Vadovas</translation>
+        <translation>Käyttöohje</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="236"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Šios MX programos sutaupo laiko ir pastangų, atliekant svarbias užduotis.</translation>
+        <translation>Nämä MX-sovellukset säästävät aikaa ja vaivaa tärkeissä tehtävissä.</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="252"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Slėpti atskirus įrankius iš meniu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="271"/>
         <source>search</source>
-        <translation>ieškoti</translation>
+        <translation>etsi</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="305"/>
         <source>About MX Tools</source>
-        <translation>Apie MX įrankiai</translation>
+        <translation>Tietoja MX Työkaluista</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="306"/>
         <source>Version: </source>
-        <translation>Versija: </translation>
+        <translation>Versio: </translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="308"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Konfigūravimo įrankiai, skirti MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="309"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorių teisės (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="310"/>
         <source>License</source>
-        <translation>Licencija</translation>
+        <translation>Lisenssi</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="311"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation>Peruuta</translation>
     </message>
 </context>
 </TS>

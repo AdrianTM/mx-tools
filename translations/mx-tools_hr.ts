@@ -1,21 +1,21 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="hr" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
         <location filename="../mxtools.cpp" line="306"/>
         <source>MX Tools</source>
-        <translation>MX Tools</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>About this application</translation>
+        <translation>O ovoj aplikaciji</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>O programu...</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="56"/>
@@ -25,12 +25,12 @@
     <message>
         <location filename="../mxtools.ui" line="114"/>
         <source>Close application</source>
-        <translation>Close application</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="117"/>
         <source>Close</source>
-        <translation>Close</translation>
+        <translation>Zatvori</translation>
     </message>
     <message>
         <location filename="../mxtools.ui" line="123"/>
@@ -40,52 +40,52 @@
     <message>
         <location filename="../mxtools.ui" line="142"/>
         <source>Manual</source>
-        <translation>Manual</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="236"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>These MX applications save time and effort with important tasks.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="252"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Hide individual tools from the menu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.ui" line="271"/>
         <source>search</source>
-        <translation>search</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="305"/>
         <source>About MX Tools</source>
-        <translation>About MX Tools</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="306"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation>Inačica:</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="308"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Configuration Tools for MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="309"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Autorska prava (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="310"/>
         <source>License</source>
-        <translation>License</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
         <location filename="../mxtools.cpp" line="311"/>
         <source>Cancel</source>
-        <translation>Cancel</translation>
+        <translation>Otkaži</translation>
     </message>
 </context>
 </TS>

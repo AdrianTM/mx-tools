@@ -49,7 +49,10 @@ TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_de.ts \
                 translations/mx-tools_el.ts \
                 translations/mx-tools_es.ts \
+                translations/mx-tools_fi.ts \
                 translations/mx-tools_fr.ts \
+                translations/mx-tools_hi.ts \
+                translations/mx-tools_hr.ts \
                 translations/mx-tools_hu.ts \
                 translations/mx-tools_it.ts \
                 translations/mx-tools_ja.ts \
