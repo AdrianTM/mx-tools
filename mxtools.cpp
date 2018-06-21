@@ -97,8 +97,7 @@ QString mxtools::getCmdOut(const QString &cmd) {
 
 // Get version of the program
 QString mxtools::getVersion(QString name) {
-    QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
-    return getCmdOut(cmd);
+    return getCmdOut("dpkg-query -f '${Version}' -W " + name);
 }
 
 
