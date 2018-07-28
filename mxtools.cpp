@@ -238,7 +238,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
 QIcon mxtools::findIcon(QString icon_name)
 {
     // return icon if fully specified
-    if (QFile("/" + icon_name).exists()) { // make sure it looks for icon in root, not in current folder
+    if (QFile::exists("/" + icon_name) && QFileInfo("/" + icon_name).isFile()) { // make sure it looks for icon in root, not in current folder
         return QIcon(icon_name);
     } else {
         icon_name = icon_name.remove(".png");
@@ -248,13 +248,13 @@ QIcon mxtools::findIcon(QString icon_name)
         if (QIcon::hasThemeIcon(icon_name)) {
             return QIcon::fromTheme(icon_name);
         // return png, svg, xpm icons from /usr/share/pixmaps
-        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".png").exists()) {
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name + ".png")) {
             return QIcon("/usr/share/pixmaps/" + icon_name + ".png");
-        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".svg").exists()) {
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name + ".svg")) {
             return QIcon("/usr/share/pixmaps/" + icon_name + ".svg");
-        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".xpm").exists()) {
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name + ".xpm")) {
             return QIcon("/usr/share/pixmaps/" + icon_name + ".xpm");
-        } else if (QFile("/usr/share/pixmaps/" + icon_name).exists()) {
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name)) {
             return QIcon("/usr/share/pixmaps/" + icon_name);
         } else {
             return QIcon();
@@ -349,7 +349,7 @@ void mxtools::on_buttonHelp_clicked()
 {
     QString cmd;
 
-    if (QFile("/usr/bin/mx-manual").exists()) {
+    if (QFile::exists("/usr/bin/mx-manual")) {
         cmd = QString("mx-manual");
     } else {
         cmd = QString("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2");

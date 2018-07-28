@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sat, 28 Jul 2018 01:22:51 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 18.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (18.7) mx; urgency=medium
+ .
+   * minor fix
+Checksums-Sha1:
+ e2283df303373cd3f159ebcd8ce22d9e03c32ea0 1150 mx-tools_18.7.dsc
+ 336b54de1e5336033d5e53819c60332156aa7d69 32308 mx-tools_18.7.tar.xz
+ 077f51a001695d935995d06e5d8f596357eead00 51850 mx-tools_18.7_amd64.deb
+Checksums-Sha256:
+ 3c12bbf2fa9cdf8cca7dbe3fa8b8dded52e1b8950e0ff4cc3b46af477dbfddcf 1150 mx-tools_18.7.dsc
+ abfa9396f8ad99f95b1cf5db963024d6555a56ba35f3040e8ab02daa86926abd 32308 mx-tools_18.7.tar.xz
+ 93a2297f066a17994a440efdc5b49353693f0b8ce3ffc014ba9e80c7741e0311 51850 mx-tools_18.7_amd64.deb
+Files:
+ 83601e56b7331097e8142a5050fa7945 1150 admin optional mx-tools_18.7.dsc
+ 7d9fea94c31c21ffd04ddda767df8093 32308 admin optional mx-tools_18.7.tar.xz
+ 00307da30d2a3a8390e08b6017b6afe7 51850 admin optional mx-tools_18.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAltcAeQTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumByGB/0WJbao/GCL5Bp8QumZ4/hQiNPKryGP
+ZWV3zh370Qt8VPxIdeZ0nCUoOeCf8D6ETsapnZCrQ7QAxvxoTfTQrSMlfNdAvu+/
+Qsuyz+dphSQqHM7TEUUjf8206+2LIvSF4wm+4M5OttOqJiaRTSME+J2Osn5edL8q
+zh4rulY8MS3vbYieUIi5Tkn7ssZtMXZvvUgfCF1HGX+r5JoNncIM/Uf1X2ClNhyn
+Dzg1Q62OG/5jgYMFL4InzAd3SlVh3VbcPOcC847JyokujzG1UiAqE0QtUnqrhV5M
+EUuHItH8Cwy0CKyKiUx2LwPm9D1W/BuLnbDpsSwlXk+tqwRGnHtdfIzX
+=hmJB
+-----END PGP SIGNATURE-----
