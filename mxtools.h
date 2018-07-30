@@ -73,6 +73,7 @@ private slots:
 private:
     Ui::mxtools *ui;
     void removeXfceOnly(QStringList &list);
+    void removeEnvExclusive(QStringList &list, bool live);
 };
 
 #endif // MXTOOLS_H

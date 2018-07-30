@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="312"/>
+        <location filename="../mxtools.cpp" line="322"/>
         <source>MX Tools</source>
         <translation>MX Strumenti</translation>
     </message>
@@ -60,42 +60,42 @@
         <translation>cerca</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="311"/>
+        <location filename="../mxtools.cpp" line="321"/>
         <source>About MX Tools</source>
         <translation>Informazioni su MX Strumenti</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="312"/>
+        <location filename="../mxtools.cpp" line="322"/>
         <source>Version: </source>
         <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="314"/>
+        <location filename="../mxtools.cpp" line="324"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>Strumenti di configurazione per MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="315"/>
+        <location filename="../mxtools.cpp" line="325"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="316"/>
+        <location filename="../mxtools.cpp" line="326"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="317"/>
+        <location filename="../mxtools.cpp" line="327"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="318"/>
+        <location filename="../mxtools.cpp" line="328"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="333"/>
+        <location filename="../mxtools.cpp" line="343"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>

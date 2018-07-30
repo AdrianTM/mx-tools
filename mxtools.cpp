@@ -48,23 +48,33 @@ mxtools::mxtools(QWidget *parent) :
     software_list = listDesktopFiles("MX-Software", search_folder);
     utilities_list = listDesktopFiles("MX-Utilities", search_folder);
 
+    QVector<QStringList *> lists;
+    lists << &live_list
+          << &maintenance_list
+          << &setup_list
+          << &software_list
+          << &utilities_list;
+
     QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
+
     // remove mx-remastercc and live-kernel-updater from list if not running Live
-    if (!(test == "aufs" || test == "overlay")) {
-        foreach(QString item, live_list) {
+    bool live = (test == "aufs" || test == "overlay");
+    if (!live) { // installed
+        foreach (QString item, live_list) {
             if (item.contains("mx-remastercc.desktop") || item.contains("live-kernel-updater.desktop")) {
                 live_list.removeOne(item);
             }
         }
     }
+    for (int i = 0; i < lists.size(); ++i) {
+        removeEnvExclusive(*lists[i], live);
+    }
 
     // remove item from list if it is only meant for XFCE
     if (qgetenv("XDG_CURRENT_DESKTOP") != "XFCE") {
-        removeXfceOnly(live_list);
-        removeXfceOnly(maintenance_list);
-        removeXfceOnly(setup_list);
-        removeXfceOnly(software_list);
-        removeXfceOnly(utilities_list);
+        for (int i = 0; i < lists.size(); ++i) {
+            removeXfceOnly(*lists[i]);
+        }
     }
 
     category_map.insertMulti("MX-Live", live_list);
@@ -405,3 +415,13 @@ void mxtools::removeXfceOnly(QStringList &list)
     }
 }
 
+// when running live remove programs meant only for installed environments and the other way round
+void mxtools::removeEnvExclusive(QStringList &list, bool live)
+{
+    QString term = live ? "MX-OnlyInstalled" : "MX-OnlyLive";
+    foreach(QString file_name, list) {
+        if (system("grep -iq " + term.toUtf8() + " " + file_name.toUtf8()) == 0) {
+            list.removeOne(file_name);
+        }
+    }
+}

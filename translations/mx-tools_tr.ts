@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="312"/>
+        <location filename="../mxtools.cpp" line="322"/>
         <source>MX Tools</source>
         <translation>MX Araçlar</translation>
     </message>
@@ -60,42 +60,42 @@
         <translation>Ara</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="311"/>
+        <location filename="../mxtools.cpp" line="321"/>
         <source>About MX Tools</source>
         <translation>MX Araçları Hakkında</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="312"/>
+        <location filename="../mxtools.cpp" line="322"/>
         <source>Version: </source>
         <translation>Sürüm</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="314"/>
+        <location filename="../mxtools.cpp" line="324"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>MX Linux için Yapılandırma Araçları</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="315"/>
+        <location filename="../mxtools.cpp" line="325"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="316"/>
+        <location filename="../mxtools.cpp" line="326"/>
         <source>License</source>
         <translation>Ruhsat</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="317"/>
+        <location filename="../mxtools.cpp" line="327"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="318"/>
+        <location filename="../mxtools.cpp" line="328"/>
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="333"/>
+        <location filename="../mxtools.cpp" line="343"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>
