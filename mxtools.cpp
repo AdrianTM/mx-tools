@@ -254,9 +254,11 @@ QIcon mxtools::findIcon(QString icon_name)
         icon_name = icon_name.remove(".png");
         icon_name = icon_name.remove(".svg");
         icon_name = icon_name.remove(".xpm");
+
         // return the icon from the theme if it exists
         if (QIcon::hasThemeIcon(icon_name)) {
             return QIcon::fromTheme(icon_name);
+
         // return png, svg, xpm icons from /usr/share/pixmaps
         } else if (QFile::exists("/usr/share/pixmaps/" + icon_name + ".png")) {
             return QIcon("/usr/share/pixmaps/" + icon_name + ".png");
@@ -266,10 +268,20 @@ QIcon mxtools::findIcon(QString icon_name)
             return QIcon("/usr/share/pixmaps/" + icon_name + ".xpm");
         } else if (QFile::exists("/usr/share/pixmaps/" + icon_name)) {
             return QIcon("/usr/share/pixmaps/" + icon_name);
-        } else {
-            return QIcon();
+
+        } else { // fallback to hicolor icons
+            QString name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + ".svg\" -print -quit");
+            if (name.isEmpty()) { // try first .png of 48x48 size
+                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + ".png\" | grep -m1 48x48");
+            }
+            if (name.isEmpty()) { // return first .png icon found
+                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + ".png\" -print -quit");
+            } else {
+                return QIcon(name);
+            }
         }
     }
+    return QIcon();
 }
 
 // run code when button is clicked

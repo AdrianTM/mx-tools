@@ -5,7 +5,7 @@
     <name>mxtools</name>
     <message>
         <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="322"/>
+        <location filename="../mxtools.cpp" line="334"/>
         <source>MX Tools</source>
         <translation>MX 工具組</translation>
     </message>
@@ -60,42 +60,42 @@
         <translation>搜尋</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="321"/>
+        <location filename="../mxtools.cpp" line="333"/>
         <source>About MX Tools</source>
         <translation>關於 MX 工具組</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="322"/>
+        <location filename="../mxtools.cpp" line="334"/>
         <source>Version: </source>
         <translation>版本：</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="324"/>
+        <location filename="../mxtools.cpp" line="336"/>
         <source>Configuration Tools for MX Linux</source>
         <translation>MX Linux 的設定工具</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="325"/>
+        <location filename="../mxtools.cpp" line="337"/>
         <source>Copyright (c) MX Linux</source>
         <translation>版權所有 (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="326"/>
+        <location filename="../mxtools.cpp" line="338"/>
         <source>License</source>
         <translation>授權條款</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="327"/>
+        <location filename="../mxtools.cpp" line="339"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="328"/>
+        <location filename="../mxtools.cpp" line="340"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="343"/>
+        <location filename="../mxtools.cpp" line="355"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>

@@ -1,5 +1,6 @@
-mx-tools 		usr/bin
+mx-tools		usr/bin
 mx-tools.desktop	usr/share/applications
-translations/*.qm 	usr/share/mx-tools/locale
+translations/*.qm	usr/share/mx-tools/locale
 mx-tools.png		usr/share/pixmaps
+mx-tools.png		usr/share/icons/hicolor/48x48/apps
 license.html		usr/share/doc/mx-tools
