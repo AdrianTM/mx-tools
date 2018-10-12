@@ -46,6 +46,7 @@ FORMS    += mxtools.ui
 TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_ca.ts \
                 translations/mx-tools_cs.ts \
+                translations/mx-tools_da.ts \
                 translations/mx-tools_de.ts \
                 translations/mx-tools_el.ts \
                 translations/mx-tools_es.ts \
@@ -65,6 +66,7 @@ TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_ro.ts \
                 translations/mx-tools_ru.ts \
                 translations/mx-tools_sk.ts \
+                translations/mx-tools_sq.ts \
                 translations/mx-tools_sv.ts \
                 translations/mx-tools_tr.ts \
                 translations/mx-tools_uk.ts \
