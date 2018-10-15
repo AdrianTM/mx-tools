@@ -1,3 +1,9 @@
+mx-tools (18.10) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 14 Oct 2018 20:27:05 -0400
+
 mx-tools (18.8) mx; urgency=medium
 
   * fix icon for other themes
