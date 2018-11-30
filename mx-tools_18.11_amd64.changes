@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 30 Nov 2018 15:00:15 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 18.11
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (18.11) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 1b790995374c6125a00df14587efa6ac1ab92d9d 1154 mx-tools_18.11.dsc
+ 9b5fd9e69806df8f1475280c38645ff25da9a237 33216 mx-tools_18.11.tar.xz
+ 6d015db000bfcd7aa3ac090772a37d274a6dfbc0 11151 mx-tools_18.11_amd64.buildinfo
+ ac7233e329af33bf2d870e99e1e0e59583ed9cac 54240 mx-tools_18.11_amd64.deb
+Checksums-Sha256:
+ 316b3acf2cfd69af3f8c0405616d8a884785d9b884b4ea9bf6c0ac8f5d0fd8d6 1154 mx-tools_18.11.dsc
+ 10ce1b6de48042ceb3fc68bdf6c601e69c97478a01ca98ef493aecd94a6328b7 33216 mx-tools_18.11.tar.xz
+ 211d614f6a9d24f50dda50475349f906f45c7a8050124931abbb3a82894cff95 11151 mx-tools_18.11_amd64.buildinfo
+ ffa3af86bc84ffc42d241de3f9ecbc23e0882afca15df43272dc5d0c0c185b72 54240 mx-tools_18.11_amd64.deb
+Files:
+ fe0a30fba58cbc09cb0aa6621e31cc6b 1154 admin optional mx-tools_18.11.dsc
+ 4ed6f57dfb1488d3a0849fc8d212bb74 33216 admin optional mx-tools_18.11.tar.xz
+ c28bf925caea7fa89ddffe3c58dae12f 11151 admin optional mx-tools_18.11_amd64.buildinfo
+ 2ee8860de46a86bae92054decc031b53 54240 admin optional mx-tools_18.11_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwBl4gTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumFk3CAC7lTfiYj+4Z1Wb2EvIL7tFdXTcrTZb
+aka8e9jKbWmy+0X57dpipaiOHGCPYvogSmc5JwalAbLYFnnkw9rVFBlITQQQq7Lj
+IIGOoELrNNd6itcteqThTXs342JGGwPu+Xe1v5LM2/85K0eq72AoUk/2kX/5/Eqc
+bcxBpSc8pCSYYxeVfHGRpvmWIHqUomVoeoatei4wrLLMUHz50HlL65ehluZTfx63
+UFtaOeoi510teNCJYKSKoW9JZCXy6jLsN3wWx91Sn1PcfEgURNUhp0UnbVvac1HY
+aSZ/CpDoAorcm7eWbuVuwSHtHOUJWVJ/MAj60VFW/e2TzikJEegmZuCO
+=Go1F
+-----END PGP SIGNATURE-----
