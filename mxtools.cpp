@@ -245,37 +245,67 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
 }
 
 // find icon by name specified in .desktop file
+// return in order: fromTheme, pixmaps, hicolor, icons
 QIcon mxtools::findIcon(QString icon_name)
 {
     // return icon if fully specified
     if (QFile::exists("/" + icon_name) && QFileInfo("/" + icon_name).isFile()) { // make sure it looks for icon in root, not in current folder
         return QIcon(icon_name);
     } else {
-        icon_name = icon_name.remove(".png");
-        icon_name = icon_name.remove(".svg");
-        icon_name = icon_name.remove(".xpm");
+        QString icon_name_no_ext = icon_name.remove(".png").remove(".svg").remove(".xpm");
 
         // return the icon from the theme if it exists
-        if (QIcon::hasThemeIcon(icon_name)) {
-            return QIcon::fromTheme(icon_name);
+        if (QIcon::hasThemeIcon(icon_name_no_ext)) {
+            return QIcon::fromTheme(icon_name_no_ext);
 
-        // return png, svg, xpm icons from /usr/share/pixmaps
-        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name + ".png")) {
-            return QIcon("/usr/share/pixmaps/" + icon_name + ".png");
-        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name + ".svg")) {
-            return QIcon("/usr/share/pixmaps/" + icon_name + ".svg");
-        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name + ".xpm")) {
-            return QIcon("/usr/share/pixmaps/" + icon_name + ".xpm");
+            // try /usr/share/pixmaps
         } else if (QFile::exists("/usr/share/pixmaps/" + icon_name)) {
             return QIcon("/usr/share/pixmaps/" + icon_name);
 
-        } else { // fallback to hicolor icons
-            QString name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + ".svg\" -print -quit");
+            // fallback to hicolor icons
+        }  else {
+            QString name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + " -print -quit");
+            if (!name.isEmpty()) {
+                return QIcon(name);
+
+                // fallback to /usr/share/icons
+            } else if (QFile::exists("/usr/share/icons/" + icon_name)) {
+                return QIcon("/usr/share/icons/" + icon_name);
+            }
+        }
+
+        // Try file names regardless of specified extension
+        // return png, svg, xpm icons from /usr/share/pixmaps
+        if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext + ".png")) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext + ".png");
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext + ".svg")) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext + ".svg");
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext + ".xpm")) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext + ".xpm");
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext)) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext);
+
+            // fallback to hicolor icons
+        } else {
+            QString name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name_no_ext + ".svg\" -print -quit");
             if (name.isEmpty()) { // try first .png of 48x48 size
-                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + ".png\" | grep -m1 48x48");
+                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name_no_ext + ".png\" | grep -m1 48x48");
             }
             if (name.isEmpty()) { // return first .png icon found
-                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + ".png\" -print -quit");
+                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name_no_ext + ".png\" -print -quit");
+            }
+
+            // if still empty check /usr/share/icons
+            if (name.isEmpty()) {
+                if (QFile::exists("/usr/share/icons/" + icon_name_no_ext + ".png")) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext + ".png");
+                } else if (QFile::exists("/usr/share/icons/" + icon_name_no_ext + ".svg")) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext + ".svg");
+                } else if (QFile::exists("/usr/share/icons/" + icon_name_no_ext + ".xpm")) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext + ".xpm");
+                } else if (QFile::exists("/usr/share/icons/" + icon_name_no_ext)) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext);
+                }
             } else {
                 return QIcon(name);
             }
