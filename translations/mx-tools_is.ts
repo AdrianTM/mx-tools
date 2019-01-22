@@ -1,101 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="is">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="is" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
-        <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="334"/>
+        <location filename="mxtools.ui" line="14"/>
+        <location filename="mxtools.cpp" line="334"/>
         <source>MX Tools</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="47"/>
+        <location filename="mxtools.ui" line="47"/>
         <source>About this application</source>
         <translation>Um þetta forrit</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="50"/>
+        <location filename="mxtools.ui" line="50"/>
         <source>About...</source>
         <translation>Um hugbúnaðinn...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="58"/>
+        <location filename="mxtools.ui" line="58"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="116"/>
+        <location filename="mxtools.ui" line="116"/>
         <source>Close application</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="119"/>
+        <location filename="mxtools.ui" line="119"/>
         <source>Close</source>
         <translation>Hætta</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="127"/>
+        <location filename="mxtools.ui" line="127"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="149"/>
+        <location filename="mxtools.ui" line="149"/>
         <source>Manual</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="248"/>
+        <location filename="mxtools.ui" line="248"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="264"/>
+        <location filename="mxtools.ui" line="264"/>
         <source>Hide individual tools from the menu</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="283"/>
+        <location filename="mxtools.ui" line="283"/>
         <source>search</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="333"/>
+        <location filename="mxtools.cpp" line="333"/>
         <source>About MX Tools</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="334"/>
+        <location filename="mxtools.cpp" line="334"/>
         <source>Version: </source>
         <translation>Útgáfa:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="336"/>
+        <location filename="mxtools.cpp" line="336"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="337"/>
+        <location filename="mxtools.cpp" line="337"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Höfundarréttur (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="338"/>
+        <location filename="mxtools.cpp" line="338"/>
         <source>License</source>
         <translation>Notkunarleyfi</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="339"/>
+        <location filename="mxtools.cpp" line="339"/>
         <source>Changelog</source>
         <translation>Breytingaskrá</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="340"/>
+        <location filename="mxtools.cpp" line="340"/>
         <source>Cancel</source>
         <translation>Hætta við</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="355"/>
+        <location filename="mxtools.cpp" line="355"/>
         <source>&amp;Close</source>
         <translation>&amp;Loka</translation>
     </message>

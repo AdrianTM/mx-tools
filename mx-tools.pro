@@ -44,22 +44,33 @@ HEADERS  += mxtools.h \
 FORMS    += mxtools.ui
 
 TRANSLATIONS += translations/mx-tools_am.ts \
+                translations/mx-tools_ar.ts \
+                translations/mx-tools_bg.ts \
                 translations/mx-tools_ca.ts \
                 translations/mx-tools_cs.ts \
                 translations/mx-tools_da.ts \
                 translations/mx-tools_de.ts \
                 translations/mx-tools_el.ts \
                 translations/mx-tools_es.ts \
+                translations/mx-tools_et.ts \
+                translations/mx-tools_eu.ts \
+                translations/mx-tools_fa.ts \
                 translations/mx-tools_fi.ts \
                 translations/mx-tools_fr.ts \
+                translations/mx-tools_he_IL.ts \
                 translations/mx-tools_hi.ts \
                 translations/mx-tools_hr.ts \
                 translations/mx-tools_hu.ts \
+                translations/mx-tools_id.ts \
                 translations/mx-tools_is.ts \
                 translations/mx-tools_it.ts \
                 translations/mx-tools_ja.ts \
+                translations/mx-tools_ja_JP.ts \
                 translations/mx-tools_kk.ts \
+                translations/mx-tools_ko.ts \
                 translations/mx-tools_lt.ts \
+                translations/mx-tools_mk.ts \
+                translations/mx-tools_nb.ts \
                 translations/mx-tools_nl.ts \
                 translations/mx-tools_pl.ts \
                 translations/mx-tools_pt.ts \
@@ -67,10 +78,13 @@ TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_ro.ts \
                 translations/mx-tools_ru.ts \
                 translations/mx-tools_sk.ts \
+                translations/mx-tools_sl.ts \
                 translations/mx-tools_sq.ts \
+                translations/mx-tools_sr.ts \
                 translations/mx-tools_sv.ts \
                 translations/mx-tools_tr.ts \
                 translations/mx-tools_uk.ts \
+                translations/mx-tools_zh_CN.ts \
                 translations/mx-tools_zh_TW.ts
 
 RESOURCES += \
