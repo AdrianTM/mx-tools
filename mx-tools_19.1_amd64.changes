@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 23 Jan 2019 16:45:10 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 19.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (19.1) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ c4a9db2a5904d52b21594785c3fa5cef9f46a484 1153 mx-tools_19.1.dsc
+ ac5cba8bd98fb071fbe93b76982224fc48c350c9 572360 mx-tools_19.1.tar.xz
+ d7bd06b18fd9b2f8e53edad663ec9ec476b818cb 458050 mx-tools-dbgsym_19.1_amd64.deb
+ 0e0b4ef8ec98675de2415a61f019be0a081369a8 11551 mx-tools_19.1_amd64.buildinfo
+ 57690092fc3ab8686069510a8baa53d7e4fcdcfd 55828 mx-tools_19.1_amd64.deb
+Checksums-Sha256:
+ ea5f74ec6a93bdd265c842e60081c9e4c5feb303712ccc9d4265941774a2d4e3 1153 mx-tools_19.1.dsc
+ 97b55007d52b5c4a26658a5320546d356f758c2444802e8bd553de7dadd467c0 572360 mx-tools_19.1.tar.xz
+ 4341d862c5d5a188da7a82b3dbea5c307b8010f92a75b001d79568b955c7c993 458050 mx-tools-dbgsym_19.1_amd64.deb
+ 0abf7e837c8f7f8e102163da49d91eef3b6dc3ec3c6154cc69ca752df2fb91a8 11551 mx-tools_19.1_amd64.buildinfo
+ 60958e1487caf431b5078cabcebfb8e9027bf69dd961463f8a107360b823c6b6 55828 mx-tools_19.1_amd64.deb
+Files:
+ 799a38a093bdfd50e57b4bb13431e25f 1153 admin optional mx-tools_19.1.dsc
+ 13dae77e81a5ec84010702cdf20d9e8e 572360 admin optional mx-tools_19.1.tar.xz
+ 84ace979597c1b54996f51ff045b261b 458050 debug optional mx-tools-dbgsym_19.1_amd64.deb
+ f5855757b00c013af1981c4c27b235d9 11551 admin optional mx-tools_19.1_amd64.buildinfo
+ f09da10b1fc29458209099893dc7a419 55828 admin optional mx-tools_19.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlxI4PgTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPXbCADR0BTDv+1BaOVBi5bbIP6oG651MFQQ
+Jy2jt3ONh4eM2czK2+S/LKL3j6MB+X5s3zuFecopn0Lgoz9L6YQVx0mzn46VCjdo
+Sq0kFafE2s5tQmF9YJP3NnMYA3WID+wc/bbN3NsjOoVXQBbSAvB38Eijx5Gpaah5
+Xv2RTusdAWmPUs2vwJFpFKh2IS+unvWj6UdAEjyCFmkigCI7jGnz8Yf1oINYWtor
+6iqAaFyXANFp1CcfgpUQ3bpm8THWRtYG0bVrHZDqFgpbCatOvifqCVWgK41sTFoh
+vLd1X+hxK5zCc7Rad7BU4ZnZlsfyHYu/AUE5GHGMg5p4oFbw4JI1XD27
+=3ucS
+-----END PGP SIGNATURE-----
