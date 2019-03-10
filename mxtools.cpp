@@ -60,7 +60,8 @@ mxtools::mxtools(QWidget *parent) :
     // remove mx-remastercc and live-kernel-updater from list if not running Live
     bool live = (test == "aufs" || test == "overlay");
     if (!live) { // installed
-        foreach (QString item, live_list) {
+        QStringList live_list_copy = live_list;
+        for (const QString &item : live_list_copy) {
             if (item.contains("mx-remastercc.desktop") || item.contains("live-kernel-updater.desktop")) {
                 live_list.removeOne(item);
             }
@@ -139,9 +140,9 @@ void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
     QString lang = locale.bcp47Name();
     QMultiMap<QString, QStringList> map;
 
-    foreach (QString category, category_map.keys()) {
+    for (const QString &category :category_map.keys()) {
         list = category_map.value(category);
-        foreach (QString file_name, list) {
+        for (const QString &file_name : list) {
             name = "";
             comment = "";
             if (lang != "en") {
@@ -185,7 +186,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
     QString file_name;
     QString terminal_switch;
 
-    foreach (QString category, info_map.keys()) {
+    for (const QString &category : info_map.keys()) {
         if (!info_map.value(category).isEmpty()) {
             // add empty row and delimiter except for the first row
             if (row != 0) {
@@ -208,7 +209,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
             row += 1;
             ui->gridLayout_btn->addWidget(label, row, col);
             row += 1;
-            foreach (QString file_name, info_map.value(category).keys()) {
+            for (const QString &file_name : info_map.value(category).keys()) {
                 QStringList file_info = info_map.value(category).value(file_name);
                 name = file_info[0];
                 comment = file_info[1];
@@ -331,8 +332,8 @@ void mxtools::closeEvent(QCloseEvent *)
 
 // hide icons in menu checkbox
 void mxtools::on_hideCheckBox_clicked(bool checked) {
-    foreach (QStringList list, category_map) {
-        foreach (QString file_name, list) {
+    for (const QStringList &list : category_map) {
+        for (const QString &file_name : list) {
             hideShowIcon(file_name, checked);
         }
     }
@@ -424,10 +425,10 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
     QMultiMap<QString, QStringList>  map;
 
     // creat a new_map with items that match the search argument
-    foreach (QString category, info_map.keys()) {
+    for (const QString &category : info_map.keys()) {
         //qDebug() << category;
         QMultiMap<QString, QStringList> file_info =  info_map.value(category);
-        foreach (QString file_name, category_map.value(category)) {
+        for (const QString &file_name : category_map.value(category)) {
             //qDebug() << file_name;
             QString name = file_info.value(file_name)[0];
             QString comment = file_info.value(file_name)[1];
@@ -450,7 +451,8 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
 // remove Xfce-only apps from the list
 void mxtools::removeXfceOnly(QStringList &list)
 {
-    foreach(QString file_name, list) {
+    QStringList list_copy = list;
+    for (const QString &file_name : list_copy) {
         if (system("grep -iq 'OnlyShowIn=XFCE' "+ file_name.toUtf8()) == 0) {
             list.removeOne(file_name);
         }
@@ -461,7 +463,8 @@ void mxtools::removeXfceOnly(QStringList &list)
 void mxtools::removeEnvExclusive(QStringList &list, bool live)
 {
     QString term = live ? "MX-OnlyInstalled" : "MX-OnlyLive";
-    foreach(QString file_name, list) {
+    QStringList list_copy = list;
+    for (const QString &file_name : list_copy) {
         if (system("grep -iq " + term.toUtf8() + " " + file_name.toUtf8()) == 0) {
             list.removeOne(file_name);
         }
