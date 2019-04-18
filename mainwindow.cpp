@@ -20,8 +20,8 @@
  * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mxtools.h"
-#include "ui_mxtools.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 #include "flatbutton.h"
 
 #include <QFile>
@@ -31,9 +31,9 @@
 #include <QDebug>
 
 
-mxtools::mxtools(QWidget *parent) :
+MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::mxtools)
+    ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
@@ -94,13 +94,13 @@ mxtools::mxtools(QWidget *parent) :
     restoreGeometry(settings.value("geometry").toByteArray());
 }
 
-mxtools::~mxtools()
+MainWindow::~MainWindow()
 {
     delete ui;
 }
 
 // Util function
-QString mxtools::getCmdOut(const QString &cmd) {
+QString MainWindow::getCmdOut(const QString &cmd) {
     proc = new QProcess(this);
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     proc->setReadChannel(QProcess::StandardOutput);
@@ -110,13 +110,13 @@ QString mxtools::getCmdOut(const QString &cmd) {
 }
 
 // Get version of the program
-QString mxtools::getVersion(QString name) {
+QString MainWindow::getVersion(QString name) {
     return getCmdOut("dpkg-query -f '${Version}' -W " + name);
 }
 
 
 // List .desktop files that contain a specific string
-QStringList mxtools::listDesktopFiles(const QString &search_string, const QString &location)
+QStringList MainWindow::listDesktopFiles(const QString &search_string, const QString &location)
 {
     QStringList listDesktop;
     QString cmd = QString("grep -Elr %1 %2 | sort").arg(search_string).arg(location);
@@ -128,7 +128,7 @@ QStringList mxtools::listDesktopFiles(const QString &search_string, const QStrin
 }
 
 // Load info (name, comment, exec, icon_name, category, terminal) to the info_map
-void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
+void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
 {
     QString name;
     QString comment;
@@ -174,7 +174,7 @@ void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
 }
 
 // read the info_map and add the buttons to the UI
-void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map)
+void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map)
 {
     int col = 0;
     int row = 0;
@@ -238,7 +238,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
                 }
 
                 //qDebug() << "button exec" << btn->objectName();
-                QObject::connect(btn, SIGNAL(clicked()), this, SLOT(btn_clicked()));
+                QObject::connect(btn, &FlatButton::clicked, this, &MainWindow::btn_clicked);
             }
         }
     }
@@ -247,7 +247,7 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
 
 // find icon by name specified in .desktop file
 // return in order: fromTheme, pixmaps, hicolor, icons
-QIcon mxtools::findIcon(QString icon_name)
+QIcon MainWindow::findIcon(QString icon_name)
 {
     // return icon if fully specified
     if (QFile::exists("/" + icon_name) && QFileInfo("/" + icon_name).isFile()) { // make sure it looks for icon in root, not in current folder
@@ -316,7 +316,7 @@ QIcon mxtools::findIcon(QString icon_name)
 }
 
 // run code when button is clicked
-void mxtools::btn_clicked()
+void MainWindow::btn_clicked()
 {
     this->hide();
     //qDebug() << sender()->objectName();
@@ -324,14 +324,14 @@ void mxtools::btn_clicked()
     this->show();
 }
 
-void mxtools::closeEvent(QCloseEvent *)
+void MainWindow::closeEvent(QCloseEvent *)
 {
     QSettings settings("MX-Linux", "mx-tools");
     settings.setValue("geometry", saveGeometry());
 }
 
 // hide icons in menu checkbox
-void mxtools::on_hideCheckBox_clicked(bool checked) {
+void MainWindow::on_hideCheckBox_clicked(bool checked) {
     for (const QStringList &list : qAsConst(category_map)) {
         for (const QString &file_name : list) {
             hideShowIcon(file_name, checked);
@@ -341,7 +341,7 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
 }
 
 // hide or show icon for .desktop file
-void mxtools::hideShowIcon(const QString &file_name, bool hide)
+void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 {
     QString hide_str = hide ? "true" : "false";
 
@@ -357,7 +357,7 @@ void mxtools::hideShowIcon(const QString &file_name, bool hide)
 }
 
 // About button clicked
-void mxtools::on_buttonAbout_clicked()
+void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
@@ -398,7 +398,7 @@ void mxtools::on_buttonAbout_clicked()
 
 
 // Help button clicked
-void mxtools::on_buttonHelp_clicked()
+void MainWindow::on_buttonHelp_clicked()
 {
     QString cmd;
 
@@ -412,7 +412,7 @@ void mxtools::on_buttonHelp_clicked()
 }
 
 // text changed in search field
-void mxtools::on_lineSearch_textChanged(const QString &arg1)
+void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 {
     // remove all items from the layout
     QLayoutItem *child;
@@ -449,7 +449,7 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
 }
 
 // remove Xfce-only apps from the list
-void mxtools::removeXfceOnly(QStringList &list)
+void MainWindow::removeXfceOnly(QStringList &list)
 {
     const QStringList list_copy = list;
     for (const QString &file_name : list_copy) {
@@ -460,7 +460,7 @@ void mxtools::removeXfceOnly(QStringList &list)
 }
 
 // when running live remove programs meant only for installed environments and the other way round
-void mxtools::removeEnvExclusive(QStringList &list, bool live)
+void MainWindow::removeEnvExclusive(QStringList &list, bool live)
 {
     QString term = live ? "MX-OnlyInstalled" : "MX-OnlyLive";
     const QStringList list_copy = list;

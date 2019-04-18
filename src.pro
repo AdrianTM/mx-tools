@@ -37,13 +37,15 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mxtools.cpp \
-    flatbutton.cpp
+    flatbutton.cpp \
+    mainwindow.cpp
 
-HEADERS  += mxtools.h \
-    flatbutton.h
+HEADERS  += \
+    flatbutton.h \
+    mainwindow.h
 
-FORMS    += mxtools.ui
+FORMS    += \
+    mainwindow.ui
 
 TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_ar.ts \

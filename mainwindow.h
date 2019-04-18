@@ -20,8 +20,8 @@
  * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#ifndef MXTOOLS_H
-#define MXTOOLS_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <flatbutton.h>
 #include <QMessageBox>
@@ -30,10 +30,10 @@
 
 
 namespace Ui {
-class mxtools;
+class MainWindow;
 }
 
-class mxtools : public QDialog
+class MainWindow : public QDialog
 {
     Q_OBJECT
 
@@ -41,8 +41,8 @@ protected:
     QProcess *proc;
 
 public:
-    explicit mxtools(QWidget *parent = 0);
-    ~mxtools();
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
 
     FlatButton *btn;
     QMultiMap<QString, QStringList> category_map;
@@ -71,9 +71,9 @@ private slots:
     void on_lineSearch_textChanged(const QString &arg1);
 
 private:
-    Ui::mxtools *ui;
+    Ui::MainWindow *ui;
     void removeXfceOnly(QStringList &list);
     void removeEnvExclusive(QStringList &list, bool live);
 };
 
-#endif // MXTOOLS_H
+#endif // MAINWINDOW_H
