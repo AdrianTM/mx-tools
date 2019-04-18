@@ -142,7 +142,7 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
 
     for (const QString &category : category_map.keys()) {
         list = category_map.value(category);
-        for (const QString &file_name : qAsConst(list)) {
+        for (const QString &file_name : list) {
             name = "";
             comment = "";
             if (lang != "en") {
@@ -332,7 +332,7 @@ void MainWindow::closeEvent(QCloseEvent *)
 
 // hide icons in menu checkbox
 void MainWindow::on_hideCheckBox_clicked(bool checked) {
-    for (const QStringList &list : qAsConst(category_map)) {
+    for (const QStringList &list : category_map) {
         for (const QString &file_name : list) {
             hideShowIcon(file_name, checked);
         }
@@ -425,10 +425,10 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
     QMultiMap<QString, QStringList>  map;
 
     // creat a new_map with items that match the search argument
-    for (const QString &category : qAsConst(info_map).keys()) {
+    for (const QString &category : info_map.keys()) {
         //qDebug() << category;
         QMultiMap<QString, QStringList> file_info =  info_map.value(category);
-        for (const QString &file_name : qAsConst(category_map).value(category)) {
+        for (const QString &file_name : category_map.value(category)) {
             //qDebug() << file_name;
             QString name = file_info.value(file_name)[0];
             QString comment = file_info.value(file_name)[1];
