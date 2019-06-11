@@ -42,7 +42,8 @@ SOURCES += main.cpp\
 
 HEADERS  += \
     flatbutton.h \
-    mainwindow.h
+    mainwindow.h \
+    version.h
 
 FORMS    += \
     mainwindow.ui

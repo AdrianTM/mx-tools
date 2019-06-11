@@ -23,6 +23,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "flatbutton.h"
+#include "version.h"
 
 #include <QFile>
 #include <QFileInfo>
@@ -35,6 +36,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
+    qDebug() << "Program Version:" << VERSION;
     ui->setupUi(this);
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx-user.desktop") == 0) {
@@ -108,12 +110,6 @@ QString MainWindow::getCmdOut(const QString &cmd) {
     proc->waitForFinished(-1);
     return proc->readAllStandardOutput().trimmed();
 }
-
-// Get version of the program
-QString MainWindow::getVersion(QString name) {
-    return getCmdOut("dpkg-query -f '${Version}' -W " + name);
-}
-
 
 // List .desktop files that contain a specific string
 QStringList MainWindow::listDesktopFiles(const QString &search_string, const QString &location)
@@ -363,7 +359,7 @@ void MainWindow::on_buttonAbout_clicked()
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Tools"), "<p align=\"center\"><b><h2>" +
                        tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
-                       getVersion("mx-tools") + "</p><p align=\"center\"><h3>" +
+                       VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Configuration Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);

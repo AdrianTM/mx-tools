@@ -59,7 +59,6 @@ public:
 
     QIcon findIcon(QString icon_name);
     QString getCmdOut(const QString &cmd);
-    QString getVersion(QString name);
     QStringList listDesktopFiles(const QString &search_string, const QString &location);
 
 private slots:
