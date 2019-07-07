@@ -2,102 +2,181 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="fi">
 <context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>MX Tools</source>
+        <translation type="unfinished">MX Työkalut</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="47"/>
+        <source>About this application</source>
+        <translation type="unfinished">Tietoja tästä sovelluksesta</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="50"/>
+        <source>About...</source>
+        <translation type="unfinished">Tietoja...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="57"/>
+        <source>Alt+B</source>
+        <translation type="unfinished">Alt+B</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="115"/>
+        <source>Close application</source>
+        <translation type="unfinished">Sulje sovellus</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="118"/>
+        <source>Close</source>
+        <translation type="unfinished">Sulje</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="125"/>
+        <source>Alt+N</source>
+        <translation type="unfinished">Alt+N</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="147"/>
+        <source>Manual</source>
+        <translation type="unfinished">Käyttöohje</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="245"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation type="unfinished">Nämä MX-sovellukset säästävät aikaa ja vaivaa tärkeissä tehtävissä.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>Hide individual tools from the menu</source>
+        <translation type="unfinished">Näytä sovelluksien yleispätevät nimet</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="280"/>
+        <source>search</source>
+        <translation type="unfinished">etsi</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="361"/>
+        <source>About MX Tools</source>
+        <translation type="unfinished">Tietoja MX Työkaluista</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version: </source>
+        <translation type="unfinished">Versio: </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="364"/>
+        <source>Configuration Tools for MX Linux</source>
+        <translation type="unfinished">MX Linuxin konfigurointityökalut</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <source>License</source>
+        <translation type="unfinished">Lisenssi</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="367"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Muutosloki</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="368"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Peruuta</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="383"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Sulje</translation>
+    </message>
+</context>
+<context>
     <name>mxtools</name>
     <message>
-        <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="365"/>
         <source>MX Tools</source>
-        <translation>MX Työkalut</translation>
+        <translation type="vanished">MX Työkalut</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>Tietoja tästä sovelluksesta</translation>
+        <translation type="vanished">Tietoja tästä sovelluksesta</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>Tietoja...</translation>
+        <translation type="vanished">Tietoja...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="58"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="116"/>
         <source>Close application</source>
-        <translation>Sulje sovellus</translation>
+        <translation type="vanished">Sulje sovellus</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="119"/>
         <source>Close</source>
-        <translation>Sulje</translation>
+        <translation type="vanished">Sulje</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="127"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="149"/>
         <source>Manual</source>
-        <translation>Käyttöohje</translation>
+        <translation type="vanished">Käyttöohje</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="248"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Nämä MX-sovellukset säästävät aikaa ja vaivaa tärkeissä tehtävissä.</translation>
+        <translation type="vanished">Nämä MX-sovellukset säästävät aikaa ja vaivaa tärkeissä tehtävissä.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="264"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Näytä sovelluksien yleispätevät nimet</translation>
+        <translation type="vanished">Näytä sovelluksien yleispätevät nimet</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="283"/>
         <source>search</source>
-        <translation>etsi</translation>
+        <translation type="vanished">etsi</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="364"/>
         <source>About MX Tools</source>
-        <translation>Tietoja MX Työkaluista</translation>
+        <translation type="vanished">Tietoja MX Työkaluista</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="365"/>
         <source>Version: </source>
-        <translation>Versio: </translation>
+        <translation type="vanished">Versio: </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="367"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>MX Linuxin konfigurointityökalut</translation>
+        <translation type="vanished">MX Linuxin konfigurointityökalut</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="368"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="369"/>
         <source>License</source>
-        <translation>Lisenssi</translation>
+        <translation type="vanished">Lisenssi</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="370"/>
         <source>Changelog</source>
-        <translation>Muutosloki</translation>
+        <translation type="vanished">Muutosloki</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="371"/>
         <source>Cancel</source>
-        <translation>Peruuta</translation>
+        <translation type="vanished">Peruuta</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="386"/>
         <source>&amp;Close</source>
-        <translation>&amp;Sulje</translation>
+        <translation type="vanished">&amp;Sulje</translation>
     </message>
 </context>
 </TS>

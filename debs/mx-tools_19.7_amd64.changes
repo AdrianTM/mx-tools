@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 07 Jul 2019 14:21:36 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 19.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (19.7) mx; urgency=medium
+ .
+   * fix window buttons for Buster
+Checksums-Sha1:
+ de6f00c0d203589063dc88d4d5c3177abe27669a 1150 mx-tools_19.7.dsc
+ 1ba20ded71d8c7bb52c24c90a1c35be90053651b 38292 mx-tools_19.7.tar.xz
+ 83ba4d232236463d02c19287fc6bed322e63299d 54306 mx-tools_19.7_amd64.deb
+Checksums-Sha256:
+ 44dbcfa971c0129ea96106fb5302225aa71398d0976a64cf5e77d472af8656cc 1150 mx-tools_19.7.dsc
+ 12c4aa1a839f23440b42d1f85f4fb332e3de875e0970b1eab0f111f037b88c72 38292 mx-tools_19.7.tar.xz
+ cd21410fce06003593dbea72a1b3245f3fff8e7e47635c419ab0021f08457bd7 54306 mx-tools_19.7_amd64.deb
+Files:
+ b25e6af1bcb0ea093090fd5c0d5a8fbe 1150 admin optional mx-tools_19.7.dsc
+ 24f0db868eeaad03a882c68b4229fd5b 38292 admin optional mx-tools_19.7.tar.xz
+ 3e65c65bd63af5e508d5205326dc7a2e 54306 admin optional mx-tools_19.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl0iOJ0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJvlB/4j3CwbbPPIp9Z8qTl6wZm+OculAfWa
+ibqTZlulI1Xrf43vLN8TFcaglFNYPm/8Ss/qe93wiyR0fiposPjMKpADw0Y83xcl
+RJERcRTNSAisDYRqb6zduN4xycBGNIxgStjxR60oXQS/SorYQO89fxkbrAKF6FLZ
+OsKmp9RX8ygs3VGTObnA1or7MMXpttwDNxVHK6y/WHJBR4Q1XHMdwhLrixftKD3A
+NWJIUAY75QxuOULYBCr+wM0oimoetB7hm+imHG5p6bOfBHtCmy1FRf6hzA3KdK6+
+KKfQuY8godaHYC5fZh/iGNgwqbbYbkNtuuANsQgis7R3ATQ7J4NewOyu
+=Q/hK
+-----END PGP SIGNATURE-----

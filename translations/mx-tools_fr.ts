@@ -2,102 +2,181 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="fr">
 <context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>MX Tools</source>
+        <translation type="unfinished">Outils MX</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="47"/>
+        <source>About this application</source>
+        <translation type="unfinished">A propos de cette application</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="50"/>
+        <source>About...</source>
+        <translation type="unfinished">A propos...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="57"/>
+        <source>Alt+B</source>
+        <translation type="unfinished">Alt+B</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="115"/>
+        <source>Close application</source>
+        <translation type="unfinished">Fermer l&apos;application</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="118"/>
+        <source>Close</source>
+        <translation type="unfinished">Fermer</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="125"/>
+        <source>Alt+N</source>
+        <translation type="unfinished">Alt+N</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="147"/>
+        <source>Manual</source>
+        <translation type="unfinished">Manuel</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="245"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation type="unfinished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>Hide individual tools from the menu</source>
+        <translation type="unfinished">Cacher les outils individuels du menu</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="280"/>
+        <source>search</source>
+        <translation type="unfinished">Rechercher</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="361"/>
+        <source>About MX Tools</source>
+        <translation type="unfinished">A propos de MX Outils</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version: </source>
+        <translation type="unfinished">Version:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="364"/>
+        <source>Configuration Tools for MX Linux</source>
+        <translation type="unfinished">Outils de configuration pour MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <source>License</source>
+        <translation type="unfinished">Licence</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="367"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Journal des modifications</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="368"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Annuler</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="383"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Fermer</translation>
+    </message>
+</context>
+<context>
     <name>mxtools</name>
     <message>
-        <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="365"/>
         <source>MX Tools</source>
-        <translation>Outils MX</translation>
+        <translation type="vanished">Outils MX</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>A propos de cette application</translation>
+        <translation type="vanished">A propos de cette application</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>A propos...</translation>
+        <translation type="vanished">A propos...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="58"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="116"/>
         <source>Close application</source>
-        <translation>Fermer l&apos;application</translation>
+        <translation type="vanished">Fermer l&apos;application</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="119"/>
         <source>Close</source>
-        <translation>Fermer</translation>
+        <translation type="vanished">Fermer</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="127"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="149"/>
         <source>Manual</source>
-        <translation>Manuel</translation>
+        <translation type="vanished">Manuel</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="248"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+        <translation type="vanished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="264"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Cacher les outils individuels du menu</translation>
+        <translation type="vanished">Cacher les outils individuels du menu</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="283"/>
         <source>search</source>
-        <translation>Rechercher</translation>
+        <translation type="vanished">Rechercher</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="364"/>
         <source>About MX Tools</source>
-        <translation>A propos de MX Outils</translation>
+        <translation type="vanished">A propos de MX Outils</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="365"/>
         <source>Version: </source>
-        <translation>Version:</translation>
+        <translation type="vanished">Version:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="367"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Outils de configuration pour MX Linux</translation>
+        <translation type="vanished">Outils de configuration pour MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="368"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="369"/>
         <source>License</source>
-        <translation>Licence</translation>
+        <translation type="vanished">Licence</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="370"/>
         <source>Changelog</source>
-        <translation>Journal des modifications</translation>
+        <translation type="vanished">Journal des modifications</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="371"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation type="vanished">Annuler</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="386"/>
         <source>&amp;Close</source>
-        <translation>&amp;Fermer</translation>
+        <translation type="vanished">&amp;Fermer</translation>
     </message>
 </context>
 </TS>

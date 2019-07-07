@@ -2,102 +2,157 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="uk">
 <context>
-    <name>mxtools</name>
+    <name>MainWindow</name>
     <message>
-        <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="365"/>
+        <location filename="../mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>MX Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="47"/>
+        <location filename="../mainwindow.ui" line="47"/>
         <source>About this application</source>
-        <translation>Про цю програму</translation>
+        <translation type="unfinished">Про цю програму</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="50"/>
+        <location filename="../mainwindow.ui" line="50"/>
         <source>About...</source>
-        <translation>Про...</translation>
+        <translation type="unfinished">Про...</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="58"/>
+        <location filename="../mainwindow.ui" line="57"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished">Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="116"/>
+        <location filename="../mainwindow.ui" line="115"/>
         <source>Close application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="119"/>
+        <location filename="../mainwindow.ui" line="118"/>
         <source>Close</source>
-        <translation>Закрити</translation>
+        <translation type="unfinished">Закрити</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="127"/>
+        <location filename="../mainwindow.ui" line="125"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished">Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="149"/>
+        <location filename="../mainwindow.ui" line="147"/>
         <source>Manual</source>
-        <translation>Посібник</translation>
+        <translation type="unfinished">Посібник</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="248"/>
+        <location filename="../mainwindow.ui" line="245"/>
         <source>These MX applications save time and effort with important tasks.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="264"/>
+        <location filename="../mainwindow.ui" line="261"/>
         <source>Hide individual tools from the menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="283"/>
+        <location filename="../mainwindow.ui" line="280"/>
         <source>search</source>
-        <translation>пошук</translation>
+        <translation type="unfinished">пошук</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="364"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>About MX Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>Version: </source>
-        <translation>Версія:</translation>
+        <translation type="unfinished">Версія:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>Configuration Tools for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>License</source>
-        <translation>Ліцензія</translation>
+        <translation type="unfinished">Ліцензія</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>Changelog</source>
-        <translation>Список змін</translation>
+        <translation type="unfinished">Список змін</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="368"/>
         <source>Cancel</source>
-        <translation>Скасувати</translation>
+        <translation type="unfinished">Скасувати</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>&amp;Close</source>
-        <translation>&amp;Закрити</translation>
+        <translation type="unfinished">&amp;Закрити</translation>
+    </message>
+</context>
+<context>
+    <name>mxtools</name>
+    <message>
+        <source>About this application</source>
+        <translation type="vanished">Про цю програму</translation>
+    </message>
+    <message>
+        <source>About...</source>
+        <translation type="vanished">Про...</translation>
+    </message>
+    <message>
+        <source>Alt+B</source>
+        <translation type="vanished">Alt+B</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="vanished">Закрити</translation>
+    </message>
+    <message>
+        <source>Alt+N</source>
+        <translation type="vanished">Alt+N</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation type="vanished">Посібник</translation>
+    </message>
+    <message>
+        <source>search</source>
+        <translation type="vanished">пошук</translation>
+    </message>
+    <message>
+        <source>Version: </source>
+        <translation type="vanished">Версія:</translation>
+    </message>
+    <message>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="vanished">Ліцензія</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation type="vanished">Список змін</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="vanished">Скасувати</translation>
+    </message>
+    <message>
+        <source>&amp;Close</source>
+        <translation type="vanished">&amp;Закрити</translation>
     </message>
 </context>
 </TS>
