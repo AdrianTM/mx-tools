@@ -93,7 +93,7 @@ MainWindow::MainWindow(QWidget *parent) :
     this->adjustSize();
     this->resize(this->width() + 80, this->height() + 130);
 
-    QSettings settings("MX-Linux", "mx-tools");
+    QSettings settings("mx-tools");
     restoreGeometry(settings.value("geometry").toByteArray());
 }
 
