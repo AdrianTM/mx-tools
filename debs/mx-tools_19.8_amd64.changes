@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 22 Aug 2019 16:07:35 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 19.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (19.8) mx; urgency=medium
+ .
+   * fix location settings
+Checksums-Sha1:
+ 723229028e983a53149fd248e4fb6440f89ad26d 1150 mx-tools_19.8.dsc
+ 884a06f1e8fe776585da625f236ebaf0e51109e0 38136 mx-tools_19.8.tar.xz
+ 42c0316cbf88bb8c6604eb40048585cd880852e8 54534 mx-tools_19.8_amd64.deb
+Checksums-Sha256:
+ f42c89455377a592815cf9098efcc11af4a672c04abf975d9c86350b47add5d7 1150 mx-tools_19.8.dsc
+ 4b7b6285c8c16b501f595e811fe9bbaf99e67544f8e29d65e08476bae7f0ec24 38136 mx-tools_19.8.tar.xz
+ bd53f20cef3bd7667df453f032ca134b990757eb45680095769aec018a261c70 54534 mx-tools_19.8_amd64.deb
+Files:
+ a2de9cfa392f6f13a1fed12ce150a971 1150 admin optional mx-tools_19.8.dsc
+ b020ac1c8bbe5882167761499d24edf6 38136 admin optional mx-tools_19.8.tar.xz
+ e8257164287cf66ec911127923c2d17e 54534 admin optional mx-tools_19.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1e9jwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJ67CADSZiaL0fHieFBdRuaPXmxG2jCmrQMp
+CEN2qERq6FvyA0JSaWkREvwCz2BfSCW8sAHyjY3D64AMMmpo/RM/EQANgVplm6PO
+CIU80yY9vgB2kF9w/H3PsY3rjYeGtYLT3CdQQiJXx0795EUuRtf3LxtIU119pDw6
+eBqM4aPDbhpnaqHtWvtusPf5sUBbqzfFfbFYeHlqOilomHWOxYHr5X2roqPUxm7G
+36wKCgeO1A0rovOEiqU/meuV0jZ7Irj4h0C0TZVOg8IZaVNK20B05UNv4aBTtTJV
+yb9UaIHHOJIGPegbV2/5o6Wr7KpYX4I1+SbAw14WRMfhZE86TScfqnk+
+=xZp4
+-----END PGP SIGNATURE-----

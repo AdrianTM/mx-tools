@@ -1,3 +1,9 @@
+mx-tools (19.8) mx; urgency=medium
+
+  * fix location settings
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 22 Aug 2019 16:07:35 -0400
+
 mx-tools (19.7) mx; urgency=medium
 
   * fix window buttons for Buster
