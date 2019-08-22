@@ -323,7 +323,7 @@ void MainWindow::btn_clicked()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings("MX-Linux", "mx-tools");
+    QSettings settings("mx-tools");
     settings.setValue("geometry", saveGeometry());
 }
 
