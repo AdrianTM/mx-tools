@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sat, 24 Aug 2019 03:20:36 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 19.8.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (19.8.1) mx; urgency=medium
+ .
+   * allow restoring window size if started maximized
+Checksums-Sha1:
+ ec6e89c1968601cde858b1af27ef40b06f91c3a1 1158 mx-tools_19.8.1.dsc
+ 7df29af4a7db39f742a557d8857c7957388e2632 38452 mx-tools_19.8.1.tar.xz
+ 44bd6677ee301df886821cad6b100f231e4745c6 54598 mx-tools_19.8.1_amd64.deb
+Checksums-Sha256:
+ 773f5729e352e764e167331150b9fc2ba304a2123ccdcd7b536034accac5f1bf 1158 mx-tools_19.8.1.dsc
+ 2209471c812fbfcd72e7f4e912661ae9a2d9e9f51b424f8f29050b97d7d0dc7d 38452 mx-tools_19.8.1.tar.xz
+ 280a71ef93fd37b86bfb0bac38ef5120c468da0e0398df3aaca7a6e0f85416b0 54598 mx-tools_19.8.1_amd64.deb
+Files:
+ 1e383ed267296aa015cf129b3a2ffddf 1158 admin optional mx-tools_19.8.1.dsc
+ 8bd00e3538b8be040e8398977f679e68 38452 admin optional mx-tools_19.8.1.tar.xz
+ 5fcae1bb0b7e4cd178675d2d8840dfee 54598 admin optional mx-tools_19.8.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1g5fsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumE7WB/9qgSV1WTShpGSo8brAYwHz1Dlnk8BQ
+2roclWblQIzN9DKNYLeyCsHaL/JZgFHVl6aGJUAlSVWxj0+fJhy+4d2Q458Yrp7n
+D+7q6WPzaxao6XLwTn3tggpXVJtuYjJl8vFKqmDkUSH3czkdfWZiSBoDjtzW8OiS
+d5eCpxaX8o1v9dhJ4OrGkPdZA4rXAKbP4JJ6YoxGfHdrUGpvNe7TAKIZaQkxikIT
++x8PxjQTXblS11YQdcvrsikRUdubrU1121WlARut/B4yDo+x5RgCiuOHcSxq0R0x
++RVQEtDVfmZastbPKp236JKiVU4hzaJKONyw+xqTVLfGUSiJT10yqmL8
+=eEdt
+-----END PGP SIGNATURE-----

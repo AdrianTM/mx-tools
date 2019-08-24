@@ -1,3 +1,9 @@
+mx-tools (19.8.1) mx; urgency=medium
+
+  * allow restoring window size if started maximized
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 24 Aug 2019 03:20:36 -0400
+
 mx-tools (19.8) mx; urgency=medium
 
   * fix location settings

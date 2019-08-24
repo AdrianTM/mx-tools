@@ -25,6 +25,7 @@
 #include "flatbutton.h"
 #include "version.h"
 
+#include <QDesktopWidget>
 #include <QFile>
 #include <QFileInfo>
 #include <QSettings>
@@ -92,9 +93,19 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lineSearch->setFocus();
     this->adjustSize();
     this->resize(this->width() + 80, this->height() + 130);
+    int width = this->width();
+    int height = this->height();
 
     QSettings settings("mx-tools");
     restoreGeometry(settings.value("geometry").toByteArray());
+
+    if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
+        this->resize(width, height);
+        QRect screenGeometry = QApplication::desktop()->screenGeometry();
+        int x = (screenGeometry.width()-this->width()) / 2;
+        int y = (screenGeometry.height()-this->height()) / 2;
+        this->move(x, y);
+    }
 }
 
 MainWindow::~MainWindow()
