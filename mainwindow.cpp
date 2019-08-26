@@ -41,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
-    if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx-user.desktop") == 0) {
+    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
 
@@ -352,16 +352,25 @@ void MainWindow::on_hideCheckBox_clicked(bool checked) {
 void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 {
     QString hide_str = hide ? "true" : "false";
+    qDebug() << "filename for hide" << file_name;
+    QFileInfo file(file_name);
+    qDebug() << "filename basename" << file.fileName();
+    qDebug() << "filename full path" << file.filePath();
 
-    QString cmd = "cat " + file_name + " | grep -m1 '^NoDisplay=' | cut -d '=' -f2";
+    QString cmd = "cp " + file.filePath() + " /home/$USER/.local/share/applications";
     QString out = getCmdOut(cmd);
 
+    QString filenamehome = "/home/$USER/.local/share/applications/" + file.fileName();
+    qDebug() << "filnamehome " << filenamehome;
+    cmd = "cat " + filenamehome + " | grep -m1 '^NoDisplay=' | cut -d '=' -f2";
+    out = getCmdOut(cmd);
+
     if (out.compare("true", Qt::CaseInsensitive) == 0 || out.compare("false", Qt::CaseInsensitive) == 0) {
-        cmd = "sed -i 's/^NoDisplay=.*/NoDisplay=" + hide_str +  "/' " + file_name;
+        cmd = "sed -i 's/^NoDisplay=.*/NoDisplay=" + hide_str +  "/' " + filenamehome;
     } else { // take care of the instances when there's no "NoDisplay=" line in .desktop
-        cmd = "echo 'NoDisplay=" + hide_str + "' >> " + file_name;
+        cmd = "echo 'NoDisplay=" + hide_str + "' >> " + filenamehome;
     }
-    system("su-to-root -X -c \"" + cmd.toUtf8() + "\"");
+    system(cmd.toUtf8());
 }
 
 // About button clicked
