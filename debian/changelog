@@ -1,3 +1,9 @@
+mx-tools (19.8.2) mx; urgency=medium
+
+  * modify mx-tools to not require root password
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 26 Aug 2019 19:55:29 -0400
+
 mx-tools (19.8.1) mx; urgency=medium
 
   * allow restoring window size if started maximized
