@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<TS version="2.1" language="fi">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>MX Tools</source>
-        <translation type="unfinished">Outils MX</translation>
+        <translation type="unfinished">MX Työkalut</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="47"/>
         <source>About this application</source>
-        <translation type="unfinished">A propos de cette application</translation>
+        <translation type="unfinished">Tietoja tästä sovelluksesta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="50"/>
         <source>About...</source>
-        <translation type="unfinished">A propos...</translation>
+        <translation type="unfinished">Tietoja...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="57"/>
@@ -27,12 +27,12 @@
     <message>
         <location filename="../mainwindow.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished">Fermer l&apos;application</translation>
+        <translation type="unfinished">Sulje sovellus</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="118"/>
         <source>Close</source>
-        <translation type="unfinished">Fermer</translation>
+        <translation type="unfinished">Sulje</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="125"/>
@@ -42,37 +42,37 @@
     <message>
         <location filename="../mainwindow.ui" line="147"/>
         <source>Manual</source>
-        <translation type="unfinished">Manuel</translation>
+        <translation type="unfinished">Käyttöohje</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="245"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+        <translation type="unfinished">Nämä MX-sovellukset säästävät aikaa ja vaivaa tärkeissä tehtävissä.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="261"/>
         <source>Hide individual tools from the menu</source>
-        <translation type="unfinished">Cacher les outils individuels du menu</translation>
+        <translation type="unfinished">Näytä sovelluksien yleispätevät nimet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>search</source>
-        <translation type="unfinished">Rechercher</translation>
+        <translation type="unfinished">etsi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
         <source>About MX Tools</source>
-        <translation type="unfinished">A propos de MX Outils</translation>
+        <translation type="unfinished">Tietoja MX Työkaluista</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Version: </source>
-        <translation type="unfinished">Version:</translation>
+        <translation type="unfinished">Versio: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished">Outils de configuration pour MX Linux</translation>
+        <translation type="unfinished">MX Linuxin konfigurointityökalut</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="376"/>
@@ -82,37 +82,37 @@
     <message>
         <location filename="../mainwindow.cpp" line="377"/>
         <source>License</source>
-        <translation type="unfinished">Licence</translation>
+        <translation type="unfinished">Lisenssi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>Changelog</source>
-        <translation type="unfinished">Journal des modifications</translation>
+        <translation type="unfinished">Muutosloki</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="379"/>
         <source>Cancel</source>
-        <translation type="unfinished">Annuler</translation>
+        <translation type="unfinished">Peruuta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Fermer</translation>
+        <translation type="unfinished">&amp;Sulje</translation>
     </message>
 </context>
 <context>
     <name>mxtools</name>
     <message>
         <source>MX Tools</source>
-        <translation type="vanished">Outils MX</translation>
+        <translation type="vanished">MX Työkalut</translation>
     </message>
     <message>
         <source>About this application</source>
-        <translation type="vanished">A propos de cette application</translation>
+        <translation type="vanished">Tietoja tästä sovelluksesta</translation>
     </message>
     <message>
         <source>About...</source>
-        <translation type="vanished">A propos...</translation>
+        <translation type="vanished">Tietoja...</translation>
     </message>
     <message>
         <source>Alt+B</source>
@@ -120,11 +120,11 @@
     </message>
     <message>
         <source>Close application</source>
-        <translation type="vanished">Fermer l&apos;application</translation>
+        <translation type="vanished">Sulje sovellus</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Fermer</translation>
+        <translation type="vanished">Sulje</translation>
     </message>
     <message>
         <source>Alt+N</source>
@@ -132,31 +132,31 @@
     </message>
     <message>
         <source>Manual</source>
-        <translation type="vanished">Manuel</translation>
+        <translation type="vanished">Käyttöohje</translation>
     </message>
     <message>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="vanished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+        <translation type="vanished">Nämä MX-sovellukset säästävät aikaa ja vaivaa tärkeissä tehtävissä.</translation>
     </message>
     <message>
         <source>Hide individual tools from the menu</source>
-        <translation type="vanished">Cacher les outils individuels du menu</translation>
+        <translation type="vanished">Näytä sovelluksien yleispätevät nimet</translation>
     </message>
     <message>
         <source>search</source>
-        <translation type="vanished">Rechercher</translation>
+        <translation type="vanished">etsi</translation>
     </message>
     <message>
         <source>About MX Tools</source>
-        <translation type="vanished">A propos de MX Outils</translation>
+        <translation type="vanished">Tietoja MX Työkaluista</translation>
     </message>
     <message>
         <source>Version: </source>
-        <translation type="vanished">Version:</translation>
+        <translation type="vanished">Versio: </translation>
     </message>
     <message>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="vanished">Outils de configuration pour MX Linux</translation>
+        <translation type="vanished">MX Linuxin konfigurointityökalut</translation>
     </message>
     <message>
         <source>Copyright (c) MX Linux</source>
@@ -164,19 +164,19 @@
     </message>
     <message>
         <source>License</source>
-        <translation type="vanished">Licence</translation>
+        <translation type="vanished">Lisenssi</translation>
     </message>
     <message>
         <source>Changelog</source>
-        <translation type="vanished">Journal des modifications</translation>
+        <translation type="vanished">Muutosloki</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Annuler</translation>
+        <translation type="vanished">Peruuta</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Fermer</translation>
+        <translation type="vanished">&amp;Sulje</translation>
     </message>
 </context>
 </TS>

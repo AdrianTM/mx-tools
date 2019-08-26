@@ -20,7 +20,7 @@
  * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mxtools.h"
+#include "mainwindow.h"
 #include <QApplication>
 #include <QTranslator>
 #include <QLocale>
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     appTran.load(QString("mx-tools_") + QLocale::system().name(), "/usr/share/mx-tools/locale");
     a.installTranslator(&appTran);
 
-    mxtools w;
+    MainWindow w;
     w.show();
 
     return a.exec();

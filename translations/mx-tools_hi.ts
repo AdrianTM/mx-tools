@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<TS version="2.1" language="hi">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>MX Tools</source>
-        <translation type="unfinished">Outils MX</translation>
+        <translation type="unfinished">MX साधन</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="47"/>
         <source>About this application</source>
-        <translation type="unfinished">A propos de cette application</translation>
+        <translation type="unfinished">इस अनुप्रयोग के बारे में</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="50"/>
         <source>About...</source>
-        <translation type="unfinished">A propos...</translation>
+        <translation type="unfinished">बारे में...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="57"/>
@@ -27,12 +27,12 @@
     <message>
         <location filename="../mainwindow.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished">Fermer l&apos;application</translation>
+        <translation type="unfinished">अनुप्रयोग बंद करें</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="118"/>
         <source>Close</source>
-        <translation type="unfinished">Fermer</translation>
+        <translation type="unfinished">बंद करें</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="125"/>
@@ -42,77 +42,77 @@
     <message>
         <location filename="../mainwindow.ui" line="147"/>
         <source>Manual</source>
-        <translation type="unfinished">Manuel</translation>
+        <translation type="unfinished">सहायता गाइड</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="245"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+        <translation type="unfinished">ये MX अनुप्रयोग महत्वपूर्ण कार्यों के दौरान समय व प्रयास की बचत करते हैं।</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="261"/>
         <source>Hide individual tools from the menu</source>
-        <translation type="unfinished">Cacher les outils individuels du menu</translation>
+        <translation type="unfinished">मेन्यू में इकलौते साधनों को प्रदर्शित न करें</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>search</source>
-        <translation type="unfinished">Rechercher</translation>
+        <translation type="unfinished">ढूँढ़ें</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
         <source>About MX Tools</source>
-        <translation type="unfinished">A propos de MX Outils</translation>
+        <translation type="unfinished">MX साधनों के बारे में</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Version: </source>
-        <translation type="unfinished">Version:</translation>
+        <translation type="unfinished">संस्करण :</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished">Outils de configuration pour MX Linux</translation>
+        <translation type="unfinished">MX लिनक्स हेतु विन्यास साधन</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="376"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation type="unfinished">प्रतिलिप्याधिकार (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="377"/>
         <source>License</source>
-        <translation type="unfinished">Licence</translation>
+        <translation type="unfinished">लाइसेंस</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>Changelog</source>
-        <translation type="unfinished">Journal des modifications</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="379"/>
         <source>Cancel</source>
-        <translation type="unfinished">Annuler</translation>
+        <translation type="unfinished">रद्द करें</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Fermer</translation>
+        <translation type="unfinished">&amp;बंद करें</translation>
     </message>
 </context>
 <context>
     <name>mxtools</name>
     <message>
         <source>MX Tools</source>
-        <translation type="vanished">Outils MX</translation>
+        <translation type="vanished">MX साधन</translation>
     </message>
     <message>
         <source>About this application</source>
-        <translation type="vanished">A propos de cette application</translation>
+        <translation type="vanished">इस अनुप्रयोग के बारे में</translation>
     </message>
     <message>
         <source>About...</source>
-        <translation type="vanished">A propos...</translation>
+        <translation type="vanished">बारे में...</translation>
     </message>
     <message>
         <source>Alt+B</source>
@@ -120,11 +120,11 @@
     </message>
     <message>
         <source>Close application</source>
-        <translation type="vanished">Fermer l&apos;application</translation>
+        <translation type="vanished">अनुप्रयोग बंद करें</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Fermer</translation>
+        <translation type="vanished">बंद करें</translation>
     </message>
     <message>
         <source>Alt+N</source>
@@ -132,51 +132,47 @@
     </message>
     <message>
         <source>Manual</source>
-        <translation type="vanished">Manuel</translation>
+        <translation type="vanished">सहायता गाइड</translation>
     </message>
     <message>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="vanished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+        <translation type="vanished">ये MX अनुप्रयोग महत्वपूर्ण कार्यों के दौरान समय व प्रयास की बचत करते हैं।</translation>
     </message>
     <message>
         <source>Hide individual tools from the menu</source>
-        <translation type="vanished">Cacher les outils individuels du menu</translation>
+        <translation type="vanished">मेन्यू में इकलौते साधनों को प्रदर्शित न करें</translation>
     </message>
     <message>
         <source>search</source>
-        <translation type="vanished">Rechercher</translation>
+        <translation type="vanished">ढूँढ़ें</translation>
     </message>
     <message>
         <source>About MX Tools</source>
-        <translation type="vanished">A propos de MX Outils</translation>
+        <translation type="vanished">MX साधनों के बारे में</translation>
     </message>
     <message>
         <source>Version: </source>
-        <translation type="vanished">Version:</translation>
+        <translation type="vanished">संस्करण :</translation>
     </message>
     <message>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="vanished">Outils de configuration pour MX Linux</translation>
+        <translation type="vanished">MX लिनक्स हेतु विन्यास साधन</translation>
     </message>
     <message>
         <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
+        <translation type="vanished">प्रतिलिप्याधिकार (c) MX Linux</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="vanished">Licence</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Journal des modifications</translation>
+        <translation type="vanished">लाइसेंस</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Annuler</translation>
+        <translation type="vanished">रद्द करें</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Fermer</translation>
+        <translation type="vanished">&amp;बंद करें</translation>
     </message>
 </context>
 </TS>

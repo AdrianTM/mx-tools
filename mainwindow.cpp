@@ -20,19 +20,26 @@
  * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mxtools.h"
-#include "ui_mxtools.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 #include "flatbutton.h"
+#include "version.h"
 
+#include <QDesktopWidget>
 #include <QFile>
+#include <QFileInfo>
 #include <QSettings>
+#include <QTextEdit>
 #include <QDebug>
 
-mxtools::mxtools(QWidget *parent) :
+
+MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::mxtools)
+    ui(new Ui::MainWindow)
 {
+    qDebug() << "Program Version:" << VERSION;
     ui->setupUi(this);
+    setWindowFlags(Qt::Window); // for the close, min and max buttons
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
     if (system("grep -q \"NoDisplay=true\" /usr/share/applications/mx-user.desktop") == 0) {
         ui->hideCheckBox->setChecked(true);
@@ -45,23 +52,34 @@ mxtools::mxtools(QWidget *parent) :
     software_list = listDesktopFiles("MX-Software", search_folder);
     utilities_list = listDesktopFiles("MX-Utilities", search_folder);
 
+    QVector<QStringList *> lists;
+    lists << &live_list
+          << &maintenance_list
+          << &setup_list
+          << &software_list
+          << &utilities_list;
+
     QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
+
     // remove mx-remastercc and live-kernel-updater from list if not running Live
-    if (!(test == "aufs" || test == "overlay")) {
-        foreach(QString item, live_list) {
+    bool live = (test == "aufs" || test == "overlay");
+    if (!live) { // installed
+        const QStringList live_list_copy = live_list;
+        for (const QString &item : live_list_copy) {
             if (item.contains("mx-remastercc.desktop") || item.contains("live-kernel-updater.desktop")) {
                 live_list.removeOne(item);
             }
         }
     }
+    for (int i = 0; i < lists.size(); ++i) {
+        removeEnvExclusive(*lists[i], live);
+    }
 
     // remove item from list if it is only meant for XFCE
     if (qgetenv("XDG_CURRENT_DESKTOP") != "XFCE") {
-        removeXfceOnly(live_list);
-        removeXfceOnly(maintenance_list);
-        removeXfceOnly(setup_list);
-        removeXfceOnly(software_list);
-        removeXfceOnly(utilities_list);
+        for (int i = 0; i < lists.size(); ++i) {
+            removeXfceOnly(*lists[i]);
+        }
     }
 
     category_map.insertMulti("MX-Live", live_list);
@@ -73,15 +91,30 @@ mxtools::mxtools(QWidget *parent) :
     readInfo(category_map);
     addButtons(info_map);
     ui->lineSearch->setFocus();
+    this->adjustSize();
+    this->resize(this->width() + 80, this->height() + 130);
+    int width = this->width();
+    int height = this->height();
+
+    QSettings settings("mx-tools");
+    restoreGeometry(settings.value("geometry").toByteArray());
+
+    if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
+        this->resize(width, height);
+        QRect screenGeometry = QApplication::desktop()->screenGeometry();
+        int x = (screenGeometry.width()-this->width()) / 2;
+        int y = (screenGeometry.height()-this->height()) / 2;
+        this->move(x, y);
+    }
 }
 
-mxtools::~mxtools()
+MainWindow::~MainWindow()
 {
     delete ui;
 }
 
 // Util function
-QString mxtools::getCmdOut(const QString &cmd) {
+QString MainWindow::getCmdOut(const QString &cmd) {
     proc = new QProcess(this);
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     proc->setReadChannel(QProcess::StandardOutput);
@@ -90,15 +123,8 @@ QString mxtools::getCmdOut(const QString &cmd) {
     return proc->readAllStandardOutput().trimmed();
 }
 
-// Get version of the program
-QString mxtools::getVersion(QString name) {
-    QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
-    return getCmdOut(cmd);
-}
-
-
 // List .desktop files that contain a specific string
-QStringList mxtools::listDesktopFiles(const QString &search_string, const QString &location)
+QStringList MainWindow::listDesktopFiles(const QString &search_string, const QString &location)
 {
     QStringList listDesktop;
     QString cmd = QString("grep -Elr %1 %2 | sort").arg(search_string).arg(location);
@@ -110,7 +136,7 @@ QStringList mxtools::listDesktopFiles(const QString &search_string, const QStrin
 }
 
 // Load info (name, comment, exec, icon_name, category, terminal) to the info_map
-void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
+void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
 {
     QString name;
     QString comment;
@@ -122,9 +148,9 @@ void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
     QString lang = locale.bcp47Name();
     QMultiMap<QString, QStringList> map;
 
-    foreach (QString category, category_map.keys()) {
+    for (const QString &category : category_map.keys()) {
         list = category_map.value(category);
-        foreach (QString file_name, list) {
+        for (const QString &file_name : list) {
             name = "";
             comment = "";
             if (lang != "en") {
@@ -156,7 +182,7 @@ void mxtools::readInfo(const QMultiMap<QString, QStringList> &category_map)
 }
 
 // read the info_map and add the buttons to the UI
-void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map)
+void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map)
 {
     int col = 0;
     int row = 0;
@@ -168,20 +194,18 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
     QString file_name;
     QString terminal_switch;
 
-    foreach (QString category, info_map.keys()) {
+    for (const QString &category : info_map.keys()) {
         if (!info_map.value(category).isEmpty()) {
-            // add empty row and delimiter except for the first key
-            if (category != category_map.firstKey()) {
+            // add empty row and delimiter except for the first row
+            if (row != 0) {
                 col = 0;
                 row += 1;
                 QFrame *line = new QFrame();
                 line->setFrameShape(QFrame::HLine);
                 line->setFrameShadow(QFrame::Sunken);
                 ui->gridLayout_btn->addWidget(line, row, col, 1, -1);
-                ui->gridLayout_btn->setRowStretch(row, 0);
             }
             QLabel *label = new QLabel();
-            //label->setStyleSheet("QLabel {color:black}");
             QFont font;
             font.setBold(true);
             font.setUnderline(true);
@@ -192,9 +216,8 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
             col = 0;
             row += 1;
             ui->gridLayout_btn->addWidget(label, row, col);
-            //ui->gridLayout_btn->setRowStretch(row, 0);
             row += 1;
-            foreach (QString file_name, info_map.value(category).keys()) {
+            for (const QString &file_name : info_map.value(category).keys()) {
                 QStringList file_info = info_map.value(category).value(file_name);
                 name = file_info[0];
                 comment = file_info[1];
@@ -223,47 +246,85 @@ void mxtools::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList
                 }
 
                 //qDebug() << "button exec" << btn->objectName();
-                QObject::connect(btn, SIGNAL(clicked()), this, SLOT(btn_clicked()));
+                QObject::connect(btn, &FlatButton::clicked, this, &MainWindow::btn_clicked);
             }
         }
     }
-    this->adjustSize();
-    this->resize(this->width() + 80, this->height() + 130);
-
-    QSettings settings("MX-Linux", "mx-tools");
-    restoreGeometry(settings.value("geometry").toByteArray());
+    ui->gridLayout_btn->setRowStretch(row, 1);
 }
 
 // find icon by name specified in .desktop file
-QIcon mxtools::findIcon(QString icon_name)
+// return in order: fromTheme, pixmaps, hicolor, icons
+QIcon MainWindow::findIcon(QString icon_name)
 {
     // return icon if fully specified
-    if (QFile("/" + icon_name).exists()) { // make sure it looks for icon in root, not in current folder
+    if (QFile::exists("/" + icon_name) && QFileInfo("/" + icon_name).isFile()) { // make sure it looks for icon in root, not in current folder
         return QIcon(icon_name);
     } else {
-        icon_name = icon_name.remove(".png");
-        icon_name = icon_name.remove(".svg");
-        icon_name = icon_name.remove(".xpm");
+        QString icon_name_no_ext = icon_name.remove(".png").remove(".svg").remove(".xpm");
+
         // return the icon from the theme if it exists
-        if (QIcon::hasThemeIcon(icon_name)) {
-            return QIcon::fromTheme(icon_name);
-        // return png, svg, xpm icons from /usr/share/pixmaps
-        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".png").exists()) {
-            return QIcon("/usr/share/pixmaps/" + icon_name + ".png");
-        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".svg").exists()) {
-            return QIcon("/usr/share/pixmaps/" + icon_name + ".svg");
-        } else if (QFile("/usr/share/pixmaps/" + icon_name + ".xpm").exists()) {
-            return QIcon("/usr/share/pixmaps/" + icon_name + ".xpm");
-        } else if (QFile("/usr/share/pixmaps/" + icon_name).exists()) {
+        if (QIcon::hasThemeIcon(icon_name_no_ext)) {
+            return QIcon::fromTheme(icon_name_no_ext);
+
+            // try /usr/share/pixmaps
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name)) {
             return QIcon("/usr/share/pixmaps/" + icon_name);
+
+            // fallback to hicolor icons
+        }  else {
+            QString name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name + " -print -quit");
+            if (!name.isEmpty()) {
+                return QIcon(name);
+
+                // fallback to /usr/share/icons
+            } else if (QFile::exists("/usr/share/icons/" + icon_name)) {
+                return QIcon("/usr/share/icons/" + icon_name);
+            }
+        }
+
+        // Try file names regardless of specified extension
+        // return png, svg, xpm icons from /usr/share/pixmaps
+        if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext + ".png")) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext + ".png");
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext + ".svg")) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext + ".svg");
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext + ".xpm")) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext + ".xpm");
+        } else if (QFile::exists("/usr/share/pixmaps/" + icon_name_no_ext)) {
+            return QIcon("/usr/share/pixmaps/" + icon_name_no_ext);
+
+            // fallback to hicolor icons
         } else {
-            return QIcon();
+            QString name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name_no_ext + ".svg\" -print -quit");
+            if (name.isEmpty()) { // try first .png of 48x48 size
+                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name_no_ext + ".png\" | grep -m1 48x48");
+            }
+            if (name.isEmpty()) { // return first .png icon found
+                name = getCmdOut("find /usr/share/icons/hicolor/ -iname \"" + icon_name_no_ext + ".png\" -print -quit");
+            }
+
+            // if still empty check /usr/share/icons
+            if (name.isEmpty()) {
+                if (QFile::exists("/usr/share/icons/" + icon_name_no_ext + ".png")) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext + ".png");
+                } else if (QFile::exists("/usr/share/icons/" + icon_name_no_ext + ".svg")) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext + ".svg");
+                } else if (QFile::exists("/usr/share/icons/" + icon_name_no_ext + ".xpm")) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext + ".xpm");
+                } else if (QFile::exists("/usr/share/icons/" + icon_name_no_ext)) {
+                    return QIcon("/usr/share/icons/" + icon_name_no_ext);
+                }
+            } else {
+                return QIcon(name);
+            }
         }
     }
+    return QIcon();
 }
 
 // run code when button is clicked
-void mxtools::btn_clicked()
+void MainWindow::btn_clicked()
 {
     this->hide();
     //qDebug() << sender()->objectName();
@@ -271,16 +332,16 @@ void mxtools::btn_clicked()
     this->show();
 }
 
-void mxtools::closeEvent(QCloseEvent *)
+void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings("MX-Linux", "mx-tools");
+    QSettings settings("mx-tools");
     settings.setValue("geometry", saveGeometry());
 }
 
 // hide icons in menu checkbox
-void mxtools::on_hideCheckBox_clicked(bool checked) {
-    foreach (QStringList list, category_map) {
-        foreach (QString file_name, list) {
+void MainWindow::on_hideCheckBox_clicked(bool checked) {
+    for (const QStringList &list : category_map) {
+        for (const QString &file_name : list) {
             hideShowIcon(file_name, checked);
         }
     }
@@ -288,7 +349,7 @@ void mxtools::on_hideCheckBox_clicked(bool checked) {
 }
 
 // hide or show icon for .desktop file
-void mxtools::hideShowIcon(const QString &file_name, bool hide)
+void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 {
     QString hide_str = hide ? "true" : "false";
 
@@ -304,35 +365,62 @@ void mxtools::hideShowIcon(const QString &file_name, bool hide)
 }
 
 // About button clicked
-void mxtools::on_buttonAbout_clicked()
+void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Tools"), "<p align=\"center\"><b><h2>" +
                        tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
-                       getVersion("mx-tools") + "</p><p align=\"center\"><h3>" +
+                       VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Configuration Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
-    msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-    msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
-    if (msgBox.exec() == QMessageBox::AcceptRole) {
+    QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
+    QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
+    QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
+    btnCancel->setIcon(QIcon::fromTheme("window-close"));
+
+    msgBox.exec();
+
+    if (msgBox.clickedButton() == btnLicense) {
         system("mx-viewer file:///usr/share/doc/mx-tools/license.html 'MX Tools License'");
+    } else if (msgBox.clickedButton() == btnChangelog) {
+        QDialog *changelog = new QDialog(this);
+        changelog->resize(600, 500);
+
+        QTextEdit *text = new QTextEdit;
+        text->setReadOnly(true);
+        text->setText(getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+
+        QPushButton *btnClose = new QPushButton(tr("&Close"));
+        btnClose->setIcon(QIcon::fromTheme("window-close"));
+        connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
+
+        QVBoxLayout *layout = new QVBoxLayout;
+        layout->addWidget(text);
+        layout->addWidget(btnClose);
+        changelog->setLayout(layout);
+        changelog->exec();
     }
     this->show();
 }
 
 
 // Help button clicked
-void mxtools::on_buttonHelp_clicked()
+void MainWindow::on_buttonHelp_clicked()
 {
-    this->hide();
-    QString cmd = QString("mx-manual");
+    QString cmd;
+
+    if (QFile::exists("/usr/bin/mx-manual")) {
+        cmd = QString("mx-manual");
+    } else {
+        cmd = QString("mx-viewer file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2");
+    }
+
     system(cmd.toUtf8());
-    this->show();
 }
 
 // text changed in search field
-void mxtools::on_lineSearch_textChanged(const QString &arg1)
+void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 {
     // remove all items from the layout
     QLayoutItem *child;
@@ -345,10 +433,10 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
     QMultiMap<QString, QStringList>  map;
 
     // creat a new_map with items that match the search argument
-    foreach (QString category, info_map.keys()) {
+    for (const QString &category : info_map.keys()) {
         //qDebug() << category;
         QMultiMap<QString, QStringList> file_info =  info_map.value(category);
-        foreach (QString file_name, category_map.value(category)) {
+        for (const QString &file_name : category_map.value(category)) {
             //qDebug() << file_name;
             QString name = file_info.value(file_name)[0];
             QString comment = file_info.value(file_name)[1];
@@ -369,12 +457,24 @@ void mxtools::on_lineSearch_textChanged(const QString &arg1)
 }
 
 // remove Xfce-only apps from the list
-void mxtools::removeXfceOnly(QStringList &list)
+void MainWindow::removeXfceOnly(QStringList &list)
 {
-    foreach(QString file_name, list) {
+    const QStringList list_copy = list;
+    for (const QString &file_name : list_copy) {
         if (system("grep -iq 'OnlyShowIn=XFCE' "+ file_name.toUtf8()) == 0) {
             list.removeOne(file_name);
         }
     }
 }
 
+// when running live remove programs meant only for installed environments and the other way round
+void MainWindow::removeEnvExclusive(QStringList &list, bool live)
+{
+    QString term = live ? "MX-OnlyInstalled" : "MX-OnlyLive";
+    const QStringList list_copy = list;
+    for (const QString &file_name : list_copy) {
+        if (system("grep -iq " + term.toUtf8() + " " + file_name.toUtf8()) == 0) {
+            list.removeOne(file_name);
+        }
+    }
+}

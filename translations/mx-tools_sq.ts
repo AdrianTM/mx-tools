@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<TS version="2.1" language="sq">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>MX Tools</source>
-        <translation type="unfinished">Outils MX</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="47"/>
         <source>About this application</source>
-        <translation type="unfinished">A propos de cette application</translation>
+        <translation type="unfinished">Rreth këtij aplikacioni</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="50"/>
         <source>About...</source>
-        <translation type="unfinished">A propos...</translation>
+        <translation type="unfinished">Rreth...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="57"/>
@@ -27,12 +27,12 @@
     <message>
         <location filename="../mainwindow.ui" line="115"/>
         <source>Close application</source>
-        <translation type="unfinished">Fermer l&apos;application</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="118"/>
         <source>Close</source>
-        <translation type="unfinished">Fermer</translation>
+        <translation type="unfinished">Mbyll</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="125"/>
@@ -42,141 +42,109 @@
     <message>
         <location filename="../mainwindow.ui" line="147"/>
         <source>Manual</source>
-        <translation type="unfinished">Manuel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="245"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="261"/>
         <source>Hide individual tools from the menu</source>
-        <translation type="unfinished">Cacher les outils individuels du menu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>search</source>
-        <translation type="unfinished">Rechercher</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
         <source>About MX Tools</source>
-        <translation type="unfinished">A propos de MX Outils</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Version: </source>
-        <translation type="unfinished">Version:</translation>
+        <translation type="unfinished">Versioni:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished">Outils de configuration pour MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="376"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation type="unfinished">Të drejtat e rezervuara (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="377"/>
         <source>License</source>
-        <translation type="unfinished">Licence</translation>
+        <translation type="unfinished">Liçensa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>Changelog</source>
-        <translation type="unfinished">Journal des modifications</translation>
+        <translation type="unfinished">Ndryshimet</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="379"/>
         <source>Cancel</source>
-        <translation type="unfinished">Annuler</translation>
+        <translation type="unfinished">Anullo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Fermer</translation>
+        <translation type="unfinished">&amp;Mbyll</translation>
     </message>
 </context>
 <context>
     <name>mxtools</name>
     <message>
-        <source>MX Tools</source>
-        <translation type="vanished">Outils MX</translation>
-    </message>
-    <message>
         <source>About this application</source>
-        <translation type="vanished">A propos de cette application</translation>
+        <translation type="vanished">Rreth këtij aplikacioni</translation>
     </message>
     <message>
         <source>About...</source>
-        <translation type="vanished">A propos...</translation>
+        <translation type="vanished">Rreth...</translation>
     </message>
     <message>
         <source>Alt+B</source>
         <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <source>Close application</source>
-        <translation type="vanished">Fermer l&apos;application</translation>
-    </message>
-    <message>
         <source>Close</source>
-        <translation type="vanished">Fermer</translation>
+        <translation type="vanished">Mbyll</translation>
     </message>
     <message>
         <source>Alt+N</source>
         <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <source>Manual</source>
-        <translation type="vanished">Manuel</translation>
-    </message>
-    <message>
-        <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="vanished">Ces applications MX permettent d&apos;accomplir des tâches importantes de manière simplifiée. </translation>
-    </message>
-    <message>
-        <source>Hide individual tools from the menu</source>
-        <translation type="vanished">Cacher les outils individuels du menu</translation>
-    </message>
-    <message>
-        <source>search</source>
-        <translation type="vanished">Rechercher</translation>
-    </message>
-    <message>
-        <source>About MX Tools</source>
-        <translation type="vanished">A propos de MX Outils</translation>
-    </message>
-    <message>
         <source>Version: </source>
-        <translation type="vanished">Version:</translation>
-    </message>
-    <message>
-        <source>Configuration Tools for MX Linux</source>
-        <translation type="vanished">Outils de configuration pour MX Linux</translation>
+        <translation type="vanished">Versioni:</translation>
     </message>
     <message>
         <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
+        <translation type="vanished">Të drejtat e rezervuara (c) MX Linux</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="vanished">Licence</translation>
+        <translation type="vanished">Liçensa</translation>
     </message>
     <message>
         <source>Changelog</source>
-        <translation type="vanished">Journal des modifications</translation>
+        <translation type="vanished">Ndryshimet</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Annuler</translation>
+        <translation type="vanished">Anullo</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Fermer</translation>
+        <translation type="vanished">&amp;Mbyll</translation>
     </message>
 </context>
 </TS>

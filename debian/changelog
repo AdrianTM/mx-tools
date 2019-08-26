@@ -1,3 +1,105 @@
+mx-tools (19.8.1) mx; urgency=medium
+
+  * allow restoring window size if started maximized
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 24 Aug 2019 03:20:36 -0400
+
+mx-tools (19.8) mx; urgency=medium
+
+  * fix location settings
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 22 Aug 2019 16:07:35 -0400
+
+mx-tools (19.7) mx; urgency=medium
+
+  * fix window buttons for Buster
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 07 Jul 2019 14:21:36 -0400
+
+mx-tools (19.4) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 05 Apr 2019 11:59:15 -0400
+
+mx-tools (19.1) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 23 Jan 2019 16:45:10 -0500
+
+mx-tools (18.11) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 30 Nov 2018 15:00:15 -0500
+
+mx-tools (18.10) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 14 Oct 2018 20:27:05 -0400
+
+mx-tools (18.8) mx; urgency=medium
+
+  * fix icon for other themes
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 11 Aug 2018 15:10:52 -0400
+
+mx-tools (18.7+1) mx; urgency=medium
+
+  * exclude items that are not supposed to be displayed either in Live or Installed environment
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 29 Jul 2018 23:50:29 -0400
+
+mx-tools (18.7) mx; urgency=medium
+
+  * minor fix
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 28 Jul 2018 01:22:51 -0400
+
+mx-tools (18.6.1) mx; urgency=medium
+
+  * added changelog button
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 28 Jun 2018 17:12:00 -0400
+
+mx-tools (18.6) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 18 Jun 2018 17:53:58 -0400
+
+mx-tools (18.3) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 02 Mar 2018 12:02:14 -0500
+
+mx-tools (18.2) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 10 Feb 2018 02:28:18 -0500
+
+mx-tools (18.01) mx; urgency=medium
+
+  * no window resize when searching
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 29 Jan 2018 18:03:00 -0500
+
+mx-tools (17.12) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Dec 2017 15:14:42 -0500
+
+mx-tools (17.11) mx; urgency=medium
+
+  * open mx-manual if present
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 17 Nov 2017 08:43:32 -0500
+
 mx-tools (17.10+3) mx; urgency=medium
 
   * remove mx-flash and mx-findshares recommends

@@ -2,92 +2,181 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="el">
 <context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.cpp" line="373"/>
+        <source>MX Tools</source>
+        <translation type="unfinished">MX Tools</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="47"/>
+        <source>About this application</source>
+        <translation type="unfinished">Περί εφαρμογής.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="50"/>
+        <source>About...</source>
+        <translation type="unfinished">Περί</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="57"/>
+        <source>Alt+B</source>
+        <translation type="unfinished">Alt+B</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="115"/>
+        <source>Close application</source>
+        <translation type="unfinished">Κλείστε την εφαρμογή </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="118"/>
+        <source>Close</source>
+        <translation type="unfinished">Κλείσιμο</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="125"/>
+        <source>Alt+N</source>
+        <translation type="unfinished">Alt+N</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="147"/>
+        <source>Manual</source>
+        <translation type="unfinished">Εγχειρίδιο</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="245"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation type="unfinished">Εξοικονομήσετε το χρόνο σας με αυτές τις εφαρμογές του MX </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>Hide individual tools from the menu</source>
+        <translation type="unfinished">Απόκρυψη μεμονωμένων εργαλείων από το μενού </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="280"/>
+        <source>search</source>
+        <translation type="unfinished">aναζήτηση </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="372"/>
+        <source>About MX Tools</source>
+        <translation type="unfinished">Περί MX Tools  </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="373"/>
+        <source>Version: </source>
+        <translation type="unfinished">Έκδοση:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="375"/>
+        <source>Configuration Tools for MX Linux</source>
+        <translation type="unfinished">Εργαλεία διαμόρφωσης για MX Linux </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="376"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c)  MX Linux </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="377"/>
+        <source>License</source>
+        <translation type="unfinished">Άδεια</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="378"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Changelog</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="379"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Ακύρωση</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="394"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Κλείσιμο</translation>
+    </message>
+</context>
+<context>
     <name>mxtools</name>
     <message>
-        <location filename="../mxtools.ui" line="14"/>
-        <location filename="../mxtools.cpp" line="312"/>
         <source>MX Tools</source>
-        <translation>MX Tools</translation>
+        <translation type="vanished">MX Tools</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>Περί εφαρμογής.</translation>
+        <translation type="vanished">Περί εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>Περί</translation>
+        <translation type="vanished">Περί</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="58"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="116"/>
         <source>Close application</source>
-        <translation>Κλείστε την εφαρμογή </translation>
+        <translation type="vanished">Κλείστε την εφαρμογή </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="119"/>
         <source>Close</source>
-        <translation>Κλείσιμο</translation>
+        <translation type="vanished">Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="127"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="146"/>
         <source>Manual</source>
-        <translation>Εγχειρίδιο</translation>
+        <translation type="vanished">Εγχειρίδιο</translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="242"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Εξοικονομήσετε το χρόνο σας με αυτές τις εφαρμογές του MX </translation>
+        <translation type="vanished">Εξοικονομήσετε το χρόνο σας με αυτές τις εφαρμογές του MX </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="258"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Απόκρυψη μεμονωμένων εργαλείων από το μενού </translation>
+        <translation type="vanished">Απόκρυψη μεμονωμένων εργαλείων από το μενού </translation>
     </message>
     <message>
-        <location filename="../mxtools.ui" line="277"/>
         <source>search</source>
-        <translation>aναζήτηση </translation>
+        <translation type="vanished">aναζήτηση </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="311"/>
         <source>About MX Tools</source>
-        <translation>Περί MX Tools  </translation>
+        <translation type="vanished">Περί MX Tools  </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="312"/>
         <source>Version: </source>
-        <translation>Έκδοση:</translation>
+        <translation type="vanished">Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="314"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Εργαλεία διαμόρφωσης για MX Linux </translation>
+        <translation type="vanished">Εργαλεία διαμόρφωσης για MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="315"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c)  MX Linux </translation>
+        <translation type="vanished">Copyright (c)  MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="316"/>
         <source>License</source>
-        <translation>Άδεια</translation>
+        <translation type="vanished">Άδεια</translation>
     </message>
     <message>
-        <location filename="../mxtools.cpp" line="317"/>
+        <source>Changelog</source>
+        <translation type="vanished">Changelog</translation>
+    </message>
+    <message>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="vanished">Ακύρωση</translation>
+    </message>
+    <message>
+        <source>&amp;Close</source>
+        <translation type="vanished">&amp;Κλείσιμο</translation>
     </message>
 </context>
 </TS>
