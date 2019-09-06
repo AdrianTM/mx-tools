@@ -165,7 +165,7 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
             }
             if (name == "") { // backup if Name is not translated
                 name = getCmdOut("grep -i ^Name= " + file_name + " | cut -f2 -d=");
-                name = name.remove("MX ");
+                name = name.remove("MX ").replace('&', "&&");
             }
             if (comment == "") { // backup if Comment is not translated
                 comment = getCmdOut("grep ^Comment= " + file_name + " | cut -f2 -d=");
@@ -191,7 +191,6 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
     QString comment;
     QString exec;
     QString icon_name;
-    QString file_name;
     QString terminal_switch;
 
     for (const QString &category : info_map.keys()) {
