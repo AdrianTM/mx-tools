@@ -16,34 +16,34 @@ Description:
 Changes:
  mx-tools (19.9) mx; urgency=medium
  .
-   * Fixed: ampersands appear as underlined text. Removed unused variable.
+   * Escape ampersands so they appear correctly.
 Checksums-Sha1:
- 5341feb86e5d5cea9776a6f830891e308cafd922 1139 mx-tools_19.9.dsc
- 57052a7b8fd1b4a8c07c01cd20e36052ba9e16c5 38468 mx-tools_19.9.tar.xz
+ 4d291451c98f4626e801ad42e95b32f5dcbcda27 1139 mx-tools_19.9.dsc
+ 6721938b666877ea14db3e8ade7dd72d1afc9ad9 38452 mx-tools_19.9.tar.xz
  6564c0fc01a3f499776a6fdd300c16664edcf55b 594234 mx-tools-dbgsym_19.9_amd64.deb
- 8523cdd3e198c9456235ec20908feb31f1083c81 11121 mx-tools_19.9_amd64.buildinfo
- 8f1f8b9bfff542476159b4a8ca09b35865123018 51874 mx-tools_19.9_amd64.deb
+ 9cebe8a6c4ff6cf687944d08d836c6bfc7fa822d 11121 mx-tools_19.9_amd64.buildinfo
+ 62efb3e18d50ff90dd3f3a1dc7b0d4a3a225589b 51866 mx-tools_19.9_amd64.deb
 Checksums-Sha256:
- f45eaa3da8eed0e3f4130a123e4727f3c32ffcd9d6ce7b61b0d286dfe54566cf 1139 mx-tools_19.9.dsc
- 71feedd8c7064ea3956ba4fde3a0675821e3826b1a5959c843f21d685bfd6171 38468 mx-tools_19.9.tar.xz
+ d24a6003d4f424b8d4c386aa0786b6d2fab7a3bbdc167ac69ae2f7a25c859f08 1139 mx-tools_19.9.dsc
+ be3e88a963ec5805c6875c2f4e8cc35b1d2c07321a8c1ea4ff3f35732211ab88 38452 mx-tools_19.9.tar.xz
  e8056def416ca63eba9c65720fd2eb9158979e49319239835c62ec2fefa4e98f 594234 mx-tools-dbgsym_19.9_amd64.deb
- 1a06dcfb3a23cb4b418a83d30edaca2e132439b657b13762e821bfb5cefb6605 11121 mx-tools_19.9_amd64.buildinfo
- 7eed61db2ce88993abdd9cc572d272ebf13798a8b2915b18502e1f3daece581d 51874 mx-tools_19.9_amd64.deb
+ 5d1571d47211259027f20689f0e78f5a895a1bf3288260d2cf22e0b095ed259c 11121 mx-tools_19.9_amd64.buildinfo
+ 931ad9e8a9d268db8b0e4498d745c81421ab98af27dc68eb4882eb4460a19ccb 51866 mx-tools_19.9_amd64.deb
 Files:
- e3f7cf3865915ee2d67b2f63f107e553 1139 admin optional mx-tools_19.9.dsc
- 9252ce7112b76e882244caf941441792 38468 admin optional mx-tools_19.9.tar.xz
+ 4923d2d7625af480ef3ba3051b8fd039 1139 admin optional mx-tools_19.9.dsc
+ c201d580dbbad30524f06b877a710706 38452 admin optional mx-tools_19.9.tar.xz
  b48baaa0ce058cf4967395edd997fc74 594234 debug optional mx-tools-dbgsym_19.9_amd64.deb
- f93392f88a3a46b82c4b0890c84f8f73 11121 admin optional mx-tools_19.9_amd64.buildinfo
- dbde1cf493f74d975e955f368dd217da 51874 admin optional mx-tools_19.9_amd64.deb
+ 2adb893699af1e3df41fa4db8942bfe6 11121 admin optional mx-tools_19.9_amd64.buildinfo
+ 9b5c7ac2f1d8fc1ffbedfeb31ccdb82d 51866 admin optional mx-tools_19.9_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1x1T4THGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCufCACbJbNOcCbhiXluE3PyfzgeLagA0UxZ
-lv4M22VOSr4rkdMppRyMlXSPCaz+Pq4C+jcWaT8xk1Csr0T/tcBCA7APN3vGQk0c
-c0/MXLERt5XQcYLA1AFjsqOY1D8bnyl5IMpfcqQMZ90M6NtTz/KQDRjqbpBRIvwg
-CbNARiUXWrrZXQ4SuISrkV1t7Lxq8DwhxJOVg7+ZWgryYoyUTRtauDeM20YJRvoj
-5/D05dGNDNu8c/ThrFZCLsnROm3SoVnMPEYqxYUINhGWB/p3Lh5O29ZTvHeBW5FC
-w6U+7+Xsv0v13jyqx3r+S+fFayftgp/UAbRlYviJegRfYNqtVcVJ+b9h
-=kuMK
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1x2DwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBk0CADX0YCLBOcJ3TAECshTp1iJs/y1cI74
+6qbR9EotD2QAIIe4b6t8eeDAK2bXWoZvHMQ/3lCPZkkt1YrMYSnx94bsz4xrCNWJ
+D5wFQjfGKUoPHo5dDwAcfWK1A6sHnyf8zstu22PdnoX5M1zCSdv2Gy2EawmTFbB+
+8G9Umw+eVRHw9LiRScc7G7f9mHs6o4p/s4nLT8Ys7T6Xl2Z1QFzTdwZfBEXtqYuz
+4aKv0uQtOAWgYHw5GQZBYz7z+ZLqBh1cty2nIxFYDiPIyoyoiO8RSg1L9Pi42M1K
+vsGyTekfRjyiSbJ02OyfbMGRJghUM1NdXgTfouXCxUCsgFFQqOS3k8OQ
+=EF+w
 -----END PGP SIGNATURE-----

@@ -1,6 +1,6 @@
 mx-tools (19.9) mx; urgency=medium
 
-  * Fixed: ampersands appear as underlined text. Removed unused variable.
+  * Escape ampersands so they appear correctly.
 
  -- Adrian <adrian@mxlinux.org>  Thu, 05 Sep 2019 23:24:49 -0400
 
