@@ -41,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
-    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop") == 0) {
+    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop >/dev/null 2>&1") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
 
