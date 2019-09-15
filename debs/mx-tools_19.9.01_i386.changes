@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 14 Sep 2019 20:44:44 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 19.9.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (19.9.01) mx; urgency=medium
+ .
+   * improve hide function
+Checksums-Sha1:
+ f10c414f99f408c62a8651b084501022fcffb49c 580992 mx-tools-dbgsym_19.9.01_i386.deb
+ fe7c199b4ee5e76c1b7a617105410a6f20803409 10543 mx-tools_19.9.01_i386.buildinfo
+ f280b914081b7923c0a77bfa1e3ab6c4fe8ea171 54652 mx-tools_19.9.01_i386.deb
+Checksums-Sha256:
+ 2d252e17d540126df0ed978a87a181cbfbb9ad4774cec4689d871f5ccc0a472c 580992 mx-tools-dbgsym_19.9.01_i386.deb
+ ea6424da8f4014147480db0512444c39fc7c89d1f315ad5f395611a40e58ca23 10543 mx-tools_19.9.01_i386.buildinfo
+ afa34a91c42fd58424bcf5e410e2095c9775303dfe70ce47ffb569439d92342e 54652 mx-tools_19.9.01_i386.deb
+Files:
+ 241182a67fa02410dd606b231997c235 580992 debug optional mx-tools-dbgsym_19.9.01_i386.deb
+ cd269a8690e32c28ed31c9d596c08d10 10543 admin optional mx-tools_19.9.01_i386.buildinfo
+ f28b6df0d47c18c1f4ae6819ea57d309 54652 admin optional mx-tools_19.9.01_i386.deb
