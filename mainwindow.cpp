@@ -41,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
-    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop") == 0) {
+    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop >/dev/null 2>&1") == 0) {
         ui->hideCheckBox->setChecked(true);
     }
 
@@ -165,7 +165,7 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
             }
             if (name == "") { // backup if Name is not translated
                 name = getCmdOut("grep -i ^Name= " + file_name + " | cut -f2 -d=");
-                name = name.remove("MX ");
+                name = name.remove("MX ").replace('&', "&&");
             }
             if (comment == "") { // backup if Comment is not translated
                 comment = getCmdOut("grep ^Comment= " + file_name + " | cut -f2 -d=");
