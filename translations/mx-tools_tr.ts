@@ -1,178 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
-<context>
-    <name>MainWindow</name>
-    <message>
-        <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="381"/>
-        <source>MX Tools</source>
-        <translation type="unfinished">MX Araçlar</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="53"/>
-        <source>About this application</source>
-        <translation type="unfinished">Uygulama hakkında</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="56"/>
-        <source>About...</source>
-        <translation type="unfinished">Hakkında...</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="63"/>
-        <source>Alt+B</source>
-        <translation type="unfinished">Alt+B</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="127"/>
-        <source>Close application</source>
-        <translation type="unfinished">Uygulamayı kapat</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="130"/>
-        <source>Close</source>
-        <translation type="unfinished">Kapat</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="137"/>
-        <source>Alt+N</source>
-        <translation type="unfinished">Alt+N</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="165"/>
-        <source>Manual</source>
-        <translation type="unfinished">El ile</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="263"/>
-        <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="279"/>
-        <source>Hide individual tools from the menu</source>
-        <translation type="unfinished">Bireysel araçları menüde gösterme</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="298"/>
-        <source>search</source>
-        <translation type="unfinished">Ara</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="380"/>
-        <source>About MX Tools</source>
-        <translation type="unfinished">MX Araçları Hakkında</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="381"/>
-        <source>Version: </source>
-        <translation type="unfinished">Sürüm</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="383"/>
-        <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished">MX Linux için Yapılandırma Araçları</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="384"/>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="385"/>
-        <source>License</source>
-        <translation type="unfinished">Ruhsat</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="386"/>
-        <source>Changelog</source>
-        <translation type="unfinished">Değişim günlüğü</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="387"/>
-        <source>Cancel</source>
-        <translation type="unfinished">İptal</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="402"/>
-        <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Kapat</translation>
-    </message>
-</context>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
+        <location filename="mxtools.ui" line="14"/>
+        <location filename="mxtools.cpp" line="334"/>
         <source>MX Tools</source>
-        <translation type="vanished">MX Araçlar</translation>
+        <translation>MX Araçları</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation type="vanished">Uygulama hakkında</translation>
+        <translation>Uygulama hakkında</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation type="vanished">Hakkında...</translation>
+        <translation>Hakkında...</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="58"/>
         <source>Alt+B</source>
-        <translation type="vanished">Alt+B</translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="116"/>
         <source>Close application</source>
-        <translation type="vanished">Uygulamayı kapat</translation>
+        <translation>Uygulamayı kapat</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="119"/>
         <source>Close</source>
-        <translation type="vanished">Kapat</translation>
+        <translation>Kapat</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="127"/>
         <source>Alt+N</source>
-        <translation type="vanished">Alt+N</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="149"/>
         <source>Manual</source>
-        <translation type="vanished">El ile</translation>
+        <translation>El ile</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="248"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation>Bu MX uygulamaları önemli görevlerde zamandan ve emekten tasarruf sağlar.</translation>
+    </message>
+    <message>
+        <location filename="mxtools.ui" line="264"/>
         <source>Hide individual tools from the menu</source>
-        <translation type="vanished">Bireysel araçları menüde gösterme</translation>
+        <translation>Bireysel araçları menüde gösterme</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="283"/>
         <source>search</source>
-        <translation type="vanished">Ara</translation>
+        <translation>Ara</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="333"/>
         <source>About MX Tools</source>
-        <translation type="vanished">MX Araçları Hakkında</translation>
+        <translation>MX Araçları Hakkında</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="334"/>
         <source>Version: </source>
-        <translation type="vanished">Sürüm</translation>
+        <translation>Sürüm</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="336"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation type="vanished">MX Linux için Yapılandırma Araçları</translation>
+        <translation>MX Linux için Yapılandırma Araçları</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="337"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="338"/>
         <source>License</source>
-        <translation type="vanished">Ruhsat</translation>
+        <translation>Ruhsat</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="339"/>
         <source>Changelog</source>
-        <translation type="vanished">Değişim günlüğü</translation>
+        <translation>Değişim günlüğü</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="340"/>
         <source>Cancel</source>
-        <translation type="vanished">İptal</translation>
+        <translation>İptal</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="355"/>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Kapat</translation>
+        <translation>&amp;Kapat</translation>
     </message>
 </context>
 </TS>

@@ -75,6 +75,7 @@ TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_ko.ts \
                 translations/mx-tools_lt.ts \
                 translations/mx-tools_mk.ts \
+                translations/mx-tools_mr.ts \
                 translations/mx-tools_nb.ts \
                 translations/mx-tools_nl.ts \
                 translations/mx-tools_pl.ts \

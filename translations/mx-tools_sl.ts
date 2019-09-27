@@ -1,150 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sl">
-<context>
-    <name>MainWindow</name>
-    <message>
-        <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="381"/>
-        <source>MX Tools</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="53"/>
-        <source>About this application</source>
-        <translation type="unfinished">O tem programu</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="56"/>
-        <source>About...</source>
-        <translation type="unfinished">O programu...</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="63"/>
-        <source>Alt+B</source>
-        <translation type="unfinished">Alt+B</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="127"/>
-        <source>Close application</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="130"/>
-        <source>Close</source>
-        <translation type="unfinished">Zapri</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="137"/>
-        <source>Alt+N</source>
-        <translation type="unfinished">Alt+N</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="165"/>
-        <source>Manual</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="263"/>
-        <source>These MX applications save time and effort with important tasks.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="279"/>
-        <source>Hide individual tools from the menu</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="298"/>
-        <source>search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="380"/>
-        <source>About MX Tools</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="381"/>
-        <source>Version: </source>
-        <translation type="unfinished">Različica:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="383"/>
-        <source>Configuration Tools for MX Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="384"/>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="385"/>
-        <source>License</source>
-        <translation type="unfinished">Licenca</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="386"/>
-        <source>Changelog</source>
-        <translation type="unfinished">Dnevnik sprememb</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="387"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Prekini</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="402"/>
-        <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Zapri</translation>
-    </message>
-</context>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sl" version="2.1">
 <context>
     <name>mxtools</name>
     <message>
+        <location filename="mxtools.ui" line="14"/>
+        <location filename="mxtools.cpp" line="334"/>
+        <source>MX Tools</source>
+        <translation>MX orodja</translation>
+    </message>
+    <message>
+        <location filename="mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation type="vanished">O tem programu</translation>
+        <translation>O tem programu</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation type="vanished">O programu...</translation>
+        <translation>O programu...</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="58"/>
         <source>Alt+B</source>
-        <translation type="vanished">Alt+B</translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="116"/>
+        <source>Close application</source>
+        <translation>Zapri program</translation>
+    </message>
+    <message>
+        <location filename="mxtools.ui" line="119"/>
         <source>Close</source>
-        <translation type="vanished">Zapri</translation>
+        <translation>Zapri</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="127"/>
         <source>Alt+N</source>
-        <translation type="vanished">Alt+N</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
+        <location filename="mxtools.ui" line="149"/>
+        <source>Manual</source>
+        <translation>Priročnik</translation>
+    </message>
+    <message>
+        <location filename="mxtools.ui" line="248"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation>Ti MX programi prihranijo čas in trud pri pomembnih opravilih.</translation>
+    </message>
+    <message>
+        <location filename="mxtools.ui" line="264"/>
+        <source>Hide individual tools from the menu</source>
+        <translation>Skrij posamezna orodja v meniju</translation>
+    </message>
+    <message>
+        <location filename="mxtools.ui" line="283"/>
+        <source>search</source>
+        <translation>iskanje</translation>
+    </message>
+    <message>
+        <location filename="mxtools.cpp" line="333"/>
+        <source>About MX Tools</source>
+        <translation>O MX orodjih</translation>
+    </message>
+    <message>
+        <location filename="mxtools.cpp" line="334"/>
         <source>Version: </source>
-        <translation type="vanished">Različica:</translation>
+        <translation>Različica:</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="336"/>
+        <source>Configuration Tools for MX Linux</source>
+        <translation>Konfiguracijska orodja za MX Linux</translation>
+    </message>
+    <message>
+        <location filename="mxtools.cpp" line="337"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="338"/>
         <source>License</source>
-        <translation type="vanished">Licenca</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="339"/>
         <source>Changelog</source>
-        <translation type="vanished">Dnevnik sprememb</translation>
+        <translation>Dnevnik sprememb</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="340"/>
         <source>Cancel</source>
-        <translation type="vanished">Prekini</translation>
+        <translation>Prekini</translation>
     </message>
     <message>
+        <location filename="mxtools.cpp" line="355"/>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Zapri</translation>
+        <translation>&amp;Zapri</translation>
     </message>
 </context>
 </TS>
