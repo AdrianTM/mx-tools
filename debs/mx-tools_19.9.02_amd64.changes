@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 29 Sep 2019 21:09:27 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 19.9.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (19.9.02) mx; urgency=medium
+ .
+   * udpated translations
+Checksums-Sha1:
+ 09e7c148321ff45888ae98dae8479e2bf242bd40 1151 mx-tools_19.9.02.dsc
+ 1b68ad9d090a3f07baa7ba9d273e7545e287a240 39212 mx-tools_19.9.02.tar.xz
+ 97e986bb30a4255d5ff6c8114bf3a745d87734da 594066 mx-tools-dbgsym_19.9.02_amd64.deb
+ 8309736c9d65fe95f253cd7e2dcf4c0d570feaf0 11260 mx-tools_19.9.02_amd64.buildinfo
+ 373506e6b7b85be5bf45f2a2ff446b4fff786c86 52610 mx-tools_19.9.02_amd64.deb
+Checksums-Sha256:
+ 07273f7c5bc2b4e4137f4f029d6990b9e0956085d47f8c63dc9c698f29d4a37b 1151 mx-tools_19.9.02.dsc
+ 1e4fc74808cb3358ba14a28da10f0937f29a6f96210fd12f8d63906b2ae67e2f 39212 mx-tools_19.9.02.tar.xz
+ fe6b70611003e66aeac7cf871164b968ee7cf31eece1ba8f911c40c91d40bd13 594066 mx-tools-dbgsym_19.9.02_amd64.deb
+ 5566e06dcd81e652e19e9340cd6bfc37f098d09afda8c9924fff9ba3ca1e655a 11260 mx-tools_19.9.02_amd64.buildinfo
+ 59fe6560ac857111b6481cc8e59909dbf1f5d941b7ae8d98b5b3f537a079d1d7 52610 mx-tools_19.9.02_amd64.deb
+Files:
+ 9540533f7016f50a7e21e60666284589 1151 admin optional mx-tools_19.9.02.dsc
+ 3ea87674f7471a0b0e8e4235fe4143da 39212 admin optional mx-tools_19.9.02.tar.xz
+ 6de0763f0a5ba0aa89c42e12da559075 594066 debug optional mx-tools-dbgsym_19.9.02_amd64.deb
+ 952efb3381a3e790769fdec02b1c5717 11260 admin optional mx-tools_19.9.02_amd64.buildinfo
+ e32789a4e0414dd64371cb9965b38cb4 52610 admin optional mx-tools_19.9.02_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2RVvYTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumK1fB/0cw7FsIzkXpDfynFn6qvwgJV/Yu181
+r/4nQab4J9wNxA9Sr6URPeCK7lEvy1nzH4K/tUC2uo19G8m3VEgnz8Jsj5rD/PMq
+aa3c7/mv/AAoK4NYWCXWSDQolYVgmog75tn+AQuTSVSsuicV8wxLF5w7VlNOTggL
+fZTPb6kqwH8IiVRZhEUDf95L+vGYYAhOZpeOoJWbNoPOJmPKC28TrDArv92ezupT
+7+8sL6W2MXsumaIS3GH61u5nvlKPmNUJ+DXQEH0RbIlRSU9J81sXbNXQBhh74Hm9
+BhO4HhVcvdix4WHhIm3Ga+7XqBDUrlKiUxldT+VVy0nrVtxgKC6qDYtY
+=gVdn
+-----END PGP SIGNATURE-----

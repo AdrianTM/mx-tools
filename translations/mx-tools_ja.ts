@@ -1,101 +1,174 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ja">
+<context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.cpp" line="402"/>
+        <source>MX Tools</source>
+        <translation type="unfinished">MX Tools</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="53"/>
+        <source>About this application</source>
+        <translation type="unfinished">このアプリケーションについて</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="56"/>
+        <source>About...</source>
+        <translation type="unfinished">About...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="63"/>
+        <source>Alt+B</source>
+        <translation type="unfinished">Alt+B</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="127"/>
+        <source>Close application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="130"/>
+        <source>Close</source>
+        <translation type="unfinished">閉じる</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="137"/>
+        <source>Alt+N</source>
+        <translation type="unfinished">Alt+N</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="165"/>
+        <source>Manual</source>
+        <translation type="unfinished">マニュアル</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="263"/>
+        <source>These MX applications save time and effort with important tasks.</source>
+        <translation type="unfinished">これらの MX アプリケーションは、重要な作業の時間・努力を温存します。</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="279"/>
+        <source>Hide individual tools from the menu</source>
+        <translation type="unfinished">メニューから個々のツールを非表示にする</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="298"/>
+        <source>search</source>
+        <translation type="unfinished">検索</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="401"/>
+        <source>About MX Tools</source>
+        <translation type="unfinished">MX ツールについて</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="402"/>
+        <source>Version: </source>
+        <translation type="unfinished">Version: </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="404"/>
+        <source>Configuration Tools for MX Linux</source>
+        <translation type="unfinished">MX Linux の設定ツール</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="405"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="406"/>
+        <source>License</source>
+        <translation type="unfinished">ライセンス</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="407"/>
+        <source>Changelog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="408"/>
+        <source>Cancel</source>
+        <translation type="unfinished">キャンセル</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">閉じる(&amp;C)</translation>
+    </message>
+</context>
 <context>
     <name>mxtools</name>
     <message>
-        <location filename="mxtools.ui" line="14"/>
-        <location filename="mxtools.cpp" line="334"/>
         <source>MX Tools</source>
-        <translation>MX Tools</translation>
+        <translation type="vanished">MX Tools</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="47"/>
         <source>About this application</source>
-        <translation>このアプリケーションについて</translation>
+        <translation type="vanished">このアプリケーションについて</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="50"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation type="vanished">About...</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="58"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="116"/>
-        <source>Close application</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="mxtools.ui" line="119"/>
         <source>Close</source>
-        <translation>閉じる</translation>
+        <translation type="vanished">閉じる</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="127"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="149"/>
         <source>Manual</source>
-        <translation>マニュアル</translation>
+        <translation type="vanished">マニュアル</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="248"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>これらの MX アプリケーションは、重要な作業の時間・努力を温存します。</translation>
+        <translation type="vanished">これらの MX アプリケーションは、重要な作業の時間・努力を温存します。</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="264"/>
         <source>Hide individual tools from the menu</source>
-        <translation>メニューから個々のツールを非表示にする</translation>
+        <translation type="vanished">メニューから個々のツールを非表示にする</translation>
     </message>
     <message>
-        <location filename="mxtools.ui" line="283"/>
         <source>search</source>
-        <translation>検索</translation>
+        <translation type="vanished">検索</translation>
     </message>
     <message>
-        <location filename="mxtools.cpp" line="333"/>
         <source>About MX Tools</source>
-        <translation>MX ツールについて</translation>
+        <translation type="vanished">MX ツールについて</translation>
     </message>
     <message>
-        <location filename="mxtools.cpp" line="334"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation type="vanished">Version: </translation>
     </message>
     <message>
-        <location filename="mxtools.cpp" line="336"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>MX Linux の設定ツール</translation>
+        <translation type="vanished">MX Linux の設定ツール</translation>
     </message>
     <message>
-        <location filename="mxtools.cpp" line="337"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="mxtools.cpp" line="338"/>
         <source>License</source>
-        <translation>ライセンス</translation>
+        <translation type="vanished">ライセンス</translation>
     </message>
     <message>
-        <location filename="mxtools.cpp" line="339"/>
-        <source>Changelog</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="mxtools.cpp" line="340"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation type="vanished">キャンセル</translation>
     </message>
     <message>
-        <location filename="mxtools.cpp" line="355"/>
         <source>&amp;Close</source>
-        <translation>閉じる(&amp;C)</translation>
+        <translation type="vanished">閉じる(&amp;C)</translation>
     </message>
 </context>
 </TS>

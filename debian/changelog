@@ -1,3 +1,9 @@
+mx-tools (19.9.02) mx; urgency=medium
+
+  * udpated translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 29 Sep 2019 21:09:27 -0400
+
 mx-tools (19.9.01) mx; urgency=medium
 
   * improve hide function 
