@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sat, 05 Oct 2019 10:19:30 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 19.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (19.10) mx; urgency=medium
+ .
+   * adjust size
+Checksums-Sha1:
+ e48ec72553727ebf48405ebfbfd3194b874ddc25 581 mx-tools_19.10.dsc
+ 816775bdf92ad02cb8404dc910199234555116e6 39244 mx-tools_19.10.tar.xz
+ ca47e709d5bd26d5a5da5ac327693c8d217f7981 593876 mx-tools-dbgsym_19.10_amd64.deb
+ 0b5e8af18db9a87145eec8713cc3fa8fbd61e9ef 10673 mx-tools_19.10_amd64.buildinfo
+ 722afbf1c57709db378d363a911ff9e32571d8bc 52634 mx-tools_19.10_amd64.deb
+Checksums-Sha256:
+ 46379bfd7633cb14fa7bf11392d2cbae78c06659325168684282c6ee3c113c30 581 mx-tools_19.10.dsc
+ 88bc809c8f0ed5cb8a1cf9c5560737b9e7e2216e2be39393a59d8418313580fc 39244 mx-tools_19.10.tar.xz
+ 9bad147741a8501f5d58f6e18ac3d30bf95df3fb94c9155f421d55c6c7b3a1d7 593876 mx-tools-dbgsym_19.10_amd64.deb
+ f0223674a6d658871482ecafff17ce0a359075bbc86730dcbc43ce50e0d5c83f 10673 mx-tools_19.10_amd64.buildinfo
+ 952716123390abc171b7824a7e9cae899eb8f0538231c0e4b44a5f721a43c24f 52634 mx-tools_19.10_amd64.deb
+Files:
+ 5359a96ed3aba64b3989ca4b5c13e8cb 581 admin optional mx-tools_19.10.dsc
+ f77361e4874c8b000d8572773d988c61 39244 admin optional mx-tools_19.10.tar.xz
+ ccdb0de94c9488bf89104d6c79146262 593876 debug optional mx-tools-dbgsym_19.10_amd64.deb
+ d42968bcb2024989ef70f901e2bb5bc7 10673 admin optional mx-tools_19.10_amd64.buildinfo
+ 334dea213deafc9ff8a49a86949f04cc 52634 admin optional mx-tools_19.10_amd64.deb
