@@ -92,7 +92,7 @@ MainWindow::MainWindow(QWidget *parent) :
     addButtons(info_map);
     ui->lineSearch->setFocus();
     this->adjustSize();
-    this->resize(this->width() + 80, this->height() + 130);
+    //this->resize(this->width() + 80, this->height() + 130);
     int width = this->width();
     int height = this->height();
 

@@ -13,20 +13,20 @@ Build-Depends: debhelper (>= 9), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-tools deb admin optional arch=any
 Checksums-Sha1:
- 816775bdf92ad02cb8404dc910199234555116e6 39244 mx-tools_19.10.tar.xz
+ 56bb8d1c62c2baeec658f05bc6eca34f30f74ebf 39236 mx-tools_19.10.tar.xz
 Checksums-Sha256:
- 88bc809c8f0ed5cb8a1cf9c5560737b9e7e2216e2be39393a59d8418313580fc 39244 mx-tools_19.10.tar.xz
+ 690e56b99eeab673daf403181e22135b3007a4ac00411a396995e1be7a062dcc 39236 mx-tools_19.10.tar.xz
 Files:
- f77361e4874c8b000d8572773d988c61 39244 mx-tools_19.10.tar.xz
+ 5f9c8f0c32ea2ccbf0e183df8df0e8be 39236 mx-tools_19.10.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2Yp3MTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCDpCAC8Op0wpubh75+G2wJlFgvQYfxbPAwP
-6Pj2Ej0jH+ciX4ksFe10n4v5OlJ6rWF1bStey9xslP6Eq+eQ1EyMotbG+gskP9Kn
-3dAKkK0CqThByJ9V975SNiXvN3m8nY2Myl+pCak74sCv9IE+8RXE39ylRtvQAskt
-BLgzdO/7Ya9iLw5Fk1E6iPTtmc/kT4xkbzUbtaDv8Ucd7vqU4a5ij3yenDTsj/nJ
-iN9lSdfod2vLNq9K28WPR+Az8WQKsFsa4atsPdKb+ElaxKtFNp9rSujtFaFOObXe
-cdqWTrf75kDnZm7TqO9xxKVdb+itVIBULuhBIfmAwk/kf/i/VGc/zYbH
-=E4Qt
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2ZUPwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJ/CCAC24LicKmUqXuH0bcz1s5J/B7kZi1/e
+g1SvEg/luReQR2ocF1bCPjSwjb24T+mTGhe/HpWxa1Ww/WExjUnS9NlbDD+14kr5
+KijcLNsiIYs70LjnAs9C5scFPLsshgy4AavPHanCBG5Uxe3cDmeNwUVubqE81vlD
+W0Y+oQdW4mqvx8SoBlGBa9GNbKTEubwWFsSQNRQ1rf0VBuiazwAeziDa7JIUTPwI
+0pcdJu/weF1E7Mu6Fq9fL1JS01znr0cR79F0Ck0+uqZV8JGZVo/tBlNh0A9LTmg8
+tQcnohaAHnOQCyHYwhVrVo+E47ePSXWSEKF4JmEHQMSl2xjKldAmoScf
+=dO38
 -----END PGP SIGNATURE-----

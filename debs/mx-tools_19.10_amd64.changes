@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 Format: 1.8
 Date: Sat, 05 Oct 2019 10:19:30 -0400
 Source: mx-tools
@@ -15,20 +18,32 @@ Changes:
  .
    * adjust size
 Checksums-Sha1:
- e48ec72553727ebf48405ebfbfd3194b874ddc25 581 mx-tools_19.10.dsc
- 816775bdf92ad02cb8404dc910199234555116e6 39244 mx-tools_19.10.tar.xz
- ca47e709d5bd26d5a5da5ac327693c8d217f7981 593876 mx-tools-dbgsym_19.10_amd64.deb
- 0b5e8af18db9a87145eec8713cc3fa8fbd61e9ef 10673 mx-tools_19.10_amd64.buildinfo
- 722afbf1c57709db378d363a911ff9e32571d8bc 52634 mx-tools_19.10_amd64.deb
+ 22387175ee2a9566dc735fe5f51a9ca1042e6347 1143 mx-tools_19.10.dsc
+ 56bb8d1c62c2baeec658f05bc6eca34f30f74ebf 39236 mx-tools_19.10.tar.xz
+ f9b721bd331e507fc7d1f696fe45374826784697 593860 mx-tools-dbgsym_19.10_amd64.deb
+ f864bf8e96ef4d438fd61f237fe0b6719ee02315 11238 mx-tools_19.10_amd64.buildinfo
+ 14b52a1bcf53dbdcbda9c7299442aed0a99bb5da 52538 mx-tools_19.10_amd64.deb
 Checksums-Sha256:
- 46379bfd7633cb14fa7bf11392d2cbae78c06659325168684282c6ee3c113c30 581 mx-tools_19.10.dsc
- 88bc809c8f0ed5cb8a1cf9c5560737b9e7e2216e2be39393a59d8418313580fc 39244 mx-tools_19.10.tar.xz
- 9bad147741a8501f5d58f6e18ac3d30bf95df3fb94c9155f421d55c6c7b3a1d7 593876 mx-tools-dbgsym_19.10_amd64.deb
- f0223674a6d658871482ecafff17ce0a359075bbc86730dcbc43ce50e0d5c83f 10673 mx-tools_19.10_amd64.buildinfo
- 952716123390abc171b7824a7e9cae899eb8f0538231c0e4b44a5f721a43c24f 52634 mx-tools_19.10_amd64.deb
+ 8e4b9401805b391f9eaa9c03062d2e46dcbf3a7ad930157ca773848819d7fac6 1143 mx-tools_19.10.dsc
+ 690e56b99eeab673daf403181e22135b3007a4ac00411a396995e1be7a062dcc 39236 mx-tools_19.10.tar.xz
+ 1a856e1e83234bea7aeba3237fc364c361fbae502b23eb77815ebe4de1e9d381 593860 mx-tools-dbgsym_19.10_amd64.deb
+ ca4886220d471f2200c2dd878a6f5881fada3d5b557c6c6603ad834aa39efa3c 11238 mx-tools_19.10_amd64.buildinfo
+ d5d0b01c52654169f5ad8bd88ff280ff4622afe7f5025ed2b963f7c5a891b42c 52538 mx-tools_19.10_amd64.deb
 Files:
- 5359a96ed3aba64b3989ca4b5c13e8cb 581 admin optional mx-tools_19.10.dsc
- f77361e4874c8b000d8572773d988c61 39244 admin optional mx-tools_19.10.tar.xz
- ccdb0de94c9488bf89104d6c79146262 593876 debug optional mx-tools-dbgsym_19.10_amd64.deb
- d42968bcb2024989ef70f901e2bb5bc7 10673 admin optional mx-tools_19.10_amd64.buildinfo
- 334dea213deafc9ff8a49a86949f04cc 52634 admin optional mx-tools_19.10_amd64.deb
+ f56f1dc69dd9478e61e75e2fe72c3f82 1143 admin optional mx-tools_19.10.dsc
+ 5f9c8f0c32ea2ccbf0e183df8df0e8be 39236 admin optional mx-tools_19.10.tar.xz
+ 5b2018779cf5224d351afe47ad0bebaa 593860 debug optional mx-tools-dbgsym_19.10_amd64.deb
+ 396a1cc95c5be431eb4baeaa6d23bea2 11238 admin optional mx-tools_19.10_amd64.buildinfo
+ 47eabec78cc451ad952c2db395cccaba 52538 admin optional mx-tools_19.10_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2ZUP0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumG+lCAC5lMzPUg816Loa3SwGVOg8IeHm6bMn
+e7OqPgM5E1gVrAxXlwxnskvxCK53n5V/5+NTJ2+MhhB3ymkMw7ZSkhAX+6OT3jSO
++qeU0av+JO+oFwV409OFJHXg4yyIXA/WgLYxGq0+Ze+vULj7ZpCCKktgqJLrn7gp
+PZ9vqfPk4I6VeBdOkc607cRaN+ro2umU6oV+x4KADM2dywIg26r+hOUOHVSEZ8ph
+SfEpJfmX5iNz3fQ9HY1lnGfZ5i7O1j16qlyPSQtaqIy4evxmjSfCqBkT0b2Ou17n
+QVsE+KaO/zSNJZkfyJzJ7GbFeMLB4DFa/tvWpAm9IzL+0Jkhpr9CWp/5
+=KPNv
+-----END PGP SIGNATURE-----
