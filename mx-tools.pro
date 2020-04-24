@@ -70,7 +70,6 @@ TRANSLATIONS += translations/mx-tools_am.ts \
                 translations/mx-tools_is.ts \
                 translations/mx-tools_it.ts \
                 translations/mx-tools_ja.ts \
-                translations/mx-tools_ja_JP.ts \
                 translations/mx-tools_kk.ts \
                 translations/mx-tools_ko.ts \
                 translations/mx-tools_lt.ts \
