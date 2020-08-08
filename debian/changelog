@@ -1,3 +1,14 @@
+mx-tools (20.08) mx; urgency=medium
+
+  * adjust hide individual tools from the menu
+  * adjust version number to 20.08
+
+ -- fehlix <fehlix@mxlinux.org>  Sat, 08 Aug 2020 00:17:03 +0200
+mx-tools (19.10) mx; urgency=medium
+
+  * adjust size
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 05 Oct 2019 10:19:30 -0400
 mx-tools (19.10) mx; urgency=medium
 
   * adjust size

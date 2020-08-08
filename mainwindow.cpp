@@ -345,18 +345,18 @@ void MainWindow::on_hideCheckBox_clicked(bool checked) {
             hideShowIcon(file_name, checked);
         }
     }
-    system("xfce4-panel --restart");
+    system("sh -c 'which xfce4-panel >/dev/null 2>/dev/null && xfce4-panel --restart'");
 }
 
 // hide or show icon for .desktop file
 void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 {
     QString hide_str = hide ? "true" : "false";
-    qDebug() << "hide_str" << hide_str;
-    qDebug() << "filename for hide" << file_name;
+    // qDebug() << "hide_str" << hide_str;
+    // qDebug() << "filename for hide" << file_name;
     QFileInfo file(file_name);
-    qDebug() << "filename basename" << file.fileName();
-    qDebug() << "filename full path" << file.filePath();
+    // qDebug() << "filename basename" << file.fileName();
+    // qDebug() << "filename full path" << file.filePath();
 
     //QString cmd = "cp " + file.filePath() + " /home/$USER/.local/share/applications";
     //QString out = getCmdOut(cmd);
@@ -365,32 +365,23 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 
     QString filenamehome = getCmdOut("echo /home/$USER/.local/share/applications/" + file.fileName());
     QFileInfo filenamehomeinfo(filenamehome);
-    qDebug() << "filnamehome " << filenamehome;
+    // qDebug() << "filnamehome " << filenamehome;
 
-    qDebug() << "filenamehomeinfo exists" << filenamehomeinfo.exists();
-    if (filenamehomeinfo.exists()) {
-        qDebug() << "filenamehomeinfo exists" << filenamehomeinfo.exists();
-        //check for modified files, assume our file only has 1 line.  leave other files alone but change any hide variable
-        int count = getCmdOut("wc -l " + filenamehome + "| cut -d' ' -f1").toInt();
-        qDebug() << "count is " << count;
-        if ( count != 1 ) {
-            cmd = "cat " + filenamehome + " | grep -m1 '^NoDisplay=' | cut -d '=' -f2";
-            out = getCmdOut(cmd);
-
-            if (out.compare("true", Qt::CaseInsensitive) == 0 || out.compare("false", Qt::CaseInsensitive) == 0) {
-                cmd = "sed -i 's/^NoDisplay=.*/NoDisplay=" + hide_str +  "/' " + filenamehome;
-            } else { // take care of the instances when there's no "NoDisplay=" line in .desktop
-                cmd = "echo 'NoDisplay=" + hide_str + "' >> " + filenamehome;
-            }
-        } else {
-            if (hide_str == "false") {
-            cmd = "rm -f " + filenamehome;
-            }
+    // qDebug() << "filenamehomeinfo exists" << filenamehomeinfo.exists();
+    if ( hide_str == "false" ) {
+        if (filenamehomeinfo.exists()) {
+            cmd = "rm  " + filenamehome ;
+            system(cmd.toUtf8());
         }
-    } else {
-        cmd = "echo NoDisplay=true >" + filenamehome;
-    }
-    system(cmd.toUtf8());
+    } else { 
+        cmd = "cp " + file.filePath() + " /home/$USER/.local/share/applications";
+        system(cmd.toUtf8());
+        cmd  = "sed -i -r -e '/^(NoDisplay|Hidden)=/d' ";
+        cmd += "-e '/Exec/aNoDisplay=true' " ;
+        cmd += filenamehome;
+        // qDebug() << "#cmd:  " << cmd;
+        system(cmd.toUtf8());
+    } 
 }
 
 // About button clicked
