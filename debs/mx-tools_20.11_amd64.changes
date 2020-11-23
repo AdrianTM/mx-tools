@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 23 Nov 2020 18:48:55 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 20.11
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (20.11) mx; urgency=medium
+ .
+   * faster launch
+Checksums-Sha1:
+ 88f7b5a5fc353b58f092541d96e5029361434634 1143 mx-tools_20.11.dsc
+ 7c352b0faec3c8da95882505bc5aea0d8d075fdd 39120 mx-tools_20.11.tar.xz
+ e108224a04ba792a93ce287164498b8c5de25b0a 592534 mx-tools-dbgsym_20.11_amd64.deb
+ 78d06eb7f1aa92a6a45e7b268362650257e4decc 10657 mx-tools_20.11_amd64.buildinfo
+ 564f94e5265b9a0d919ebd43b520328d67e8b362 51788 mx-tools_20.11_amd64.deb
+Checksums-Sha256:
+ 4ace50c768fba4c4c3fcc61725ac0fae8031d63bc672b8816ab9a6e6c0a286ee 1143 mx-tools_20.11.dsc
+ a97e4e2d50db9df9eab5603fda1d8c4bf122304bd6462e62525fed0212c5040d 39120 mx-tools_20.11.tar.xz
+ 5374e740eeb7634d1c8dfafe2e7ae4e64cd0b3cd9a1d0ec22e2f3d4324c29090 592534 mx-tools-dbgsym_20.11_amd64.deb
+ 85797802740e51796a5d0a0d1d54999a9e9b2383729877165e8ad0344beb13d4 10657 mx-tools_20.11_amd64.buildinfo
+ e2444c24129b3c8e42b74666bb63893ea5018a2c4cefd41f576d685c941291cb 51788 mx-tools_20.11_amd64.deb
+Files:
+ b6268674a26139a85eeb551cf6faa3f4 1143 admin optional mx-tools_20.11.dsc
+ a22b45677f66289f6973bf1c066f12d8 39120 admin optional mx-tools_20.11.tar.xz
+ 5077728af06c014f6f95537258f68718 592534 debug extra mx-tools-dbgsym_20.11_amd64.deb
+ e55fc8e39da321b05e0739dbcbc9e1fa 10657 admin optional mx-tools_20.11_amd64.buildinfo
+ 0de2d3964d5bb1e5d5f4ac298f7181f2 51788 admin optional mx-tools_20.11_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl+8SwATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHgsB/9MwyCMZKW+9VYTj2tPeNqIhLyOk2B6
+MP8Gp1tddHR4NQiI/ti5wtMfdViaZdE/qaMAXb6+xd4t6pL8LCRp7wxpzhh1TOjb
+mu4iBTGigwJSs3k0HCCs1CTsIcD8jVJLbwgNA5KHx4iaEqzB8nqfBb7J96Zd3sex
+V8oYsCUbwxpJP1YJ6KwmPiCc0Cxt2MhgTCoUkblo5aaBJtWSmo9Gn955wtyoiivO
+qCoeSNVun+orAANpLnExr4n+CWuj5S1BxGy4IxoA3wfh/GQ6XJ+gvrxZC16l1Za2
+ucSCRhBkrPM0PE9BQ4NNVxtZ+CxXpeGcwdAkCRwutY25xfeDJmE8DETw
+=PthF
+-----END PGP SIGNATURE-----

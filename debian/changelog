@@ -1,3 +1,9 @@
+mx-tools (20.11) mx; urgency=medium
+
+  * faster launch
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 23 Nov 2020 18:48:55 -0500
+
 mx-tools (20.08) mx; urgency=medium
 
   * adjust hide individual tools from the menu

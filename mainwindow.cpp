@@ -25,13 +25,13 @@
 #include "flatbutton.h"
 #include "version.h"
 
+#include <QDebug>
 #include <QDesktopWidget>
 #include <QFile>
 #include <QFileInfo>
+#include <QRegularExpression>
 #include <QSettings>
 #include <QTextEdit>
-#include <QDebug>
-
 
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
@@ -71,6 +71,7 @@ MainWindow::MainWindow(QWidget *parent) :
             }
         }
     }
+
     for (int i = 0; i < lists.size(); ++i) {
         removeEnvExclusive(*lists[i], live);
     }
@@ -148,31 +149,48 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
     QString lang = locale.bcp47Name();
     QMultiMap<QString, QStringList> map;
 
+    QRegularExpression re;
+    re.setPatternOptions(QRegularExpression::MultilineOption);
+
     for (const QString &category : category_map.keys()) {
         list = category_map.value(category);
         for (const QString &file_name : list) {
+            QFile file(file_name);
+            if(!file.open(QFile::Text | QFile::ReadOnly))
+                continue;
+            QString text = file.readAll();
+            file.close();
             name = "";
             comment = "";
             if (lang != "en") {
-                name = getCmdOut("grep -i ^'Name\\[" + lang + "\\]=' " + file_name + " | cut -f2 -d=");
-                comment = getCmdOut("grep -i ^'Comment\\[" + lang + "\\]=' " + file_name + " | cut -f2 -d=");
+                re.setPattern("^Name\\[" + lang + "\\]=(.*)$");
+                name = re.match(text).captured(1);
+                re.setPattern("^Comment\\[" + lang + "\\]=(.*)$");
+                comment = re.match(text).captured(1);
             }
             if (lang == "pt" && name == "") { // Brazilian if Portuguese and name empty
-                name = getCmdOut("grep -i ^'Name\\[pt_BR]=' " + file_name + " | cut -f2 -d=");
+                re.setPattern("^Name\\[pt_BR\\]=(.*)$");
+                name = re.match(text).captured(1);
             }
             if (lang == "pt" && comment == "") { // Brazilian if Portuguese and comment empty
-                comment = getCmdOut("grep -i ^'Comment\\[pt_BR]=' " + file_name + " | cut -f2 -d=");
+                re.setPattern("^Comment\\[pt_BR\\]=(.*)$");
+                comment = re.match(text).captured(1);
             }
             if (name == "") { // backup if Name is not translated
-                name = getCmdOut("grep -i ^Name= " + file_name + " | cut -f2 -d=");
+                re.setPattern("^Name=(.*)$");
+                name = re.match(text).captured(1);
                 name = name.remove("MX ").replace('&', "&&");
             }
             if (comment == "") { // backup if Comment is not translated
-                comment = getCmdOut("grep ^Comment= " + file_name + " | cut -f2 -d=");
+                re.setPattern("^Comment=(.*)$");
+                comment = re.match(text).captured(1);
             }
-            exec = getCmdOut("grep ^Exec= " + file_name + " | cut -f2 -d=");
-            icon_name = getCmdOut("grep ^Icon= " + file_name + " | cut -f2 -d=");
-            terminal_switch = getCmdOut("grep ^Terminal= " + file_name + " | cut -f2 -d=");
+            re.setPattern("^Exec=(.*)$");
+            exec = re.match(text).captured(1);
+            re.setPattern("^Icon=(.*)$");
+            icon_name = re.match(text).captured(1);
+            re.setPattern("^Terminal=(.*)$");
+            terminal_switch = re.match(text).captured(1);
             QStringList info;
             map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
         }
@@ -373,7 +391,7 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
             cmd = "rm  " + filenamehome ;
             system(cmd.toUtf8());
         }
-    } else { 
+    } else {
         cmd = "cp " + file.filePath() + " /home/$USER/.local/share/applications";
         system(cmd.toUtf8());
         cmd  = "sed -i -r -e '/^(NoDisplay|Hidden)=/d' ";
@@ -381,7 +399,7 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
         cmd += filenamehome;
         // qDebug() << "#cmd:  " << cmd;
         system(cmd.toUtf8());
-    } 
+    }
 }
 
 // About button clicked
@@ -393,7 +411,7 @@ void MainWindow::on_buttonAbout_clicked()
                        tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
                        VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Configuration Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", nullptr, this);
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
     QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
@@ -444,7 +462,7 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 {
     // remove all items from the layout
     QLayoutItem *child;
-    while ((child = ui->gridLayout_btn->takeAt(0)) != 0) {
+    while ((child = ui->gridLayout_btn->takeAt(0))) {
         delete child->widget();
         delete child;
     }
@@ -481,7 +499,13 @@ void MainWindow::removeXfceOnly(QStringList &list)
 {
     const QStringList list_copy = list;
     for (const QString &file_name : list_copy) {
-        if (system("grep -iq 'OnlyShowIn=XFCE' "+ file_name.toUtf8()) == 0) {
+        QFile file(file_name);
+        if(!file.open(QFile::Text | QFile::ReadOnly)) {
+            continue;
+        }
+        QString text = file.readAll();
+        file.close();
+        if (text.contains("OnlyShowIn=XFCE")) {
             list.removeOne(file_name);
         }
     }
@@ -491,9 +515,16 @@ void MainWindow::removeXfceOnly(QStringList &list)
 void MainWindow::removeEnvExclusive(QStringList &list, bool live)
 {
     QString term = live ? "MX-OnlyInstalled" : "MX-OnlyLive";
+
     const QStringList list_copy = list;
     for (const QString &file_name : list_copy) {
-        if (system("grep -iq " + term.toUtf8() + " " + file_name.toUtf8()) == 0) {
+        QFile file(file_name);
+        if(!file.open(QFile::Text | QFile::ReadOnly)) {
+            continue;
+        }
+        QString text = file.readAll();
+        file.close();
+        if (text.contains(term)) {
             list.removeOne(file_name);
         }
     }

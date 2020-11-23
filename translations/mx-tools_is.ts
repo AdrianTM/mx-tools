@@ -5,7 +5,7 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="393"/>
+        <location filename="../mainwindow.cpp" line="411"/>
         <source>MX Tools</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,42 +60,42 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="392"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>About MX Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="393"/>
+        <location filename="../mainwindow.cpp" line="411"/>
         <source>Version: </source>
         <translation type="unfinished">Útgáfa:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="413"/>
         <source>Configuration Tools for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished">Höfundarréttur (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
+        <location filename="../mainwindow.cpp" line="415"/>
         <source>License</source>
         <translation type="unfinished">Notkunarleyfi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Changelog</source>
         <translation type="unfinished">Breytingaskrá</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="417"/>
         <source>Cancel</source>
         <translation type="unfinished">Hætta við</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>&amp;Close</source>
         <translation type="unfinished">&amp;Loka</translation>
     </message>
