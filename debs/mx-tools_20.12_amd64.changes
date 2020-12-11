@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 11 Dec 2020 18:10:03 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 20.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (20.12) mx; urgency=medium
+ .
+   * added larger size icon
+Checksums-Sha1:
+ 0a0e0c7c055e0543719594dedd60e3b417844d3a 1143 mx-tools_20.12.dsc
+ fe22337148f1944ec3517c11b051b8ef9b7ec400 44060 mx-tools_20.12.tar.xz
+ 6f634bb9d1b4fdd94735581a44d9c01d1b459235 592552 mx-tools-dbgsym_20.12_amd64.deb
+ a9ae51218617a0cad6f55b98264ddea084168839 10657 mx-tools_20.12_amd64.buildinfo
+ 7662b88a5c7d6de011117a3fb734e0b7240b8fe5 56790 mx-tools_20.12_amd64.deb
+Checksums-Sha256:
+ c3f3f7b0da79edae88af36bcd9558e56897e79efbef6e72f3d54d6695b498367 1143 mx-tools_20.12.dsc
+ 59c8bf1be26714cc44281ea36603ff70c697f9b724a7537b988fcd9cd16d2ca3 44060 mx-tools_20.12.tar.xz
+ 12153f2a40ab91a4a24b3ba2792ac65927f7d2188b266b306232e90575d57192 592552 mx-tools-dbgsym_20.12_amd64.deb
+ bc3d86e368d7882cf9f3d2bbb5817a91c8902590b42af9c3089ff631498cfdfe 10657 mx-tools_20.12_amd64.buildinfo
+ 862181a5acd17a785a543f47bd4697c54e6cee38235f192dc739fb39a7675962 56790 mx-tools_20.12_amd64.deb
+Files:
+ 59a2c49d1a90ee880c358b71183575af 1143 admin optional mx-tools_20.12.dsc
+ 0dc65ea5cc02b5ca0a7e21049528ec1d 44060 admin optional mx-tools_20.12.tar.xz
+ 2247f2bc68de984869a05409712adcff 592552 debug extra mx-tools-dbgsym_20.12_amd64.deb
+ f89135edfb271933c36d7b58fc5b0ffe 10657 admin optional mx-tools_20.12_amd64.buildinfo
+ 9e4f8503ec3311fb3a6b8185142a6036 56790 admin optional mx-tools_20.12_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/UASUTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumG2YB/99dV3VADyNgchZhvOJul002i52Vwlc
+iZnGns6/3sHN+LoTMfUf+RqtuDBdKBP2Srfg3LgRP+806CG3e4W1G4beMkYlZPpP
+j3BMSTeyk8ZmUQgMtHczaS/USYIzrB/SiWEUXJtSbriHwlEojOBlDYug97iTGZJ9
+toub0d6QRnheWrPrGEHDEEr9l3SnjsdqRA/ovhyD/WxgN8julOnoMt6SDNo06TUm
+ppj02Cu6+1RESm7vJvnLoWq8wBgHFRwg/9Yn+/q7t6ig3A/PW3N4dbHnjtJoEohf
+IMkemtxUFunBLrbaLi/RGP2GRodIpWjNJ+AjemJ1oPQFh8WXHOd8GEol
+=EJao
+-----END PGP SIGNATURE-----
