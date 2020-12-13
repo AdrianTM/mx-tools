@@ -468,7 +468,7 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
     }
 
     QMultiMap<QString, QMultiMap<QString, QStringList> > new_map;
-    QMultiMap<QString, QStringList>  map;
+    QMultiMap<QString, QStringList> map;
 
     // creat a new_map with items that match the search argument
     for (const QString &category : info_map.keys()) {
@@ -484,13 +484,13 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
                 map.insert(file_name, info_map.value(category).value(file_name));
             }
         }
-        if (!map.empty()) {
+        if (!map.isEmpty()) {
             new_map.insert(category, map);
             map.clear();
         }
     }
-    if (!new_map.empty()) {
-        arg1 == "" ? addButtons(info_map) : addButtons(new_map);
+    if (!new_map.isEmpty()) {
+        arg1.isEmpty() ? addButtons(info_map) : addButtons(new_map);
     }
 }
 
