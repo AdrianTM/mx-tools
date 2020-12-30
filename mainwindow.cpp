@@ -20,11 +20,6 @@
  * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include "flatbutton.h"
-#include "version.h"
-
 #include <QDebug>
 #include <QDesktopWidget>
 #include <QFile>
@@ -33,11 +28,16 @@
 #include <QSettings>
 #include <QTextEdit>
 
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include "flatbutton.h"
+#include "version.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
-    qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
+    qDebug().noquote() << qApp->applicationName() << "version:" << VERSION;
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
@@ -97,7 +97,7 @@ MainWindow::MainWindow(QWidget *parent) :
     int width = this->width();
     int height = this->height();
 
-    QSettings settings("mx-tools");
+    QSettings settings(qApp->applicationName());
     restoreGeometry(settings.value("geometry").toByteArray());
 
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
@@ -160,36 +160,36 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
                 continue;
             QString text = file.readAll();
             file.close();
-            name = "";
-            comment = "";
-            if (lang != "en") {
-                re.setPattern("^Name\\[" + lang + "\\]=(.*)$");
+            name.clear();
+            comment.clear();
+            if (lang != QLatin1String("en")) {
+                re.setPattern(QLatin1String("^Name\\[") + lang + QLatin1String("\\]=(.*)$"));
                 name = re.match(text).captured(1);
-                re.setPattern("^Comment\\[" + lang + "\\]=(.*)$");
+                re.setPattern(QLatin1String("^Comment\\[") + lang + QLatin1String("\\]=(.*)$"));
                 comment = re.match(text).captured(1);
             }
-            if (lang == "pt" && name == "") { // Brazilian if Portuguese and name empty
-                re.setPattern("^Name\\[pt_BR\\]=(.*)$");
+            if (lang == QLatin1String("pt") && name.isEmpty()) { // Brazilian if Portuguese and name empty
+                re.setPattern(QLatin1String("^Name\\[pt_BR\\]=(.*)$"));
                 name = re.match(text).captured(1);
             }
-            if (lang == "pt" && comment == "") { // Brazilian if Portuguese and comment empty
-                re.setPattern("^Comment\\[pt_BR\\]=(.*)$");
+            if (lang == QLatin1String("pt") && comment.isEmpty()) { // Brazilian if Portuguese and comment empty
+                re.setPattern(QLatin1String("^Comment\\[pt_BR\\]=(.*)$"));
                 comment = re.match(text).captured(1);
             }
-            if (name == "") { // backup if Name is not translated
-                re.setPattern("^Name=(.*)$");
+            if (name.isEmpty()) { // backup if Name is not translated
+                re.setPattern(QLatin1String("^Name=(.*)$"));
                 name = re.match(text).captured(1);
-                name = name.remove("MX ").replace('&', "&&");
+                name = name.remove(QLatin1String("MX ")).replace(QLatin1Char('&'), QLatin1String("&&"));
             }
-            if (comment == "") { // backup if Comment is not translated
-                re.setPattern("^Comment=(.*)$");
+            if (comment.isEmpty()) { // backup if Comment is not translated
+                re.setPattern(QLatin1String("^Comment=(.*)$"));
                 comment = re.match(text).captured(1);
             }
-            re.setPattern("^Exec=(.*)$");
+            re.setPattern(QLatin1String("^Exec=(.*)$"));
             exec = re.match(text).captured(1);
-            re.setPattern("^Icon=(.*)$");
+            re.setPattern(QLatin1String("^Icon=(.*)$"));
             icon_name = re.match(text).captured(1);
-            re.setPattern("^Terminal=(.*)$");
+            re.setPattern(QLatin1String("^Terminal=(.*)$"));
             terminal_switch = re.match(text).captured(1);
             QStringList info;
             map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
@@ -386,7 +386,7 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
     // qDebug() << "filnamehome " << filenamehome;
 
     // qDebug() << "filenamehomeinfo exists" << filenamehomeinfo.exists();
-    if ( hide_str == "false" ) {
+    if ( hide_str == QLatin1String("false") ) {
         if (filenamehomeinfo.exists()) {
             cmd = "rm  " + filenamehome ;
             system(cmd.toUtf8());
@@ -505,7 +505,7 @@ void MainWindow::removeXfceOnly(QStringList &list)
         }
         QString text = file.readAll();
         file.close();
-        if (text.contains("OnlyShowIn=XFCE")) {
+        if (text.contains(QLatin1String("OnlyShowIn=XFCE"))) {
             list.removeOne(file_name);
         }
     }
