@@ -23,6 +23,7 @@
 #include <QApplication>
 #include <QIcon>
 #include <QLibraryInfo>
+#include <QLibraryInfo>
 #include <QLocale>
 #include <QTranslator>
 
@@ -44,6 +45,7 @@ int main(int argc, char *argv[])
     QTranslator appTran;
     if (appTran.load(app.applicationName() + "_" + QLocale::system().name(), "/usr/share/" + app.applicationName() + "/locale"))
         app.installTranslator(&appTran);
+
     MainWindow w;
     w.show();
 
