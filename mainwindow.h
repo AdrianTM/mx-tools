@@ -72,6 +72,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void removeXfceOnly(QStringList &list);
+    void removeFLUXBOXonly(QStringList &list);
     void removeEnvExclusive(QStringList &list, bool live);
 };
 

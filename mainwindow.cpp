@@ -77,6 +77,11 @@ MainWindow::MainWindow(QWidget *parent) :
         for (int i = 0; i < lists.size(); ++i)
             removeXfceOnly(*lists[i]);
 
+    // remove item from list if it is only meant for FLUXBOX
+    if (qgetenv("XDG_CURRENT_DESKTOP") != "FLUXBOX")
+        for (int i = 0; i < lists.size(); ++i)
+            removeFLUXBOXonly(*lists[i]);
+
     category_map.insertMulti("MX-Live", live_list);
     category_map.insertMulti("MX-Maintenance", maintenance_list);
     category_map.insertMulti("MX-Setup", setup_list);
@@ -489,6 +494,21 @@ void MainWindow::removeXfceOnly(QStringList &list)
         QString text = file.readAll();
         file.close();
         if (text.contains(QLatin1String("OnlyShowIn=XFCE")))
+            list.removeOne(file_name);
+    }
+}
+
+// remove FLUXBOX-only apps from the list
+void MainWindow::removeFLUXBOXonly(QStringList &list)
+{
+    const QStringList list_copy = list;
+    for (const QString &file_name : list_copy) {
+        QFile file(file_name);
+        if(!file.open(QFile::Text | QFile::ReadOnly))
+            continue;
+        QString text = file.readAll();
+        file.close();
+        if (text.contains(QLatin1String("OnlyShowIn=FLUXBOX")))
             list.removeOne(file_name);
     }
 }
