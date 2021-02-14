@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sat, 13 Feb 2021 19:45:39 -0500
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 21.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.02) mx; urgency=medium
+ .
+   * add fluxbox filter
+Checksums-Sha1:
+ 175ab79dbd1b4e8bb157c9fc4690bc223269c419 581 mx-tools_21.02.dsc
+ 259be8e3a91082cae9216e35b5d05e664f85c1de 46372 mx-tools_21.02.tar.xz
+ c94eb5fa1a93d194a5c4cceadfe258d58a91c7af 598926 mx-tools-dbgsym_21.02_amd64.deb
+ f38b137362587bb529261c8c78580009f55770eb 10913 mx-tools_21.02_amd64.buildinfo
+ 96ba95e4be1df76c9db0833cec7584abf8ce2cc1 57158 mx-tools_21.02_amd64.deb
+Checksums-Sha256:
+ 0b07a11d43adfde58d0ad7db0151288a541da1bf12c293a08856e43816cd250d 581 mx-tools_21.02.dsc
+ 07342d22c1a91a7d20e492970e174a7b17c0363bb86e0202986a39e98fb95d4f 46372 mx-tools_21.02.tar.xz
+ 2fff52bb0923eb75bfc5e287d6fcc42e4f61561edba77c6e252749739216c972 598926 mx-tools-dbgsym_21.02_amd64.deb
+ 34c1853814a13d46747523327d2fc6d3d84d32a5f3b4d600e0dcc9a8505e0f5d 10913 mx-tools_21.02_amd64.buildinfo
+ 20b97dd014527ab51a6cf61f743f21fa4acfc7a2683b673dc1ec16fd801a3c71 57158 mx-tools_21.02_amd64.deb
+Files:
+ 3a7a7254f740a40e4739d3ac9414da8d 581 admin optional mx-tools_21.02.dsc
+ 886ef7d9f5fc1383f31f470b01c9efcf 46372 admin optional mx-tools_21.02.tar.xz
+ b06bcca576ee971f045a250b3631f1ea 598926 debug optional mx-tools-dbgsym_21.02_amd64.deb
+ d804798be5b722092bf7c683d1466a97 10913 admin optional mx-tools_21.02_amd64.buildinfo
+ 312cdb0f6dda643e4580b23b16128ebb 57158 admin optional mx-tools_21.02_amd64.deb
