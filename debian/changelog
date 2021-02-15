@@ -1,3 +1,9 @@
+mx-tools (21.02.01) mx; urgency=medium
+
+  * fix fluxbox detection
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 15 Feb 2021 17:50:39 -0500
+
 mx-tools (21.02) mx; urgency=medium
 
   * add fluxbox filter 

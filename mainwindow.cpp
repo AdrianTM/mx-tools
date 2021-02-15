@@ -78,7 +78,7 @@ MainWindow::MainWindow(QWidget *parent) :
             removeXfceOnly(*lists[i]);
 
     // remove item from list if it is only meant for FLUXBOX
-    if (qgetenv("XDG_CURRENT_DESKTOP") != "FLUXBOX")
+    if (qgetenv("XDG_SESSION_DESKTOP") != "fluxbox")
         for (int i = 0; i < lists.size(); ++i)
             removeFLUXBOXonly(*lists[i]);
 
