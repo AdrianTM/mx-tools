@@ -1,6 +1,6 @@
  dpkg-buildpackage -rfakeroot -us -uc
 dpkg-buildpackage: info: source package mx-tools
-dpkg-buildpackage: info: source version 21.02
+dpkg-buildpackage: info: source version 21.02.01
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
  dpkg-source --before-build 64
@@ -15,8 +15,8 @@ make[1]: Leaving directory '/media/demo/dataext/development/working/mx-tools/64'
    dh_clean -O--parallel
  dpkg-source -b 64
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building mx-tools in mx-tools_21.02.tar.xz
-dpkg-source: info: building mx-tools in mx-tools_21.02.dsc
+dpkg-source: info: building mx-tools in mx-tools_21.02.01.tar.xz
+dpkg-source: info: building mx-tools in mx-tools_21.02.01.dsc
  debian/rules build
 dh build --parallel 
    dh_update_autotools_config -O--parallel
@@ -208,11 +208,11 @@ make[1]: Leaving directory '/media/demo/dataext/development/working/mx-tools/64'
    debian/rules override_dh_builddeb
 make[1]: Entering directory '/media/demo/dataext/development/working/mx-tools/64'
 dh_builddeb -- -Z xz
-dpkg-deb: building package 'mx-tools-dbgsym' in '../mx-tools-dbgsym_21.02_amd64.deb'.
-dpkg-deb: building package 'mx-tools' in '../mx-tools_21.02_amd64.deb'.
+dpkg-deb: building package 'mx-tools-dbgsym' in '../mx-tools-dbgsym_21.02.01_amd64.deb'.
+dpkg-deb: building package 'mx-tools' in '../mx-tools_21.02.01_amd64.deb'.
 make[1]: Leaving directory '/media/demo/dataext/development/working/mx-tools/64'
  dpkg-genbuildinfo
- dpkg-genchanges  >../mx-tools_21.02_amd64.changes
+ dpkg-genchanges  >../mx-tools_21.02.01_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build 64
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)

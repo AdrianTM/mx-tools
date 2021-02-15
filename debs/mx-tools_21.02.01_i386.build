@@ -1,6 +1,6 @@
  dpkg-buildpackage -rfakeroot -us -uc -B
 dpkg-buildpackage: info: source package mx-tools
-dpkg-buildpackage: info: source version 21.02
+dpkg-buildpackage: info: source version 21.02.01
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
  dpkg-source --before-build 32
@@ -204,16 +204,13 @@ make[1]: Leaving directory '/media/demo/dataext/development/working/mx-tools/32'
    debian/rules override_dh_builddeb
 make[1]: Entering directory '/media/demo/dataext/development/working/mx-tools/32'
 dh_builddeb -- -Z xz
-dpkg-deb: building package 'mx-tools-dbgsym' in '../mx-tools-dbgsym_21.02_i386.deb'.
-dpkg-deb: building package 'mx-tools' in '../mx-tools_21.02_i386.deb'.
+dpkg-deb: building package 'mx-tools-dbgsym' in '../mx-tools-dbgsym_21.02.01_i386.deb'.
+dpkg-deb: building package 'mx-tools' in '../mx-tools_21.02.01_i386.deb'.
 make[1]: Leaving directory '/media/demo/dataext/development/working/mx-tools/32'
  dpkg-genbuildinfo --build=any
- dpkg-genchanges --build=any >../mx-tools_21.02_i386.changes
+ dpkg-genchanges --build=any >../mx-tools_21.02.01_i386.changes
 dpkg-genchanges: info: binary-only arch-specific upload (source code and arch-indep packages not included)
  dpkg-source --after-build 32
 dpkg-buildpackage: info: binary-only upload (no source included)
 Now signing dsc file...
- signfile dsc mx-tools_21.02.dsc Adrian <adrian@mxlinux.org>
-gpg: skipped "Adrian <adrian@mxlinux.org>": No secret key
-gpg: /tmp/debsign.kLhpVUQ9/mx-tools_21.02.dsc: clear-sign failed: No secret key
-debsign: gpg error occurred!  Aborting....
+debsign: Can't find or can't read dsc file mx-tools_21.02.01.dsc!

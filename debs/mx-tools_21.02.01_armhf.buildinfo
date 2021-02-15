@@ -2,19 +2,19 @@ Format: 1.0
 Source: mx-tools
 Binary: mx-tools
 Architecture: armhf
-Version: 21.02
+Version: 21.02.01
 Checksums-Md5:
- ddf5a58702ee9c6e7e852b925d5d1463 680844 mx-tools-dbgsym_21.02_armhf.deb
- d8ac8ed08dc824a45cf1b09efb143a62 53364 mx-tools_21.02_armhf.deb
+ 97550d07e180204b126749f788c28c4f 680900 mx-tools-dbgsym_21.02.01_armhf.deb
+ 3c019b761cecf4928c3beaeab173fe48 53384 mx-tools_21.02.01_armhf.deb
 Checksums-Sha1:
- 07233520ee72c96dee6235759babc474be2272c1 680844 mx-tools-dbgsym_21.02_armhf.deb
- 52b0915734ab386595ee840d3f3b6ab2028ca3cc 53364 mx-tools_21.02_armhf.deb
+ 839848d88b49cbcb41935fcc10fb02b6d2238a7b 680900 mx-tools-dbgsym_21.02.01_armhf.deb
+ 6d15013f0265333ef5def7c8db4ebcfec9b0bcc1 53384 mx-tools_21.02.01_armhf.deb
 Checksums-Sha256:
- db3238da32d1da4b998a5b29e7fbf2b75a6775cfd5268066930c5935dbe3d0b4 680844 mx-tools-dbgsym_21.02_armhf.deb
- c3e02c77aa159cb37da2966fd839481f5568be36b9df5f8d5816796101627af1 53364 mx-tools_21.02_armhf.deb
+ e757629bcd10b87479a80bc1925489f03e95efb8ab1b2736d438bbda55a8ea8f 680900 mx-tools-dbgsym_21.02.01_armhf.deb
+ d4250983c687c377f3a0a815c2f84e490d1a76f2c36cd7b247041301c053bd4d 53384 mx-tools_21.02.01_armhf.deb
 Build-Origin: Raspbian
 Build-Architecture: armhf
-Build-Date: Sat, 13 Feb 2021 19:52:30 -0500
+Build-Date: Mon, 15 Feb 2021 17:55:26 -0500
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -312,6 +312,7 @@ Installed-Build-Depends:
  x11-common (= 1:7.7+19),
  x11proto-core-dev (= 2018.4-4),
  x11proto-dev (= 2018.4-4),
+ x11proto-input-dev (= 2018.4-4),
  x11proto-xext-dev (= 2018.4-4),
  xkb-data (= 2.26-2),
  xorg-sgml-doctools (= 1:1.11-1),
@@ -322,4 +323,4 @@ Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
  LC_ALL="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1613263539"
+ SOURCE_DATE_EPOCH="1613429439"

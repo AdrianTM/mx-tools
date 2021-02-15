@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui -B
 dpkg-buildpackage: info: source package mx-tools
-dpkg-buildpackage: info: source version 21.02
+dpkg-buildpackage: info: source version 21.02.01
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
  dpkg-source --before-build .
@@ -225,19 +225,19 @@ dh_installdeb: warning: Compatibility levels before 10 are deprecated (level 9 i
    debian/rules override_dh_builddeb
 make[1]: Entering directory '/home/pi/mx-tools/armhf'
 dh_builddeb -- -Z xz
-dpkg-deb: building package 'mx-tools-dbgsym' in '../mx-tools-dbgsym_21.02_armhf.deb'.
-dpkg-deb: building package 'mx-tools' in '../mx-tools_21.02_armhf.deb'.
+dpkg-deb: building package 'mx-tools' in '../mx-tools_21.02.01_armhf.deb'.
+dpkg-deb: building package 'mx-tools-dbgsym' in '../mx-tools-dbgsym_21.02.01_armhf.deb'.
 make[1]: Leaving directory '/home/pi/mx-tools/armhf'
  dpkg-genbuildinfo --build=any
- dpkg-genchanges --build=any >../mx-tools_21.02_armhf.changes
+ dpkg-genchanges --build=any >../mx-tools_21.02.01_armhf.changes
 dpkg-genchanges: info: binary-only arch-specific upload (source code and arch-indep packages not included)
  dpkg-source --after-build .
 dpkg-buildpackage: info: binary-only upload (no source included)
-Now running lintian mx-tools_21.02_armhf.changes ...
+Now running lintian mx-tools_21.02.01_armhf.changes ...
 E: mx-tools changes: bad-distribution-in-changes-file mx
 W: mx-tools: hardening-no-pie usr/bin/mx-tools
 E: mx-tools: copyright-should-refer-to-common-license-file-for-gpl
 W: mx-tools: binary-without-manpage usr/bin/mx-tools
 Finished running lintian.
 Now signing dsc file...
-debsign: Can't find or can't read dsc file mx-tools_21.02.dsc!
+debsign: Can't find or can't read dsc file mx-tools_21.02.01.dsc!

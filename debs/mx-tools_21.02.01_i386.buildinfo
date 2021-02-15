@@ -1,29 +1,26 @@
 Format: 1.0
 Source: mx-tools
 Binary: mx-tools
-Architecture: amd64 source
-Version: 21.02
+Architecture: i386
+Version: 21.02.01
 Checksums-Md5:
- 3a7a7254f740a40e4739d3ac9414da8d 581 mx-tools_21.02.dsc
- b06bcca576ee971f045a250b3631f1ea 598926 mx-tools-dbgsym_21.02_amd64.deb
- 312cdb0f6dda643e4580b23b16128ebb 57158 mx-tools_21.02_amd64.deb
+ 857aac50b3f4f47ceb3094190dd5a4b1 588298 mx-tools-dbgsym_21.02.01_i386.deb
+ 632417152d10fa461edc500aa8bc1722 59798 mx-tools_21.02.01_i386.deb
 Checksums-Sha1:
- 175ab79dbd1b4e8bb157c9fc4690bc223269c419 581 mx-tools_21.02.dsc
- c94eb5fa1a93d194a5c4cceadfe258d58a91c7af 598926 mx-tools-dbgsym_21.02_amd64.deb
- 96ba95e4be1df76c9db0833cec7584abf8ce2cc1 57158 mx-tools_21.02_amd64.deb
+ 37a3163a9c316e64657845d7a6dce7d2a1af4221 588298 mx-tools-dbgsym_21.02.01_i386.deb
+ 0834f9eb7553cde82f270003e271a61f228f1b2e 59798 mx-tools_21.02.01_i386.deb
 Checksums-Sha256:
- 0b07a11d43adfde58d0ad7db0151288a541da1bf12c293a08856e43816cd250d 581 mx-tools_21.02.dsc
- 2fff52bb0923eb75bfc5e287d6fcc42e4f61561edba77c6e252749739216c972 598926 mx-tools-dbgsym_21.02_amd64.deb
- 20b97dd014527ab51a6cf61f743f21fa4acfc7a2683b673dc1ec16fd801a3c71 57158 mx-tools_21.02_amd64.deb
+ 37983dd2d4f8884e87b287877333d89b280ab439f3d1f14bdabe74c5c4d56135 588298 mx-tools-dbgsym_21.02.01_i386.deb
+ 7a7080ff29c52205f362d056a8c9902c390dbe9f394d3b9a120525ea57fe41ee 59798 mx-tools_21.02.01_i386.deb
 Build-Origin: Debian
-Build-Architecture: amd64
-Build-Date: Sat, 13 Feb 2021 19:49:44 -0500
+Build-Architecture: i386
+Build-Date: Mon, 15 Feb 2021 18:06:42 -0500
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
  autopoint (= 0.19.8.1-2+deb9u1),
  autotools-dev (= 20161112.1),
- base-files (= 9.9+deb9u13),
+ base-files (= 9.9+deb9u12),
  base-passwd (= 3.5.43),
  bash (= 4.4-5),
  binutils (= 2.28-5),
@@ -44,8 +41,8 @@ Installed-Build-Depends:
  dpkg (= 1.18.25),
  dpkg-dev (= 1.18.25),
  dwz (= 0.12-1+b1),
- e2fslibs (= 1.43.4-2+deb9u2),
- e2fsprogs (= 1.43.4-2+deb9u2),
+ e2fslibs (= 1.43.4-2+deb9u1),
+ e2fsprogs (= 1.43.4-2+deb9u1),
  file (= 1:5.30-1+deb9u3),
  findutils (= 4.6.0+git+20161106-2),
  fontconfig (= 1:2.13.0-5~mx17+1),
@@ -90,11 +87,11 @@ Installed-Build-Depends:
  libcap2-bin (= 1:2.25-1),
  libcc1-0 (= 6.3.0-18+deb9u1),
  libcilkrts5 (= 6.3.0-18+deb9u1),
- libcomerr2 (= 1.43.4-2+deb9u2),
+ libcomerr2 (= 1.43.4-2+deb9u1),
  libcroco3 (= 0.6.11-3),
- libcups2 (= 2.2.1-8+deb9u6),
+ libcups2 (= 2.2.1-8+deb9u5),
  libdb5.3 (= 5.3.28-12+deb9u1),
- libdbus-1-3 (= 1.10.32-0+deb9u1),
+ libdbus-1-3 (= 1.10.28-0+deb9u1),
  libdebconfclient0 (= 0.227),
  libdouble-conversion1 (= 2.0.1-4),
  libdpkg-perl (= 1.18.25),
@@ -116,7 +113,7 @@ Installed-Build-Depends:
  libffi6 (= 3.2.1-6),
  libfile-stripnondeterminism-perl (= 0.034-1),
  libfontconfig1 (= 1:2.13.0-5~mx17+1),
- libfreetype6 (= 2.8.1-3mx17+1),
+ libfreetype6 (= 2.8.1-2~mx17+1),
  libgbm1 (= 18.2.6-1~mx17+1),
  libgcc-6-dev (= 6.3.0-18+deb9u1),
  libgcc1 (= 1:6.3.0-18+deb9u1),
@@ -138,11 +135,11 @@ Installed-Build-Depends:
  libglx-mesa0 (= 18.2.6-1~mx17+1),
  libglx0 (= 1.1.0-1~mx17+1),
  libgmp10 (= 2:6.1.2+dfsg-1),
- libgnutls30 (= 3.5.8-5+deb9u5),
+ libgnutls30 (= 3.5.8-5+deb9u4),
  libgomp1 (= 6.3.0-18+deb9u1),
  libgpg-error0 (= 1.26-2),
  libgraphite2-3 (= 1.3.10-1),
- libgssapi-krb5-2 (= 1.15-1+deb9u2),
+ libgssapi-krb5-2 (= 1.15-1+deb9u1),
  libgstreamer-plugins-base1.0-0 (= 1.10.4-1+deb9u1),
  libgstreamer1.0-0 (= 1.10.4-1),
  libgudev-1.0-0 (= 230-3),
@@ -155,13 +152,12 @@ Installed-Build-Depends:
  libinput10 (= 1.6.3-1),
  libisl15 (= 0.18-1),
  libitm1 (= 6.3.0-18+deb9u1),
- libjpeg62-turbo (= 1:1.5.1-2+deb9u1),
- libk5crypto3 (= 1.15-1+deb9u2),
+ libjpeg62-turbo (= 1:1.5.1-2),
+ libk5crypto3 (= 1.15-1+deb9u1),
  libkeyutils1 (= 1.5.9-9),
- libkrb5-3 (= 1.15-1+deb9u2),
- libkrb5support0 (= 1.15-1+deb9u2),
- libllvm7 (= 1:7.0.1-8~deb9u4),
- liblsan0 (= 6.3.0-18+deb9u1),
+ libkrb5-3 (= 1.15-1+deb9u1),
+ libkrb5support0 (= 1.15-1+deb9u1),
+ libllvm7 (= 1:7.0.1-8~deb9u3),
  liblz4-1 (= 0.0~r131-2+b1),
  liblzma5 (= 5.2.2-1.2+b1),
  libmagic-mgc (= 1:5.30-1+deb9u3),
@@ -177,7 +173,7 @@ Installed-Build-Depends:
  libnettle6 (= 3.3-1+b2),
  libopengl0 (= 1.1.0-1~mx17+1),
  liborc-0.4-0 (= 1:0.4.26-2),
- libp11-kit0 (= 0.23.3-2+deb9u1),
+ libp11-kit0 (= 0.23.3-2),
  libpam-modules (= 1.1.8-3.6),
  libpam-modules-bin (= 1.1.8-3.6),
  libpam-runtime (= 1.1.8-3.6),
@@ -185,30 +181,30 @@ Installed-Build-Depends:
  libpciaccess0 (= 0.13.4-1+b2),
  libpcre16-3 (= 2:8.39-3),
  libpcre3 (= 2:8.39-3),
- libperl5.24 (= 5.24.1-3+deb9u7),
+ libperl5.24 (= 5.24.1-3+deb9u6),
  libpipeline1 (= 1.4.1-2),
  libpng16-16 (= 1.6.28-1+deb9u1),
- libproxy1v5 (= 0.4.14-2+deb9u2),
+ libproxy1v5 (= 0.4.14-2),
  libpthread-stubs0-dev (= 0.3-4),
  libqt5clucene5 (= 5.7.1-1),
- libqt5concurrent5 (= 5.7.1+dfsg-3+deb9u3),
- libqt5core5a (= 5.7.1+dfsg-3+deb9u3),
- libqt5dbus5 (= 5.7.1+dfsg-3+deb9u3),
+ libqt5concurrent5 (= 5.7.1+dfsg-3+deb9u2),
+ libqt5core5a (= 5.7.1+dfsg-3+deb9u2),
+ libqt5dbus5 (= 5.7.1+dfsg-3+deb9u2),
  libqt5designer5 (= 5.7.1-1),
  libqt5designercomponents5 (= 5.7.1-1),
- libqt5gui5 (= 5.7.1+dfsg-3+deb9u3),
+ libqt5gui5 (= 5.7.1+dfsg-3+deb9u2),
  libqt5help5 (= 5.7.1-1),
- libqt5network5 (= 5.7.1+dfsg-3+deb9u3),
- libqt5opengl5 (= 5.7.1+dfsg-3+deb9u3),
- libqt5printsupport5 (= 5.7.1+dfsg-3+deb9u3),
+ libqt5network5 (= 5.7.1+dfsg-3+deb9u2),
+ libqt5opengl5 (= 5.7.1+dfsg-3+deb9u2),
+ libqt5printsupport5 (= 5.7.1+dfsg-3+deb9u2),
  libqt5qml5 (= 5.7.1-2+b2),
  libqt5quick5 (= 5.7.1-2+b2),
  libqt5quickwidgets5 (= 5.7.1-2+b2),
- libqt5sql5 (= 5.7.1+dfsg-3+deb9u3),
- libqt5test5 (= 5.7.1+dfsg-3+deb9u3),
+ libqt5sql5 (= 5.7.1+dfsg-3+deb9u2),
+ libqt5test5 (= 5.7.1+dfsg-3+deb9u2),
  libqt5webkit5 (= 5.7.1+dfsg-1),
- libqt5widgets5 (= 5.7.1+dfsg-3+deb9u3),
- libqt5xml5 (= 5.7.1+dfsg-3+deb9u3),
+ libqt5widgets5 (= 5.7.1+dfsg-3+deb9u2),
+ libqt5xml5 (= 5.7.1+dfsg-3+deb9u2),
  libquadmath0 (= 6.3.0-18+deb9u1),
  libreadline7 (= 7.0-3),
  libselinux1 (= 2.6-3+b3),
@@ -219,9 +215,9 @@ Installed-Build-Depends:
  libsigsegv2 (= 2.10-5),
  libsm6 (= 2:1.2.2-1+b3),
  libsmartcols1 (= 2.29.2-1+deb9u1),
- libsqlite3-0 (= 3.16.2-5+deb9u3),
- libss2 (= 1.43.4-2+deb9u2),
- libssl1.0.2 (= 1.0.2u-1~deb9u3),
+ libsqlite3-0 (= 3.16.2-5+deb9u1),
+ libss2 (= 1.43.4-2+deb9u1),
+ libssl1.0.2 (= 1.0.2u-1~deb9u1),
  libstdc++-6-dev (= 6.3.0-18+deb9u1),
  libstdc++6 (= 6.3.0-18+deb9u1),
  libsystemd0 (= 232-25+deb9u12),
@@ -229,7 +225,6 @@ Installed-Build-Depends:
  libtimedate-perl (= 2.3000-2+deb9u1),
  libtinfo5 (= 6.0+20161126-1+deb9u2),
  libtool (= 2.4.6-2),
- libtsan0 (= 6.3.0-18+deb9u1),
  libubsan0 (= 6.3.0-18+deb9u1),
  libudev1 (= 232-25+deb9u12),
  libunistring0 (= 0.9.6+really0.9.3-0.1),
@@ -240,11 +235,11 @@ Installed-Build-Depends:
  libwayland-client0 (= 1.16.0-1~mx17+1),
  libwayland-server0 (= 1.16.0-1~mx17+1),
  libwebp6 (= 0.6.1-2~mx17+1),
- libx11-6 (= 2:1.6.4-3+deb9u3),
- libx11-data (= 2:1.6.4-3+deb9u3),
- libx11-dev (= 2:1.6.4-3+deb9u3),
- libx11-xcb-dev (= 2:1.6.4-3+deb9u3),
- libx11-xcb1 (= 2:1.6.4-3+deb9u3),
+ libx11-6 (= 2:1.6.4-3+deb9u1),
+ libx11-data (= 2:1.6.4-3+deb9u1),
+ libx11-dev (= 2:1.6.4-3+deb9u1),
+ libx11-xcb-dev (= 2:1.6.4-3+deb9u1),
+ libx11-xcb1 (= 2:1.6.4-3+deb9u1),
  libxau-dev (= 1:1.0.8-1),
  libxau6 (= 1:1.0.8-1),
  libxcb-dri2-0 (= 1.12-3),
@@ -287,14 +282,14 @@ Installed-Build-Depends:
  libxi6 (= 2:1.7.9-1),
  libxkbcommon-x11-0 (= 0.7.1-2~deb9u1),
  libxkbcommon0 (= 0.7.1-2~deb9u1),
- libxml2 (= 2.9.4+dfsg1-2.2+deb9u3),
+ libxml2 (= 2.9.4+dfsg1-2.2+deb9u2),
  libxrender1 (= 1:0.9.10-1),
  libxshmfence-dev (= 1.2-1+b2),
  libxshmfence1 (= 1.2-1+b2),
  libxslt1.1 (= 1.1.29-2.1+deb9u2),
  libxxf86vm-dev (= 1:1.1.4-1+b2),
  libxxf86vm1 (= 1:1.1.4-1+b2),
- linux-libc-dev (= 4.19.171-2~mx19+1),
+ linux-libc-dev (= 4.19.118-1mx17+1),
  login (= 1:4.4-4.1),
  lsb-base (= 9.20161125),
  m4 (= 1.4.18-1),
@@ -308,13 +303,13 @@ Installed-Build-Depends:
  ncurses-bin (= 6.0+20161126-1+deb9u2),
  passwd (= 1:4.4-4.1),
  patch (= 2.7.5-1+deb9u2),
- perl (= 5.24.1-3+deb9u7),
- perl-base (= 5.24.1-3+deb9u7),
- perl-modules-5.24 (= 5.24.1-3+deb9u7),
+ perl (= 5.24.1-3+deb9u6),
+ perl-base (= 5.24.1-3+deb9u6),
+ perl-modules-5.24 (= 5.24.1-3+deb9u6),
  po-debconf (= 1.0.20),
- qt5-qmake (= 5.7.1+dfsg-3+deb9u3),
- qtbase5-dev (= 5.7.1+dfsg-3+deb9u3),
- qtbase5-dev-tools (= 5.7.1+dfsg-3+deb9u3),
+ qt5-qmake (= 5.7.1+dfsg-3+deb9u2),
+ qtbase5-dev (= 5.7.1+dfsg-3+deb9u2),
+ qtbase5-dev-tools (= 5.7.1+dfsg-3+deb9u2),
  qtchooser (= 63-g13a3d08-1),
  qttools5-dev-tools (= 5.7.1-1),
  readline-common (= 7.0-3),
@@ -343,4 +338,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1613263539"
+ SOURCE_DATE_EPOCH="1613429439"
