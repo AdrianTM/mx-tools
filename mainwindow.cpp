@@ -155,7 +155,7 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
         list = category_map.value(category);
         for (const QString &file_name : list) {
             QFile file(file_name);
-            if(!file.open(QFile::Text | QFile::ReadOnly))
+            if (!file.open(QFile::Text | QFile::ReadOnly))
                 continue;
             QString text = file.readAll();
             file.close();
@@ -489,7 +489,7 @@ void MainWindow::removeXfceOnly(QStringList &list)
     const QStringList list_copy = list;
     for (const QString &file_name : list_copy) {
         QFile file(file_name);
-        if(!file.open(QFile::Text | QFile::ReadOnly))
+        if (!file.open(QFile::Text | QFile::ReadOnly))
             continue;
         QString text = file.readAll();
         file.close();
@@ -504,7 +504,7 @@ void MainWindow::removeFLUXBOXonly(QStringList &list)
     const QStringList list_copy = list;
     for (const QString &file_name : list_copy) {
         QFile file(file_name);
-        if(!file.open(QFile::Text | QFile::ReadOnly))
+        if (!file.open(QFile::Text | QFile::ReadOnly))
             continue;
         QString text = file.readAll();
         file.close();
@@ -521,7 +521,7 @@ void MainWindow::removeEnvExclusive(QStringList &list, bool live)
     const QStringList list_copy = list;
     for (const QString &file_name : list_copy) {
         QFile file(file_name);
-        if(!file.open(QFile::Text | QFile::ReadOnly))
+        if (!file.open(QFile::Text | QFile::ReadOnly))
             continue;
         QString text = file.readAll();
         file.close();
