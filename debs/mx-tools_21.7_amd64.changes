@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 20 Jul 2021 15:51:26 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 21.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.7) mx; urgency=medium
+ .
+   * Faster and more complete icon search
+   * Put .conf file in ~/.config/MX-Linux folder
+Checksums-Sha1:
+ 555de753a5a6521e5ea141c2365e3502e8fe4a8b 1140 mx-tools_21.7.dsc
+ 8b9c906f21000bf43b0bcdee4c31ea9a69bd65cb 44224 mx-tools_21.7.tar.xz
+ ea7f3c5b0669f2a176c2e216fe6c307624f5b04f 10390 mx-tools_21.7_amd64.buildinfo
+ 7179af541818d2dd07e9391dd8822c81e6953ae0 57490 mx-tools_21.7_amd64.deb
+Checksums-Sha256:
+ e2f2c261befa6b9f3d05c85b9ce51f4c8f6d9241cc934449d53dca3790a15e5b 1140 mx-tools_21.7.dsc
+ de5b15bb86f1498406d0667e6815f1f4dda3eca238151b60a4665eec37deced4 44224 mx-tools_21.7.tar.xz
+ c867c26854a7323525badd43373b15214e09e809addb1c777369b893e47fcfb7 10390 mx-tools_21.7_amd64.buildinfo
+ 1ca95e1fd22fd8c279042fc6fd7a1a287a1a89cf20e1b110ba482587a2be116c 57490 mx-tools_21.7_amd64.deb
+Files:
+ d27e4790879336e5e7c2081280e3b3b0 1140 admin optional mx-tools_21.7.dsc
+ ec21df8bca14834f8b4bcd25d757a2bb 44224 admin optional mx-tools_21.7.tar.xz
+ e838368176d8e47e97371b19c745dc00 10390 admin optional mx-tools_21.7_amd64.buildinfo
+ 54b0d6ae77c54fc01e4d0a9b74bd08da 57490 admin optional mx-tools_21.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmD3KbgTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLZVB/9QgjSDnUnP4cbqguOne3Ugi9XTsl5/
+CUzHbs+lTXy41taep9crHJrEJBisrMxa/fmICjrN9Y8aCDrkv/1pRfgbCK0qoh7t
+2exlAXHc6Z5Yav0AITCzyCRHAxvBYLjo5cnR8QO/6rpcRtNGg5ZEC2tOkqG32yA7
+M0QWFG1CDNiFXRFgH0fS4WU/LxvGwp6zfTtCPxRfvlVaEPTQ0Qf9qLL1HWuLJd+U
+Fs/q+47XOYMsLJtOwVeJFVtrbakHTreQLd+ttCJd6zISgzKsEPPwhvLXyf8vhoOB
+q1Wrnc4C+wzg/MJrasCfE73rCHF20wJv95cppglBQrr0Lv5DwwifmAp/
+=AsAg
+-----END PGP SIGNATURE-----

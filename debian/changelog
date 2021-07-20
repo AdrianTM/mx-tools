@@ -1,3 +1,10 @@
+mx-tools (21.7) mx; urgency=medium
+
+  * Faster and more complete icon search
+  * Put .conf file in ~/.config/MX-Linux folder
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 20 Jul 2021 15:51:26 -0400
+
 mx-tools (21.02.01) mx; urgency=medium
 
   * fix fluxbox detection
