@@ -96,7 +96,7 @@ MainWindow::MainWindow(QWidget *parent) :
     int width = this->width();
     int height = this->height();
 
-    QSettings settings(qApp->applicationName());
+    QSettings settings(qApp->organizationName(), qApp->applicationName());
     restoreGeometry(settings.value("geometry").toByteArray());
 
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
@@ -344,7 +344,7 @@ void MainWindow::btn_clicked()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings("mx-tools");
+    QSettings settings(qApp->organizationName(), qApp->applicationName());
     settings.setValue("geometry", saveGeometry());
 }
 
