@@ -230,7 +230,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             font.setUnderline(true);
             label->setFont(font);
             QString label_txt = category;
-            label_txt.remove("MX-");
+            label_txt.remove(QRegularExpression("^MX-"));
             label->setText(label_txt);
             col = 0;
             row += 1;
