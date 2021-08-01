@@ -18,23 +18,23 @@ Changes:
  .
    * Remove "MX-" only from the begining of names
 Checksums-Sha1:
- f17f4f7ec1bf612650ed93c9d33f5a9ed510604c 10105 mx-tools_21.8_i386.buildinfo
- a49f7e79c3b71becc11afca3650388368d4ec58d 59676 mx-tools_21.8_i386.deb
+ 704e6b5f941680b9b10cb7315d1370f29cb7bd40 10105 mx-tools_21.8_i386.buildinfo
+ b31fdea7fe98120ae84893ebda23ef0e18e008bd 59444 mx-tools_21.8_i386.deb
 Checksums-Sha256:
- 0fed6dd49cee923a00d4e7fb3d9d5e2f0506964baed2115cdc0e210b517f9105 10105 mx-tools_21.8_i386.buildinfo
- c67fc4ce372a7c5f157fd7ce37c55415ec9cbf7ce96abc426679bc3751806d11 59676 mx-tools_21.8_i386.deb
+ e375cc6e6e5d876b783de63e9a2f97e1d6f9765c5a571454025bb43df08908e1 10105 mx-tools_21.8_i386.buildinfo
+ 85eee7ad88129a9d166e691ab7a994502e66bffe1d548df3e8c2c0db97942543 59444 mx-tools_21.8_i386.deb
 Files:
- 4a2f6b8757ba36f909f8c5d39007233f 10105 admin optional mx-tools_21.8_i386.buildinfo
- ec462c620c5a3286e758ab9ee559143e 59676 admin optional mx-tools_21.8_i386.deb
+ a1016402bb15dc03304e9b42f4b5d5f7 10105 admin optional mx-tools_21.8_i386.buildinfo
+ e2e27f87f5cace69a78e45f49bbfd7cc 59444 admin optional mx-tools_21.8_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEHBksTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMGBCADQK2HRv292oHbpbT38tYr/N//0rA6K
-vTRptXETSgqoQQJqNo5GbbRrMV89P7JqQwFHjejjHVft+IOXW6HlKvxhZUhjjZA+
-qb/za0H7lN/KSpE4tGJAdhBqzrLWAprvnMGfLze/AkrhxwTCHYpbLZAD6aL0wuU6
-2+dCHLkkwOqTW76pKf63knkAkms3SbdBk4uTBaZcHQY6d6Xy80p/x/GTUCvOWIhL
-jJ53C+Lhpx9exkNBkl5kxfzDETFg36fdZHfF4k01eSftNwe1H+plPqLrxt8BN2bV
-ufPxhexPYNMftnT++nmJyQ12jlae49PNkXKvc3cKgYbZbsR7kc7s+Znt
-=wgka
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEHCl0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumEq8B/0RxYAQxODtuGvR7rF8ket1bQboibEv
+CONub+GTbiQL1am8Zv8vsBb9DWvDnueVkcTI/P/mc1wFzFjN4FAddFQ24Stbm2L9
+Q92GzDA9XaNpzB55uLRwQU0RaVaYex2thrWxymMq9x64dcZa9+SQD6EmiA0sm1wT
+xH1wUi2jFkKuoKn9IR6rFf8uDU3wDFUmUCe3T3m2dutl1I9ALtCL3NTbi/P9b36j
+gMdoDP8q4NTnKeVj3mQh+Bs0kX4Nf5GLbjPGSU1Fz8JOXV6p1PXS/Bhmryl2He7D
+HLy9kgHdnmyHl5MOdYnWuG/s2Q6sEtf9W31OL56Ex2ktrb3qmrxU0xgI
+=c6sW
 -----END PGP SIGNATURE-----
