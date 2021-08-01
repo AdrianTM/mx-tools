@@ -24,8 +24,9 @@
 #define MAINWINDOW_H
 
 #include <QMessageBox>
-#include <QProcess>
 #include <QMultiMap>
+#include <QProcess>
+#include <QSettings>
 
 #include <flatbutton.h>
 
@@ -71,6 +72,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QSettings settings;
     void removeXfceOnly(QStringList &list);
     void removeFLUXBOXonly(QStringList &list);
     void removeEnvExclusive(QStringList &list, bool live);
