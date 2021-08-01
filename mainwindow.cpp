@@ -176,7 +176,7 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
             if (name.isEmpty()) { // backup if Name is not translated
                 re.setPattern(QLatin1String("^Name=(.*)$"));
                 name = re.match(text).captured(1);
-                name = name.remove(QLatin1String("MX ")).replace(QLatin1Char('&'), QLatin1String("&&"));
+                name = name.remove(QRegularExpression(QLatin1String("^MX "))).replace(QLatin1Char('&'), QLatin1String("&&"));
             }
             if (comment.isEmpty()) { // backup if Comment is not translated
                 re.setPattern(QLatin1String("^Comment=(.*)$"));
