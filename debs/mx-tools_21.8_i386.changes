@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 01 Aug 2021 16:36:06 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 21.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.8) mx; urgency=medium
+ .
+   * Remove "MX-" only from the begining of names
+Checksums-Sha1:
+ f17f4f7ec1bf612650ed93c9d33f5a9ed510604c 10105 mx-tools_21.8_i386.buildinfo
+ a49f7e79c3b71becc11afca3650388368d4ec58d 59676 mx-tools_21.8_i386.deb
+Checksums-Sha256:
+ 0fed6dd49cee923a00d4e7fb3d9d5e2f0506964baed2115cdc0e210b517f9105 10105 mx-tools_21.8_i386.buildinfo
+ c67fc4ce372a7c5f157fd7ce37c55415ec9cbf7ce96abc426679bc3751806d11 59676 mx-tools_21.8_i386.deb
+Files:
+ 4a2f6b8757ba36f909f8c5d39007233f 10105 admin optional mx-tools_21.8_i386.buildinfo
+ ec462c620c5a3286e758ab9ee559143e 59676 admin optional mx-tools_21.8_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEHBksTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMGBCADQK2HRv292oHbpbT38tYr/N//0rA6K
+vTRptXETSgqoQQJqNo5GbbRrMV89P7JqQwFHjejjHVft+IOXW6HlKvxhZUhjjZA+
+qb/za0H7lN/KSpE4tGJAdhBqzrLWAprvnMGfLze/AkrhxwTCHYpbLZAD6aL0wuU6
+2+dCHLkkwOqTW76pKf63knkAkms3SbdBk4uTBaZcHQY6d6Xy80p/x/GTUCvOWIhL
+jJ53C+Lhpx9exkNBkl5kxfzDETFg36fdZHfF4k01eSftNwe1H+plPqLrxt8BN2bV
+ufPxhexPYNMftnT++nmJyQ12jlae49PNkXKvc3cKgYbZbsR7kc7s+Znt
+=wgka
+-----END PGP SIGNATURE-----

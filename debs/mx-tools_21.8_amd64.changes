@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 01 Aug 2021 16:36:06 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 21.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.8) mx; urgency=medium
+ .
+   * Remove "MX-" only from the begining of names
+Checksums-Sha1:
+ a78697ea81dd5d6c0e5475c7aeaab1c7fbfc2a5c 1140 mx-tools_21.8.dsc
+ 15035a04f8676904f441bb842e8ce629b5205917 44072 mx-tools_21.8.tar.xz
+ da5c1f18206ebf265aec0657048ac5357b6aacb3 10390 mx-tools_21.8_amd64.buildinfo
+ 4eadd1ed20da84598a6322e316d32dd8115d8edb 56910 mx-tools_21.8_amd64.deb
+Checksums-Sha256:
+ b04fbb8c638b756abff214c5e25e92b3f652a4f2d89d18a288387d630ccb6e92 1140 mx-tools_21.8.dsc
+ 07205079753d7c5ae782f6e466252f45ad54a26107f279e2f536ce42dc2e3afe 44072 mx-tools_21.8.tar.xz
+ b1f761bf3f20ea831adf05b875521f76fb71cf9c7e9092e6865c478cb28a4d7b 10390 mx-tools_21.8_amd64.buildinfo
+ b07485f5dac8825a20bcd74f5845802f47b23e0dc46a62c597e0a5edcd680703 56910 mx-tools_21.8_amd64.deb
+Files:
+ 71363f3f033c2d7a84d8ee211b682a54 1140 admin optional mx-tools_21.8.dsc
+ 28584f0e574c4525c5090e02ea66580e 44072 admin optional mx-tools_21.8.tar.xz
+ feed73a174e185a5705184c4c0dfefec 10390 admin optional mx-tools_21.8_amd64.buildinfo
+ 4a8b5a288e3986d525756cd023b2bdba 56910 admin optional mx-tools_21.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEHBksTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHV0CAC1vxcN8T0Ud6RKPiVr8yDp0fLiJoKm
+BAjKbQMdu1us+yMESnla2QQ8HImw/bD8VMTOiIE2AzeTNuqlekFzjNol/07nOljR
+HuQBip9zsUDkjY9113vR4esP+vrXB7EykEnsqimzc7LSnowNTPjL46uRyN6lk3s7
+Hh1PvUztO+EbXwvxKdjN6eclP8tLnHJwX2fCKb3uQEVFtLURbLL0fgfaT+HJs6+j
+fdRPcLiVJYAEee+fSA29+1YA4/pKT6gLcYweZrwNYbxKtjZH2e6eY4eB1upilWwR
+tjAxr0MlfNE3HT4Cb5XO69kPGBvDc/CMFzodoG5GPdqoHiup8PNueCGB
+=OICA
+-----END PGP SIGNATURE-----

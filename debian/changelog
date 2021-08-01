@@ -1,3 +1,9 @@
+mx-tools (21.8) mx; urgency=medium
+
+  * Remove "MX-" only from the begining of names 
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 01 Aug 2021 16:36:06 -0400
+
 mx-tools (21.7) mx; urgency=medium
 
   * Faster and more complete icon search
