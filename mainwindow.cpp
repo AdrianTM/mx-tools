@@ -52,36 +52,36 @@ MainWindow::MainWindow(QWidget *parent) :
     software_list = listDesktopFiles("MX-Software", search_folder);
     utilities_list = listDesktopFiles("MX-Utilities", search_folder);
 
-    QVector<QStringList *> lists;
-    lists << &live_list
-          << &maintenance_list
-          << &setup_list
-          << &software_list
-          << &utilities_list;
+    QVector<QStringList *> lists {
+                &live_list,
+                &maintenance_list,
+                &setup_list,
+                &software_list,
+                &utilities_list };
 
     QString test = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
 
     // remove mx-remastercc and live-kernel-updater from list if not running Live
     bool live = (test == "aufs" || test == "overlay");
-    if (!live) { // installed
+    if (!live) {
         const QStringList live_list_copy = live_list;
         for (const QString &item : live_list_copy)
             if (item.contains("mx-remastercc.desktop") || item.contains("live-kernel-updater.desktop"))
                 live_list.removeOne(item);
     }
 
-    for (int i = 0; i < lists.size(); ++i)
-        removeEnvExclusive(*lists[i], live);
+    for (auto &list : lists)
+        removeEnvExclusive(*list, live);
 
     // remove item from list if it is only meant for XFCE
     if (qgetenv("XDG_CURRENT_DESKTOP") != "XFCE")
-        for (int i = 0; i < lists.size(); ++i)
-            removeXfceOnly(*lists[i]);
+        for (auto &list : lists)
+            removeXfceOnly(*list);
 
     // remove item from list if it is only meant for FLUXBOX
     if (qgetenv("XDG_SESSION_DESKTOP") != "fluxbox")
-        for (int i = 0; i < lists.size(); ++i)
-            removeFLUXBOXonly(*lists[i]);
+        for (auto &list : lists)
+            removeFLUXBOXonly(*list);
 
     category_map.insertMulti("MX-Live", live_list);
     category_map.insertMulti("MX-Maintenance", maintenance_list);
@@ -94,13 +94,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lineSearch->setFocus();
     this->adjustSize();
     //this->resize(this->width() + 80, this->height() + 130);
-    int width = this->width();
-    int height = this->height();
-
+    QSize size = this->size();
     restoreGeometry(settings.value("geometry").toByteArray());
-
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
-        this->resize(width, height);
+        this->resize(size);
         QRect screenGeometry = QApplication::desktop()->screenGeometry();
         int x = (screenGeometry.width()-this->width()) / 2;
         int y = (screenGeometry.height()-this->height()) / 2;
@@ -120,7 +117,9 @@ QString MainWindow::getCmdOut(const QString &cmd) {
     proc->setReadChannel(QProcess::StandardOutput);
     proc->setReadChannelMode(QProcess::MergedChannels);
     proc->waitForFinished(-1);
-    return proc->readAllStandardOutput().trimmed();
+    auto result = proc->readAllStandardOutput().trimmed();
+    delete proc;
+    return result;
 }
 
 // List .desktop files that contain a specific string
@@ -129,9 +128,8 @@ QStringList MainWindow::listDesktopFiles(const QString &search_string, const QSt
     QStringList listDesktop;
     QString cmd = QString("grep -Elr %1 %2 | sort").arg(search_string).arg(location);
     QString out = getCmdOut(cmd);
-    if (out != "") {
+    if (!out.isEmpty())
         listDesktop = out.split("\n");
-    }
     return listDesktop;
 }
 
@@ -338,35 +336,15 @@ void MainWindow::on_hideCheckBox_clicked(bool checked) {
 // hide or show icon for .desktop file
 void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 {
-    QString hide_str = hide ? "true" : "false";
-    // qDebug() << "hide_str" << hide_str;
-    // qDebug() << "filename for hide" << file_name;
     QFileInfo file(file_name);
-    // qDebug() << "filename basename" << file.fileName();
-    // qDebug() << "filename full path" << file.filePath();
-
-    //QString cmd = "cp " + file.filePath() + " /home/$USER/.local/share/applications";
-    //QString out = getCmdOut(cmd);
-    QString cmd;
-    QString out;
-
-    QString filenamehome = getCmdOut("echo /home/$USER/.local/share/applications/" + file.fileName());
-    QFileInfo filenamehomeinfo(filenamehome);
-    // qDebug() << "filnamehome " << filenamehome;
-
-    // qDebug() << "filenamehomeinfo exists" << filenamehomeinfo.exists();
-    if ( hide_str == QLatin1String("false") ) {
-        if (filenamehomeinfo.exists()) {
-            cmd = "rm  " + filenamehome ;
-            system(cmd.toUtf8());
-        }
+    QString file_name_home = QDir::homePath() + "/.local/share/applications/" + file.fileName();
+    if (!hide) {
+        QFile::remove(file_name_home);
     } else {
-        cmd = "cp " + file.filePath() + " /home/$USER/.local/share/applications";
-        system(cmd.toUtf8());
-        cmd  = "sed -i -r -e '/^(NoDisplay|Hidden)=/d' ";
+        QFile::copy(file_name, file_name_home);
+        QString cmd  = "sed -i -r -e '/^(NoDisplay|Hidden)=/d' ";
         cmd += "-e '/Exec/aNoDisplay=true' " ;
-        cmd += filenamehome;
-        // qDebug() << "#cmd:  " << cmd;
+        cmd += file_name_home;
         system(cmd.toUtf8());
     }
 }
@@ -396,13 +374,14 @@ void MainWindow::on_buttonAbout_clicked()
 
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
-        text->setText(getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+        text->setText(getCmdOut("zless /usr/share/doc/" +
+                                QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
 
-        QPushButton *btnClose = new QPushButton(tr("&Close"));
+        auto *btnClose = new QPushButton(tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));
         connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
 
-        QVBoxLayout *layout = new QVBoxLayout;
+        auto *layout = new QVBoxLayout;
         layout->addWidget(text);
         layout->addWidget(btnClose);
         changelog->setLayout(layout);
@@ -425,10 +404,10 @@ void MainWindow::on_buttonHelp_clicked()
     system(cmd.toUtf8());
 }
 
-// text changed in search field
+// Text changed in search field
 void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 {
-    // remove all items from the layout
+    // Remove all items from the layout
     QLayoutItem *child;
     while ((child = ui->gridLayout_btn->takeAt(0))) {
         delete child->widget();
@@ -438,7 +417,7 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
     QMultiMap<QString, QMultiMap<QString, QStringList> > new_map;
     QMultiMap<QString, QStringList> map;
 
-    // creat a new_map with items that match the search argument
+    // Create a new_map with items that match the search argument
     for (const QString &category : info_map.keys()) {
         //qDebug() << category;
         QMultiMap<QString, QStringList> file_info =  info_map.value(category);
@@ -462,7 +441,7 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
     }
 }
 
-// remove Xfce-only apps from the list
+// Remove Xfce-only apps from the list
 void MainWindow::removeXfceOnly(QStringList &list)
 {
     const QStringList list_copy = list;
@@ -477,7 +456,7 @@ void MainWindow::removeXfceOnly(QStringList &list)
     }
 }
 
-// remove FLUXBOX-only apps from the list
+// Remove FLUXBOX-only apps from the list
 void MainWindow::removeFLUXBOXonly(QStringList &list)
 {
     const QStringList list_copy = list;
@@ -492,11 +471,10 @@ void MainWindow::removeFLUXBOXonly(QStringList &list)
     }
 }
 
-// when running live remove programs meant only for installed environments and the other way round
+// When running live remove programs meant only for installed environments and the other way round
 void MainWindow::removeEnvExclusive(QStringList &list, bool live)
 {
-    QString term = live ? "MX-OnlyInstalled" : "MX-OnlyLive";
-
+    const QString term = live ? "MX-OnlyInstalled" : "MX-OnlyLive";
     const QStringList list_copy = list;
     for (const QString &file_name : list_copy) {
         QFile file(file_name);
