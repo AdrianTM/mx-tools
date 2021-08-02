@@ -65,6 +65,7 @@ public:
 private slots:
     void btn_clicked();
     void closeEvent(QCloseEvent *);
+    void resizeEvent(QResizeEvent *event);
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
     void on_hideCheckBox_clicked(bool checked);

@@ -26,6 +26,7 @@
 #include <QFile>
 #include <QFileInfo>
 #include <QRegularExpression>
+#include <QResizeEvent>
 #include <QTextEdit>
 
 #include "mainwindow.h"
@@ -33,6 +34,7 @@
 #include "flatbutton.h"
 #include "version.h"
 
+static int count_col = 0;
 
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
@@ -99,8 +101,8 @@ MainWindow::MainWindow(QWidget *parent) :
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
         this->resize(size);
         QRect screenGeometry = QApplication::desktop()->screenGeometry();
-        int x = (screenGeometry.width()-this->width()) / 2;
-        int y = (screenGeometry.height()-this->height()) / 2;
+        int x = (screenGeometry.width() - this->width()) / 2;
+        int y = (screenGeometry.height() - this->height()) / 2;
         this->move(x, y);
     }
 }
@@ -201,7 +203,8 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
 {
     int col = 0;
     int row = 0;
-    int max = 3; // no. max of col
+    int max  = this->width() / 200;
+
     QString name;
     QString comment;
     QString exec;
@@ -213,12 +216,11 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
         if (!info_map.value(category).isEmpty()) {
             // add empty row and delimiter except for the first row
             if (row != 0) {
-                col = 0;
-                row += 1;
+                ++row;
                 QFrame *line = new QFrame();
                 line->setFrameShape(QFrame::HLine);
                 line->setFrameShadow(QFrame::Sunken);
-                ui->gridLayout_btn->addWidget(line, row, col, 1, -1);
+                ui->gridLayout_btn->addWidget(line, row, 0, 1, -1);
             }
             QLabel *label = new QLabel();
             QFont font;
@@ -228,18 +230,19 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             QString label_txt = category;
             label_txt.remove(QRegularExpression("^MX-"));
             label->setText(label_txt);
+            ++row;
+            ui->gridLayout_btn->addWidget(label, row, 0);
+            ++row;
             col = 0;
-            row += 1;
-            ui->gridLayout_btn->addWidget(label, row, col);
-            row += 1;
             for (const QString &file_name : info_map.value(category).keys()) {
+                if (col >= count_col)
+                    count_col = col + 1;
                 QStringList file_info = info_map.value(category).value(file_name);
-                name = file_info[0];
-                comment = file_info[1];
-                icon_name = file_info[2];
-                exec = file_info[3];
-                terminal_switch = file_info[5];
-                //qDebug() << "terminal switch" << terminal_switch;
+                name = file_info.at(0);
+                comment = file_info.at(1);
+                icon_name = file_info.at(2);
+                exec = file_info.at(3);
+                terminal_switch = file_info.at(5);
                 btn = new FlatButton(name);
                 btn->setToolTip(comment);
                 btn->setAutoDefault(false);
@@ -247,25 +250,23 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
                 btn->setIconSize(32, 32);
                 ui->gridLayout_btn->addWidget(btn, row, col);
                 //ui->gridLayout_btn->setRowStretch(row, 0);
-                col += 1;
+                ++col;
                 if (col >= max) {
                     col = 0;
-                    row += 1;
+                    ++row;
                 }
-                //add "x-termial-emulator -e " if terminal_switch = true
                 QString cmd = "x-terminal-emulator -e ";
                 if (terminal_switch == "true")
                     btn->setObjectName(cmd + exec); // add the command to be executed to the object name
                 else
                     btn->setObjectName(exec); // add the command to be executed to the object name
-
-                //qDebug() << "button exec" << btn->objectName();
                 QObject::connect(btn, &FlatButton::clicked, this, &MainWindow::btn_clicked);
             }
         }
     }
     ui->gridLayout_btn->setRowStretch(row, 1);
 }
+
 
 // Find icon file by name
 QIcon MainWindow::findIcon(QString icon_name)
@@ -323,6 +324,25 @@ void MainWindow::btn_clicked()
 void MainWindow::closeEvent(QCloseEvent *)
 {
     settings.setValue("geometry", saveGeometry());
+}
+
+void MainWindow::resizeEvent(QResizeEvent *event)
+{
+    if (event->oldSize().width() == event->size().width())
+        return;
+    if (this->width() / 200 != count_col) {
+        count_col = 0;
+        if (ui->lineSearch->text().isEmpty()) {
+            QLayoutItem *child;
+            while ((child = ui->gridLayout_btn->takeAt(0))) {
+                delete child->widget();
+                delete child;
+            }
+            addButtons(info_map);
+        } else {
+            on_lineSearch_textChanged(ui->lineSearch->text());
+        }
+    }
 }
 
 // hide icons in menu checkbox
