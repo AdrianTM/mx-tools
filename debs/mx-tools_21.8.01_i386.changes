@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 02 Aug 2021 10:43:39 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 21.8.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.8.01) mx; urgency=medium
+ .
+   * Rearrange buttons when window is resized
+Checksums-Sha1:
+ d7fd14878dcb927499e4f352729782298fcbc7da 10071 mx-tools_21.8.01_i386.buildinfo
+ 02b8e16f6312a9a1c3eca7743c1d563a0ec6d25f 60004 mx-tools_21.8.01_i386.deb
+Checksums-Sha256:
+ 5816e96846bb19cc943ea6093891efa3a6318dabdac3b2a2b254d2716263c861 10071 mx-tools_21.8.01_i386.buildinfo
+ a6d201cc49b37273d99af716d920fe6affd131dbb992f0a586703e7fc87ac8df 60004 mx-tools_21.8.01_i386.deb
+Files:
+ 24bcf39cb3f35202fcb46e1bc4034589 10071 admin optional mx-tools_21.8.01_i386.buildinfo
+ 09528a27eb5cb910caf22cda01b65dfe 60004 admin optional mx-tools_21.8.01_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEIBQITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJm7CADQM3DUhrCVzE8pw36stZKSZFrfme9e
+1xwLPEFNeX26CoY5jcHqlR4a2XysNaFTkCAeSa/3X3NwjCi6GYWKDyFCKYXE3jtg
+jWu6aMvVapWtu6xEhZm3ugmcgamz8bhUbdUUfR0K/fjypd7pfF8EpKcAAUy1Spm1
+ahl49UtGtPEv3UYu3xUEilqbjbmxS8SzZh4DJNmk+QkfTfBxPuc7SlVwT/O1PzW8
+Hb24elMEcl6vYJJTtV8nI2Lx8ABsLRafTrUY7zvtnXT+BCbrgWskDFT/MBTHONI4
+Zj3xUXhwV3jid5Mk0IfqyM9j73inYmDu1j4lvaUfSjVhMIPNBHHygBLT
+=QVHC
+-----END PGP SIGNATURE-----

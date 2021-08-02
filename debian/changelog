@@ -1,3 +1,9 @@
+mx-tools (21.8.01) mx; urgency=medium
+
+  * Rearrange buttons when window is resized
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 02 Aug 2021 10:43:39 -0400
+
 mx-tools (21.8) mx; urgency=medium
 
   * Remove "MX-" only from the begining of names 

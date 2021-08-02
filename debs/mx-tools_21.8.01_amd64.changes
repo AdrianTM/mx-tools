@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 02 Aug 2021 10:43:39 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 21.8.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.8.01) mx; urgency=medium
+ .
+   * Rearrange buttons when window is resized
+Checksums-Sha1:
+ a02f779d20072a75e1fb06ae3d5b89bbef355cff 1152 mx-tools_21.8.01.dsc
+ a146e2aaf065cefaf2ea17df85afe8663ce4d847 44192 mx-tools_21.8.01.tar.xz
+ f43b7778ce2024aced6f5a8f1ae0751294a9d5be 10365 mx-tools_21.8.01_amd64.buildinfo
+ 4fd2e1b38a10bc163ace29b87a1527c735ab55f5 57220 mx-tools_21.8.01_amd64.deb
+Checksums-Sha256:
+ 686ac2f23a0528e5e522e4636f8b89ca6a34085998cda9614bf91fac24aecdb3 1152 mx-tools_21.8.01.dsc
+ 3dd841c027998a4cf1e4db9a95887ae62e8f001e3e752044505a8576259039f5 44192 mx-tools_21.8.01.tar.xz
+ b5d9ec35c0ff41636033782ff80dbdc0541e3b06e7baebadba45d7e08abd7952 10365 mx-tools_21.8.01_amd64.buildinfo
+ 19adcb59a2a5c3a84f6b95917cdd7dd7c35c6618a52fc1f038ce245803121a81 57220 mx-tools_21.8.01_amd64.deb
+Files:
+ c827d7836700344dc244d9ecafc1e547 1152 admin optional mx-tools_21.8.01.dsc
+ eb743e0b249064607b59dbd2e3e30604 44192 admin optional mx-tools_21.8.01.tar.xz
+ 9d64bf9c94c83a9fff1671adc90c95e5 10365 admin optional mx-tools_21.8.01_amd64.buildinfo
+ 4341ac2460d4940aabe2f93f5626733f 57220 admin optional mx-tools_21.8.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEIBQITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOAhB/9zGdfca4ej7NvHrexhtmMW8VBpZr2Y
+Lut2gdI8zKGbJymmtUqw38Om54V43LU50wR01DNxw7dD0kS9QWBVDrtCAs95UK2S
+QsE4DrFfZZIZQFikSJOxpl8L5WIqGzMpbD2vtXNGur7cstZdqa1RlvE8oOM38W93
+uJdlLMS3eAAW8RRBtNhaJwCzjbZNOOY3hBqbImrfMREWAvRgkkrhvgsEvGIQYlnc
+M3BqC4cX93btp9ror4qRrxH/vdZGJJ8JhUGAPYDVgaE5MUVzwoDnT8UjldvZLUDt
+1/prLjGZ3KkF+nk1axyDTgQw4PH9Afoel50OFVLtG87jzlJHKyFmreYO
+=b2Hl
+-----END PGP SIGNATURE-----
