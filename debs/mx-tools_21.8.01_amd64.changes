@@ -18,29 +18,29 @@ Changes:
  .
    * Rearrange buttons when window is resized
 Checksums-Sha1:
- a02f779d20072a75e1fb06ae3d5b89bbef355cff 1152 mx-tools_21.8.01.dsc
- a146e2aaf065cefaf2ea17df85afe8663ce4d847 44192 mx-tools_21.8.01.tar.xz
- f43b7778ce2024aced6f5a8f1ae0751294a9d5be 10365 mx-tools_21.8.01_amd64.buildinfo
- 4fd2e1b38a10bc163ace29b87a1527c735ab55f5 57220 mx-tools_21.8.01_amd64.deb
+ 5ce988356240d1d902cb7242d57899da69a33c00 1152 mx-tools_21.8.01.dsc
+ 77ebc133a82a7d8bcaa418c783738d7d4ba0a336 44204 mx-tools_21.8.01.tar.xz
+ 2d0a9cbcf9b5e7637334e39ea43b18a7950adcea 10414 mx-tools_21.8.01_amd64.buildinfo
+ fc134bbd56fa0a15a0ebab8dab8cc960253751a3 57248 mx-tools_21.8.01_amd64.deb
 Checksums-Sha256:
- 686ac2f23a0528e5e522e4636f8b89ca6a34085998cda9614bf91fac24aecdb3 1152 mx-tools_21.8.01.dsc
- 3dd841c027998a4cf1e4db9a95887ae62e8f001e3e752044505a8576259039f5 44192 mx-tools_21.8.01.tar.xz
- b5d9ec35c0ff41636033782ff80dbdc0541e3b06e7baebadba45d7e08abd7952 10365 mx-tools_21.8.01_amd64.buildinfo
- 19adcb59a2a5c3a84f6b95917cdd7dd7c35c6618a52fc1f038ce245803121a81 57220 mx-tools_21.8.01_amd64.deb
+ 7e9a400974bd051a4436b8952a571d67edd9ef5b8f0f3b71430ad3d89c84a01d 1152 mx-tools_21.8.01.dsc
+ a5a0f8983d17c4f26c45b458656a33ec99818047f02cac6017d1e5ab40215c51 44204 mx-tools_21.8.01.tar.xz
+ 4caf527ce9f467488760453833e62f6d51a1ff465f33b57e683e7d34c2ed6edb 10414 mx-tools_21.8.01_amd64.buildinfo
+ 6bce7500f5644cabab6981856ed3596668a003740bea21dcff2cb87d32c69704 57248 mx-tools_21.8.01_amd64.deb
 Files:
- c827d7836700344dc244d9ecafc1e547 1152 admin optional mx-tools_21.8.01.dsc
- eb743e0b249064607b59dbd2e3e30604 44192 admin optional mx-tools_21.8.01.tar.xz
- 9d64bf9c94c83a9fff1671adc90c95e5 10365 admin optional mx-tools_21.8.01_amd64.buildinfo
- 4341ac2460d4940aabe2f93f5626733f 57220 admin optional mx-tools_21.8.01_amd64.deb
+ 5da3dbd17fd3b76bd29ee47d1d24c0f7 1152 admin optional mx-tools_21.8.01.dsc
+ 1abea1aed7f61335ccb4d922e157ef77 44204 admin optional mx-tools_21.8.01.tar.xz
+ ca8689503489c10f8febd3c50d025f61 10414 admin optional mx-tools_21.8.01_amd64.buildinfo
+ a5fba6e57f0cb914862ddbe2d4a3e939 57248 admin optional mx-tools_21.8.01_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEIBQITHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOAhB/9zGdfca4ej7NvHrexhtmMW8VBpZr2Y
-Lut2gdI8zKGbJymmtUqw38Om54V43LU50wR01DNxw7dD0kS9QWBVDrtCAs95UK2S
-QsE4DrFfZZIZQFikSJOxpl8L5WIqGzMpbD2vtXNGur7cstZdqa1RlvE8oOM38W93
-uJdlLMS3eAAW8RRBtNhaJwCzjbZNOOY3hBqbImrfMREWAvRgkkrhvgsEvGIQYlnc
-M3BqC4cX93btp9ror4qRrxH/vdZGJJ8JhUGAPYDVgaE5MUVzwoDnT8UjldvZLUDt
-1/prLjGZ3KkF+nk1axyDTgQw4PH9Afoel50OFVLtG87jzlJHKyFmreYO
-=b2Hl
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEIifwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMTXB/0TtSHIN8IICP3OneUiEXXhuC9xsK+i
+z5Ra+rE9+2SUhJrLkmdmBVDK0wyFGuefGNMfnVcvNBYpSWVY6XXuuP2FkxeNDYkB
+z8+/dQhMZKTFXkLt8me/gZpt3Lw8MOJLyRZ97YKZfK+EzcDQrCoJD/6bb2a2zcuO
+jxUTyVZE4G25JIbB9UY6o/mJIE0Ud9T7vNnittvfS4AZ1hrgUUehMnjYsfsYZLST
+vFgZl3r2tbLcfzOzbYcoCEpi0fkQgZBi0k1oHvoKzQl7OeQK6ZXivBVFTHLbZoq6
+LyePN/jm6g2eZLPprmVs0VpUzZA5tv3N5LIUJFEliuXeMgg9tEZ0oWch
+=aE9I
 -----END PGP SIGNATURE-----
