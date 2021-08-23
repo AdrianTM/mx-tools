@@ -85,11 +85,11 @@ MainWindow::MainWindow(QWidget *parent) :
         for (auto &list : lists)
             removeFLUXBOXonly(*list);
 
-    category_map.insertMulti("MX-Live", live_list);
-    category_map.insertMulti("MX-Maintenance", maintenance_list);
-    category_map.insertMulti("MX-Setup", setup_list);
-    category_map.insertMulti("MX-Software", software_list);
-    category_map.insertMulti("MX-Utilities", utilities_list);
+    category_map.insert("MX-Live", live_list);
+    category_map.insert("MX-Maintenance", maintenance_list);
+    category_map.insert("MX-Setup", setup_list);
+    category_map.insert("MX-Software", software_list);
+    category_map.insert("MX-Utilities", utilities_list);
 
     readInfo(category_map);
     addButtons(info_map);
@@ -117,7 +117,7 @@ QString MainWindow::getCmdOut(const QString &cmd) {
     proc = new QProcess(this);
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     proc->setReadChannel(QProcess::StandardOutput);
-    proc->setReadChannelMode(QProcess::MergedChannels);
+    proc->setProcessChannelMode(QProcess::MergedChannels);
     proc->waitForFinished(-1);
     auto result = proc->readAllStandardOutput().trimmed();
     delete proc;
@@ -378,7 +378,7 @@ void MainWindow::on_buttonAbout_clicked()
                        tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
                        VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Configuration Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", nullptr, this);
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>");
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
     QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
