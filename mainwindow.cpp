@@ -21,12 +21,12 @@
  **********************************************************************/
 
 #include <QDebug>
-#include <QDesktopWidget>
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
 #include <QRegularExpression>
 #include <QResizeEvent>
+#include <QScreen>
 #include <QTextEdit>
 
 #include "mainwindow.h"
@@ -100,7 +100,7 @@ MainWindow::MainWindow(QWidget *parent) :
     restoreGeometry(settings.value("geometry").toByteArray());
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
         this->resize(size);
-        QRect screenGeometry = QApplication::desktop()->screenGeometry();
+        QRect screenGeometry = qApp->screens().first()->geometry();
         int x = (screenGeometry.width() - this->width()) / 2;
         int y = (screenGeometry.height() - this->height()) / 2;
         this->move(x, y);
@@ -212,7 +212,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
     QString file_name;
     QString terminal_switch;
 
-    for (const QString &category : info_map.keys()) {
+    for (const QString &category : info_map.uniqueKeys()) {
         if (!info_map.value(category).isEmpty()) {
             // add empty row and delimiter except for the first row
             if (row != 0) {
