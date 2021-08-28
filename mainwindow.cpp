@@ -267,7 +267,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             }
         }
     }
-    ui->gridLayout_btn->setRowStretch(row + 1, 1);
+    ui->gridLayout_btn->setRowStretch(row + 2, 1);
 }
 
 
