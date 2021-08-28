@@ -34,8 +34,6 @@
 #include "flatbutton.h"
 #include "version.h"
 
-static int count_col = 0;
-
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow)
@@ -205,6 +203,11 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
     int row = 0;
     int max  = this->width() / 200;
 
+    max_elements = 0;
+    for (const QString &category : info_map.uniqueKeys())
+        if (info_map.value(category).keys().count() > max_elements)
+            max_elements = info_map.value(category).keys().count();
+
     QString name;
     QString comment;
     QString exec;
@@ -235,8 +238,8 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             ++row;
             col = 0;
             for (const QString &file_name : info_map.value(category).keys()) {
-                if (col >= count_col)
-                    count_col = col + 1;
+                if (col >= col_count)
+                    col_count = col + 1;
                 QStringList file_info = info_map.value(category).value(file_name);
                 name = file_info.at(0);
                 comment = file_info.at(1);
@@ -316,7 +319,6 @@ QIcon MainWindow::findIcon(QString icon_name)
 void MainWindow::btn_clicked()
 {
     this->hide();
-    //qDebug() << sender()->objectName();
     system(sender()->objectName().toUtf8());
     this->show();
 }
@@ -330,8 +332,11 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 {
     if (event->oldSize().width() == event->size().width())
         return;
-    if (this->width() / 200 != count_col) {
-        count_col = 0;
+    int new_count = this->width() / 200;
+    if (this->width() / 200 != col_count) {
+        if (new_count > max_elements && col_count == max_elements)
+            return;
+        col_count = 0;
         if (ui->lineSearch->text().isEmpty()) {
             QLayoutItem *child;
             while ((child = ui->gridLayout_btn->takeAt(0))) {

@@ -74,9 +74,12 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QSettings settings;
-    void removeXfceOnly(QStringList &list);
-    void removeFLUXBOXonly(QStringList &list);
+    int col_count = 0;
+    int max_col = 0;
+    int max_elements = 0;
     void removeEnvExclusive(QStringList &list, bool live);
+    void removeFLUXBOXonly(QStringList &list);
+    void removeXfceOnly(QStringList &list);
 };
 
 #endif // MAINWINDOW_H
