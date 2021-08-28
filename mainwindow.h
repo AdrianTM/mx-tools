@@ -75,6 +75,7 @@ private:
     Ui::MainWindow *ui;
     QSettings settings;
     int col_count = 0;
+    int icon_size = 32;
     int max_col = 0;
     int max_elements = 0;
     void removeEnvExclusive(QStringList &list, bool live);

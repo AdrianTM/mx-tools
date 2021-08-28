@@ -54,3 +54,8 @@ void FlatButton::setIconSize(int x, int y)
 {
     QPushButton::setIconSize(QSize(x, y));
 }
+
+void FlatButton::setIconSize(const QSize &size)
+{
+    QPushButton::setIconSize(size);
+}

@@ -102,6 +102,7 @@ MainWindow::MainWindow(QWidget *parent) :
         int y = (screenGeometry.height() - this->height()) / 2;
         this->move(x, y);
     }
+    icon_size = settings.value("icon_size", icon_size).toInt();
 }
 
 MainWindow::~MainWindow()
@@ -249,7 +250,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
                 btn->setToolTip(comment);
                 btn->setAutoDefault(false);
                 btn->setIcon(findIcon(icon_name));
-                btn->setIconSize(32, 32);
+                btn->setIconSize(icon_size, icon_size);
                 ui->gridLayout_btn->addWidget(btn, row, col);
                 //ui->gridLayout_btn->setRowStretch(row, 0);
                 ++col;
