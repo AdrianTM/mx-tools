@@ -20,29 +20,29 @@ Changes:
    * Allow setting icon size in mx-tools.conf, e.g., icon_size=40
    * Add vertical stretch (it looks bad without stretch when searching).
 Checksums-Sha1:
- d1b3deb78d6135ef3b535f8b4bbd4f7b2f79b8c4 1152 mx-tools_21.8.02.dsc
- 68cf15536a5dc755ff294827caf441a747b68114 44396 mx-tools_21.8.02.tar.xz
- da85ebb2f7a776f39a94fcb9b8c3028f010a3948 10414 mx-tools_21.8.02_amd64.buildinfo
- 438599941c4e8e9fbb0a9d6181dc4c81124cd976 58108 mx-tools_21.8.02_amd64.deb
+ 636ef9f51d81b7bfdf98ea3b767ed79159123251 1152 mx-tools_21.8.02.dsc
+ 5ffe29dd38fe27ad680cb81072c13b09b14e249a 44388 mx-tools_21.8.02.tar.xz
+ 1a16cae3cd4798c71e337828a794c3594819c2c0 10414 mx-tools_21.8.02_amd64.buildinfo
+ c04bc6be9c005ee76ff0d3fb7fdefff1e6bff124 58106 mx-tools_21.8.02_amd64.deb
 Checksums-Sha256:
- 98f617528bc7800384341cc32423907fa38ced24f829193d7141982ea387db88 1152 mx-tools_21.8.02.dsc
- 5d60cc5d8232064eb74dcc5421c3643b41713bc7c2170a7f5b66a66a28c48d1a 44396 mx-tools_21.8.02.tar.xz
- b66e9e0f1f782b47d33207bd21c109ae851e0a8cf5e3b1ab06a0ec92184e1b2b 10414 mx-tools_21.8.02_amd64.buildinfo
- 2efc495bcf0e7f5e11bcaee53e93db12210dac639377b8768f93243d465a3259 58108 mx-tools_21.8.02_amd64.deb
+ dd272618878f08da261d5f669573ed3ea22d8fb7a716f067d632918e07bdd838 1152 mx-tools_21.8.02.dsc
+ 554d3f2d6e10c224a07574294ea1be998242bb097df8161e407210973854258a 44388 mx-tools_21.8.02.tar.xz
+ eefbb3086f478c2f1d49746b2a0090ab0ddedf0acb7da190ed1b7dacf79cb2da 10414 mx-tools_21.8.02_amd64.buildinfo
+ f552b51af0581d1d789a61354eeaf57d06fbd93ec2e3e3f8d87cf19fbd1b128a 58106 mx-tools_21.8.02_amd64.deb
 Files:
- 1e7dbe3268036d65ac72bd3529b8a2ab 1152 admin optional mx-tools_21.8.02.dsc
- e8f7cb53a01f7873f996d36ec62b2868 44396 admin optional mx-tools_21.8.02.tar.xz
- 505536068db89dbd31429ac14eca5541 10414 admin optional mx-tools_21.8.02_amd64.buildinfo
- 40a77dfa6ccd45292de50dbd8a960251 58108 admin optional mx-tools_21.8.02_amd64.deb
+ e60229f8944064e1eddb614358d1ce8c 1152 admin optional mx-tools_21.8.02.dsc
+ 9d49bbf15907563e3b70b47f858ff176 44388 admin optional mx-tools_21.8.02.tar.xz
+ 0f9ba5ab347d844987cab5ee3cddfa3b 10414 admin optional mx-tools_21.8.02_amd64.buildinfo
+ 304472bf105bfc133e8ca6c7db5cc78a 58106 admin optional mx-tools_21.8.02_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEpkPcTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBzsCACbZddorPaOdWLKBLrxPC0PGNVO/BxY
-o/Un4GuNlahqBIiqwg1K13Ytuu1r1sbEmklzy+jmDnNkxaJ6oHTEYQLuOwTT+r6j
-rottgO+A+uTP08Z76xKSD7ySEBebWPISsgF/LzAGtYl9pi2QG40ZEuzPxFU1Aqic
-McQfe3KCfdjyhdy+YZYIraUzO7hNwAwmsUaTX/Gt46Z2bqDmby1zajFg/lx1EBW8
-anre4xPdOyzNnSzXvuiJeD8hTrETqcLchM3+xoJEPo6OxqiuYD45BTVDaznc077r
-xmQM9mEDWJN/c5TjpOcgbdMGII5nH+dtJlG0EGksUabO6mQlmG41wYQd
-=P3Xt
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEplRQTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumO0ZB/9rjvFgVdsR+0aaEl9S7nz79pjr8yAR
+uvCld5PSyDB8k5Z4HXvZ/di2RKqhzMfh7kygEOCSkT4I+qUF/FkENRo22brdYDHr
+HXYCig/Vy9n1qkgV31CCMVihaP4yreqRC2QYohfmYoVzv/k3qxtaGP4XV2V5ffwD
+nnAWMyRC+rtQfl2npyGekj5BiwzlEzd++yDSRDPofnefYAoxTu+lMFr+MNhrRGZF
+BbqCtsUTLXi+GWaSFHkGL7DwlS2UmK6AACIxfcKAJEbF4n0TJQm2yJMSz+Bnpy9b
+Sv+nEnJxAUNDBgyRk35/2biqiTOZEibXH05IpNrzyzTLJrHbh7de/S3T
+=gF/s
 -----END PGP SIGNATURE-----

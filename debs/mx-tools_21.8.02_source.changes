@@ -20,26 +20,26 @@ Changes:
    * Allow setting icon size in mx-tools.conf, e.g., icon_size=40
    * Add vertical stretch (it looks bad without stretch when searching).
 Checksums-Sha1:
- cbfa5c6acb7ccb03ccb66e300029e553edfeca07 1152 mx-tools_21.8.02.dsc
- 32b63c2a45da9abc0397382e72b8031f47a32ea1 44424 mx-tools_21.8.02.tar.xz
- d205d1ad6942443fd99e7344ac370f21002d82c1 10120 mx-tools_21.8.02_i386.buildinfo
+ b2d31490c75d7bcfde1507254c30a21230d9f356 1152 mx-tools_21.8.02.dsc
+ 6a23aba168fbc9c762bdb27d0fd360f6172ad8d0 44416 mx-tools_21.8.02.tar.xz
+ 9854f43e46877d0d35f1bebd69712981aa699602 10120 mx-tools_21.8.02_i386.buildinfo
 Checksums-Sha256:
- 94f9bcf3969731e6d3161c838d895d8bad123c6381291a3a1d695460fcc4043d 1152 mx-tools_21.8.02.dsc
- 846cc3b938db65653b336d1a1344f28e16dc4bb4e42670ad5c6924d2fce8846c 44424 mx-tools_21.8.02.tar.xz
- 03650075bc34fdc7c4abf7e7d03aa34c4b43291af0c2d2e34aa66aa8820c2a0e 10120 mx-tools_21.8.02_i386.buildinfo
+ efd2c4ba2ced2b210a2d8c3580fe3678b0ba7dafc0f3f5cfd1911b5b8e1efd51 1152 mx-tools_21.8.02.dsc
+ da06cd28aa0c322980bc033a43439c2853b91fbf2a60287fb3e4c95d3830f1ae 44416 mx-tools_21.8.02.tar.xz
+ 4e721259f8f3b6697b6b4f4f10754b9e4d49fe9cb5ffb0e6b581f8a68b7ded19 10120 mx-tools_21.8.02_i386.buildinfo
 Files:
- 459d923971d710a1bd395df3ca975f3c 1152 admin optional mx-tools_21.8.02.dsc
- d7d95f33df5d038d51b16e7964946cf8 44424 admin optional mx-tools_21.8.02.tar.xz
- 109b74b53c8f9d76cd3b05c518ba15af 10120 admin optional mx-tools_21.8.02_i386.buildinfo
+ 599c387e6bf888ed3aff9955056f445d 1152 admin optional mx-tools_21.8.02.dsc
+ 400b8af4f9e88b45574d14a7bea73862 44416 admin optional mx-tools_21.8.02.tar.xz
+ db1e4659e64364478f09236392c87cea 10120 admin optional mx-tools_21.8.02_i386.buildinfo
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEpkPsTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumF4tB/936yaVfFw9F14jjn+I4VO2ATkBzcTQ
-ibpqO/KM/CCIUn/fiK0eM00yLUdTP4YSecyV1UV16yAVwZRSP6YCm/13eom6Newl
-S8XnbF4G8twms+a9YDLXUzL3xnE2w6XmKrszZsip+H76BhHE1psjxZ0GGFD7CYgk
-9xlwiLwhvYcW6fVqxtsIkn8s3Va6W+FvjDBAvUtncG5+bREKUPSOGZoFHfJ5Zrsf
-G5hx7Y/R/3ZokkizHTsvjkrI0RnGvZz1+BOk/kRk9fm+TUPoefyp+DU64S1QChUB
-O+x7eTpMXpBOtP1sX22THZTFa/bWuzWXD3AfkzJJedL5MVw4GYc+Z9Sx
-=821N
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEplRkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumEr9B/9xo2FAAd87IJJjsVoL1E5up6098bFP
+bN0jeEqL5vPrBjSwk/0xpUoTzPbvI6Ud1CEFUY951yLovmQkxrZTPdvXYK7nWlrP
+RIup845pu52Yb5S0M2w04rg+4BpFoTEUxfOZ014EkqBfalX1KCp9RU5HtO4Y/iMu
+cXC8fsEvhyzG07on4BbNKggLHmKqe6eKuzy6UQOn/Zz8txWROI3aqcX/CHAw4U2U
+2nzdRqvPpA5rrqXxtYuA4YAJwveskOnvdfDT7Y5B8I3QlywsFTSfPW2WVEJU+YtF
+eRbgOPBopKFjk6ObSUOZm0rEcUputv7M4gpO5JUpCweJduFFdvckmuCj
+=BjGN
 -----END PGP SIGNATURE-----
