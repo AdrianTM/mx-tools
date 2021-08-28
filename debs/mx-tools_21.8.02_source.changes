@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 27 Aug 2021 21:23:03 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source
+Version: 21.8.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.8.02) mx; urgency=medium
+ .
+   * Smoother resize; don't readd the buttons if no need to expand
+   * Allow setting icon size in mx-tools.conf, e.g., icon_size=40
+   * Add vertical stretch (it looks bad without stretch when searching).
+Checksums-Sha1:
+ cbfa5c6acb7ccb03ccb66e300029e553edfeca07 1152 mx-tools_21.8.02.dsc
+ 32b63c2a45da9abc0397382e72b8031f47a32ea1 44424 mx-tools_21.8.02.tar.xz
+ d205d1ad6942443fd99e7344ac370f21002d82c1 10120 mx-tools_21.8.02_i386.buildinfo
+Checksums-Sha256:
+ 94f9bcf3969731e6d3161c838d895d8bad123c6381291a3a1d695460fcc4043d 1152 mx-tools_21.8.02.dsc
+ 846cc3b938db65653b336d1a1344f28e16dc4bb4e42670ad5c6924d2fce8846c 44424 mx-tools_21.8.02.tar.xz
+ 03650075bc34fdc7c4abf7e7d03aa34c4b43291af0c2d2e34aa66aa8820c2a0e 10120 mx-tools_21.8.02_i386.buildinfo
+Files:
+ 459d923971d710a1bd395df3ca975f3c 1152 admin optional mx-tools_21.8.02.dsc
+ d7d95f33df5d038d51b16e7964946cf8 44424 admin optional mx-tools_21.8.02.tar.xz
+ 109b74b53c8f9d76cd3b05c518ba15af 10120 admin optional mx-tools_21.8.02_i386.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEpkPsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumF4tB/936yaVfFw9F14jjn+I4VO2ATkBzcTQ
+ibpqO/KM/CCIUn/fiK0eM00yLUdTP4YSecyV1UV16yAVwZRSP6YCm/13eom6Newl
+S8XnbF4G8twms+a9YDLXUzL3xnE2w6XmKrszZsip+H76BhHE1psjxZ0GGFD7CYgk
+9xlwiLwhvYcW6fVqxtsIkn8s3Va6W+FvjDBAvUtncG5+bREKUPSOGZoFHfJ5Zrsf
+G5hx7Y/R/3ZokkizHTsvjkrI0RnGvZz1+BOk/kRk9fm+TUPoefyp+DU64S1QChUB
+O+x7eTpMXpBOtP1sX22THZTFa/bWuzWXD3AfkzJJedL5MVw4GYc+Z9Sx
+=821N
+-----END PGP SIGNATURE-----

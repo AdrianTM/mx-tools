@@ -1,0 +1,48 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 27 Aug 2021 21:23:03 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 21.8.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (21.8.02) mx; urgency=medium
+ .
+   * Smoother resize; don't readd the buttons if no need to expand
+   * Allow setting icon size in mx-tools.conf, e.g., icon_size=40
+   * Add vertical stretch (it looks bad without stretch when searching).
+Checksums-Sha1:
+ d1b3deb78d6135ef3b535f8b4bbd4f7b2f79b8c4 1152 mx-tools_21.8.02.dsc
+ 68cf15536a5dc755ff294827caf441a747b68114 44396 mx-tools_21.8.02.tar.xz
+ da85ebb2f7a776f39a94fcb9b8c3028f010a3948 10414 mx-tools_21.8.02_amd64.buildinfo
+ 438599941c4e8e9fbb0a9d6181dc4c81124cd976 58108 mx-tools_21.8.02_amd64.deb
+Checksums-Sha256:
+ 98f617528bc7800384341cc32423907fa38ced24f829193d7141982ea387db88 1152 mx-tools_21.8.02.dsc
+ 5d60cc5d8232064eb74dcc5421c3643b41713bc7c2170a7f5b66a66a28c48d1a 44396 mx-tools_21.8.02.tar.xz
+ b66e9e0f1f782b47d33207bd21c109ae851e0a8cf5e3b1ab06a0ec92184e1b2b 10414 mx-tools_21.8.02_amd64.buildinfo
+ 2efc495bcf0e7f5e11bcaee53e93db12210dac639377b8768f93243d465a3259 58108 mx-tools_21.8.02_amd64.deb
+Files:
+ 1e7dbe3268036d65ac72bd3529b8a2ab 1152 admin optional mx-tools_21.8.02.dsc
+ e8f7cb53a01f7873f996d36ec62b2868 44396 admin optional mx-tools_21.8.02.tar.xz
+ 505536068db89dbd31429ac14eca5541 10414 admin optional mx-tools_21.8.02_amd64.buildinfo
+ 40a77dfa6ccd45292de50dbd8a960251 58108 admin optional mx-tools_21.8.02_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEpkPcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBzsCACbZddorPaOdWLKBLrxPC0PGNVO/BxY
+o/Un4GuNlahqBIiqwg1K13Ytuu1r1sbEmklzy+jmDnNkxaJ6oHTEYQLuOwTT+r6j
+rottgO+A+uTP08Z76xKSD7ySEBebWPISsgF/LzAGtYl9pi2QG40ZEuzPxFU1Aqic
+McQfe3KCfdjyhdy+YZYIraUzO7hNwAwmsUaTX/Gt46Z2bqDmby1zajFg/lx1EBW8
+anre4xPdOyzNnSzXvuiJeD8hTrETqcLchM3+xoJEPo6OxqiuYD45BTVDaznc077r
+xmQM9mEDWJN/c5TjpOcgbdMGII5nH+dtJlG0EGksUabO6mQlmG41wYQd
+=P3Xt
+-----END PGP SIGNATURE-----
