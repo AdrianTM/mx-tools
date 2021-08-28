@@ -93,7 +93,6 @@ MainWindow::MainWindow(QWidget *parent) :
     addButtons(info_map);
     ui->lineSearch->setFocus();
     this->adjustSize();
-    //this->resize(this->width() + 80, this->height() + 130);
     QSize size = this->size();
     restoreGeometry(settings.value("geometry").toByteArray());
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
@@ -267,7 +266,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             }
         }
     }
-    //ui->gridLayout_btn->setRowStretch(row, 1);
+    ui->gridLayout_btn->setRowStretch(row + 1, 1);
 }
 
 
