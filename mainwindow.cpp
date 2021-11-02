@@ -143,7 +143,8 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
     QString terminal_switch;
     QStringList list;
     QLocale locale;
-    QString lang = locale.bcp47Name();
+    QString lang = locale.name().split('_').first();
+    QString lang_region = locale.name();
     QMultiMap<QString, QStringList> map;
 
     QRegularExpression re;
@@ -160,17 +161,23 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
             name.clear();
             comment.clear();
             if (lang != QLatin1String("en")) {
-                re.setPattern(QLatin1String("^Name\\[") + lang + QLatin1String("\\]=(.*)$"));
+                re.setPattern(QLatin1String("^Name\\[") + lang_region + QLatin1String("\\]=(.*)$"));
                 name = re.match(text).captured(1);
-                re.setPattern(QLatin1String("^Comment\\[") + lang + QLatin1String("\\]=(.*)$"));
+                if (name.isEmpty()) { // check lang
+                    re.setPattern(QLatin1String("^Name\\[") + lang + QLatin1String("\\]=(.*)$"));
+                    name = re.match(text).captured(1);
+                }
+                re.setPattern(QLatin1String("^Comment\\[") + lang_region + QLatin1String("\\]=(.*)$"));
                 comment = re.match(text).captured(1);
+                if (comment.isEmpty()) { // check lang
+                    re.setPattern(QLatin1String("^Comment\\[") + lang + QLatin1String("\\]=(.*)$"));
+                    comment = re.match(text).captured(1);
+                }
             }
-            if (lang == QLatin1String("pt") && name.isEmpty()) { // Brazilian if Portuguese and name empty
-                re.setPattern(QLatin1String("^Name\\[pt_BR\\]=(.*)$"));
+            if (lang_region == QLatin1String("pt_BR")) { // not using Portuguese [pt] for Brazilian Portuguese [pt_BR]
+                re.setPattern(QLatin1String("^Name\\[") + lang_region + QLatin1String("\\]=(.*)$"));
                 name = re.match(text).captured(1);
-            }
-            if (lang == QLatin1String("pt") && comment.isEmpty()) { // Brazilian if Portuguese and comment empty
-                re.setPattern(QLatin1String("^Comment\\[pt_BR\\]=(.*)$"));
+                re.setPattern(QLatin1String("^Comment\\[") + lang_region + QLatin1String("\\]=(.*)$"));
                 comment = re.match(text).captured(1);
             }
             if (name.isEmpty()) { // backup if Name is not translated
