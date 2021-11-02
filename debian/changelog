@@ -1,3 +1,9 @@
+mx-tools (21.11) mx; urgency=medium
+
+  * Fix localization of displayed tool names and comments
+
+ -- fehlix <fehlix@mxlinux.org>  Tue, 02 Nov 2021 17:43:19 -0400
+
 mx-tools (21.8.02) mx; urgency=medium
 
   * Smoother resize; don't readd the buttons if no need to expand
