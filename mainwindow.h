@@ -47,16 +47,17 @@ public:
 
     FlatButton *btn;
     QMultiMap<QString, QStringList> category_map;
-    QMultiMap<QString, QMultiMap<QString, QStringList> > info_map;
+    QMultiMap<QString, QMultiMap<QString, QStringList>> info_map;
     QStringList live_list;
     QStringList maintenance_list;
     QStringList setup_list;
     QStringList software_list;
     QStringList utilities_list;
 
-    void addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList> > &info_map);
+    void addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList>> &info_map);
     void hideShowIcon(const QString &file_name, bool hide);
     void readInfo(const QMultiMap<QString, QStringList> &category_map);
+    void setConnections();
 
     QIcon findIcon(QString icon_name);
     QString getCmdOut(const QString &cmd);
@@ -64,12 +65,12 @@ public:
 
 private slots:
     void btn_clicked();
-    void closeEvent(QCloseEvent *);
+    void closeEvent(QCloseEvent*);
     void resizeEvent(QResizeEvent *event);
-    void on_buttonAbout_clicked();
-    void on_buttonHelp_clicked();
-    void on_hideCheckBox_clicked(bool checked);
-    void on_lineSearch_textChanged(const QString &arg1);
+    void pushAbout_clicked();
+    void pushHelp_clicked();
+    void checkHide_clicked(bool checked);
+    void textSearch_textChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;

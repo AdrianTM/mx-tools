@@ -42,7 +42,7 @@
       <number>5</number>
      </property>
      <item row="0" column="0">
-      <widget class="QPushButton" name="buttonAbout">
+      <widget class="QPushButton" name="pushAbout">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -116,7 +116,7 @@
       </widget>
      </item>
      <item row="0" column="8">
-      <widget class="QPushButton" name="buttonCancel">
+      <widget class="QPushButton" name="pushCancel">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -145,7 +145,7 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QPushButton" name="buttonHelp">
+      <widget class="QPushButton" name="pushHelp">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -231,7 +231,7 @@
            <x>0</x>
            <y>0</y>
            <width>755</width>
-           <height>391</height>
+           <height>408</height>
           </rect>
          </property>
          <property name="autoFillBackground">
@@ -246,7 +246,7 @@
        </widget>
       </item>
       <item row="0" column="0" rowspan="2" colspan="2">
-       <widget class="QLabel" name="introductionLabel">
+       <widget class="QLabel" name="labelIntroduction">
         <property name="sizePolicy">
          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -257,6 +257,8 @@
          <font>
           <weight>75</weight>
           <bold>true</bold>
+          <strikeout>false</strikeout>
+          <kerning>true</kerning>
          </font>
         </property>
         <property name="text">
@@ -274,14 +276,14 @@
        </widget>
       </item>
       <item row="3" column="0">
-       <widget class="QCheckBox" name="hideCheckBox">
+       <widget class="QCheckBox" name="checkHide">
         <property name="text">
          <string>Hide individual tools from the menu</string>
         </property>
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QLineEdit" name="lineSearch">
+       <widget class="QLineEdit" name="textSearch">
         <property name="maximumSize">
          <size>
           <width>150</width>
@@ -313,7 +315,7 @@
  </resources>
  <connections>
   <connection>
-   <sender>buttonCancel</sender>
+   <sender>pushCancel</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>

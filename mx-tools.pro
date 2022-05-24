@@ -26,15 +26,11 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
-CONFIG   += c++11
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui widgets
+CONFIG   += c++17
 
 TARGET = mx-tools
 TEMPLATE = app
-
 
 SOURCES += main.cpp\
     flatbutton.cpp \

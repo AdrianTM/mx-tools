@@ -40,10 +40,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     qDebug().noquote() << qApp->applicationName() << "version:" << VERSION;
     ui->setupUi(this);
+    setConnections();
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     // detect if tools are displayed in the menu (check for only one since all are set at the same time)
     if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop >/dev/null 2>&1") == 0)
-        ui->hideCheckBox->setChecked(true);
+        ui->checkHide->setChecked(true);
 
     QString search_folder = "/usr/share/applications";
     live_list = listDesktopFiles("MX-Live", search_folder);
@@ -91,13 +92,13 @@ MainWindow::MainWindow(QWidget *parent) :
 
     readInfo(category_map);
     addButtons(info_map);
-    ui->lineSearch->setFocus();
+    ui->textSearch->setFocus();
     this->adjustSize();
     QSize size = this->size();
     restoreGeometry(settings.value("geometry").toByteArray());
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
         this->resize(size);
-        QRect screenGeometry = qApp->screens().first()->geometry();
+        QRect screenGeometry = qApp->primaryScreen()->geometry();
         int x = (screenGeometry.width() - this->width()) / 2;
         int y = (screenGeometry.height() - this->height()) / 2;
         this->move(x, y);
@@ -110,8 +111,17 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::setConnections()
+{
+    connect(ui->pushAbout, &QPushButton::clicked, this, &MainWindow::pushAbout_clicked);
+    connect(ui->pushHelp, &QPushButton::clicked, this, &MainWindow::pushHelp_clicked);
+    connect(ui->checkHide, &QCheckBox::clicked, this, &MainWindow::checkHide_clicked);
+    connect(ui->textSearch, &QLineEdit::textChanged, this, &MainWindow::textSearch_textChanged);
+}
+
 // Util function
-QString MainWindow::getCmdOut(const QString &cmd) {
+QString MainWindow::getCmdOut(const QString &cmd)
+{
     proc = new QProcess(this);
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     proc->setReadChannel(QProcess::StandardOutput);
@@ -126,7 +136,7 @@ QString MainWindow::getCmdOut(const QString &cmd) {
 QStringList MainWindow::listDesktopFiles(const QString &search_string, const QString &location)
 {
     QStringList listDesktop;
-    QString cmd = QString("grep -Elr %1 %2 | sort").arg(search_string).arg(location);
+    QString cmd = QString("grep -Elr %1 %2 | sort").arg(search_string, location);
     QString out = getCmdOut(cmd);
     if (!out.isEmpty())
         listDesktop = out.split("\n");
@@ -149,10 +159,12 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
 
     QRegularExpression re;
     re.setPatternOptions(QRegularExpression::MultilineOption);
-
-    for (const QString &category : category_map.keys()) {
+    QMapIterator<QString, QStringList> it(category_map);
+    QString category;
+    while (it.hasNext()) {
+        category = it.next().key();
         list = category_map.value(category);
-        for (const QString &file_name : list) {
+        for (const QString &file_name : qAsConst(list)) {
             QFile file(file_name);
             if (!file.open(QFile::Text | QFile::ReadOnly))
                 continue;
@@ -208,21 +220,26 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
 {
     int col = 0;
     int row = 0;
-    int max  = this->width() / 200;
+    const int max  = this->width() / 200;
 
     max_elements = 0;
-    for (const QString &category : info_map.uniqueKeys())
+    QMapIterator<QString, QMultiMap<QString, QStringList>> it(info_map);
+    QString category;
+    while (it.hasNext()) {
+        category = it.next().key();
         if (info_map.value(category).keys().count() > max_elements)
             max_elements = info_map.value(category).keys().count();
+    }
 
     QString name;
     QString comment;
     QString exec;
     QString icon_name;
-    QString file_name;
     QString terminal_switch;
 
-    for (const QString &category : info_map.uniqueKeys()) {
+    it.toFront();
+    while (it.hasNext()) {
+        category = it.next().key();
         if (!info_map.value(category).isEmpty()) {
             // add empty row and delimiter except for the first row
             if (row != 0) {
@@ -244,7 +261,10 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             ui->gridLayout_btn->addWidget(label, row, 0);
             ++row;
             col = 0;
-            for (const QString &file_name : info_map.value(category).keys()) {
+            QMapIterator<QString, QStringList> it(info_map.value(category));
+            QString file_name;
+            while (it.hasNext()) {
+                file_name = it.next().key();
                 if (col >= col_count)
                     col_count = col + 1;
                 QStringList file_info = info_map.value(category).value(file_name);
@@ -344,7 +364,7 @@ void MainWindow::resizeEvent(QResizeEvent *event)
         if (new_count > max_elements && col_count == max_elements)
             return;
         col_count = 0;
-        if (ui->lineSearch->text().isEmpty()) {
+        if (ui->textSearch->text().isEmpty()) {
             QLayoutItem *child;
             while ((child = ui->gridLayout_btn->takeAt(0))) {
                 delete child->widget();
@@ -352,15 +372,15 @@ void MainWindow::resizeEvent(QResizeEvent *event)
             }
             addButtons(info_map);
         } else {
-            on_lineSearch_textChanged(ui->lineSearch->text());
+            textSearch_textChanged(ui->textSearch->text());
         }
     }
 }
 
 // hide icons in menu checkbox
-void MainWindow::on_hideCheckBox_clicked(bool checked) {
-    for (const QStringList &list : category_map)
-        for (const QString &file_name : list)
+void MainWindow::checkHide_clicked(bool checked) {
+    for (const QStringList &list : qAsConst(category_map))
+        for (const QString &file_name : qAsConst(list))
             hideShowIcon(file_name, checked);
     system("sh -c 'which xfce4-panel >/dev/null 2>/dev/null && xfce4-panel --restart'");
 }
@@ -382,7 +402,7 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 }
 
 // About button clicked
-void MainWindow::on_buttonAbout_clicked()
+void MainWindow::pushAbout_clicked()
 {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
@@ -424,7 +444,7 @@ void MainWindow::on_buttonAbout_clicked()
 
 
 // Help button clicked
-void MainWindow::on_buttonHelp_clicked()
+void MainWindow::pushHelp_clicked()
 {
     QString cmd;
 
@@ -437,7 +457,7 @@ void MainWindow::on_buttonHelp_clicked()
 }
 
 // Text changed in search field
-void MainWindow::on_lineSearch_textChanged(const QString &arg1)
+void MainWindow::textSearch_textChanged(const QString &arg1)
 {
     // Remove all items from the layout
     QLayoutItem *child;
@@ -450,8 +470,10 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
     QMultiMap<QString, QStringList> map;
 
     // Create a new_map with items that match the search argument
-    for (const QString &category : info_map.keys()) {
-        //qDebug() << category;
+    QMapIterator<QString, QMultiMap<QString, QStringList>> it(info_map);
+    QString category;
+    while(it.hasNext()) {
+        category = it.next().key();
         QMultiMap<QString, QStringList> file_info =  info_map.value(category);
         for (const QString &file_name : category_map.value(category)) {
             //qDebug() << file_name;

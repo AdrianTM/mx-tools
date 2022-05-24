@@ -22,14 +22,14 @@
 
 #include "flatbutton.h"
 
-FlatButton::FlatButton(QWidget * parent)
+FlatButton::FlatButton(QWidget *parent)
     : QPushButton(parent)
 {
     setFlat(true);
     setStyleSheet("text-align:left; color:black");
 }
 
-FlatButton::FlatButton(QString name, QWidget * parent)
+FlatButton::FlatButton(QString name, QWidget *parent)
     : QPushButton(name, parent)
 {
     setFlat(true);
@@ -43,7 +43,7 @@ void FlatButton::leaveEvent(QEvent * e)
     QPushButton::leaveEvent(e);
 }
 
-void FlatButton::enterEvent(QEvent * e)
+void FlatButton::enterEvent(QEvent *e)
 {
     //setFlat(false);
     setStyleSheet("QPushButton { text-align:left; text-decoration:underline}; QToolTip { text-decoration: none; }");

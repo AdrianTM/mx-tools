@@ -30,8 +30,8 @@
 class FlatButton : public QPushButton
 {
 public:
-    FlatButton(QWidget * parent = nullptr);
-    FlatButton(QString name, QWidget * parent = nullptr);
+    FlatButton(QWidget *parent = nullptr);
+    FlatButton(QString name, QWidget *parent = nullptr);
     void setIconSize(int, int);
     void setIconSize(const QSize&);
 protected:
