@@ -119,11 +119,10 @@ void MainWindow::setConnections()
     connect(ui->textSearch, &QLineEdit::textChanged, this, &MainWindow::textSearch_textChanged);
 }
 
-// Util function
 QString MainWindow::getCmdOut(const QString &cmd)
 {
     proc = new QProcess(this);
-    proc->start("/bin/bash", QStringList() << "-c" << cmd);
+    proc->start("/bin/bash", {"-c", cmd});
     proc->setReadChannel(QProcess::StandardOutput);
     proc->setProcessChannelMode(QProcess::MergedChannels);
     proc->waitForFinished(-1);
@@ -244,12 +243,12 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             // add empty row and delimiter except for the first row
             if (row != 0) {
                 ++row;
-                QFrame *line = new QFrame();
+                auto *line = new QFrame();
                 line->setFrameShape(QFrame::HLine);
                 line->setFrameShadow(QFrame::Sunken);
                 ui->gridLayout_btn->addWidget(line, row, 0, 1, -1);
             }
-            QLabel *label = new QLabel();
+            auto *label = new QLabel();
             QFont font;
             font.setBold(true);
             font.setUnderline(true);
@@ -268,11 +267,11 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
                 if (col >= col_count)
                     col_count = col + 1;
                 QStringList file_info = info_map.value(category).value(file_name);
-                name = file_info.at(0);
-                comment = file_info.at(1);
-                icon_name = file_info.at(2);
-                exec = file_info.at(3);
-                terminal_switch = file_info.at(5);
+                name = file_info.at(Info::Name);
+                comment = file_info.at(Info::Comment);
+                icon_name = file_info.at(Info::IconName);
+                exec = file_info.at(Info::Exec);
+                terminal_switch = file_info.at(Info::Terminal);
                 btn = new FlatButton(name);
                 btn->setToolTip(comment);
                 btn->setAutoDefault(false);
@@ -297,8 +296,6 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
     ui->gridLayout_btn->setRowStretch(row + 2, 1);
 }
 
-
-// Find icon file by name
 QIcon MainWindow::findIcon(QString icon_name)
 {
     if (icon_name.isEmpty())
@@ -310,7 +307,7 @@ QIcon MainWindow::findIcon(QString icon_name)
     if (!icon_name.endsWith(".png") && !icon_name.endsWith(".svg") && !icon_name.endsWith(".xpm"))
         search_term = icon_name + ".*";
 
-    icon_name.remove(QRegularExpression("\\.png$|\\.svg$|\\.xpm$"));
+    icon_name.remove(QRegularExpression(R"(\.png$|\.svg$|\.xpm$)"));
 
     // return the icon from the theme if it exists
     if (QIcon::hasThemeIcon(icon_name))
@@ -342,7 +339,6 @@ QIcon MainWindow::findIcon(QString icon_name)
     return (!out.isEmpty()) ? QIcon(out) : QIcon();
 }
 
-// run code when button is clicked
 void MainWindow::btn_clicked()
 {
     this->hide();
@@ -365,8 +361,8 @@ void MainWindow::resizeEvent(QResizeEvent *event)
             return;
         col_count = 0;
         if (ui->textSearch->text().isEmpty()) {
-            QLayoutItem *child;
-            while ((child = ui->gridLayout_btn->takeAt(0))) {
+            QLayoutItem *child = nullptr;
+            while ((child = ui->gridLayout_btn->takeAt(0)) != nullptr) {
                 delete child->widget();
                 delete child;
             }
@@ -401,15 +397,14 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
     }
 }
 
-// About button clicked
 void MainWindow::pushAbout_clicked()
 {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Tools"), "<p align=\"center\"><b><h2>" +
                        tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
-                       VERSION + "</p><p align=\"center\"><h3>" +
-                       tr("Configuration Tools for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
+                       VERSION + "</p><p align=\"center\"><h3>" + tr("Configuration Tools for MX Linux") +
+                       R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>");
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
@@ -421,10 +416,10 @@ void MainWindow::pushAbout_clicked()
     if (msgBox.clickedButton() == btnLicense) {
         system("mx-viewer file:///usr/share/doc/mx-tools/license.html 'MX Tools License'");
     } else if (msgBox.clickedButton() == btnChangelog) {
-        QDialog *changelog = new QDialog(this);
+        auto *changelog = new QDialog(this);
         changelog->resize(600, 500);
 
-        QTextEdit *text = new QTextEdit;
+        auto *text = new QTextEdit;
         text->setReadOnly(true);
         text->setText(getCmdOut("zless /usr/share/doc/" +
                                 QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
@@ -442,8 +437,6 @@ void MainWindow::pushAbout_clicked()
     this->show();
 }
 
-
-// Help button clicked
 void MainWindow::pushHelp_clicked()
 {
     QString cmd;
@@ -456,12 +449,11 @@ void MainWindow::pushHelp_clicked()
     system(cmd.toUtf8());
 }
 
-// Text changed in search field
 void MainWindow::textSearch_textChanged(const QString &arg1)
 {
     // Remove all items from the layout
-    QLayoutItem *child;
-    while ((child = ui->gridLayout_btn->takeAt(0))) {
+    QLayoutItem *child = nullptr;
+    while ((child = ui->gridLayout_btn->takeAt(0)) != nullptr) {
         delete child->widget();
         delete child;
     }

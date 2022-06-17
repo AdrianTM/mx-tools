@@ -29,7 +29,7 @@ FlatButton::FlatButton(QWidget *parent)
     setStyleSheet("text-align:left; color:black");
 }
 
-FlatButton::FlatButton(QString name, QWidget *parent)
+FlatButton::FlatButton(const QString& name, QWidget *parent)
     : QPushButton(name, parent)
 {
     setFlat(true);
@@ -55,7 +55,7 @@ void FlatButton::setIconSize(int x, int y)
     QPushButton::setIconSize(QSize(x, y));
 }
 
-void FlatButton::setIconSize(const QSize &size)
+void FlatButton::setIconSize(QSize size)
 {
     QPushButton::setIconSize(size);
 }

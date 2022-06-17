@@ -29,11 +29,12 @@
 
 class FlatButton : public QPushButton
 {
+    Q_OBJECT
 public:
     FlatButton(QWidget *parent = nullptr);
-    FlatButton(QString name, QWidget *parent = nullptr);
+    FlatButton(const QString& name, QWidget *parent = nullptr);
     void setIconSize(int, int);
-    void setIconSize(const QSize&);
+    void setIconSize(QSize size);
 protected:
     void enterEvent(QEvent *e);
     void leaveEvent(QEvent *e);
