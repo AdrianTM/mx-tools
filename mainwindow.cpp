@@ -444,9 +444,9 @@ void MainWindow::textSearch_textChanged(const QString &arg1)
         QMultiMap<QString, QStringList> file_info = info_map.value(category);
         for (const QString &file_name : category_map.value(category)) {
             // qDebug() << file_name;
-            QString name = file_info.value(file_name)[0];
-            QString comment = file_info.value(file_name)[1];
-            QString category = file_info.value(file_name)[4];
+            QString name = file_info.value(file_name).at(0);
+            QString comment = file_info.value(file_name).at(1);
+            QString category = file_info.value(file_name).at(4);
             if (name.contains(arg1, Qt::CaseInsensitive) || comment.contains(arg1, Qt::CaseInsensitive)
                 || category.contains(arg1, Qt::CaseInsensitive)) {
                 map.insert(file_name, info_map.value(category).value(file_name));
