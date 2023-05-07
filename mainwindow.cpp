@@ -474,7 +474,7 @@ void MainWindow::removeEnvExclusive(QStringList &list, const QStringList &termsT
         if (file.open(QFile::Text | QFile::ReadOnly)) {
             QString text = file.readAll();
             file.close();
-            if (std::none_of(termsToRemove.begin(), termsToRemove.end(),
+            if (std::none_of(termsToRemove.cbegin(), termsToRemove.cend(),
                              [&text](const QString &term) { return text.contains(term); }))
                 ++it;
             else
