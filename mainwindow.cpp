@@ -383,7 +383,7 @@ void MainWindow::checkHide_clicked(bool checked)
     for (const QStringList &list : qAsConst(category_map))
         for (const QString &file_name : qAsConst(list))
             hideShowIcon(file_name, checked);
-    system("sh -c 'which xfce4-panel >/dev/null 2>/dev/null && xfce4-panel --restart'");
+    system("sh -c 'pgrep xfce4-panel >/dev/null && xfce4-panel --restart'");
 }
 
 // hide or show icon for .desktop file
