@@ -419,9 +419,10 @@ void MainWindow::pushAbout_clicked()
 void MainWindow::pushHelp_clicked()
 {
     if (QFile::exists(QStringLiteral("/usr/bin/mx-manual")))
-        QProcess::execute(QStringLiteral("mx-manual"), {});
+        QProcess::startDetached(QStringLiteral("mx-manual"), {});
     else // for MX19?
-        QProcess::execute(QStringLiteral("xdg-open"), {"file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2"});
+        QProcess::startDetached(QStringLiteral("xdg-open"),
+                                {"file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2"});
 }
 
 void MainWindow::textSearch_textChanged(const QString &arg1)
