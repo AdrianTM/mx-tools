@@ -78,7 +78,6 @@ TRANSLATIONS += translations/mx-tools_af.ts \
                 translations/mx-tools_et.ts \
                 translations/mx-tools_eu.ts \
                 translations/mx-tools_fa.ts \
-                translations/mx-tools_fi_FI.ts \
                 translations/mx-tools_fil_PH.ts \
                 translations/mx-tools_fil.ts \
                 translations/mx-tools_fi.ts \
@@ -144,7 +143,6 @@ TRANSLATIONS += translations/mx-tools_af.ts \
                 translations/mx-tools_pt.ts \
                 translations/mx-tools_ro.ts \
                 translations/mx-tools_rue.ts \
-                translations/mx-tools_ru_RU.ts \
                 translations/mx-tools_ru.ts \
                 translations/mx-tools_rw.ts \
                 translations/mx-tools_sd.ts \
