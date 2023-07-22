@@ -59,7 +59,6 @@ TRANSLATIONS += translations/mx-tools_af.ts \
                 translations/mx-tools_be.ts \
                 translations/mx-tools_bg.ts \
                 translations/mx-tools_bn.ts \
-                translations/mx-tools_bs_BA.ts \
                 translations/mx-tools_bs.ts \
                 translations/mx-tools_ca.ts \
                 translations/mx-tools_ceb.ts \
@@ -97,7 +96,6 @@ TRANSLATIONS += translations/mx-tools_af.ts \
                 translations/mx-tools_hr.ts \
                 translations/mx-tools_ht.ts \
                 translations/mx-tools_hu.ts \
-                translations/mx-tools_hy_AM.ts \
                 translations/mx-tools_hye.ts \
                 translations/mx-tools_hy.ts \
                 translations/mx-tools_id.ts \
