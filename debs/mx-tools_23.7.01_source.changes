@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 24 Jul 2023 15:11:53 -0400
+Source: mx-tools
+Architecture: source
+Version: 23.7.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-tools (23.7.01) mx; urgency=medium
+ .
+   * Fix a couple of translations
+Checksums-Sha1:
+ 30effc8db7a1e4d7de443374c8adb11ade6eb6a1 1152 mx-tools_23.7.01.dsc
+ e6cc77f3c89d3ba3bf9ceeefecc5b7a2209fc41c 56548 mx-tools_23.7.01.tar.xz
+ 2892133940d5e0e40d458915ba6d43f81a66f362 10725 mx-tools_23.7.01_amd64.buildinfo
+Checksums-Sha256:
+ ab79ef00a692bbc3d3e37b472562e7905ea9525fdc5456fd529817bb353ebeb7 1152 mx-tools_23.7.01.dsc
+ 0c5cd975bca7bfae606d6e36d4422d0aa62021841de4b4925dbc03aa9b6c44e9 56548 mx-tools_23.7.01.tar.xz
+ db88651951670a8517b2b708dd99a8635a4116ef5fcaeed9288cd2e49a1a48d7 10725 mx-tools_23.7.01_amd64.buildinfo
+Files:
+ a758f7610520adcc5da934570d002469 1152 admin optional mx-tools_23.7.01.dsc
+ 8f2e3ddce7d84f32b165fcb3d78ead46 56548 admin optional mx-tools_23.7.01.tar.xz
+ be58cc91f86d887ffb3cd48ca57b687a 10725 admin optional mx-tools_23.7.01_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS+zcwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHbVCACzoG9eUhDOd1i8/LvLjj0OuLKeLY7M
+2IHroiCPThyz5mAvEtfBx7ZNOwnsSFQ/bJVl4VOJhUJ8a593FeJDkPpKn+GzAEfx
+aX2+YDd3VNzbZZRlddAoCW2p+okicFhVIzQcXTFbIaj45roTYuTvYNw1D2UJk/17
+u+P2cEHjSu4dmyx79QBxiwCKlhjsj9bSsyaoKMAvoX6tnPnsqQ/mBQ1AJaOSq6u9
+SV9K4d1Yed3js5eY1l9op2BiMTi2c1tFZXRP34nVtC5D849jWYLGw1M8mfj4M60H
+LRw/rlIdGZIRNEH9WY+2tjHUB27VqRzS/qFUFtucrn5JpnyHRpM3ovpJ
+=mxqj
+-----END PGP SIGNATURE-----
