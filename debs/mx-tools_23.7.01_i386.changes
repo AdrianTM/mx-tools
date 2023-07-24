@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Mon, 24 Jul 2023 15:11:53 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: i386
+Version: 23.7.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (23.7.01) mx; urgency=medium
+ .
+   * Fix a couple of translations
+Checksums-Sha1:
+ cc7c775487523d9f9dab9db9fbcb2710f5aaf368 10059 mx-tools_23.7.01_i386.buildinfo
+ c881ac98c202e6f3b54bb717c52b7e47496daa44 70012 mx-tools_23.7.01_i386.deb
+Checksums-Sha256:
+ ddb73481cf64c70ca6a2b86c42b29874f5500e407b2bcea43c43b07164b61c7f 10059 mx-tools_23.7.01_i386.buildinfo
+ 0ef2551d98c4dc2e9971dd0a3552b364b5386f09e072d0f5afc5885a6d1781b7 70012 mx-tools_23.7.01_i386.deb
+Files:
+ c1a9a2765748b14a19b8e534f8920573 10059 admin optional mx-tools_23.7.01_i386.buildinfo
+ 9079dd67d0e53d0912f4ad5d49f5f776 70012 admin optional mx-tools_23.7.01_i386.deb

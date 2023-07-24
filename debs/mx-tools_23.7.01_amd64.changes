@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 24 Jul 2023 15:11:53 -0400
+Source: mx-tools
+Binary: mx-tools
+Architecture: source amd64
+Version: 23.7.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-tools   - MX Tools Launcher
+Changes:
+ mx-tools (23.7.01) mx; urgency=medium
+ .
+   * Fix a couple of translations
+Checksums-Sha1:
+ 30effc8db7a1e4d7de443374c8adb11ade6eb6a1 1152 mx-tools_23.7.01.dsc
+ e6cc77f3c89d3ba3bf9ceeefecc5b7a2209fc41c 56548 mx-tools_23.7.01.tar.xz
+ 2892133940d5e0e40d458915ba6d43f81a66f362 10725 mx-tools_23.7.01_amd64.buildinfo
+ 1e1fdbbf480dabfb2b3df4d08b78cb98d5b6afd1 66808 mx-tools_23.7.01_amd64.deb
+Checksums-Sha256:
+ ab79ef00a692bbc3d3e37b472562e7905ea9525fdc5456fd529817bb353ebeb7 1152 mx-tools_23.7.01.dsc
+ 0c5cd975bca7bfae606d6e36d4422d0aa62021841de4b4925dbc03aa9b6c44e9 56548 mx-tools_23.7.01.tar.xz
+ db88651951670a8517b2b708dd99a8635a4116ef5fcaeed9288cd2e49a1a48d7 10725 mx-tools_23.7.01_amd64.buildinfo
+ 47170a4acb3a176c30e81179fccd6cd88e871263b9e9bbb8d5edab9262071472 66808 mx-tools_23.7.01_amd64.deb
+Files:
+ a758f7610520adcc5da934570d002469 1152 admin optional mx-tools_23.7.01.dsc
+ 8f2e3ddce7d84f32b165fcb3d78ead46 56548 admin optional mx-tools_23.7.01.tar.xz
+ be58cc91f86d887ffb3cd48ca57b687a 10725 admin optional mx-tools_23.7.01_amd64.buildinfo
+ b4e666a64533ce30693d9238946e43a3 66808 admin optional mx-tools_23.7.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS+zcwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumD/7B/4+L3KGdL7nbcb20dWJXMrl8UIsnkSf
+tB1qZlkSxEyhxT7Oa55Oz3mlbBajIYSYfvzZJaZJqrQCF0y+r1Ljy+G9IKX31pwN
+dNb5nldtSP/O/cfK5fGs4Iu+JlAJvj8Rr4b6vjgQSi6hA+f3RKy6YOGHFchIZGkI
+hoXIX0NGnF9lvwJrCC7kYdTbeDaI3Slz2DOShPpZxws2wAX2IaWbKIrwj4NBEVlv
+tK/46y0LTyIjQap+q181Pw+qsfnU/hfFgdPu8QxxsAzw0lzWPUWISTHV8UVt1GBj
+lq/Z/ch6YV9VXh2HDhaz1CJtgCnGzHTrs7GhqCHG8CZ9UOpwXlQR5QqK
+=mlQk
+-----END PGP SIGNATURE-----
