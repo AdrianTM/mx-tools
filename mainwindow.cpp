@@ -46,7 +46,7 @@ MainWindow::MainWindow(QWidget *parent)
     if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop >/dev/null 2>&1") == 0)
         ui->checkHide->setChecked(true);
 
-    QString search_folder = QStringLiteral("/usr/share/applications");
+    const QString search_folder = QStringLiteral("/usr/share/applications");
     live_list = listDesktopFiles(QStringLiteral("MX-Live"), search_folder);
     maintenance_list = listDesktopFiles(QStringLiteral("MX-Maintenance"), search_folder);
     setup_list = listDesktopFiles(QStringLiteral("MX-Setup"), search_folder);
@@ -55,7 +55,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     QVector<QStringList *> lists {&live_list, &maintenance_list, &setup_list, &software_list, &utilities_list};
 
-    QString partitionType = getCmdOut(QStringLiteral("df -T / |tail -n1 |awk '{print $2}'"));
+    const QString partitionType = getCmdOut(QStringLiteral("df -T / |tail -n1 |awk '{print $2}'"));
 
     // remove mx-remastercc and live-kernel-updater from list if not running Live
     bool live = (partitionType == QLatin1String("aufs") || partitionType == QLatin1String("overlay"));
@@ -308,7 +308,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
 QIcon MainWindow::findIcon(QString icon_name)
 {
     if (icon_name.isEmpty())
-        return QIcon();
+        return {};
     if (QFileInfo::exists("/" + icon_name))
         return QIcon(icon_name);
 
@@ -331,7 +331,7 @@ QIcon MainWindow::findIcon(QString icon_name)
             search_paths.removeOne(path);
             continue;
         }
-        for (const QString &ext : {".png", ".svg", ".xpm"}) {
+        for (const QString ext : {".png", ".svg", ".xpm"}) {
             QString file = path + icon_name + ext;
             if (QFileInfo::exists(file))
                 return QIcon(file);
