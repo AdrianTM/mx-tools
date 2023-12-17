@@ -36,15 +36,17 @@
 #include "version.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QDialog(parent)
-    , ui(new Ui::MainWindow)
+    : QDialog(parent),
+      ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     setConnections();
     setWindowFlags(Qt::Window); // for the close, min and max buttons
-    // detect if tools are displayed in the menu (check for only one since all are set at the same time)
-    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop >/dev/null 2>&1") == 0)
+    // Detect if tools are displayed in the menu (check for only one since all are set at the same time)
+    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop >/dev/null 2>&1")
+        == 0) {
         ui->checkHide->setChecked(true);
+    }
 
     const QString search_folder = QStringLiteral("/usr/share/applications");
     live_list = listDesktopFiles(QStringLiteral("MX-Live"), search_folder);
@@ -57,14 +59,16 @@ MainWindow::MainWindow(QWidget *parent)
 
     const QString partitionType = getCmdOut(QStringLiteral("df -T / |tail -n1 |awk '{print $2}'"));
 
-    // remove mx-remastercc and live-kernel-updater from list if not running Live
+    // Remove mx-remastercc and live-kernel-updater from list if not running Live
     bool live = (partitionType == QLatin1String("aufs") || partitionType == QLatin1String("overlay"));
     if (!live) {
         const QStringList live_list_copy = live_list;
-        for (const QString &item : live_list_copy)
+        for (const QString &item : live_list_copy) {
             if (item.contains(QLatin1String("mx-remastercc.desktop"))
-                || item.contains(QLatin1String("live-kernel-updater.desktop")))
+                || item.contains(QLatin1String("live-kernel-updater.desktop"))) {
                 live_list.removeOne(item);
+            }
+        }
     }
 
     QStringList termsToRemove;
@@ -72,15 +76,18 @@ MainWindow::MainWindow(QWidget *parent)
     // Since we are loading only MX apps we control this works OK, however we need to keep in mind that some
     // app .desktop files have something like "OnlyShownIn=Blah;Xfce;KDE;Blah" so this login would fail in that case
     QString desktop = qgetenv("XDG_CURRENT_DESKTOP");
-    if (desktop != "XFCE")
+    if (desktop != "XFCE") {
         termsToRemove << QStringLiteral("OnlyShowIn=XFCE");
-    if (desktop != "Fluxbox")
+    }
+    if (desktop != "Fluxbox") {
         termsToRemove << QStringLiteral("OnlyShowIn=FLUXBOX");
-    if (desktop != "KDE")
+    }
+    if (desktop != "KDE") {
         termsToRemove << QStringLiteral("OnlyShowIn=KDE");
-
-    for (auto &list : lists)
+    }
+    for (auto &list : lists) {
         removeEnvExclusive(list, termsToRemove);
+    }
 
     category_map.insert(QStringLiteral("MX-Live"), live_list);
     category_map.insert(QStringLiteral("MX-Maintenance"), maintenance_list);
@@ -91,20 +98,22 @@ MainWindow::MainWindow(QWidget *parent)
     readInfo(category_map);
     addButtons(info_map);
     ui->textSearch->setFocus();
-    // this->adjustSize();
     QSize size = this->size();
     restoreGeometry(settings.value(QStringLiteral("geometry")).toByteArray());
-    if (this->isMaximized()) { // if started maximized give option to resize to normal window size
-        this->resize(size);
+    if (isMaximized()) { // if started maximized give option to resize to normal window size
+        resize(size);
         QRect screenGeometry = QApplication::primaryScreen()->geometry();
-        int x = (screenGeometry.width() - this->width()) / 2;
-        int y = (screenGeometry.height() - this->height()) / 2;
-        this->move(x, y);
+        int x = (screenGeometry.width() - width()) / 2;
+        int y = (screenGeometry.height() - height()) / 2;
+        move(x, y);
     }
     icon_size = settings.value(QStringLiteral("icon_size"), icon_size).toInt();
 }
 
-MainWindow::~MainWindow() { delete ui; }
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
 
 void MainWindow::setConnections()
 {
@@ -133,8 +142,9 @@ QStringList MainWindow::listDesktopFiles(const QString &search_string, const QSt
     QStringList listDesktop;
     QString cmd = QStringLiteral("grep -Elr %1 %2 | sort").arg(search_string, location);
     QString out = getCmdOut(cmd);
-    if (!out.isEmpty())
+    if (!out.isEmpty()) {
         listDesktop = out.split(QStringLiteral("\n"));
+    }
     return listDesktop;
 }
 
@@ -146,7 +156,6 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
     QString exec;
     QString icon_name;
     QString terminal_switch;
-    QStringList list;
     QLocale locale;
     QString lang = locale.name().split('_').first();
     QString lang_region = locale.name();
@@ -155,14 +164,14 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
     QRegularExpression re;
     re.setPatternOptions(QRegularExpression::MultilineOption);
     QMapIterator<QString, QStringList> it(category_map);
-    QString category;
     while (it.hasNext()) {
-        category = it.next().key();
-        list = category_map.value(category);
+        QString category = it.next().key();
+        QStringList list = category_map.value(category);
         for (const QString &file_name : qAsConst(list)) {
             QFile file(file_name);
-            if (!file.open(QFile::Text | QFile::ReadOnly))
+            if (!file.open(QFile::Text | QFile::ReadOnly)) {
                 continue;
+            }
             QString text = file.readAll();
             file.close();
             name.clear();
@@ -204,15 +213,14 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
             icon_name = re.match(text).captured(1).trimmed();
             re.setPattern(QStringLiteral("^Terminal=(.*)$"));
             terminal_switch = re.match(text).captured(1).trimmed();
-            QStringList info;
-            map.insert(file_name, info << name << comment << icon_name << exec << category << terminal_switch);
+            map.insert(file_name, {name, comment, icon_name, exec, category, terminal_switch});
         }
         info_map.insert(category, map);
         map.clear();
     }
 }
 
-// read the info_map and add the buttons to the UI
+// Read the info_map and add the buttons to the UI
 void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList>> &info_map)
 {
     int col = 0;
@@ -224,8 +232,9 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
     QString category;
     while (it.hasNext()) {
         category = it.next().key();
-        if (info_map.value(category).keys().count() > max_elements)
+        if (info_map.value(category).keys().count() > max_elements) {
             max_elements = info_map.value(category).keys().count();
+        }
     }
 
     QString name;
@@ -234,7 +243,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
     QString icon_name;
     QString terminal_switch;
 
-    // get max button size
+    // Get max button size
     QMapIterator<QString, QStringList> itsize(info_map.value(category));
     int max_button_width = 20; // set a min != 0 to avoid div/0 in case of error
     while (itsize.hasNext()) {
@@ -243,12 +252,12 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
         name = file_info.at(Info::Name);
         max_button_width = qMax(name.size() * QApplication::font().pointSize() + icon_size, max_button_width);
     }
-    max = this->width() / max_button_width;
+    max = width() / max_button_width;
     it.toFront();
     while (it.hasNext()) {
         category = it.next().key();
         if (!info_map.value(category).isEmpty()) {
-            // add empty row and delimiter except for the first row
+            // Add empty row and delimiter except for the first row
             if (row != 0) {
                 ++row;
                 auto *line = new QFrame();
@@ -269,11 +278,11 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
             ++row;
             col = 0;
             QMapIterator<QString, QStringList> it(info_map.value(category));
-            QString file_name;
             while (it.hasNext()) {
-                file_name = it.next().key();
-                if (col >= col_count)
+                QString file_name = it.next().key();
+                if (col >= col_count) {
                     col_count = col + 1;
+                }
                 QStringList file_info = info_map.value(category).value(file_name);
                 name = file_info.at(Info::Name);
                 comment = file_info.at(Info::Comment);
@@ -294,10 +303,11 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
                     ++row;
                 }
                 QString cmd = QStringLiteral("x-terminal-emulator -e ");
-                if (terminal_switch == QLatin1String("true"))
-                    btn->setObjectName(cmd + exec); // add the command to be executed to the object name
-                else
-                    btn->setObjectName(exec); // add the command to be executed to the object name
+                if (terminal_switch == QLatin1String("true")) {
+                    btn->setObjectName(cmd + exec); // Add the command to be executed to the object name
+                } else {
+                    btn->setObjectName(exec); // Add the command to be executed to the object name
+                }
                 QObject::connect(btn, &FlatButton::clicked, this, &MainWindow::btn_clicked);
             }
         }
@@ -307,21 +317,25 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
 
 QIcon MainWindow::findIcon(QString icon_name)
 {
-    if (icon_name.isEmpty())
+    if (icon_name.isEmpty()) {
         return {};
-    if (QFileInfo::exists("/" + icon_name))
+    }
+    if (QFileInfo::exists("/" + icon_name)) {
         return QIcon(icon_name);
+    }
 
     QString search_term = icon_name;
     if (!icon_name.endsWith(QLatin1String(".png")) && !icon_name.endsWith(QLatin1String(".svg"))
-        && !icon_name.endsWith(QLatin1String(".xpm")))
+        && !icon_name.endsWith(QLatin1String(".xpm"))) {
         search_term = icon_name + ".*";
+    }
 
     icon_name.remove(QRegularExpression(QStringLiteral(R"(\.png$|\.svg$|\.xpm$)")));
 
-    // return the icon from the theme if it exists
-    if (QIcon::hasThemeIcon(icon_name))
+    // Return the icon from the theme if it exists
+    if (QIcon::hasThemeIcon(icon_name)) {
         return QIcon::fromTheme(icon_name);
+    }
 
     // Try to find in most obvious places
     QStringList search_paths {QDir::homePath() + "/.local/share/icons/", "/usr/share/pixmaps/",
@@ -333,8 +347,9 @@ QIcon MainWindow::findIcon(QString icon_name)
         }
         for (const QString ext : {".png", ".svg", ".xpm"}) {
             QString file = path + icon_name + ext;
-            if (QFileInfo::exists(file))
+            if (QFileInfo::exists(file)) {
                 return QIcon(file);
+            }
         }
     }
 
@@ -349,21 +364,26 @@ QIcon MainWindow::findIcon(QString icon_name)
 
 void MainWindow::btn_clicked()
 {
-    this->hide();
+    hide();
     system(sender()->objectName().toUtf8());
-    this->show();
+    show();
 }
 
-void MainWindow::closeEvent(QCloseEvent * /*unused*/) { settings.setValue(QStringLiteral("geometry"), saveGeometry()); }
+void MainWindow::closeEvent(QCloseEvent * /*unused*/)
+{
+    settings.setValue(QStringLiteral("geometry"), saveGeometry());
+}
 
 void MainWindow::resizeEvent(QResizeEvent *event)
 {
-    if (event->oldSize().width() == event->size().width())
+    if (event->oldSize().width() == event->size().width()) {
         return;
-    int new_count = this->width() / 200;
-    if (this->width() / 200 != col_count) {
-        if (new_count > max_elements && col_count == max_elements)
+    }
+    int new_count = width() / 200;
+    if (width() / 200 != col_count) {
+        if (new_count > max_elements && col_count == max_elements) {
             return;
+        }
         col_count = 0;
         if (ui->textSearch->text().isEmpty()) {
             QLayoutItem *child = nullptr;
@@ -378,16 +398,18 @@ void MainWindow::resizeEvent(QResizeEvent *event)
     }
 }
 
-// hide icons in menu checkbox
+// Hide icons in menu checkbox
 void MainWindow::checkHide_clicked(bool checked)
 {
-    for (const QStringList &list : qAsConst(category_map))
-        for (const QString &file_name : qAsConst(list))
+    for (const QStringList &list : qAsConst(category_map)) {
+        for (const QString &file_name : qAsConst(list)) {
             hideShowIcon(file_name, checked);
+        }
+    }
     system("sh -c 'pgrep xfce4-panel >/dev/null && xfce4-panel --restart'");
 }
 
-// hide or show icon for .desktop file
+// Hide or show icon for .desktop file
 void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 {
     QFileInfo file(file_name);
@@ -405,7 +427,7 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
 
 void MainWindow::pushAbout_clicked()
 {
-    this->hide();
+    hide();
     displayAboutMsgBox(
         tr("About MX Tools"),
         "<p align=\"center\"><b><h2>" + tr("MX Tools") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + VERSION
@@ -413,17 +435,17 @@ void MainWindow::pushAbout_clicked()
             + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p>"
               "<p align=\"center\">"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        QStringLiteral("/usr/share/doc/mx-tools/license.html"), tr("%1 License").arg(this->windowTitle()));
-    this->show();
+        QStringLiteral("/usr/share/doc/mx-tools/license.html"), tr("%1 License").arg(windowTitle()));
+    show();
 }
 
 void MainWindow::pushHelp_clicked()
 {
-    if (QFile::exists(QStringLiteral("/usr/bin/mx-manual")))
-        QProcess::startDetached(QStringLiteral("mx-manual"), {});
-    else // for MX19?
-        QProcess::startDetached(QStringLiteral("xdg-open"),
-                                {"file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2"});
+    if (QFile::exists("/usr/bin/mx-manual")) {
+        QProcess::startDetached("mx-manual", {});
+    } else { // for MX19?
+        QProcess::startDetached("xdg-open", {"file:///usr/local/share/doc/mxum.html#toc-Subsection-3.2"});
+    }
 }
 
 void MainWindow::textSearch_textChanged(const QString &arg1)
@@ -440,9 +462,8 @@ void MainWindow::textSearch_textChanged(const QString &arg1)
 
     // Create a new_map with items that match the search argument
     QMapIterator<QString, QMultiMap<QString, QStringList>> it(info_map);
-    QString category;
     while (it.hasNext()) {
-        category = it.next().key();
+        QString category = it.next().key();
         QMultiMap<QString, QStringList> file_info = info_map.value(category);
         for (const QString &file_name : category_map.value(category)) {
             // qDebug() << file_name;
@@ -464,7 +485,10 @@ void MainWindow::textSearch_textChanged(const QString &arg1)
 }
 
 // Strip %f, %F, %U, etc. if exec expects a file name since it's called without an argument from this launcher.
-void MainWindow::fixExecItem(QString *item) { item->remove(QRegularExpression(QStringLiteral(R"( %[a-zA-Z])"))); }
+void MainWindow::fixExecItem(QString *item)
+{
+    item->remove(QRegularExpression(QStringLiteral(R"( %[a-zA-Z])")));
+}
 
 // When running live remove programs meant only for installed environments and the other way round
 // Remove XfceOnly and FluxboxOnly when not running in that environment
@@ -476,10 +500,11 @@ void MainWindow::removeEnvExclusive(QStringList *list, const QStringList &termsT
             QString text = file.readAll();
             file.close();
             if (std::none_of(termsToRemove.cbegin(), termsToRemove.cend(),
-                             [&text](const QString &term) { return text.contains(term); }))
+                             [&text](const QString &term) { return text.contains(term); })) {
                 ++it;
-            else
+            } else {
                 it = list->erase(it);
+            }
         } else {
             qWarning() << "Could not open file:" << *it;
             ++it;

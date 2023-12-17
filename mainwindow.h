@@ -19,9 +19,7 @@
  * You should have received a copy of the GNU General Public License
  * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
-
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMessageBox>
 #include <QMultiMap>
@@ -43,11 +41,9 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
-    enum Info { Name, Comment, IconName, Exec, Category, Terminal };
-
-    QIcon findIcon(QString icon_name);
-    QString getCmdOut(const QString &cmd);
-    QStringList listDesktopFiles(const QString &search_string, const QString &location);
+    [[nodiscard]] QIcon findIcon(QString icon_name);
+    [[nodiscard]] QString getCmdOut(const QString &cmd);
+    [[nodiscard]] QStringList listDesktopFiles(const QString &search_string, const QString &location);
     static void hideShowIcon(const QString &file_name, bool hide);
     void addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList>> &info_map);
     void readInfo(const QMultiMap<QString, QStringList> &category_map);
@@ -74,6 +70,7 @@ private:
     QStringList setup_list;
     QStringList software_list;
     QStringList utilities_list;
+    enum Info { Name, Comment, IconName, Exec, Category, Terminal };
     int col_count = 0;
     int icon_size = 32;
     int max_col = 0;
@@ -81,5 +78,3 @@ private:
     static void removeEnvExclusive(QStringList *list, const QStringList &termsToRemove);
     static void fixExecItem(QString *item);
 };
-
-#endif // MAINWINDOW_H
