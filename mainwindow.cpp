@@ -285,11 +285,10 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
                     col = 0;
                     ++row;
                 }
-                QString cmd = "x-terminal-emulator -e ";
                 if (terminal_switch == "true") {
-                    btn->setObjectName(cmd + exec); // Add the command to be executed to the object name
+                    btn->setObjectName("x-terminal-emulator -e " + exec);
                 } else {
-                    btn->setObjectName(exec); // Add the command to be executed to the object name
+                    btn->setObjectName(exec);
                 }
                 QObject::connect(btn, &FlatButton::clicked, this, &MainWindow::btn_clicked);
             }
