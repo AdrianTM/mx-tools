@@ -23,7 +23,6 @@
 
 #include <QMessageBox>
 #include <QMultiMap>
-#include <QProcess>
 #include <QSettings>
 
 #include <flatbutton.h>
@@ -60,21 +59,23 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QSettings settings;
     FlatButton *btn {};
     QMultiMap<QString, QMultiMap<QString, QStringList>> info_map;
     QMultiMap<QString, QStringList> category_map;
-    QProcess *proc {};
+    QSettings settings;
     QStringList live_list;
     QStringList maintenance_list;
     QStringList setup_list;
     QStringList software_list;
     QStringList utilities_list;
+    [[nodiscard]] QString getTranslation(const QString &text, const QString &key, const QString &lang_region,
+                                         const QString &lang);
+    [[nodiscard]] QString getValueFromText(const QString &text, const QString &key);
     enum Info { Name, Comment, IconName, Exec, Category, Terminal };
     int col_count = 0;
     int icon_size = 32;
     int max_col = 0;
     int max_elements = 0;
-    static void removeEnvExclusive(QStringList *list, const QStringList &termsToRemove);
     static void fixExecItem(QString *item);
+    static void removeEnvExclusive(QStringList *list, const QStringList &termsToRemove);
 };
