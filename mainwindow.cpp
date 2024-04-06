@@ -39,70 +39,62 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setConnections();
-    setWindowFlags(Qt::Window); // For the close, min and max buttons
-    // Detect if tools are displayed in the menu (check for only one since all are set at the same time)
-    if (system("grep -q \"NoDisplay=true\" /home/$USER/.local/share/applications/mx-user.desktop >/dev/null 2>&1")
-        == 0) {
-        ui->checkHide->setChecked(true);
-    }
+    setWindowFlags(Qt::Window); // Enables the close, min, and max buttons
+    // Check if tools are displayed in the menu
+    QString userDesktopPath = QDir::homePath() + "/.local/share/applications/mx-user.desktop";
+    ui->checkHide->setChecked(QFile::exists(userDesktopPath)
+                              && QFile(userDesktopPath).readAll().contains("NoDisplay=true"));
 
-    const QString search_folder = "/usr/share/applications";
-    live_list = listDesktopFiles("MX-Live", search_folder);
-    maintenance_list = listDesktopFiles("MX-Maintenance", search_folder);
-    setup_list = listDesktopFiles("MX-Setup", search_folder);
-    software_list = listDesktopFiles("MX-Software", search_folder);
-    utilities_list = listDesktopFiles("MX-Utilities", search_folder);
-
+    const QString search_folder {"/usr/share/applications"};
+    const QStringList categories {"MX-Live", "MX-Maintenance", "MX-Setup", "MX-Software", "MX-Utilities"};
     QVector<QStringList *> lists {&live_list, &maintenance_list, &setup_list, &software_list, &utilities_list};
 
-    const QString partitionType = getCmdOut("df -T / |tail -n1 |awk '{print $2}'");
+    for (int i = 0; i < categories.size(); ++i) {
+        *lists[i] = listDesktopFiles(categories.at(i), search_folder);
+    }
 
-    // Remove mx-remastercc and live-kernel-updater from list if not running Live
+    const QString partitionType = getCmdOut("df -T / |awk 'END {print $2}'");
+
+    // Conditionally remove items based on the environment
     bool live = (partitionType == "aufs" || partitionType == "overlay");
     if (!live) {
-        const QStringList live_list_copy = live_list;
-        for (const QString &item : live_list_copy) {
-            if (item.contains("mx-remastercc.desktop") || item.contains("live-kernel-updater.desktop")) {
-                live_list.removeOne(item);
-            }
-        }
+        QStringList itemsToRemove {"mx-remastercc.desktop", "live-kernel-updater.desktop"};
+        live_list.erase(std::remove_if(live_list.begin(), live_list.end(),
+                                       [&itemsToRemove](const QString &item) {
+                                           return item.contains(itemsToRemove.at(0))
+                                                  || item.contains(itemsToRemove.at(1));
+                                       }),
+                        live_list.end());
     }
-
-    QStringList termsToRemove;
-    termsToRemove << (live ? "MX-OnlyInstalled" : "MX-OnlyLive");
     // Since we are loading only MX apps we control this works OK, however we need to keep in mind that some
-    // app .desktop files have something like "OnlyShownIn=Blah;Xfce;KDE;Blah" so this login would fail in that case
+    // app .desktop files have something like "OnlyShownIn=Blah;Xfce;KDE;Blah" so this would fail in that case
+    QStringList termsToRemove {live ? "MX-OnlyInstalled" : "MX-OnlyLive"};
     QString desktop = qgetenv("XDG_CURRENT_DESKTOP");
-    if (desktop != "XFCE") {
-        termsToRemove << "OnlyShowIn=XFCE";
-    }
-    if (desktop != "Fluxbox") {
-        termsToRemove << "OnlyShowIn=FLUXBOX";
-    }
-    if (desktop != "KDE") {
-        termsToRemove << "OnlyShowIn=KDE";
+    const QMap<QString, QString> desktopTerms {
+        {"XFCE", "OnlyShowIn=XFCE"}, {"Fluxbox", "OnlyShowIn=FLUXBOX"}, {"KDE", "OnlyShowIn=KDE"}};
+    for (auto it = desktopTerms.keyValueBegin(); it != desktopTerms.keyValueEnd(); ++it) {
+        if (desktop != it->first) {
+            termsToRemove << desktopTerms.value(it->first);
+        }
     }
     for (auto &list : lists) {
         removeEnvExclusive(list, termsToRemove);
     }
 
-    category_map.insert("MX-Live", live_list);
-    category_map.insert("MX-Maintenance", maintenance_list);
-    category_map.insert("MX-Setup", setup_list);
-    category_map.insert("MX-Software", software_list);
-    category_map.insert("MX-Utilities", utilities_list);
+    // Populate category_map
+    for (int i = 0; i < categories.size(); ++i) {
+        category_map.insert(categories.at(i), *lists.at(i));
+    }
 
     readInfo(category_map);
     addButtons(info_map);
     ui->textSearch->setFocus();
-    QSize size = this->size();
+    auto size = this->size();
     restoreGeometry(settings.value("geometry").toByteArray());
     if (isMaximized()) { // if started maximized give option to resize to normal window size
         resize(size);
-        QRect screenGeometry = QApplication::primaryScreen()->geometry();
-        int x = (screenGeometry.width() - width()) / 2;
-        int y = (screenGeometry.height() - height()) / 2;
-        move(x, y);
+        auto screenGeometry = QApplication::primaryScreen()->geometry();
+        move((screenGeometry.width() - width()) / 2, (screenGeometry.height() - height()) / 2);
     }
     icon_size = settings.value("icon_size", icon_size).toInt();
 }
@@ -146,13 +138,12 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
     const QString lang = QLocale().name().split('_').first();
     const QString lang_region = QLocale().name();
 
-    QMapIterator<QString, QStringList> it(category_map);
-    while (it.hasNext()) {
-        const QString category = it.next().key();
-        const QStringList list = category_map.value(category);
+    for (auto it = category_map.cbegin(); it != category_map.cend(); ++it) {
+        const QString category = it.key();
+        const QStringList list = it.value();
 
         QMultiMap<QString, QStringList> categoryInfoMap;
-        for (const QString &file_name : qAsConst(list)) {
+        for (const QString &file_name : list) {
             QFile file(file_name);
             if (!file.open(QFile::Text | QFile::ReadOnly)) {
                 continue;
@@ -206,6 +197,8 @@ QString MainWindow::getValueFromText(const QString &text, const QString &key)
 // Read the info_map and add the buttons to the UI
 void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList>> &info_map)
 {
+    clearGrid();
+
     int col = 0;
     int row = 0;
     int max = 200;
@@ -367,11 +360,6 @@ void MainWindow::resizeEvent(QResizeEvent *event)
         }
         col_count = 0;
         if (ui->textSearch->text().isEmpty()) {
-            QLayoutItem *child = nullptr;
-            while ((child = ui->gridLayout_btn->takeAt(0)) != nullptr) {
-                delete child->widget();
-                delete child;
-            }
             addButtons(info_map);
         } else {
             textSearch_textChanged(ui->textSearch->text());
@@ -429,39 +417,33 @@ void MainWindow::pushHelp_clicked()
     }
 }
 
-void MainWindow::textSearch_textChanged(const QString &arg1)
+void MainWindow::textSearch_textChanged(const QString &searchTerm)
 {
-    // Remove all items from the layout
-    QLayoutItem *child = nullptr;
-    while ((child = ui->gridLayout_btn->takeAt(0)) != nullptr) {
-        delete child->widget();
-        delete child;
-    }
+    QMultiMap<QString, QMultiMap<QString, QStringList>> filteredMap;
 
-    QMultiMap<QString, QMultiMap<QString, QStringList>> new_map;
-    QMultiMap<QString, QStringList> map;
+    // Iterate over categories in info_map
+    for (auto it = info_map.constBegin(); it != info_map.constEnd(); ++it) {
+        const auto &category = it.key();
+        const auto &fileInfo = it.value();
+        QMultiMap<QString, QStringList> filteredCategoryMap;
 
-    // Create a new_map with items that match the search argument
-    QMapIterator<QString, QMultiMap<QString, QStringList>> it(info_map);
-    while (it.hasNext()) {
-        QString category = it.next().key();
-        QMultiMap<QString, QStringList> file_info = info_map.value(category);
-        for (const QString &file_name : category_map.value(category)) {
-            QString name = file_info.value(file_name).at(0);
-            QString comment = file_info.value(file_name).at(1);
-            if (name.contains(arg1, Qt::CaseInsensitive) || comment.contains(arg1, Qt::CaseInsensitive)
-                || category.contains(arg1, Qt::CaseInsensitive)) {
-                map.insert(file_name, info_map.value(category).value(file_name));
+        // Iterate over file names in the current category
+        for (const auto &fileName : category_map.value(category)) {
+            const auto &fileData = fileInfo.value(fileName);
+            const auto &name = fileData.at(Info::Name);
+            const auto &comment = fileData.at(Info::Comment);
+
+            // Check if any part of the file matches the search term
+            if (name.contains(searchTerm, Qt::CaseInsensitive) || comment.contains(searchTerm, Qt::CaseInsensitive)
+                || category.contains(searchTerm, Qt::CaseInsensitive)) {
+                filteredCategoryMap.insert(fileName, fileData);
             }
         }
-        if (!map.isEmpty()) {
-            new_map.insert(category, map);
-            map.clear();
+        if (!filteredCategoryMap.isEmpty()) {
+            filteredMap.insert(category, filteredCategoryMap);
         }
     }
-    if (!new_map.isEmpty()) {
-        arg1.isEmpty() ? addButtons(info_map) : addButtons(new_map);
-    }
+    searchTerm.isEmpty() ? addButtons(info_map) : addButtons(filteredMap);
 }
 
 // Strip %f, %F, %U, etc. if exec expects a file name since it's called without an argument from this launcher.
@@ -475,19 +457,31 @@ void MainWindow::fixExecItem(QString *item)
 void MainWindow::removeEnvExclusive(QStringList *list, const QStringList &termsToRemove)
 {
     for (auto it = list->begin(); it != list->end();) {
-        QFile file(*it);
-        if (file.open(QFile::Text | QFile::ReadOnly)) {
-            QString text = file.readAll();
+        const QString &filePath = *it;
+        QFile file(filePath);
+        if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            QString fileContent = QString::fromUtf8(file.readAll());
             file.close();
-            if (std::none_of(termsToRemove.cbegin(), termsToRemove.cend(),
-                             [&text](const QString &term) { return text.contains(term); })) {
-                ++it;
-            } else {
-                it = list->erase(it);
-            }
+
+            bool containsTerm
+                = std::any_of(termsToRemove.cbegin(), termsToRemove.cend(), [&fileContent](const QString &term) {
+                      return fileContent.contains(term, Qt::CaseInsensitive);
+                  });
+
+            containsTerm ? it = list->erase(it) : ++it;
         } else {
-            qWarning() << "Could not open file:" << *it;
+            qWarning() << "Could not open file:" << filePath;
             ++it;
         }
+    }
+}
+
+// Remove all items from the layout
+void MainWindow::clearGrid()
+{
+    QLayoutItem *child {nullptr};
+    while ((child = ui->gridLayout_btn->takeAt(0)) != nullptr) {
+        delete child->widget();
+        delete child;
     }
 }
