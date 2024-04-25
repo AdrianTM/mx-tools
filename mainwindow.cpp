@@ -124,11 +124,7 @@ QString MainWindow::getCmdOut(const QString &cmd)
 // List .desktop files that contain a specific string
 QStringList MainWindow::listDesktopFiles(const QString &search_string, const QString &location)
 {
-    QString cmd = QStringLiteral("grep -Elr %1 %2 | sort").arg(search_string, location);
-    QString out = getCmdOut(cmd);
-    if (out.isEmpty()) {
-        return {};
-    }
+    QString out = getCmdOut(QStringLiteral("grep -Elr %1 %2 | sort").arg(search_string, location));
     return out.split('\n');
 }
 
@@ -278,11 +274,7 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
                     col = 0;
                     ++row;
                 }
-                if (terminal_switch == "true") {
-                    btn->setObjectName("x-terminal-emulator -e " + exec);
-                } else {
-                    btn->setObjectName(exec);
-                }
+                btn->setObjectName(terminal_switch == "true" ? "x-terminal-emulator -e " + exec : exec);
                 QObject::connect(btn, &FlatButton::clicked, this, &MainWindow::btn_clicked);
             }
         }
@@ -354,16 +346,15 @@ void MainWindow::resizeEvent(QResizeEvent *event)
         return;
     }
     int new_count = width() / 200;
-    if (width() / 200 != col_count) {
-        if (new_count > max_elements && col_count == max_elements) {
-            return;
-        }
-        col_count = 0;
-        if (ui->textSearch->text().isEmpty()) {
-            addButtons(info_map);
-        } else {
-            textSearch_textChanged(ui->textSearch->text());
-        }
+    if (new_count == col_count || (new_count > max_elements && col_count == max_elements)) {
+        return;
+    }
+    col_count = new_count;
+
+    if (ui->textSearch->text().isEmpty()) {
+        addButtons(info_map);
+    } else {
+        textSearch_textChanged(ui->textSearch->text());
     }
 }
 
