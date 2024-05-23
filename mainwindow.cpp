@@ -74,7 +74,7 @@ MainWindow::MainWindow(QWidget *parent)
         {"XFCE", "OnlyShowIn=XFCE"}, {"Fluxbox", "OnlyShowIn=FLUXBOX"}, {"KDE", "OnlyShowIn=KDE"}};
     for (auto it = desktopTerms.keyValueBegin(); it != desktopTerms.keyValueEnd(); ++it) {
         if (desktop != it->first) {
-            termsToRemove << desktopTerms.value(it->first);
+            termsToRemove << it->second;
         }
     }
     for (auto &list : lists) {
@@ -136,33 +136,29 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
 
     for (auto it = category_map.cbegin(); it != category_map.cend(); ++it) {
         const QString category = it.key();
-        const QStringList list = it.value();
+        const QStringList &fileList = it.value();
 
         QMultiMap<QString, QStringList> categoryInfoMap;
-        for (const QString &file_name : list) {
+        for (const QString &file_name : fileList) {
             QFile file(file_name);
             if (!file.open(QFile::Text | QFile::ReadOnly)) {
                 continue;
             }
-            const QString text = file.readAll();
+            QTextStream stream(&file);
+            QString text = stream.readAll();
             file.close();
 
-            QString name;
-            QString comment;
-            if (lang != "en") {
-                name = getTranslation(text, "Name", lang_region, lang);
-                comment = getTranslation(text, "Comment", lang_region, lang);
-            }
+            QString name = lang != "en" ? getTranslation(text, "Name", lang_region, lang) : QString();
+            QString comment = lang != "en" ? getTranslation(text, "Comment", lang_region, lang) : QString();
 
-            name = name.isEmpty() ? getValueFromText(text, "Name").remove(QRegularExpression("^MX ")).replace('&', "&&")
-                                  : name;
+            name = name.isEmpty() ? getValueFromText(text, "Name").remove(QRegularExpression("^MX ")).replace('&', "&&") : name;
             comment = comment.isEmpty() ? getValueFromText(text, "Comment") : comment;
 
             QString exec = getValueFromText(text, "Exec");
             fixExecItem(&exec);
 
-            const QString icon_name = getValueFromText(text, "Icon");
-            const QString terminal_switch = getValueFromText(text, "Terminal");
+            QString icon_name = getValueFromText(text, "Icon");
+            QString terminal_switch = getValueFromText(text, "Terminal");
 
             categoryInfoMap.insert(file_name, {name, comment, icon_name, exec, category, terminal_switch});
         }
@@ -366,7 +362,12 @@ void MainWindow::checkHide_clicked(bool checked)
             hideShowIcon(file_name, checked);
         }
     }
-    system("sh -c 'pgrep xfce4-panel >/dev/null && xfce4-panel --restart'");
+    QProcess process;
+    process.start("pgrep", {"xfce4-panel"});
+    process.waitForFinished();
+    if (process.exitCode() == 0) {
+        QProcess::execute("xfce4-panel", {"--restart"});
+    }
 }
 
 // Hide or show icon for .desktop file
@@ -410,6 +411,12 @@ void MainWindow::pushHelp_clicked()
 
 void MainWindow::textSearch_textChanged(const QString &searchTerm)
 {
+    // Check if the search term is empty and display all buttons if it is
+    if (searchTerm.isEmpty()) {
+        addButtons(info_map);
+        return;
+    }
+
     QMultiMap<QString, QMultiMap<QString, QStringList>> filteredMap;
 
     // Iterate over categories in info_map
@@ -430,11 +437,15 @@ void MainWindow::textSearch_textChanged(const QString &searchTerm)
                 filteredCategoryMap.insert(fileName, fileData);
             }
         }
+
+        // If the filtered category map is not empty, add it to the filtered map
         if (!filteredCategoryMap.isEmpty()) {
             filteredMap.insert(category, filteredCategoryMap);
         }
     }
-    searchTerm.isEmpty() ? addButtons(info_map) : addButtons(filteredMap);
+
+    // Display buttons for the filtered map
+    addButtons(filteredMap);
 }
 
 // Strip %f, %F, %U, etc. if exec expects a file name since it's called without an argument from this launcher.
