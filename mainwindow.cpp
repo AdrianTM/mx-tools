@@ -78,7 +78,7 @@ void MainWindow::checkHideToolsInMenu()
 void MainWindow::initializeCategoryLists()
 {
     const QString search_folder {"/usr/share/applications"};
-    for (auto it = categoryMap.cbegin(); it != categoryMap.cend(); ++it) {
+    for (auto it = categories.cbegin(); it != categories.cend(); ++it) {
         *(it.value()) = listDesktopFiles(it.key(), search_folder);
     }
 }
@@ -111,16 +111,14 @@ void MainWindow::filterDesktopEnvironmentItems()
             termsToRemove << it->second;
         }
     }
-
-    QVector<QStringList *> lists {&live_list, &maintenance_list, &setup_list, &software_list, &utilities_list};
-    for (auto &list : lists) {
-        removeEnvExclusive(list, termsToRemove);
+    for (auto it = categories.begin(); it != categories.end(); ++it) {
+        removeEnvExclusive(it.value(), termsToRemove);
     }
 }
 
 void MainWindow::populateCategoryMap()
 {
-    for (auto it = categoryMap.cbegin(); it != categoryMap.cend(); ++it) {
+    for (auto it = categories.cbegin(); it != categories.cend(); ++it) {
         category_map.insert(it.key(), *(it.value()));
     }
 }
@@ -356,7 +354,7 @@ QIcon MainWindow::findIcon(const QString &icon_name)
         if (!QFile::exists(path)) {
             continue;
         }
-        for (const QString &ext : {".png", ".svg", ".xpm"}) {
+        for (const char* ext : {".png", ".svg", ".xpm"}) {
             QString file = path + name_noext + ext;
             if (QFile::exists(file)) {
                 return QIcon(file);
