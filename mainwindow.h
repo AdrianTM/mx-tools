@@ -50,11 +50,6 @@ private slots:
     void textSearch_textChanged(const QString &arg1);
 
 private:
-    const QMap<QString, QStringList *> categories {{"MX-Live", &live_list},
-                                                    {"MX-Maintenance", &maintenance_list},
-                                                    {"MX-Setup", &setup_list},
-                                                    {"MX-Software", &software_list},
-                                                    {"MX-Utilities", &utilities_list}};
     Ui::MainWindow *ui;
     FlatButton *btn {};
     QMultiMap<QString, QMultiMap<QString, QStringList>> info_map;
@@ -65,6 +60,11 @@ private:
     QStringList setup_list;
     QStringList software_list;
     QStringList utilities_list;
+    const QMap<QString, QStringList *> categories {{"MX-Live", &live_list},
+                                                   {"MX-Maintenance", &maintenance_list},
+                                                   {"MX-Setup", &setup_list},
+                                                   {"MX-Software", &software_list},
+                                                   {"MX-Utilities", &utilities_list}};
     enum Info { Name, Comment, IconName, Exec, Category, Terminal };
     int col_count = 0;
     int icon_size = 32;

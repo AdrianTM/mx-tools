@@ -137,7 +137,7 @@ void MainWindow::restoreWindowGeometry()
 // List .desktop files that contain a specific string
 QStringList MainWindow::listDesktopFiles(const QString &search_string, const QString &location)
 {
-    QDirIterator it(location, QStringList() << "*.desktop", QDir::Files, QDirIterator::Subdirectories);
+    QDirIterator it(location, {"*.desktop"}, QDir::Files, QDirIterator::Subdirectories);
     QStringList matchingFiles;
 
     while (it.hasNext()) {
@@ -150,8 +150,6 @@ QStringList MainWindow::listDesktopFiles(const QString &search_string, const QSt
             }
         }
     }
-
-    std::sort(matchingFiles.begin(), matchingFiles.end());
     return matchingFiles;
 }
 
@@ -354,7 +352,7 @@ QIcon MainWindow::findIcon(const QString &icon_name)
         if (!QFile::exists(path)) {
             continue;
         }
-        for (const char* ext : {".png", ".svg", ".xpm"}) {
+        for (const char *ext : {".png", ".svg", ".xpm"}) {
             QString file = path + name_noext + ext;
             if (QFile::exists(file)) {
                 return QIcon(file);
