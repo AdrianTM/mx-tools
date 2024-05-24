@@ -71,8 +71,13 @@ void MainWindow::setConnections()
 void MainWindow::checkHideToolsInMenu()
 {
     QString userDesktopPath = QDir::homePath() + "/.local/share/applications/mx-user.desktop";
-    ui->checkHide->setChecked(QFile::exists(userDesktopPath)
-                              && QFile(userDesktopPath).readAll().contains("NoDisplay=true"));
+    QFile userDesktopFile(userDesktopPath);
+    if (userDesktopFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        ui->checkHide->setChecked(userDesktopFile.readAll().contains("NoDisplay=true"));
+        userDesktopFile.close();
+    } else {
+        ui->checkHide->setChecked(false);
+    }
 }
 
 void MainWindow::initializeCategoryLists()
@@ -428,10 +433,9 @@ void MainWindow::hideShowIcon(const QString &file_name, bool hide)
         QFile::remove(file_name_home);
     } else {
         QFile::copy(file_name, file_name_home);
-        QString cmd = "sed -i -r -e '/^(NoDisplay|Hidden)=/d' ";
-        cmd += "-e '/Exec/aNoDisplay=true' ";
-        cmd += file_name_home;
-        system(cmd.toUtf8());
+        QProcess process;
+        process.start("sed", {"-ire", "/^(NoDisplay|Hidden)=/d", "-e", "/Exec/aNoDisplay=true", file_name_home});
+        process.waitForFinished();
     }
 }
 
