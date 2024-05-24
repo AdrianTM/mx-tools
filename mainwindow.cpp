@@ -24,10 +24,12 @@
 
 #include <QDebug>
 #include <QDir>
+#include <QDirIterator>
 #include <QProcess>
 #include <QRegularExpression>
 #include <QResizeEvent>
 #include <QScreen>
+#include <QStorageInfo>
 
 #include "about.h"
 #include "flatbutton.h"
@@ -40,62 +42,15 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setConnections();
     setWindowFlags(Qt::Window); // Enables the close, min, and max buttons
-    // Check if tools are displayed in the menu
-    QString userDesktopPath = QDir::homePath() + "/.local/share/applications/mx-user.desktop";
-    ui->checkHide->setChecked(QFile::exists(userDesktopPath)
-                              && QFile(userDesktopPath).readAll().contains("NoDisplay=true"));
-
-    const QString search_folder {"/usr/share/applications"};
-    const QStringList categories {"MX-Live", "MX-Maintenance", "MX-Setup", "MX-Software", "MX-Utilities"};
-    QVector<QStringList *> lists {&live_list, &maintenance_list, &setup_list, &software_list, &utilities_list};
-
-    for (int i = 0; i < categories.size(); ++i) {
-        *lists[i] = listDesktopFiles(categories.at(i), search_folder);
-    }
-
-    const QString partitionType = getCmdOut("df -T / |awk 'END {print $2}'");
-
-    // Conditionally remove items based on the environment
-    bool live = (partitionType == "aufs" || partitionType == "overlay");
-    if (!live) {
-        QStringList itemsToRemove {"mx-remastercc.desktop", "live-kernel-updater.desktop"};
-        live_list.erase(std::remove_if(live_list.begin(), live_list.end(),
-                                       [&itemsToRemove](const QString &item) {
-                                           return item.contains(itemsToRemove.at(0))
-                                                  || item.contains(itemsToRemove.at(1));
-                                       }),
-                        live_list.end());
-    }
-    // Since we are loading only MX apps we control this works OK, however we need to keep in mind that some
-    // app .desktop files have something like "OnlyShownIn=Blah;Xfce;KDE;Blah" so this would fail in that case
-    QStringList termsToRemove {live ? "MX-OnlyInstalled" : "MX-OnlyLive"};
-    QString desktop = qgetenv("XDG_CURRENT_DESKTOP");
-    const QMap<QString, QString> desktopTerms {
-        {"XFCE", "OnlyShowIn=XFCE"}, {"Fluxbox", "OnlyShowIn=FLUXBOX"}, {"KDE", "OnlyShowIn=KDE"}};
-    for (auto it = desktopTerms.keyValueBegin(); it != desktopTerms.keyValueEnd(); ++it) {
-        if (desktop != it->first) {
-            termsToRemove << it->second;
-        }
-    }
-    for (auto &list : lists) {
-        removeEnvExclusive(list, termsToRemove);
-    }
-
-    // Populate category_map
-    for (int i = 0; i < categories.size(); ++i) {
-        category_map.insert(categories.at(i), *lists.at(i));
-    }
-
+    checkHideToolsInMenu();
+    initializeCategoryLists();
+    filterLiveEnvironmentItems();
+    filterDesktopEnvironmentItems();
+    populateCategoryMap();
     readInfo(category_map);
     addButtons(info_map);
     ui->textSearch->setFocus();
-    auto size = this->size();
-    restoreGeometry(settings.value("geometry").toByteArray());
-    if (isMaximized()) { // if started maximized give option to resize to normal window size
-        resize(size);
-        auto screenGeometry = QApplication::primaryScreen()->geometry();
-        move((screenGeometry.width() - width()) / 2, (screenGeometry.height() - height()) / 2);
-    }
+    restoreWindowGeometry();
     icon_size = settings.value("icon_size", icon_size).toInt();
 }
 
@@ -113,19 +68,93 @@ void MainWindow::setConnections()
     connect(ui->textSearch, &QLineEdit::textChanged, this, &MainWindow::textSearch_textChanged);
 }
 
-QString MainWindow::getCmdOut(const QString &cmd)
+void MainWindow::checkHideToolsInMenu()
 {
-    QProcess proc;
-    proc.start("/bin/bash", {"-c", cmd});
-    proc.waitForFinished(-1);
-    return proc.readAllStandardOutput().trimmed();
+    QString userDesktopPath = QDir::homePath() + "/.local/share/applications/mx-user.desktop";
+    ui->checkHide->setChecked(QFile::exists(userDesktopPath)
+                              && QFile(userDesktopPath).readAll().contains("NoDisplay=true"));
+}
+
+void MainWindow::initializeCategoryLists()
+{
+    const QString search_folder {"/usr/share/applications"};
+    for (auto it = categoryMap.cbegin(); it != categoryMap.cend(); ++it) {
+        *(it.value()) = listDesktopFiles(it.key(), search_folder);
+    }
+}
+
+void MainWindow::filterLiveEnvironmentItems()
+{
+    QStorageInfo storageInfo(QDir::rootPath());
+    const QString partitionType = storageInfo.fileSystemType();
+    bool live = (partitionType == "aufs" || partitionType == "overlay");
+
+    if (!live) {
+        QStringList itemsToRemove {"mx-remastercc.desktop", "live-kernel-updater.desktop"};
+        live_list.erase(std::remove_if(live_list.begin(), live_list.end(),
+                                       [&itemsToRemove](const QString &item) {
+                                           return item.contains(itemsToRemove.at(0))
+                                                  || item.contains(itemsToRemove.at(1));
+                                       }),
+                        live_list.end());
+    }
+}
+
+void MainWindow::filterDesktopEnvironmentItems()
+{
+    QStringList termsToRemove {qgetenv("XDG_CURRENT_DESKTOP") == "live" ? "MX-OnlyInstalled" : "MX-OnlyLive"};
+    const QMap<QString, QString> desktopTerms {
+        {"XFCE", "OnlyShowIn=XFCE"}, {"Fluxbox", "OnlyShowIn=FLUXBOX"}, {"KDE", "OnlyShowIn=KDE"}};
+
+    for (auto it = desktopTerms.keyValueBegin(); it != desktopTerms.keyValueEnd(); ++it) {
+        if (qgetenv("XDG_CURRENT_DESKTOP") != it->first) {
+            termsToRemove << it->second;
+        }
+    }
+
+    QVector<QStringList *> lists {&live_list, &maintenance_list, &setup_list, &software_list, &utilities_list};
+    for (auto &list : lists) {
+        removeEnvExclusive(list, termsToRemove);
+    }
+}
+
+void MainWindow::populateCategoryMap()
+{
+    for (auto it = categoryMap.cbegin(); it != categoryMap.cend(); ++it) {
+        category_map.insert(it.key(), *(it.value()));
+    }
+}
+
+void MainWindow::restoreWindowGeometry()
+{
+    auto size = this->size();
+    restoreGeometry(settings.value("geometry").toByteArray());
+    if (isMaximized()) { // if started maximized give option to resize to normal window size
+        resize(size);
+        auto screenGeometry = QApplication::primaryScreen()->geometry();
+        move((screenGeometry.width() - width()) / 2, (screenGeometry.height() - height()) / 2);
+    }
 }
 
 // List .desktop files that contain a specific string
 QStringList MainWindow::listDesktopFiles(const QString &search_string, const QString &location)
 {
-    QString out = getCmdOut(QStringLiteral("grep -Elr %1 %2 | sort").arg(search_string, location));
-    return out.split('\n');
+    QDirIterator it(location, QStringList() << "*.desktop", QDir::Files, QDirIterator::Subdirectories);
+    QStringList matchingFiles;
+
+    while (it.hasNext()) {
+        QFile file(it.next());
+        if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            QTextStream in(&file);
+            QString content = in.readAll();
+            if (content.contains(search_string)) {
+                matchingFiles << file.fileName();
+            }
+        }
+    }
+
+    std::sort(matchingFiles.begin(), matchingFiles.end());
+    return matchingFiles;
 }
 
 // Load info (name, comment, exec, icon_name, category, terminal) to the info_map

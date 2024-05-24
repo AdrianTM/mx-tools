@@ -40,14 +40,6 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
-    [[nodiscard]] QIcon findIcon(const QString &icon_name);
-    [[nodiscard]] QString getCmdOut(const QString &cmd);
-    [[nodiscard]] QStringList listDesktopFiles(const QString &search_string, const QString &location);
-    static void hideShowIcon(const QString &file_name, bool hide);
-    void addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList>> &info_map);
-    void readInfo(const QMultiMap<QString, QStringList> &category_map);
-    void setConnections();
-
 private slots:
     static void pushHelp_clicked();
     void btn_clicked();
@@ -58,6 +50,11 @@ private slots:
     void textSearch_textChanged(const QString &arg1);
 
 private:
+    const QMap<QString, QStringList *> categoryMap {{"MX-Live", &live_list},
+                                                    {"MX-Maintenance", &maintenance_list},
+                                                    {"MX-Setup", &setup_list},
+                                                    {"MX-Software", &software_list},
+                                                    {"MX-Utilities", &utilities_list}};
     Ui::MainWindow *ui;
     FlatButton *btn {};
     QMultiMap<QString, QMultiMap<QString, QStringList>> info_map;
@@ -77,7 +74,19 @@ private:
     [[nodiscard]] QString getTranslation(const QString &text, const QString &key, const QString &lang_region,
                                          const QString &lang);
     [[nodiscard]] QString getValueFromText(const QString &text, const QString &key);
+    [[nodiscard]] QIcon findIcon(const QString &icon_name);
+    [[nodiscard]] QStringList listDesktopFiles(const QString &search_string, const QString &location);
     static void fixExecItem(QString *item);
+    static void hideShowIcon(const QString &file_name, bool hide);
     static void removeEnvExclusive(QStringList *list, const QStringList &termsToRemove);
+    void addButtons(const QMultiMap<QString, QMultiMap<QString, QStringList>> &info_map);
+    void checkHideToolsInMenu();
     void clearGrid();
+    void filterDesktopEnvironmentItems();
+    void filterLiveEnvironmentItems();
+    void initializeCategoryLists();
+    void populateCategoryMap();
+    void readInfo(const QMultiMap<QString, QStringList> &category_map);
+    void restoreWindowGeometry();
+    void setConnections();
 };
