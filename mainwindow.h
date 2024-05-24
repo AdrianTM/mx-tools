@@ -40,7 +40,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
-    [[nodiscard]] QIcon findIcon(QString icon_name);
+    [[nodiscard]] QIcon findIcon(const QString &icon_name);
     [[nodiscard]] QString getCmdOut(const QString &cmd);
     [[nodiscard]] QStringList listDesktopFiles(const QString &search_string, const QString &location);
     static void hideShowIcon(const QString &file_name, bool hide);

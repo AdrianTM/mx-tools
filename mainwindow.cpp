@@ -151,7 +151,8 @@ void MainWindow::readInfo(const QMultiMap<QString, QStringList> &category_map)
             QString name = lang != "en" ? getTranslation(text, "Name", lang_region, lang) : QString();
             QString comment = lang != "en" ? getTranslation(text, "Comment", lang_region, lang) : QString();
 
-            name = name.isEmpty() ? getValueFromText(text, "Name").remove(QRegularExpression("^MX ")).replace('&', "&&") : name;
+            name = name.isEmpty() ? getValueFromText(text, "Name").remove(QRegularExpression("^MX ")).replace('&', "&&")
+                                  : name;
             comment = comment.isEmpty() ? getValueFromText(text, "Comment") : comment;
 
             QString exec = getValueFromText(text, "Exec");
@@ -278,50 +279,73 @@ void MainWindow::addButtons(const QMultiMap<QString, QMultiMap<QString, QStringL
     ui->gridLayout_btn->setRowStretch(row + 2, 1);
 }
 
-QIcon MainWindow::findIcon(QString icon_name)
+QIcon MainWindow::findIcon(const QString &icon_name)
 {
+    static QIcon defaultIcon;
+    static bool defaultIconLoaded = false;
+
     if (icon_name.isEmpty()) {
-        return {};
+        if (!defaultIconLoaded) {
+            defaultIcon = findIcon("utilities-terminal");
+            defaultIconLoaded = true;
+        }
+        return defaultIcon;
     }
-    if (QFileInfo::exists('/' + icon_name)) {
+
+    // Check if the icon name is an absolute path and exists
+    if (QFileInfo(icon_name).isAbsolute() && QFile::exists(icon_name)) {
         return QIcon(icon_name);
     }
 
-    QString search_term = icon_name;
-    const QRegularExpression pattern("\\.(png|svg|xpm)$");
-    if (!pattern.match(icon_name).hasMatch()) {
-        search_term = icon_name + ".*";
-    }
-    icon_name.remove(pattern);
+    // Prepare regular expression to strip extension
+    static const QRegularExpression re(R"(\.(png|svg|xpm)$)");
+    QString name_noext = icon_name;
+    name_noext.remove(re);
 
-    // Return the icon from the theme if it exists
-    if (QIcon::hasThemeIcon(icon_name)) {
-        return QIcon::fromTheme(icon_name);
+    // Return the themed icon if available
+    if (QIcon::hasThemeIcon(name_noext)) {
+        return QIcon::fromTheme(name_noext);
     }
 
-    // Try to find in most obvious places
-    QStringList search_paths {QDir::homePath() + "/.local/share/icons/", "/usr/share/pixmaps/",
-                              "/usr/local/share/icons/", "/usr/share/icons/hicolor/48x48/apps/"};
+    // Define common search paths for icons
+    QStringList search_paths {QDir::homePath() + "/.local/share/icons/",
+                              "/usr/share/pixmaps/",
+                              "/usr/local/share/icons/",
+                              "/usr/share/icons/",
+                              "/usr/share/icons/hicolor/48x48/apps/",
+                              "/usr/share/icons/Adwaita/48x48/legacy/"};
+
+    // Optimization: search first for the full icon_name with the specified extension
+    auto it = std::find_if(search_paths.cbegin(), search_paths.cend(),
+                           [&](const QString &path) { return QFile::exists(path + icon_name); });
+    if (it != search_paths.cend()) {
+        return QIcon(*it + icon_name);
+    }
+
+    // Search for the icon without extension in the specified paths
     for (const QString &path : search_paths) {
-        if (!QFileInfo::exists(path)) {
-            search_paths.removeOne(path);
+        if (!QFile::exists(path)) {
             continue;
         }
-        for (const QString ext : {".png", ".svg", ".xpm"}) {
-            QString file = path + icon_name + ext;
-            if (QFileInfo::exists(file)) {
+        for (const QString &ext : {".png", ".svg", ".xpm"}) {
+            QString file = path + name_noext + ext;
+            if (QFile::exists(file)) {
                 return QIcon(file);
             }
         }
     }
 
-    // Search recursive
-    search_paths.append("/usr/share/icons/hicolor/48x48/");
-    search_paths.append("/usr/share/icons/hicolor/");
-    search_paths.append("/usr/share/icons/");
-    QString out
-        = getCmdOut("find " + search_paths.join(' ') + " -iname \"" + search_term + "\" -print -quit 2>/dev/null");
-    return (!out.isEmpty()) ? QIcon(out) : QIcon();
+    // If the icon is "utilities-terminal" and not found, return the default icon if it's already loaded
+    if (icon_name == "utilities-terminal") {
+        if (!defaultIconLoaded) {
+            defaultIcon = QIcon();
+            defaultIconLoaded = true;
+        }
+        return defaultIcon;
+    }
+
+    // If the icon is not "utilities-terminal", try to load the default icon
+    return findIcon("utilities-terminal");
 }
 
 void MainWindow::btn_clicked()
