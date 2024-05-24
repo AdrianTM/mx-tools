@@ -342,6 +342,7 @@ QIcon MainWindow::findIcon(const QString &icon_name)
                               "/usr/share/pixmaps/",
                               "/usr/local/share/icons/",
                               "/usr/share/icons/",
+                              "/usr/share/icons/hicolor/scalable/apps/",
                               "/usr/share/icons/hicolor/48x48/apps/",
                               "/usr/share/icons/Adwaita/48x48/legacy/"};
 
