@@ -381,7 +381,13 @@ QIcon MainWindow::findIcon(const QString &icon_name)
 void MainWindow::btn_clicked()
 {
     hide();
-    system(sender()->objectName().toUtf8());
+    QStringList cmdList = QProcess::splitCommand(sender()->objectName());
+    if (cmdList.last() == "&") {
+        cmdList.removeLast();
+        QProcess::startDetached(cmdList.first(), cmdList);
+    } else {
+        QProcess::execute(cmdList.first(), cmdList);
+    }
     show();
 }
 
