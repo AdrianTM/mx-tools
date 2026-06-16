@@ -20,6 +20,8 @@
  * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
+#include <algorithm>
+
 #include <QDebug>
 #include <QDir>
 #include <QDirIterator>
@@ -170,7 +172,9 @@ void MainWindow::checkHideToolsInMenu()
 void MainWindow::initializeCategoryLists()
 {
     for (auto it = categories.cbegin(); it != categories.cend(); ++it) {
-        *(it.value()) = listDesktopFiles(it.key(), APPLICATIONS_PATH);
+        QStringList tokens {it.key()};
+        tokens += categoryAliases.value(it.key());
+        *(it.value()) = listDesktopFiles(tokens, APPLICATIONS_PATH);
     }
 }
 
@@ -215,8 +219,8 @@ void MainWindow::restoreWindowGeometry()
     }
 }
 
-// List .desktop files whose Categories= line contains the given category token.
-QStringList MainWindow::listDesktopFiles(const QString &category, const QString &location)
+// List .desktop files whose Categories= line contains any of the given category tokens.
+QStringList MainWindow::listDesktopFiles(const QStringList &categoryTokens, const QString &location)
 {
     QDirIterator it(location, {"*.desktop"}, QDir::Files, QDirIterator::Subdirectories);
     QStringList matchingFiles;
@@ -234,11 +238,12 @@ QStringList MainWindow::listDesktopFiles(const QString &category, const QString 
             if (!line.startsWith(QLatin1String("Categories="))) {
                 continue;
             }
-            // Match the category as an exact ;-separated token, not a loose substring,
+            // Match each category as an exact ;-separated token, not a loose substring,
             // so it can only come from Categories= and won't partial-match other tokens.
             const QStringList categories =
                 line.mid(line.indexOf(QLatin1Char('=')) + 1).split(QLatin1Char(';'), Qt::SkipEmptyParts);
-            if (categories.contains(category)) {
+            if (std::any_of(categoryTokens.cbegin(), categoryTokens.cend(),
+                            [&categories](const QString &token) { return categories.contains(token); })) {
                 matchingFiles << filePath;
             }
             break; // only one Categories line per desktop file

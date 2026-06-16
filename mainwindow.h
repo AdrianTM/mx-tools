@@ -90,6 +90,14 @@ private:
                                                    {"MX-Setup", &setup_list},
                                                    {"MX-Software", &software_list},
                                                    {"MX-Utilities", &utilities_list}};
+    // Alternative category tokens accepted in addition to the primary key, so desktop
+    // files can migrate to the freedesktop-standard X- prefix while the old token still
+    // works. Files matching an alias are grouped under the primary key's header.
+    const QMap<QString, QStringList> categoryAliases {{"MX-Live", {"X-MX-Live"}},
+                                                      {"MX-Maintenance", {"X-MX-Maintenance"}},
+                                                      {"MX-Setup", {"X-MX-Setup"}},
+                                                      {"MX-Software", {"X-MX-Software"}},
+                                                      {"MX-Utilities", {"X-MX-Utilities"}}};
     int colCount = 0;
     int iconSize = 32;
     int maxElements = 0;
@@ -117,7 +125,7 @@ private:
     [[nodiscard]] QIcon findIcon(const QString &iconName);
     [[nodiscard]] static std::optional<QIcon> lookupIcon(const QString &iconName);
     [[nodiscard]] static QIcon defaultIcon();
-    [[nodiscard]] QStringList listDesktopFiles(const QString &category, const QString &location);
+    [[nodiscard]] QStringList listDesktopFiles(const QStringList &categoryTokens, const QString &location);
     [[nodiscard]] int columnsForWidth() const;
     void updateLayoutMetrics();
     static void fixExecItem(QString *item);
