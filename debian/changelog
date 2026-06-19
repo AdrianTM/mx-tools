@@ -1,3 +1,10 @@
+mx-tools (26.06) mx; urgency=medium
+
+  * Fix missing tools on some desktop environments (Fluxbox)
+  * Accept X-MX-* category tokens for desktop file compatibility
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 19 Jun 2026 14:48:19 -0400
+
 mx-tools (26.05.4) mx; urgency=medium
 
   * Fix display of translated tool names (MX prefix and & escaping)
