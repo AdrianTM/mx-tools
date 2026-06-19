@@ -63,6 +63,12 @@ QStringList currentDesktopNames()
 {
     QStringList desktops = QString::fromUtf8(qgetenv("XDG_CURRENT_DESKTOP")).split(QLatin1Char(':'),
                                                                                     Qt::SkipEmptyParts);
+    if (desktops.isEmpty()) {
+        const QString sessionDesktop = QString::fromUtf8(qgetenv("XDG_SESSION_DESKTOP")).trimmed();
+        if (!sessionDesktop.isEmpty()) {
+            desktops.append(sessionDesktop);
+        }
+    }
     for (QString &desktop : desktops) {
         desktop = desktop.trimmed().toUpper();
     }
