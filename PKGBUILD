@@ -37,7 +37,7 @@ package() {
 
     # Install translations
     install -dm755 "${pkgdir}/usr/share/mx-tools/locale"
-    install -Dm644 build/*.qm "${pkgdir}/usr/share/mx-tools/locale/" 2>/dev/null || true
+    install -Dm644 -t "${pkgdir}/usr/share/mx-tools/locale/" build/*.qm 2>/dev/null || true
 
     # Install desktop file
     install -Dm644 mx-tools.desktop "${pkgdir}/usr/share/applications/mx-tools.desktop"
@@ -48,8 +48,13 @@ package() {
 
     # Install documentation
     install -dm755 "${pkgdir}/usr/share/doc/mx-tools"
+
+    install -dm755 "${pkgdir}/usr/share/man/man1"
+    install -Dm644 -t "${pkgdir}/usr/share/man/man1/" help/*.1 2>/dev/null || true
     if [ -d help ]; then
-        cp -r help/* "${pkgdir}/usr/share/doc/mx-tools/" 2>/dev/null || true
+        for help_file in help/*.html help/*.jpg help/*.png help/*.css; do
+            [ -f "$help_file" ] && install -Dm644 "$help_file" "${pkgdir}/usr/share/doc/mx-tools/$(basename "$help_file")"
+        done
     fi
 
     # Install license
