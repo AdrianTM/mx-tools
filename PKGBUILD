@@ -40,7 +40,7 @@ package() {
     install -Dm644 -t "${pkgdir}/usr/share/mx-tools/locale/" build/*.qm 2>/dev/null || true
 
     # Install desktop file
-    install -Dm644 mx-tools.desktop "${pkgdir}/usr/share/applications/mx-tools.desktop"
+    install -Dm644 data/mx-tools.desktop "${pkgdir}/usr/share/applications/mx-tools.desktop"
 
     # Install icons
     install -Dm644 icons/mx-tools.png "${pkgdir}/usr/share/icons/hicolor/96x96/apps/mx-tools.png"

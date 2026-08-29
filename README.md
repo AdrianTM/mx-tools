@@ -77,9 +77,9 @@ ninja
 ### Project Structure
 ```
 mx-tools/
-├── main.cpp              # Application entry point
-├── toolmodel.{cpp,h}      # Tool discovery, filtering, icons, and launching
+├── src/                   # C++ entry point and application backend
 ├── qml/                   # Qt Quick window and reusable UI components
+├── data/                  # Desktop integration files
 ├── translations/          # Translation files (.ts)
 ├── icons/                 # Application icons
 ├── help/                  # Documentation files

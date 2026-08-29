@@ -6,5 +6,5 @@ help/*.html			usr/share/doc/mx-tools
 help/*.css			usr/share/doc/mx-tools
 help/*.1			usr/share/man/man1
 obj-*/mx-tools		usr/bin
-mx-tools.desktop	usr/share/applications
+data/mx-tools.desktop	usr/share/applications
 obj-*/*.qm		usr/share/mx-tools/locale

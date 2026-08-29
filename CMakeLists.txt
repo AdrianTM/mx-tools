@@ -106,12 +106,12 @@ set(CMAKE_AUTORCC ON)
 
 # Define source files
 set(SOURCES
-    main.cpp
-    toolmodel.cpp
+    src/main.cpp
+    src/toolmodel.cpp
 )
 
 set(HEADERS
-    toolmodel.h
+    src/toolmodel.h
 )
 
 # Get all translation files
