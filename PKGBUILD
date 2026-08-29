@@ -6,8 +6,8 @@ pkgdesc="MX Tools - Dashboard application launcher for various MX tools"
 arch=('x86_64' 'i686')
 url="https://mxlinux.org"
 license=('GPL3')
-depends=('qt6-base')
-makedepends=('cmake' 'ninja' 'qt6-tools')
+depends=('qt6-base' 'qt6-declarative')
+makedepends=('cmake' 'ninja' 'qt6-declarative' 'qt6-tools')
 source=()
 sha256sums=()
 

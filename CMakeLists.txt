@@ -90,34 +90,28 @@ find_package(Qt6 REQUIRED COMPONENTS
     Core
     Gui
     Widgets
+    Qml
+    Quick
+    QuickControls2
     LinguistTools
 )
 
+qt_policy(SET QTP0001 NEW)
+qt_policy(SET QTP0004 NEW)
+
 # Enable automatic MOC, UIC, and RCC processing
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOUIC OFF)
 set(CMAKE_AUTORCC ON)
 
 # Define source files
 set(SOURCES
     main.cpp
-    mainwindow.cpp
-    flatbutton.cpp
-    about.cpp
+    toolmodel.cpp
 )
 
 set(HEADERS
-    mainwindow.h
-    flatbutton.h
-    about.h
-)
-
-set(UI_FILES
-    mainwindow.ui
-)
-
-set(RESOURCE_FILES
-    images.qrc
+    toolmodel.h
 )
 
 # Get all translation files
@@ -128,15 +122,29 @@ list(FILTER TRANSLATION_FILES EXCLUDE REGEX "/mx-tools_en_US\\.ts$")
 add_executable(mx-tools
     ${SOURCES}
     ${HEADERS}
-    ${UI_FILES}
-    ${RESOURCE_FILES}
+)
+
+qt_add_qml_module(mx-tools
+    URI MxTools
+    VERSION 1.0
+    QML_FILES
+        qml/Main.qml
+        qml/components/CategoryButton.qml
+        qml/components/ModernSwitch.qml
+        qml/components/SecondaryButton.qml
+        qml/components/ToolCard.qml
+    RESOURCES
+        icons/logo.svg
 )
 
 # Link Qt6 libraries
-target_link_libraries(mx-tools
+target_link_libraries(mx-tools PRIVATE
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
+    Qt6::Qml
+    Qt6::Quick
+    Qt6::QuickControls2
 )
 
 # Set compiler flags

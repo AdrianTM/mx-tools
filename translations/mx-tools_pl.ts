@@ -1,110 +1,343 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pl">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pl">
+<context>
+    <name>Main</name>
+    <message>
+        <location filename="../qml/Main.qml" line="17"/>
+        <location filename="../qml/Main.qml" line="73"/>
+        <location filename="../qml/Main.qml" line="406"/>
+        <source>MX Tools</source>
+        <translation type="unfinished">MX Narzędzia</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="80"/>
+        <source>System dashboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="95"/>
+        <source>Search tools and tasks…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="101"/>
+        <source>Search tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="126"/>
+        <source>Clear search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="134"/>
+        <source>Manual</source>
+        <translation type="unfinished">Podręcznik</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="143"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="175"/>
+        <source>CATEGORIES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="218"/>
+        <source>Simplify menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="225"/>
+        <source>Keep tools here only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="236"/>
+        <location filename="../qml/Main.qml" line="364"/>
+        <location filename="../qml/Main.qml" line="373"/>
+        <source>Hide individual tools from the application menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="287"/>
+        <source>Search results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="289"/>
+        <source>All tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="296"/>
+        <source>Results matching “%1”</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="297"/>
+        <source>Choose a tool to configure or maintain your system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/Main.qml" line="306"/>
+        <source>%n tool(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="351"/>
+        <source>No tools found
+Try a different search or category.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="386"/>
+        <source>About MX Tools</source>
+        <translation type="unfinished">O MX Narzędzia</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="413"/>
+        <source>Version %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="419"/>
+        <source>A focused collection of configuration and maintenance tools for MX Linux.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="428"/>
+        <source>Website</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="436"/>
+        <source>License</source>
+        <translation type="unfinished">Licencja</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="444"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Dziennik zmian</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="454"/>
+        <source>Copyright © MX Linux</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="478"/>
         <source>MX Tools</source>
-        <translation>MX Narzędzia</translation>
+        <translation type="vanished">MX Narzędzia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="53"/>
         <source>About this application</source>
-        <translation>O programie</translation>
+        <translation type="vanished">O programie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="56"/>
         <source>About...</source>
-        <translation>O...</translation>
+        <translation type="vanished">O...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="63"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="127"/>
         <source>Close application</source>
-        <translation>Zamknij program</translation>
+        <translation type="vanished">Zamknij program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="130"/>
         <source>Close</source>
-        <translation>Zamknij</translation>
+        <translation type="vanished">Zamknij</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="137"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="165"/>
         <source>Manual</source>
-        <translation>Podręcznik</translation>
+        <translation type="vanished">Podręcznik</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="274"/>
         <source>These MX applications save time and effort with important tasks.</source>
-        <translation>Te aplikacje MX oszczędzają Twój czas i wysiłek poświęcony na ważne zadania.</translation>
+        <translation type="vanished">Te aplikacje MX oszczędzają Twój czas i wysiłek poświęcony na ważne zadania.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="290"/>
         <source>Hide individual tools from the menu</source>
-        <translation>Ukryj poszczególne narzędzia w menu</translation>
+        <translation type="vanished">Ukryj poszczególne narzędzia w menu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="309"/>
         <source>search</source>
-        <translation>szukaj</translation>
+        <translation type="vanished">szukaj</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="477"/>
         <source>About MX Tools</source>
-        <translation>O MX Narzędzia</translation>
+        <translation type="vanished">O MX Narzędzia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="478"/>
         <source>Version: </source>
-        <translation>Wersja:</translation>
+        <translation type="vanished">Wersja:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="479"/>
         <source>Configuration Tools for MX Linux</source>
-        <translation>Narzędzia konfiguracyjne dla MX Linux</translation>
+        <translation type="vanished">Narzędzia konfiguracyjne dla MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="482"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Prawa autorskie © MX Linux</translation>
+        <translation type="vanished">Prawa autorskie © MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="483"/>
         <source>%1 License</source>
-        <translation>%1 Licencja</translation>
+        <translation type="vanished">%1 Licencja</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="61"/>
         <source>License</source>
-        <translation>Licencja</translation>
+        <translation type="vanished">Licencja</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="62"/>
-        <location filename="../about.cpp" line="72"/>
         <source>Changelog</source>
-        <translation>Dziennik zmian</translation>
+        <translation type="vanished">Dziennik zmian</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="63"/>
         <source>Cancel</source>
-        <translation>Anuluj</translation>
+        <translation type="vanished">Anuluj</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="85"/>
         <source>&amp;Close</source>
-        <translation>&amp;Zamknij</translation>
+        <translation type="vanished">&amp;Zamknij</translation>
+    </message>
+</context>
+<context>
+    <name>ToolCard</name>
+    <message>
+        <location filename="../qml/components/ToolCard.qml" line="74"/>
+        <source>Open this MX tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ToolModel</name>
+    <message>
+        <location filename="../toolmodel.cpp" line="59"/>
+        <source>Live</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="62"/>
+        <source>Maintenance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="65"/>
+        <source>Setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="68"/>
+        <source>Software</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="70"/>
+        <source>Utilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="217"/>
+        <source>All tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="388"/>
+        <location filename="../toolmodel.cpp" line="395"/>
+        <location filename="../toolmodel.cpp" line="403"/>
+        <source>Unable to launch tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="388"/>
+        <source>The selected tool is no longer available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="395"/>
+        <source>The selected tool has no launch command.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="403"/>
+        <source>Could not start %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="410"/>
+        <location filename="../toolmodel.cpp" line="434"/>
+        <source>Could not open %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="416"/>
+        <source>Manual unavailable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="421"/>
+        <source>License unavailable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="427"/>
+        <source>Website unavailable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="427"/>
+        <source>Could not open the MX Linux website.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="434"/>
+        <location filename="../toolmodel.cpp" line="440"/>
+        <source>Changelog unavailable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="440"/>
+        <source>Could not read the application changelog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="443"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Dziennik zmian</translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="458"/>
+        <location filename="../toolmodel.cpp" line="468"/>
+        <source>Menu setting failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="458"/>
+        <source>Could not create %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../toolmodel.cpp" line="468"/>
+        <source>Could not update %1.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
