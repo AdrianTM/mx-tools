@@ -388,6 +388,14 @@ void ToolModel::launch(const QString &fileName)
         emit errorOccurred(tr("Unable to launch tool"), tr("The selected tool is no longer available."));
         return;
     }
+    const qint64 runningProcessId = m_runningTools.value(fileName);
+    if (runningProcessId > 0
+        && QFileInfo::exists(QStringLiteral("/proc/%1").arg(runningProcessId))) {
+        emit errorOccurred(tr("Tool already running"), tr("%1 is already running.").arg(iterator->name));
+        return;
+    }
+    m_runningTools.remove(fileName);
+
     QString commandText = iterator->runInTerminal ? QStringLiteral("x-terminal-emulator -e ") + iterator->exec
                                                    : iterator->exec;
     QStringList arguments = QProcess::splitCommand(commandText);
@@ -399,8 +407,11 @@ void ToolModel::launch(const QString &fileName)
     if (!arguments.isEmpty() && arguments.constLast() == QLatin1String("&")) {
         arguments.removeLast();
     }
-    if (!QProcess::startDetached(program, arguments)) {
+    qint64 processId = 0;
+    if (!QProcess::startDetached(program, arguments, {}, &processId)) {
         emit errorOccurred(tr("Unable to launch tool"), tr("Could not start %1.").arg(iterator->name));
+    } else if (processId > 0) {
+        m_runningTools.insert(fileName, processId);
     }
 }
 

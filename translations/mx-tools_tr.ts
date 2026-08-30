@@ -274,8 +274,8 @@ Try a different search or category.</source>
     </message>
     <message>
         <location filename="../src/toolmodel.cpp" line="388"/>
-        <location filename="../src/toolmodel.cpp" line="395"/>
         <location filename="../src/toolmodel.cpp" line="403"/>
+        <location filename="../src/toolmodel.cpp" line="412"/>
         <source>Unable to launch tool</source>
         <translation type="unfinished"></translation>
     </message>
@@ -285,70 +285,80 @@ Try a different search or category.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="395"/>
-        <source>The selected tool has no launch command.</source>
+        <location filename="../src/toolmodel.cpp" line="394"/>
+        <source>Tool already running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/toolmodel.cpp" line="394"/>
+        <source>%1 is already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/toolmodel.cpp" line="403"/>
+        <source>The selected tool has no launch command.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/toolmodel.cpp" line="412"/>
         <source>Could not start %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="410"/>
-        <location filename="../src/toolmodel.cpp" line="434"/>
+        <location filename="../src/toolmodel.cpp" line="421"/>
+        <location filename="../src/toolmodel.cpp" line="445"/>
         <source>Could not open %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="416"/>
+        <location filename="../src/toolmodel.cpp" line="427"/>
         <source>Manual unavailable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="421"/>
+        <location filename="../src/toolmodel.cpp" line="432"/>
         <source>License unavailable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="427"/>
+        <location filename="../src/toolmodel.cpp" line="438"/>
         <source>Website unavailable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="427"/>
+        <location filename="../src/toolmodel.cpp" line="438"/>
         <source>Could not open the MX Linux website.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="434"/>
-        <location filename="../src/toolmodel.cpp" line="440"/>
+        <location filename="../src/toolmodel.cpp" line="445"/>
+        <location filename="../src/toolmodel.cpp" line="451"/>
         <source>Changelog unavailable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="440"/>
+        <location filename="../src/toolmodel.cpp" line="451"/>
         <source>Could not read the application changelog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="443"/>
+        <location filename="../src/toolmodel.cpp" line="454"/>
         <source>Changelog</source>
         <translation type="unfinished">Değişim günlüğü</translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="458"/>
-        <location filename="../src/toolmodel.cpp" line="468"/>
+        <location filename="../src/toolmodel.cpp" line="469"/>
+        <location filename="../src/toolmodel.cpp" line="479"/>
         <source>Menu setting failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="458"/>
+        <location filename="../src/toolmodel.cpp" line="469"/>
         <source>Could not create %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/toolmodel.cpp" line="468"/>
+        <location filename="../src/toolmodel.cpp" line="479"/>
         <source>Could not update %1.</source>
         <translation type="unfinished"></translation>
     </message>

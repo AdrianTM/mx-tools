@@ -88,6 +88,7 @@ private:
     QStringList m_menuFiles;
     QString m_search;
     QString m_selectedCategory;
+    QHash<QString, qint64> m_runningTools;
     ToolIconProvider *m_iconProvider;
     bool m_hideFromMenu = false;
 
