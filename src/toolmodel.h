@@ -91,11 +91,14 @@ private:
     QHash<QString, qint64> m_runningTools;
     ToolIconProvider *m_iconProvider;
     bool m_hideFromMenu = false;
+    bool m_legacyMenuState = false;
 
     void loadTools();
     void refilter();
     void detectMenuVisibility();
-    void updateDesktopFileVisibility(const QString &fileName, bool hide);
+    [[nodiscard]] bool hideMenuEntries();
+    [[nodiscard]] bool restoreMenuEntries();
+    [[nodiscard]] bool restoreLegacyMenuEntries();
     [[nodiscard]] static QString value(const QString &text, const QString &key);
     [[nodiscard]] static QString translatedValue(const QString &text, const QString &key);
     [[nodiscard]] static QStringList desktopFilesForCategory(const QStringList &tokens);

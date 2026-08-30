@@ -15,8 +15,10 @@
 #include <QLocale>
 #include <QProcess>
 #include <QRegularExpression>
+#include <QSaveFile>
+#include <QSettings>
+#include <QStandardPaths>
 #include <QStorageInfo>
-#include <QTextStream>
 #include <QUrl>
 
 namespace
@@ -26,6 +28,7 @@ constexpr auto userApplicationsPath = "/.local/share/applications";
 constexpr auto manualPath = "/usr/share/mx-docs/mxum_en.pdf";
 constexpr auto licensePath = "/usr/share/doc/mx-tools/license.html";
 constexpr auto changelogPath = "/usr/share/doc/mx-tools/changelog.gz";
+constexpr auto menuStateFileName = "menu-visibility.ini";
 
 const QList<QPair<QString, QStringList>> categoryDefinitions {
     {QStringLiteral("Live"), {QStringLiteral("MX-Live"), QStringLiteral("X-MX-Live")}},
@@ -83,6 +86,73 @@ QStringList listValue(const QString &text, const QString &key)
         }
     }
     return {};
+}
+
+QString menuStateFilePath()
+{
+    return QDir(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation))
+        .filePath(QString::fromLatin1(menuStateFileName));
+}
+
+bool isVisibilityLine(const QString &line)
+{
+    static const QRegularExpression expression(QStringLiteral(R"(^\s*(NoDisplay|Hidden)\s*=)"),
+                                                QRegularExpression::CaseInsensitiveOption);
+    return expression.match(line).hasMatch();
+}
+
+QStringList visibilityLines(const QString &text)
+{
+    QStringList result;
+    bool inDesktopEntry = false;
+    for (const QString &line : text.split(QLatin1Char('\n'))) {
+        const QString trimmed = line.trimmed();
+        if (trimmed.startsWith(QLatin1Char('['))) {
+            inDesktopEntry = trimmed.compare(QStringLiteral("[Desktop Entry]"), Qt::CaseInsensitive) == 0;
+        } else if (inDesktopEntry && isVisibilityLine(line)) {
+            result.append(line);
+        }
+    }
+    return result;
+}
+
+QString replaceVisibilityLines(const QString &text, const QStringList &replacement)
+{
+    QStringList lines = text.split(QLatin1Char('\n'));
+    bool inDesktopEntry = false;
+    qsizetype header = -1;
+    for (qsizetype index = 0; index < lines.size();) {
+        const QString trimmed = lines.at(index).trimmed();
+        if (trimmed.startsWith(QLatin1Char('['))) {
+            inDesktopEntry = trimmed.compare(QStringLiteral("[Desktop Entry]"), Qt::CaseInsensitive) == 0;
+            if (inDesktopEntry) {
+                header = index;
+            }
+            ++index;
+        } else if (inDesktopEntry && isVisibilityLine(lines.at(index))) {
+            lines.removeAt(index);
+        } else {
+            ++index;
+        }
+    }
+    if (header < 0) {
+        lines.prepend(QStringLiteral("[Desktop Entry]"));
+        header = 0;
+    }
+    for (auto iterator = replacement.crbegin(); iterator != replacement.crend(); ++iterator) {
+        lines.insert(header + 1, *iterator);
+    }
+    return lines.join(QLatin1Char('\n'));
+}
+
+bool writeFileAtomically(const QString &path, const QByteArray &content)
+{
+    QSaveFile file(path);
+    if (!file.open(QIODevice::WriteOnly) || file.write(content) != content.size()) {
+        file.cancelWriting();
+        return false;
+    }
+    return file.commit();
 }
 }
 
@@ -198,10 +268,13 @@ void ToolModel::setHideFromMenu(bool hide)
     if (m_hideFromMenu == hide) {
         return;
     }
-    for (const QString &fileName : std::as_const(m_menuFiles)) {
-        updateDesktopFileVisibility(fileName, hide);
+    const bool updated = hide ? hideMenuEntries()
+                              : (m_legacyMenuState ? restoreLegacyMenuEntries() : restoreMenuEntries());
+    if (!updated) {
+        return;
     }
     m_hideFromMenu = hide;
+    m_legacyMenuState = false;
     emit hideFromMenuChanged();
 
     QProcess panelCheck;
@@ -456,42 +529,141 @@ void ToolModel::openChangelog()
 
 void ToolModel::detectMenuVisibility()
 {
+    QSettings state(menuStateFilePath(), QSettings::IniFormat);
+    if (state.value(QStringLiteral("active"), false).toBool()) {
+        m_hideFromMenu = true;
+        return;
+    }
+
+    // Compatibility with overrides produced by releases that predate the
+    // state file. Those releases used mx-user.desktop as their state probe.
     QFile file(QDir::homePath() + QString::fromLatin1(userApplicationsPath) + QStringLiteral("/mx-user.desktop"));
     if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         m_hideFromMenu = QString::fromUtf8(file.readAll()).contains(QStringLiteral("NoDisplay=true"));
+        m_legacyMenuState = m_hideFromMenu;
     }
 }
 
-void ToolModel::updateDesktopFileVisibility(const QString &fileName, bool hide)
+bool ToolModel::hideMenuEntries()
 {
     const QDir directory(QDir::homePath() + QString::fromLatin1(userApplicationsPath));
     if (!QDir().mkpath(directory.absolutePath())) {
         emit errorOccurred(tr("Menu setting failed"), tr("Could not create %1.").arg(directory.absolutePath()));
-        return;
+        return false;
     }
-    const QString destination = directory.filePath(QFileInfo(fileName).fileName());
-    if (!hide) {
-        QFile::remove(destination);
-        return;
+    const QString statePath = menuStateFilePath();
+    if (!QDir().mkpath(QFileInfo(statePath).absolutePath())) {
+        emit errorOccurred(tr("Menu setting failed"), tr("Could not create %1.").arg(QFileInfo(statePath).absolutePath()));
+        return false;
     }
-    QFile::remove(destination);
-    if (!QFile::copy(fileName, destination)) {
-        emit errorOccurred(tr("Menu setting failed"), tr("Could not update %1.").arg(destination));
-        return;
+
+    QSettings state(statePath, QSettings::IniFormat);
+    state.clear();
+    state.setValue(QStringLiteral("active"), true);
+    state.beginGroup(QStringLiteral("Entries"));
+    bool success = true;
+    for (const QString &fileName : std::as_const(m_menuFiles)) {
+        const QString desktopId = QFileInfo(fileName).fileName();
+        const QString destination = directory.filePath(desktopId);
+        const bool originalExists = QFileInfo::exists(destination);
+        QFile input(originalExists ? destination : fileName);
+        if (!input.open(QIODevice::ReadOnly)) {
+            success = false;
+            break;
+        }
+        const QByteArray original = input.readAll();
+        const QByteArray hidden = replaceVisibilityLines(QString::fromUtf8(original),
+                                                         {QStringLiteral("NoDisplay=true")})
+                                      .toUtf8();
+
+        state.beginGroup(desktopId);
+        state.setValue(QStringLiteral("path"), destination);
+        state.setValue(QStringLiteral("originalExists"), originalExists);
+        state.setValue(QStringLiteral("original"), original);
+        state.setValue(QStringLiteral("hidden"), hidden);
+        state.endGroup();
+        state.sync();
+        if (state.status() != QSettings::NoError || !writeFileAtomically(destination, hidden)) {
+            success = false;
+            break;
+        }
     }
-    QFile file(destination);
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        return;
+    state.endGroup();
+    state.sync();
+    success = state.status() == QSettings::NoError && success;
+
+    if (!success) {
+        const bool restored = restoreMenuEntries();
+        if (!restored) {
+            m_hideFromMenu = true;
+            emit hideFromMenuChanged();
+        }
+        emit errorOccurred(tr("Menu setting failed"), tr("Could not update %1.").arg(directory.absolutePath()));
+        return false;
     }
-    QStringList lines = QString::fromUtf8(file.readAll()).split(QLatin1Char('\n'));
-    file.close();
-    lines.removeIf([](const QString &line) {
-        return line.startsWith(QStringLiteral("NoDisplay=")) || line.startsWith(QStringLiteral("Hidden="));
-    });
-    const qsizetype header = lines.indexOf(QStringLiteral("[Desktop Entry]"));
-    lines.insert(header >= 0 ? header + 1 : 0, QStringLiteral("NoDisplay=true"));
-    if (file.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate)) {
-        QTextStream stream(&file);
-        stream << lines.join(QLatin1Char('\n'));
+    return true;
+}
+
+bool ToolModel::restoreMenuEntries()
+{
+    QSettings state(menuStateFilePath(), QSettings::IniFormat);
+    state.beginGroup(QStringLiteral("Entries"));
+    bool success = true;
+    for (const QString &desktopId : state.childGroups()) {
+        state.beginGroup(desktopId);
+        const QString path = state.value(QStringLiteral("path")).toString();
+        const bool originalExists = state.value(QStringLiteral("originalExists")).toBool();
+        const QByteArray original = state.value(QStringLiteral("original")).toByteArray();
+        const QByteArray hidden = state.value(QStringLiteral("hidden")).toByteArray();
+        state.endGroup();
+
+        QFile currentFile(path);
+        QByteArray current;
+        const bool currentExists = currentFile.open(QIODevice::ReadOnly);
+        if (currentExists) {
+            current = currentFile.readAll();
+        }
+
+        if (originalExists) {
+            const QByteArray restored = !currentExists || current == hidden
+                                            ? original
+                                            : replaceVisibilityLines(QString::fromUtf8(current),
+                                                                     visibilityLines(QString::fromUtf8(original)))
+                                                  .toUtf8();
+            success = writeFileAtomically(path, restored) && success;
+        } else if (currentExists && current == hidden) {
+            success = QFile::remove(path) && success;
+        } else if (currentExists) {
+            const QByteArray restored = replaceVisibilityLines(QString::fromUtf8(current),
+                                                               visibilityLines(QString::fromUtf8(original)))
+                                            .toUtf8();
+            success = writeFileAtomically(path, restored) && success;
+        }
     }
+    state.endGroup();
+    if (success) {
+        state.clear();
+        state.sync();
+        success = state.status() == QSettings::NoError;
+    }
+    if (!success) {
+        emit errorOccurred(tr("Menu setting failed"), tr("Could not update %1.").arg(menuStateFilePath()));
+    }
+    return success;
+}
+
+bool ToolModel::restoreLegacyMenuEntries()
+{
+    const QDir directory(QDir::homePath() + QString::fromLatin1(userApplicationsPath));
+    bool success = true;
+    for (const QString &fileName : std::as_const(m_menuFiles)) {
+        const QString destination = directory.filePath(QFileInfo(fileName).fileName());
+        if (QFileInfo::exists(destination)) {
+            success = QFile::remove(destination) && success;
+        }
+    }
+    if (!success) {
+        emit errorOccurred(tr("Menu setting failed"), tr("Could not update %1.").arg(directory.absolutePath()));
+    }
+    return success;
 }
