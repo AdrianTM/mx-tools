@@ -9,6 +9,8 @@
 #include <QLocale>
 #include <QQmlApplicationEngine>
 #include <QTranslator>
+#include <QUrl>
+#include <QtGlobal>
 
 #include "toolmodel.h"
 
@@ -30,8 +32,14 @@ int main(int argc, char *argv[])
     QApplication::setApplicationName(QStringLiteral("mx-tools"));
     QApplication::setApplicationDisplayName(QStringLiteral("MX Tools"));
     QApplication::setApplicationVersion(QStringLiteral(VERSION));
-    QApplication::setWindowIcon(QIcon::fromTheme(
-        QStringLiteral("mx-tools"), QIcon(QStringLiteral(":/qt/qml/MxTools/icons/logo.svg"))));
+    const auto bundledIcon =
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        QStringLiteral(":/qt/qml/MxTools/icons/logo.svg");
+#else
+        QStringLiteral(":/MxTools/icons/logo.svg");
+#endif
+    QApplication::setWindowIcon(
+        QIcon::fromTheme(QStringLiteral("mx-tools"), QIcon(bundledIcon)));
 
     QTranslator qtTranslator;
     if (qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(),
@@ -57,7 +65,11 @@ int main(int argc, char *argv[])
                                  {QStringLiteral("version"), QStringLiteral(VERSION)}});
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed, &app,
                      [] { QCoreApplication::exit(EXIT_FAILURE); }, Qt::QueuedConnection);
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
     engine.loadFromModule(QStringLiteral("MxTools"), QStringLiteral("Main"));
+#else
+    engine.load(QUrl(QStringLiteral("qrc:/MxTools/qml/Main.qml")));
+#endif
 
     return QApplication::exec();
 }

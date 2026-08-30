@@ -1,5 +1,3 @@
-pragma ComponentBehavior: Bound
-
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
@@ -68,7 +66,7 @@ ApplicationWindow {
                     anchors.centerIn: parent
                     width: 38
                     height: 38
-                    source: "qrc:/qt/qml/MxTools/icons/logo.svg"
+                    source: "../icons/logo.svg"
                     fillMode: Image.PreserveAspectFit
                 }
             }
@@ -494,7 +492,7 @@ ApplicationWindow {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.preferredWidth: 72
                 Layout.preferredHeight: 72
-                source: "qrc:/qt/qml/MxTools/icons/logo.svg"
+                source: "../icons/logo.svg"
                 fillMode: Image.PreserveAspectFit
             }
             Text {
