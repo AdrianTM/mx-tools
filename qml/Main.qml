@@ -268,12 +268,28 @@ ApplicationWindow {
             spacing: 15
 
             Flickable {
+                id: compactCategoriesFlickable
                 visible: root.compactNavigation
                 Layout.fillWidth: true
                 Layout.preferredHeight: 46
                 contentWidth: compactCategories.implicitWidth
                 clip: true
                 boundsBehavior: Flickable.StopAtBounds
+
+                // Qt's default wheel handling on Flickable applies flick momentum, which on
+                // touchpads keeps decelerating in the old direction after the fingers reverse
+                // (you have to lift off and let it stop before it will scroll the other way).
+                // Move contentX directly instead so reversing direction is immediate.
+                WheelHandler {
+                    target: null
+                    acceptedDevices: PointerDevice.Mouse | PointerDevice.TouchPad
+                    onWheel: (event) => {
+                        const delta = event.angleDelta.x !== 0 ? event.angleDelta.x : event.angleDelta.y
+                        compactCategoriesFlickable.contentX = Math.max(0, Math.min(
+                            Math.max(0, compactCategoriesFlickable.contentWidth - compactCategoriesFlickable.width),
+                            compactCategoriesFlickable.contentX - delta))
+                    }
+                }
 
                 Row {
                     id: compactCategories
@@ -342,6 +358,19 @@ ApplicationWindow {
                 model: root.backend
                 cellWidth: width / Math.max(1, Math.floor(width / 300))
                 cellHeight: 154
+
+                // See the comment on the compact category Flickable above: bypass the default
+                // flick-momentum wheel handling so touchpad scrolling can reverse direction
+                // immediately instead of needing a full stop first.
+                WheelHandler {
+                    target: null
+                    acceptedDevices: PointerDevice.Mouse | PointerDevice.TouchPad
+                    onWheel: (event) => {
+                        toolsGrid.contentY = Math.max(0, Math.min(
+                            Math.max(0, toolsGrid.contentHeight - toolsGrid.height),
+                            toolsGrid.contentY - event.angleDelta.y))
+                    }
+                }
 
                 delegate: ToolCard {
                     required property string name
