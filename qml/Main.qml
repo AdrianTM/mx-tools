@@ -438,7 +438,19 @@ ApplicationWindow {
         x: (root.width - width) / 2
         y: (root.height - height) / 2
         title: qsTr("About MX Tools")
-        standardButtons: Dialog.Close
+        footer: DialogButtonBox {
+            standardButtons: DialogButtonBox.Close
+            alignment: Qt.AlignRight
+            padding: 12
+            background: Item {}
+            delegate: SecondaryButton {
+                textColor: root.primaryTextColor
+                hoverColor: root.accentWash
+                borderColor: root.borderColor
+                accentColor: root.accentColor
+            }
+            onRejected: aboutDialog.reject()
+        }
 
         background: Rectangle {
             color: root.surfaceColor
@@ -517,7 +529,19 @@ ApplicationWindow {
         property string message: ""
         modal: true
         anchors.centerIn: Overlay.overlay
-        standardButtons: Dialog.Ok
+        footer: DialogButtonBox {
+            standardButtons: DialogButtonBox.Ok
+            alignment: Qt.AlignRight
+            padding: 12
+            background: Item {}
+            delegate: SecondaryButton {
+                textColor: root.primaryTextColor
+                hoverColor: root.accentWash
+                borderColor: root.borderColor
+                accentColor: root.accentColor
+            }
+            onAccepted: errorDialog.accept()
+        }
         contentItem: Text {
             text: errorDialog.message
             color: root.primaryTextColor
@@ -532,7 +556,19 @@ ApplicationWindow {
         width: Math.min(root.width - 80, 760)
         height: Math.min(root.height - 80, 560)
         anchors.centerIn: Overlay.overlay
-        standardButtons: Dialog.Close
+        footer: DialogButtonBox {
+            standardButtons: DialogButtonBox.Close
+            alignment: Qt.AlignRight
+            padding: 12
+            background: Item {}
+            delegate: SecondaryButton {
+                textColor: root.primaryTextColor
+                hoverColor: root.accentWash
+                borderColor: root.borderColor
+                accentColor: root.accentColor
+            }
+            onRejected: documentDialog.reject()
+        }
 
         contentItem: ScrollView {
             TextArea {
