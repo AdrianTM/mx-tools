@@ -205,8 +205,9 @@ ApplicationWindow {
                         required property int index
                         Layout.fillWidth: true
                         text: modelData
-                        selected: root.backend.selectedCategory === modelData
-                                  || (index === 0 && root.backend.selectedCategory === "")
+                        selected: searchField.text.length === 0
+                                  && (root.backend.selectedCategory === modelData
+                                      || (index === 0 && root.backend.selectedCategory === ""))
                         accentColor: root.accentColor
                         mutedTextColor: root.secondaryTextColor
                         hoverColor: root.accentWash
@@ -284,8 +285,9 @@ ApplicationWindow {
                             required property int index
                             width: Math.max(92, implicitWidth)
                             text: modelData
-                            selected: root.backend.selectedCategory === modelData
-                                      || (index === 0 && root.backend.selectedCategory === "")
+                            selected: searchField.text.length === 0
+                                      && (root.backend.selectedCategory === modelData
+                                          || (index === 0 && root.backend.selectedCategory === ""))
                             accentColor: root.accentColor
                             mutedTextColor: root.secondaryTextColor
                             hoverColor: root.accentWash
