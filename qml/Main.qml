@@ -354,7 +354,7 @@ ApplicationWindow {
                 Layout.fillHeight: true
                 clip: true
                 boundsBehavior: Flickable.StopAtBounds
-                ScrollBar.vertical: ScrollBar {}
+                ScrollBar.vertical: ScrollBar { policy: ScrollBar.AlwaysOn }
                 model: root.backend
                 cellWidth: width / Math.max(1, Math.floor(width / 300))
                 cellHeight: 154
