@@ -67,6 +67,7 @@ ApplicationWindow {
                     width: 38
                     height: 38
                     source: "../icons/logo.svg"
+                    sourceSize: Qt.size(48, 48)
                     fillMode: Image.PreserveAspectFit
                 }
             }
@@ -496,6 +497,7 @@ ApplicationWindow {
                 Layout.preferredWidth: 72
                 Layout.preferredHeight: 72
                 source: "../icons/logo.svg"
+                sourceSize: Qt.size(96, 96)
                 fillMode: Image.PreserveAspectFit
             }
             Text {
