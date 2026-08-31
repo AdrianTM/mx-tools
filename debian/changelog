@@ -1,7 +1,9 @@
 mx-tools (26.08) mx; urgency=medium
 
-  * Replace the interface with a responsive dashboard featuring searchable tool cards, category navigation, and support for the desktop light or dark theme
-  * Add direct access to the MX Linux manual, website, license, and application changelog
+  * Replace the interface with a responsive dashboard featuring searchable
+    tool cards, category navigation, and desktop light or dark theme support
+  * Add direct access to the MX Linux manual, website, license, and
+    application changelog
   * Add a manual page describing how to launch MX Tools
 
  -- Adrian <adrian@mxlinux.org>  Sat, 29 Aug 2026 19:04:24 -0400
