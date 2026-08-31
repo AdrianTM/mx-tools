@@ -182,7 +182,7 @@ target_compile_definitions(mx-tools PRIVATE
 # Release-specific optimizations
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
     target_compile_definitions(mx-tools PRIVATE NDEBUG)
-    target_compile_options(mx-tools PRIVATE -O3)
+    target_compile_options(mx-tools PRIVATE -Os)
 
     # Add LTO - different flags for different compilers
     if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR USE_CLANG)
