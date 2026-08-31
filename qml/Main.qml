@@ -390,6 +390,9 @@ ApplicationWindow {
                 cellWidth: width / Math.max(1, Math.floor(width / (root.condensedView ? 230 : 300)))
                 cellHeight: root.condensedView ? 112 : 154
 
+                onCellWidthChanged: Qt.callLater(toolsGrid.returnToBounds)
+                onCellHeightChanged: Qt.callLater(toolsGrid.returnToBounds)
+
                 // See the comment on the compact category Flickable above: bypass the default
                 // flick-momentum wheel handling so touchpad scrolling can reverse direction
                 // immediately instead of needing a full stop first.
@@ -397,8 +400,11 @@ ApplicationWindow {
                     target: null
                     acceptedDevices: PointerDevice.Mouse | PointerDevice.TouchPad
                     onWheel: (event) => {
-                        toolsGrid.contentY = Math.max(0, Math.min(
-                            Math.max(0, toolsGrid.contentHeight - toolsGrid.height),
+                        const minimumY = toolsGrid.originY
+                        const maximumY = Math.max(minimumY,
+                                                  minimumY + toolsGrid.contentHeight - toolsGrid.height)
+                        toolsGrid.contentY = Math.max(minimumY, Math.min(
+                            maximumY,
                             toolsGrid.contentY - event.angleDelta.y))
                     }
                 }
