@@ -363,14 +363,17 @@ ApplicationWindow {
                     elide: Text.ElideRight
                 }
                 ModernSwitch {
+                    id: condensedSwitch
                     checked: root.condensedView
                     accentColor: root.accentColor
                     inactiveColor: root.inactiveControlColor
                     knobColor: checked ? systemPalette.highlightedText : systemPalette.button
                     knobBorderColor: Qt.alpha(systemPalette.shadow, 0.25)
                     Accessible.name: qsTr("Use condensed tool view")
-                    ToolTip.visible: hovered
-                    ToolTip.text: qsTr("Show more tools at once")
+                    ThemeToolTip {
+                        visible: condensedSwitch.hovered
+                        text: qsTr("Show more tools at once")
+                    }
                     onToggled: root.condensedView = checked
                 }
             }

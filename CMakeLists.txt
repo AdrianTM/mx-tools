@@ -139,6 +139,7 @@ qt6_add_qml_module(mx-tools
         qml/components/CategoryButton.qml
         qml/components/ModernSwitch.qml
         qml/components/SecondaryButton.qml
+        qml/components/ThemeToolTip.qml
         qml/components/ToolCard.qml
     RESOURCES
         icons/logo.svg
