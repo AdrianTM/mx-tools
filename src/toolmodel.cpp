@@ -597,8 +597,9 @@ bool ToolModel::hideMenuEntries()
         if (!restored) {
             m_hideFromMenu = true;
             emit hideFromMenuChanged();
+        } else {
+            emit errorOccurred(tr("Menu setting failed"), tr("Could not update %1.").arg(directory.absolutePath()));
         }
-        emit errorOccurred(tr("Menu setting failed"), tr("Could not update %1.").arg(directory.absolutePath()));
         return false;
     }
     return true;
