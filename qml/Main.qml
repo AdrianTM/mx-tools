@@ -233,11 +233,17 @@ ApplicationWindow {
                     spacing: 7
 
                     Text {
+                        id: sidebarMenuVisibilityLabel
                         Layout.fillWidth: true
                         text: qsTr("Show tools only in MX Tools.")
                         color: root.secondaryTextColor
                         font.pixelSize: Math.max(10, root.baseFontSize - 1)
                         wrapMode: Text.Wrap
+                        HoverHandler { id: sidebarMenuVisibilityLabelHover }
+                        ThemeToolTip {
+                            visible: sidebarMenuVisibilityLabelHover.hovered
+                            text: qsTr("Hide individual tools from the applications menu")
+                        }
                     }
 
                     ModernSwitch {
@@ -444,13 +450,20 @@ ApplicationWindow {
             RowLayout {
                 visible: root.compactNavigation
                 Layout.fillWidth: true
+                spacing: 7
 
+                Item { Layout.fillWidth: true }
                 Text {
+                    id: compactMenuVisibilityLabel
                     text: qsTr("Show tools only in MX Tools.")
                     color: root.secondaryTextColor
                     font.pixelSize: Math.max(10, root.baseFontSize - 1)
+                    HoverHandler { id: compactMenuVisibilityLabelHover }
+                    ThemeToolTip {
+                        visible: compactMenuVisibilityLabelHover.hovered
+                        text: qsTr("Hide individual tools from the applications menu")
+                    }
                 }
-                Item { Layout.fillWidth: true }
                 ModernSwitch {
                     id: compactMenuVisibilitySwitch
                     checked: root.backend.hideFromMenu
