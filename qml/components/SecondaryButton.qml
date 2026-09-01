@@ -29,7 +29,7 @@ Button {
     }
 
     background: Rectangle {
-        radius: 9
+        radius: 6
         color: control.hovered ? control.hoverColor : control.surfaceColor
         border.width: control.activeFocus ? 2 : 1
         border.color: control.activeFocus ? control.accentColor : control.borderColor

@@ -27,7 +27,7 @@ Button {
     }
 
     background: Rectangle {
-        radius: 10
+        radius: 6
         color: control.selected ? control.hoverColor : (control.hovered ? Qt.alpha(control.hoverColor, 0.7) : "transparent")
         border.width: control.activeFocus ? 2 : 0
         border.color: control.accentColor

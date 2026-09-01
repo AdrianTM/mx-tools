@@ -29,7 +29,7 @@ Button {
 
     background: Rectangle {
         color: control.hovered ? control.hoverSurfaceColor : control.surfaceColor
-        radius: 14
+        radius: 6
         border.width: control.activeFocus ? 2 : 1
         border.color: control.activeFocus || control.hovered ? control.accentColor : control.borderColor
 
@@ -44,7 +44,7 @@ Button {
             Layout.alignment: Qt.AlignTop
             Layout.preferredWidth: control.condensed ? 42 : 54
             Layout.preferredHeight: control.condensed ? 42 : 54
-            radius: control.condensed ? 10 : 13
+            radius: 6
             color: Qt.alpha(control.accentColor, control.hovered ? 0.16 : 0.10)
 
             Image {

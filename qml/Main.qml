@@ -59,7 +59,7 @@ ApplicationWindow {
             Rectangle {
                 Layout.preferredWidth: 48
                 Layout.preferredHeight: 48
-                radius: 12
+                radius: 6
                 color: root.accentWash
 
                 Image {
@@ -108,7 +108,7 @@ ApplicationWindow {
                 Accessible.name: qsTr("Search tools")
 
                 background: Rectangle {
-                    radius: 12
+                    radius: 6
                     color: root.backgroundColor
                     border.width: searchField.activeFocus ? 2 : 1
                     border.color: searchField.activeFocus ? root.accentColor : root.borderColor
@@ -179,7 +179,7 @@ ApplicationWindow {
             visible: !root.compactNavigation
             Layout.preferredWidth: 218
             Layout.fillHeight: true
-            radius: 16
+            radius: 6
             color: root.surfaceColor
             border.color: root.borderColor
 
@@ -505,7 +505,7 @@ ApplicationWindow {
 
         background: Rectangle {
             color: root.surfaceColor
-            radius: 16
+            radius: 6
             border.color: root.borderColor
         }
 
@@ -629,7 +629,7 @@ ApplicationWindow {
                 readOnly: true
                 selectByMouse: true
                 wrapMode: TextEdit.Wrap
-                background: Rectangle { color: root.backgroundColor; radius: 8 }
+                background: Rectangle { color: root.backgroundColor; radius: 6 }
             }
         }
     }
