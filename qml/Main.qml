@@ -232,31 +232,26 @@ ApplicationWindow {
                     Layout.topMargin: 6
                     spacing: 7
 
-                    ColumnLayout {
+                    Text {
                         Layout.fillWidth: true
-                        spacing: 1
-                        Text {
-                            text: qsTr("Simplify menu")
-                            color: root.primaryTextColor
-                            font.pixelSize: root.baseFontSize
-                            font.weight: Font.Medium
-                        }
-                        Text {
-                            Layout.fillWidth: true
-                            text: qsTr("Keep tools here only")
-                            color: root.secondaryTextColor
-                            font.pixelSize: Math.max(10, root.baseFontSize - 2)
-                            wrapMode: Text.Wrap
-                        }
+                        text: qsTr("Show tools only in MX Tools.")
+                        color: root.secondaryTextColor
+                        font.pixelSize: Math.max(10, root.baseFontSize - 1)
+                        wrapMode: Text.Wrap
                     }
 
                     ModernSwitch {
+                        id: sidebarMenuVisibilitySwitch
                         checked: root.backend.hideFromMenu
                         accentColor: root.accentColor
                         inactiveColor: root.inactiveControlColor
                         knobColor: checked ? systemPalette.highlightedText : systemPalette.button
                         knobBorderColor: Qt.alpha(systemPalette.shadow, 0.25)
-                        Accessible.name: qsTr("Hide individual tools from the application menu")
+                        Accessible.name: qsTr("Show tools only in MX Tools.")
+                        ThemeToolTip {
+                            visible: sidebarMenuVisibilitySwitch.hovered
+                            text: qsTr("Hide individual tools from the applications menu")
+                        }
                         onToggled: root.backend.hideFromMenu = checked
                     }
                 }
@@ -451,18 +446,23 @@ ApplicationWindow {
                 Layout.fillWidth: true
 
                 Text {
-                    text: qsTr("Hide individual tools from the application menu")
+                    text: qsTr("Show tools only in MX Tools.")
                     color: root.secondaryTextColor
                     font.pixelSize: Math.max(10, root.baseFontSize - 1)
                 }
                 Item { Layout.fillWidth: true }
                 ModernSwitch {
+                    id: compactMenuVisibilitySwitch
                     checked: root.backend.hideFromMenu
                     accentColor: root.accentColor
                     inactiveColor: root.inactiveControlColor
                     knobColor: checked ? systemPalette.highlightedText : systemPalette.button
                     knobBorderColor: Qt.alpha(systemPalette.shadow, 0.25)
-                    Accessible.name: qsTr("Hide individual tools from the application menu")
+                    Accessible.name: qsTr("Show tools only in MX Tools.")
+                    ThemeToolTip {
+                        visible: compactMenuVisibilitySwitch.hovered
+                        text: qsTr("Hide individual tools from the applications menu")
+                    }
                     onToggled: root.backend.hideFromMenu = checked
                 }
             }
