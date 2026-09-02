@@ -76,6 +76,7 @@ private:
         QString fileName;
         QString name;
         QString comment;
+        QString keywords;
         QString iconSource;
         QString exec;
         QString category;

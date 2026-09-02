@@ -320,6 +320,10 @@ void ToolModel::loadTools()
             if (tool.comment.isEmpty()) {
                 tool.comment = value(text, QStringLiteral("Comment"));
             }
+            tool.keywords = translatedValue(text, QStringLiteral("Keywords"));
+            if (tool.keywords.isEmpty()) {
+                tool.keywords = value(text, QStringLiteral("Keywords"));
+            }
             tool.exec = value(text, QStringLiteral("Exec"));
             tool.exec.remove(QRegularExpression(QStringLiteral(R"( %[a-zA-Z])")));
             tool.category = categoryName;
@@ -353,6 +357,7 @@ void ToolModel::refilter()
         const bool textMatches = m_search.trimmed().isEmpty()
                                  || tool.name.contains(m_search, Qt::CaseInsensitive)
                                  || tool.comment.contains(m_search, Qt::CaseInsensitive)
+                                 || tool.keywords.contains(m_search, Qt::CaseInsensitive)
                                  || tool.category.contains(m_search, Qt::CaseInsensitive);
         if (categoryMatches && textMatches) {
             m_visibleRows.append(i);
