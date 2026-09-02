@@ -11,8 +11,8 @@ Build-Depends: debhelper-compat (= 12), cmake (>= 3.16), ninja-build, qt6-base-d
 Package-List:
  mx-tools deb admin optional arch=any
 Checksums-Sha1:
- 173d7538e354e3b1075c153469fa6717d7005c15 13753956 mx-tools_26.08.tar.xz
+ 5273d10405929546242057cd27b8f15433ca4ce1 14056128 mx-tools_26.08.tar.xz
 Checksums-Sha256:
- 8e1cf75b7b3d4b161e2a07cbb0be10a1f53e253133745278e712f6024659ee4c 13753956 mx-tools_26.08.tar.xz
+ 79a9c9504a3fbc652510398d68af027e37f9682c3e2f9a108f24a5d61904f405 14056128 mx-tools_26.08.tar.xz
 Files:
- ee41d10627ab82680a5b9aaf85ab5a1e 13753956 mx-tools_26.08.tar.xz
+ b3c6d1af89f946eec7c48cd3a0392eb4 14056128 mx-tools_26.08.tar.xz
