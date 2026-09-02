@@ -80,6 +80,7 @@ private:
         QString iconSource;
         QString exec;
         QString category;
+        QString searchText;
         bool runInTerminal = false;
     };
 

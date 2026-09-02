@@ -311,23 +311,33 @@ void ToolModel::loadTools()
 
             ToolInfo tool;
             tool.fileName = fileName;
+            const QString englishName = value(text, QStringLiteral("Name"));
             tool.name = translatedValue(text, QStringLiteral("Name"));
             if (tool.name.isEmpty()) {
-                tool.name = value(text, QStringLiteral("Name"));
+                tool.name = englishName;
             }
             tool.name.remove(QRegularExpression(QStringLiteral("^MX ")));
+            const QString englishComment = value(text, QStringLiteral("Comment"));
             tool.comment = translatedValue(text, QStringLiteral("Comment"));
             if (tool.comment.isEmpty()) {
-                tool.comment = value(text, QStringLiteral("Comment"));
+                tool.comment = englishComment;
             }
+            const QString englishKeywords = value(text, QStringLiteral("Keywords"));
             tool.keywords = translatedValue(text, QStringLiteral("Keywords"));
             if (tool.keywords.isEmpty()) {
-                tool.keywords = value(text, QStringLiteral("Keywords"));
+                tool.keywords = englishKeywords;
             }
             tool.exec = value(text, QStringLiteral("Exec"));
             tool.exec.remove(QRegularExpression(QStringLiteral(R"( %[a-zA-Z])")));
             tool.category = categoryName;
             tool.runInTerminal = value(text, QStringLiteral("Terminal")).compare(QStringLiteral("true"), Qt::CaseInsensitive) == 0;
+
+            // Always keep the English strings searchable alongside the
+            // localized ones, so a tool can be found by its English name
+            // even when a translation replaces it in the UI.
+            tool.searchText = QStringList {tool.name, englishName, tool.comment, englishComment,
+                                           tool.keywords, englishKeywords, tool.category, category}
+                                  .join(QLatin1Char(' '));
 
             const QString iconName = value(text, QStringLiteral("Icon"));
             const QString iconKey = QString::number(iconNumber++);
@@ -355,10 +365,7 @@ void ToolModel::refilter()
                                      || m_selectedCategory == allTools
                                      || tool.category == m_selectedCategory;
         const bool textMatches = m_search.trimmed().isEmpty()
-                                 || tool.name.contains(m_search, Qt::CaseInsensitive)
-                                 || tool.comment.contains(m_search, Qt::CaseInsensitive)
-                                 || tool.keywords.contains(m_search, Qt::CaseInsensitive)
-                                 || tool.category.contains(m_search, Qt::CaseInsensitive);
+                                 || tool.searchText.contains(m_search, Qt::CaseInsensitive);
         if (categoryMatches && textMatches) {
             m_visibleRows.append(i);
         }
